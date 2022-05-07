@@ -1,0 +1,206 @@
+.panel--basket-preview {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+    .close {
+        background: none;
+        border: none;
+        padding: 12px;
+        outline: none;
+        display: block;
+        position: absolute;
+        font-size: 19px;
+        right: 5px;
+        top: 5px;
+        z-index: 1;
+        appearance: none;
+        cursor: pointer;
+        opacity: 0.65;
+
+        .close-icon {
+            background-image: url(../../../public/img-downl/cross.svg);
+            height: 1em;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 1em;
+            display: block;
+        }
+    }
+
+    .heading-basket {
+        padding: 16px 0px;
+        color: rgb(45, 69, 88);
+        font: 600 18px "Chronicle SSm A", "Chronicle SSm B", serif;
+        text-align: center;
+    }
+
+    .info__shipping {
+        background-color: rgba(234, 234, 234, 0.52);
+        margin: -3px 0px 20px;
+        padding: 12px 0px;
+        position: relative;
+        text-align: center;
+
+        .text__shipping {
+            color: rgb(68, 68, 68);
+            font: italic 500 15px "Chronicle SSm A", "Chronicle SSm B", serif;
+            margin: 0px;
+            text-align: center;
+        }
+
+        .decor__shipping {
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            height: 8px;
+            margin: 10px 22px 0px 23px;
+        }
+    }
+
+    .info__produits {
+        display: flex;
+        padding: auto 13px;
+        flex-grow: 1;
+        overflow-y: auto;
+        justify-content: center;
+
+        .panier-vide {
+            margin: 50px;
+            color: rgb(45, 69, 88);
+            font-size: 14px;
+            line-height: 1.57;
+            text-align: center;
+
+            .lien {
+                color: rgb(161, 143, 122);
+                text-decoration: underline;
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .info__subtotal {
+        background: rgb(250, 250, 250);
+        padding: 8px 19px 22px;
+        box-shadow: rgb(0 0 0 / 11%) 0px 1px 4px 2px;
+        position: relative;
+        z-index: 1;
+
+        .subtotal {
+            margin-bottom: 6px;
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            color: rgb(45, 69, 88);
+            font: 400 15px / 1.77 "Gotham SSm A", "Gotham SSm B", sans-serif;
+            text-transform: uppercase;
+        }
+
+        .wrapper-button {
+            display: flex;
+
+            .btn {
+                background: #c4c4c4;
+                border: none;
+                border-radius: 1px;
+                padding: 0 8px;
+                outline: none;
+                display: inline-block;
+                color: #fff;
+                font-weight: 400;
+                font-family: "Gotham SSm A", sans-serif;
+                font-size: 13px;
+                line-height: 25px;
+                text-align: center;
+                text-transform: uppercase;
+                white-space: nowrap;
+                -webkit-appearance: none;
+                -webkit-transition: background-color 0.2s;
+                transition: background-color 0.2s;
+            }
+
+            .btn--default {
+                background: #2d4558;
+                width: 100%;
+                font-size: 17px;
+                line-height: 50px;
+            }
+
+            .checkout--b {
+                margin: 0px;
+            }
+
+            .btn[disabled] {
+                background: #e6e6e6;
+                color: #a9a9a9;
+                opacity: 0.65;
+                cursor: default;
+            }
+
+            .btn--default:disabled {
+                background: #b4b4b4;
+                color: #fff;
+            }
+
+            .checkout--b:disabled {
+                background-color: rgb(196, 196, 196);
+                color: rgb(255, 255, 255);
+                pointer-events: none;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .container__box {
+        width: 390px;
+    }
+
+    .panel--basket-preview {
+        .close {
+            padding: 0px;
+            font-size: 25px;
+            right: auto;
+            top: 20px;
+            left: 20px;
+
+            .close-icon {
+                background-image: url(../../../public/img-downl/arrow.svg);
+                height: 0.85em;
+                background-size: 100%;
+                background-repeat: no-repeat;
+                width: 1em;
+                display: block;
+            }
+        }
+
+        .heading-basket {
+            padding: 28px 0px 19px;
+        }
+
+        .info__produits {
+            padding: 0px 19px;
+        }
+
+        .info__subtotal {
+            padding: 11px 19px 19px;
+
+            .subtotal {
+                margin-bottom: 10px;
+                font-size: 13px;
+            }
+
+            .wrapper-button {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container__box {
+        width: 100vw;
+    }
+}

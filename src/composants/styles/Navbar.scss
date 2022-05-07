@@ -1,0 +1,148 @@
+@import '/src/varG.scss';
+
+.navbar {
+    display: flex;
+    background-color: #57696d;
+    height: 44px;
+    width: 100%;
+    position: sticky;
+    top: 100px;
+    z-index: 1000;
+
+    .container__navbar {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+
+        .shop-nav__button {
+            display: none;
+            width: 100%;
+            height: 100%;
+            padding-left: 16px;
+            color: #fff;
+            font-weight: 400;
+            font-family: "Chronicle SSm A", serif;
+            font-style: italic;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn--link {
+            background: transparent;
+            padding: 0;
+            border: none;
+            outline: none;
+            font-size: inherit;
+            font-family: inherit;
+            
+
+            
+        }
+
+        .shop-nav__menu-list {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            height: 100%;
+            margin-inline: auto;
+            
+            .shop-nav__menu-item {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                font-size: $taille-font-navbar;
+                padding-inline: 11px;
+
+                .shop-nav__menu-link {
+                    text-decoration: none;
+                    color: white;
+                    
+                }
+            }
+
+            .shop-nav__menu-item--sh {
+                
+                .shop-nav__menu-link {
+                    padding-left: 17px;
+                    border-left: 1px solid white;
+                    height: 20px;
+                    
+                    span {
+                        display: flex;
+                        height: 100%;
+                        width: 100%;
+                        align-items: center;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+    .navbar {
+        .container__navbar {
+            .btn--link {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                padding-left: 16px;
+                color: #fff;
+                font-weight: 400;
+                font-family: "Chronicle SSm A", serif;
+                font-style: italic;
+                align-items: center;
+                justify-content: center;
+                
+
+                .span1 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 16px;
+                }
+
+                .icon__arrow {
+                    display: flex;
+                    margin-left: 5px;
+                    margin-top: 2px;
+                    padding-top: 1px;
+                    font-size: 16px;
+                    height: 8px;
+                    align-items: flex-end;
+                    cursor: pointer;
+                }
+
+
+                .icon__arrow::before, .icon__arrow::after {
+                    content: " ";
+                    width: 0.5em;
+                    border-top: 1px solid;
+                    border-radius: 1px;
+                    border-color: white;
+                    transform: rotate(45deg);
+                    transform-origin: right;
+                }
+    
+                .icon__arrow:after {
+                    transform: rotate(-45deg);
+                    transform-origin: left;
+                }
+            }
+
+            .shop-nav__menu-list {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1006px) {
+    .navbar {
+        top: 50px;
+    }
+}

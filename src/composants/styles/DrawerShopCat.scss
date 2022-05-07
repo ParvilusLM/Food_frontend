@@ -1,0 +1,110 @@
+.container__boxSC {
+    padding: 30px 16px;
+    .close {
+        background: none;
+        border: none;
+        color: white;
+        padding: 12px;
+        outline: none;
+        display: block;
+        position: absolute;
+        font-size: 19px;
+        right: 5px;
+        top: 5px;
+        z-index: 1;
+        appearance: none;
+        cursor: pointer;
+        opacity: 0.65;
+
+        .close-icon {
+            background-image: url(../../../public/img-downl/cross.svg);
+            height: 1em;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 1em;
+            display: block;
+        }
+    }
+
+    .shop-nav__menu {
+        font-size: 15px;
+        .shop-nav__menu-list {
+            color: white;
+            list-style: none;
+
+            .shop-nav__menu-heading {
+                padding-bottom: 7px;
+                font-weight: 500;
+                font-family: "Chronicle SSm A", serif;
+                font-size: 20px;
+                font-style: italic;
+                text-align: center;
+            }
+
+            .shop-nav__menu-item {
+                padding: 11px 0;
+                border-bottom: 1px solid #fff;
+
+                .shop-nav__menu-link {
+                    display: flex;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    text-decoration: none;
+                    line-height: 34px;
+                    color: #fff;
+
+                    .shop-nav__menu-caret {
+                        transition: transform 0.1s linear;
+                        width: 16px;
+                        height: 34px;
+
+                        .icon {
+                            background-size: 100% auto;
+                            background-repeat: no-repeat;
+                            width: 16px;
+                            height: 7px;
+                            display: inline-block;
+                        }
+                        
+                        .icon__arrow {
+                            padding-top: 1px;
+                            font-size: 16px;
+                            height: 8px;
+                            align-items: center;
+                            height: 1em;
+                            border-color: white;
+                            display: inline-flex;
+                            font-size: 10px;
+                            -webkit-transform: rotate(180deg);
+                            transform: rotate(180deg);
+
+                            &::before,&::after {
+                                content: " ";
+                                width: 1em;
+                                height: 0;
+                                border-top: 1px solid;
+                                border-radius: 1px;
+                                border-color: inherit;
+                                -webkit-transform: rotate(-45deg);
+                                transform: rotate(-45deg);
+                                -webkit-transform-origin: right;
+                                transform-origin: right;
+                            }
+
+                            &::after {
+                                -webkit-transform: rotate(45deg);
+                                transform: rotate(45deg);
+                                -webkit-transform-origin: left;
+                                transform-origin: left;
+                            }
+                        }
+                    }
+                }
+
+                
+            }
+
+        }
+        
+    }
+}

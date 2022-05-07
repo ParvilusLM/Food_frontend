@@ -1,0 +1,850 @@
+@import '/src/varG.scss';
+
+.wrapper-header {
+    display: flex;
+    flex-direction: column;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    z-index: 1001;
+    border-bottom: 1px solid #eaeaea;
+
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        position: relative;
+        
+    
+    
+        nav {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-inline: auto;
+
+            .logo {
+                cursor: pointer;
+                margin-inline: 11px;
+            }
+
+            .global-nav__menu {
+                .close {
+                    display: none;
+                }
+                
+                .global-nav__menu-list {
+                    display: flex;
+                    flex-direction: row;
+                    padding-inline: auto;
+                    justify-content: center;
+                    list-style: none;
+                    width: 640px;
+            
+                    .global-nav__menu-item {
+                        text-transform: uppercase;
+                        font-size: $taille-font;
+                        min-width: 12%;
+                        line-height: 51px;
+                        max-height: 50px;
+                        justify-content: center;
+                        align-items: center;
+
+                        .lien-nav {
+                            display: flex;
+                            height: 100%;
+                            width: 100%;
+                            text-decoration: none;
+                            color: #444;
+                            padding-inline: 15px;
+                            justify-content: center;
+                            align-items: center;
+
+                            span {
+                                display: flex;
+                                height: 60%;
+                                padding: 5px 0;
+                                align-items: center;
+                                border-bottom: 2px solid transparent;
+                                
+                                
+                            }
+
+                            span:hover {
+                                color:#959595 ;
+                                border-color: rgb(87,105,109);
+                                font-weight: 700;
+            
+                            }
+                        }
+        
+
+                        .global-nav__menu-dropdown{
+                            display: none;
+                            position: absolute;
+                            width: 100%;
+                            top: 50px;
+                            left: 0;
+                            justify-content: center;
+                            z-index: 10001;
+                            max-height: calc(100vh - 50px);
+                            background-color: #fff;
+                            line-height: 17px;
+                            border-top: 1px solid #eaeaea;
+                            border-bottom: 1px solid #eaeaea;
+                            
+                            
+    
+                            .global-nav__shop {
+                                width: 100%;
+                                height: calc(100vh - 50px);
+                                margin-bottom: 2rem;
+                                padding-right: auto;
+                                overflow: auto;
+                                
+                                li {
+                                    margin: 0;
+                                }
+                                
+                                .global-nav__shop-groups {
+                                    column-count: 4;
+                                    column-gap: 20px;
+                                    max-width: 1024px;
+                                    margin: 0 auto;
+                                    padding: 30px 12px;
+                                    font-size: 12px;
+                                    line-height: 1.46em;
+                                    text-align: left;
+                                    
+    
+                                    .global-nav__shop-group {
+                                        display: flex;
+                                        flex-direction: column;
+                                        margin-bottom: 30px;
+    
+                                        h5 {
+                                            margin-bottom: 18px;
+                                            .lien {
+                                                color: #57696d;
+                                                font-weight: 500;
+                                                font-family: "Chronicle SSm A", serif;
+                                                font-size: 16px;
+                                                text-decoration: none;
+                                                
+                                            }
+    
+                                            .lien:hover {
+                                                color: black;
+                                            }
+
+                                            .lien-registry {
+                                                display: flex;
+                                                .icon__registry {
+                                                    display: flex;
+                                                    background-size: 100% auto;
+                                                    background-repeat: no-repeat;
+                                                    width: 1.7rem;
+                                                    height: 1.8rem;
+                                                    font-size: 1.7rem;
+                                                    align-items: center;
+                                                    margin-left: 3px;
+                                                    
+                                                    background-image: url('../../../public/img-downl/registry.svg');
+                                                }
+                                            } 
+
+                                            .five-two:after {
+                                                content: "\00a0\2013\00a0our line!";
+                                                color: #688f96;
+                                                font-weight: 500;
+                                                font-family: "Chronicle SSm A", serif;
+                                                font-size: 1.2rem;
+                                                font-style: italic;
+                                                text-transform: none;
+                                            }
+                                        }
+
+                                        .spacingTop{
+                                            margin-top: 30px;
+                                        }
+
+                                        .global-nav__shop-link {
+                                            font-weight: 400;
+                                            font-family: "Gotham SSm A", sans-serif;
+                                            display: block;
+                                            border: 1.5px solid #2d4558;
+                                            border-radius: 1px;
+                                            color: #2d4558;
+                                            font-size: 13px;
+                                            line-height: 36px;
+                                            padding-top: 1px;
+                                            text-align: center;
+                                            width: 149px;
+                                            text-decoration: none;
+                                        }
+                                            
+                                        .global-nav__shop-sub-group {
+                                            display: flex;
+                                            flex-direction: column;
+                                            list-style: none;
+    
+                                            li {
+                                                margin-bottom: 9px;
+    
+                                                .lien {
+                                                    font-size: 1rem;
+                                                    text-decoration: none;
+                                                    color: #444;
+                                                }
+    
+                                                .lien:hover {
+                                                    color: #111111;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            .global-nav__recipes--row {
+                                display: flex;
+                                max-width: 1024px;
+                                font-size: 1rem;
+                                padding: 30px 12px;
+                                margin: 0 auto;
+                                
+                                justify-content: center;
+
+                                .explore-arrow {
+                                    width: 113px;
+                                    height: auto;
+                                    margin-right: 20px;
+                                }
+
+                                
+                                .global-nav__recipes-groups {
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    width: 130px;
+                                    margin-right: 4px;
+                                    padding: 0;
+
+                                    .global-nav__recipes-tags {
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: flex-start;
+                                        align-items: flex-start;
+                                        padding-bottom: 3.5px;
+
+                                        .vector-6 {
+                                            margin-bottom: 1.2rem;
+                                            width: 21px;
+                                            height: 1px;
+                                            background-color: #a18f7a;
+                                        }
+
+                                        .global-nav__recipes-list {
+                                            text-align: left;
+                                            list-style: none;
+
+                                            li {
+                                                margin-bottom: 9px;
+
+                                                .lien-recipes {
+                                                    text-decoration: none;
+                                                    color: #444;
+                                                }
+
+                                                .lien-recipes:hover {
+                                                    color: #111111;
+                                                }
+                                            }
+
+                                        }
+                                    }
+
+                                    .global-nav__shop-link {
+                                        display: block;
+                                        border: 1.5px solid #2d4558;
+                                        border-radius: 1px;
+                                        color: #2d4558;
+                                        font-size: 1rem;
+                                        line-height: 36px;
+                                        padding-top: 1px;
+                                        text-align: center;
+                                        width: 149px;
+                                        text-decoration: none;
+                                    }
+
+                                    .global-nav__shop-link:hover {
+                                        color: #111111;
+                                    }
+                                }
+
+                                .hidden-l-screen {
+                                    display: none;
+                                }
+
+                            }
+    
+                            .global-nav__community {
+                                display: flex;
+                                max-width: 1024px;
+                                margin: 30px auto;
+                                padding: 0 2px;
+                                justify-content: center;
+                                line-height: 1.46em;
+                                text-align: center;
+                                list-style: none;
+
+                                li {
+                                    width: 25%;
+                                    padding: 0 10px;
+
+                                    .lien-community {
+                                        text-decoration: none;
+                                        color: #444;
+
+                                        .wrapper1 {
+                                            width: 100px;
+                                            max-width: 100%;
+
+                                            .wrapper2 {
+                                                height: 0px;
+                                                padding-bottom: 100%;
+                                                position: relative;
+
+                                                .img-community {
+                                                    border-radius: 50%;
+                                                }
+                                            }
+                                        }
+
+                                        h5 {
+                                            padding: 12px 0 10px 0;
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                        }
+
+                                        p {
+                                            font-size: 1rem;
+                                            margin: 0;
+                                        }
+                                    }
+
+                                    .lien-community:hover {
+                                        color: #111111;
+                                    }
+
+                                    .lien-community>div {
+                                        margin: 0 auto;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .global-nav__menu-item--more {
+                        display: none;
+                    }
+
+                    .li-shop:hover {
+                        .global-nav__menu-dropdown {
+                            display: flex;
+                        } 
+                    } 
+
+                    .li-recipes:hover {
+                        .global-nav__menu-dropdown {
+                            display: flex;
+                        } 
+                    }
+
+                    .li-community:hover {
+                        .global-nav__menu-dropdown {
+                            display: flex;
+                        } 
+                    }
+                }
+            }
+
+            .global-nav__menu--expanded {
+                display: flex;
+                width: 100%;
+                max-height: calc(100vh - 50px);
+                flex-direction: column;
+                font-size: 14px;
+                text-transform: uppercase;
+                overflow-y: auto;
+                padding-block: 5px auto;
+
+                .close {
+                    background: none;
+                    border: none;
+                    color: white;
+                    padding: 10px;
+                    outline: none;
+                    display: block;
+                    position: absolute;
+                    font-size: 19px;
+                    right: 15px;
+                    top: 50px;
+                    z-index: 1;
+                    appearance: none;
+                    cursor: pointer;
+                    opacity: 0.65;
+            
+                    .close-icon {
+                        background-image: url(../../../public/img-downl/cross.svg);
+                        height: 1em;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        width: 1em;
+                        display: block;
+                    }
+                }
+
+                .global-nav__menu-list {
+                    display: block;
+                    flex-direction: column;
+                    max-height: 5000px;
+                    padding: 0px 16px 0 16px;
+                    flex-grow: 1;
+                    overflow-y: auto;
+
+
+                    .global-nav__menu-item.global-nav__menu-item--more {
+                        display: none;
+                    }
+
+                    .global-nav__menu-item {
+                        padding: 11px 0;
+                        text-align: left;
+                        display: flex;
+                        flex-direction: column;
+                        height: auto;
+                        max-height: 2000px;
+                        justify-content:space-between;
+                        flex-grow: 1;
+                        
+                        
+                        &:nth-child(2) {
+                            border-top: none;
+                        }
+
+                        .lien-nav {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: flex-start;
+                            line-height: 34px;
+                            font-size: 15px;
+                            
+                            margin: 5px 0;
+
+                            &:hover {
+                                color: #444;
+                            }
+
+                            span {
+                                height: auto;
+                                padding: 0;
+
+                                &:hover {
+                                    border-color: transparent;
+                                }
+                            }
+
+                            .global-nav__menu-caret {
+                                display: inline-flex;
+                                align-items: flex-end;
+                                padding: 7px 0 0 5px;
+                                transform-origin: top center;
+                                transition: transform 0.1s linear;
+                                pointer-events: none;
+
+                                .icon__arrow {
+                                    height: 100%;
+                                    border-color: inherit;
+                                    display: inline-flex;
+                                    font-size: 12px;
+                                    -webkit-transform: rotate(180deg);
+                                    transform: rotate(180deg);
+                                }
+
+                                .icon__arrow {
+                                    padding-top: 1px;
+                                    align-items: center;
+
+                                    &:before, &:after {
+                                        content: " ";
+                                        width: 8px;
+                                        height: 0;
+                                        border-top: 1px solid;
+                                        border-radius: 1px;
+                                        border-color: inherit;
+                                        transform: rotate(-45deg);
+                                        transform-origin: right;
+                                    }
+
+                                    &:after {
+                                        transform: rotate(45deg);
+                                        transform-origin: left;
+                                    }
+                                }
+                            }
+
+                            
+                        }
+
+                        .global-nav__menu-dropdown {
+                            position: static !important;
+                            z-index: 1001;
+                            border-top: none;
+                            margin-left: 30px;
+                            padding-bottom: 10px;
+                            max-height: 2000px;
+                            opacity: 1;
+                            visibility: visible;
+
+                            .global-nav__shop {
+                                width: 100%;
+                                padding-right: auto;
+                                overflow:initial;
+                                margin-bottom: 10px;
+                                height: auto;
+
+                                .global-nav__shop-groups {
+                                    display: flex;
+                                    flex-direction: column;
+                                    column-gap: 0;
+                                    max-width: 1024px;
+                                    padding: 5px 12px;
+                                    font-size: 12px;
+
+                                    .global-nav__shop-group {
+                                        margin-bottom: 0;
+                                        text-transform: capitalize;
+                                        font-size: 14px;
+                                        color: #444;
+
+                                        h5, .global-nav__shop-heading--pantry, .global-nav__shop-heading--registry  {
+                                            margin: 0;
+                                        }
+                                    }
+                                    
+
+                                }
+
+                                .global-nav__shop-sub-group {
+                                    display: none !important;
+                                }
+                            }
+
+                            .global-nav__recipes--row {
+                                display: flex;
+                                width: 100%;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                padding-top: 20px;
+                                text-transform: capitalize;
+                                padding-bottom: 0;
+
+                                .explore-arrow {
+                                    display: none;
+                                }
+
+                                .global-nav__recipes-groups {
+                                    font-size: 14px;
+                                    color: rgb(68, 68, 68);
+                                    .global-nav__recipes-list {
+                                        display: flex;
+                                        flex-direction: column;
+                                        list-style: none;
+                                        margin-bottom: 15px;
+
+                                        .lien-allRecipes {
+                                            text-decoration: none;
+                                        }
+
+                                        .explore-text {
+                                            margin-top: 10px;
+                                            color: #a18f7a;
+                                            font-weight: 500;
+                                            font-size: 11px;
+                                            
+                                        }
+                                    }
+
+                                    .global-nav__shop-link {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+
+                        
+                    }
+
+                    .li-shop .lien-nav[aria-expanded='true']~#the_shopDropdown {
+                        display: flex;
+                    }
+
+                    .li-recipes .lien-nav[aria-expanded='true']~#the_recipesDropdown {
+                        display: flex;
+                    }
+
+                    .li-community .lien-nav[aria-expanded='true']~#communityDropdown {
+                        display: flex;
+                    }
+
+                }
+
+                .lien {
+                    line-height: 34px;
+                    display: block;
+                }
+
+
+            }
+
+            .global-nav__actions {
+                display: flex;
+                align-items: center;
+                height: 50px;
+                list-style: none;
+                
+                li {
+                    margin: 0;
+                    button {
+                        display: flex;
+                        width: 108px;
+                        height: 24px;
+                        margin-right: 11px;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        border-radius: 1px;
+                        color: white;
+                        background-color: #2d4558;
+                        justify-content: center;
+                        align-items: center;
+                        border: none;
+        
+                    }
+    
+                    button:hover {
+                        background-color: rgb(28,43,54);
+                    }
+        
+                    .fa-solid {
+                        display: flex;
+                        font-size: 1.6rem;
+                        margin-inline: 11px;
+                        color: rgb(59, 59, 59);  
+                    }
+    
+                    .fa-solid:hover {
+                        color: black;
+                    }
+                }
+    
+                
+            }
+        
+            
+            
+            
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 1005px) {
+
+    .wrapper-header {
+        .header {
+            height: auto;
+            max-height: 100vh;
+            flex-shrink: 0;
+            flex-grow: 1;
+
+            .global-nav {
+                display: flex;
+                flex-direction: row;
+                background: #fff;
+                align-items: center;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .logo {
+                    margin-inline:22px 0;
+                    margin-block: auto;
+    
+                }
+
+                .global-nav__menu {
+                    display: flex;
+                    background: #fff;
+                    width: 100%;
+                    height: 50px;
+                    border-top: 1px solid #eaeaea;
+                    align-items: center;
+                    justify-content: center;
+                    order: 1;
+                    font-size: 12px;
+
+                    .global-nav__menu-list {
+                        width: 100%;
+                        justify-content: space-around;
+                        margin-inline: auto;
+                        
+                        .global-nav__menu-item:nth-child(n + 6), .global-nav__menu-item:nth-child(n + 7),
+                            .global-nav__menu-item:nth-child(n + 8){
+                            display: none;
+                        }
+    
+                        .global-nav__menu-item {
+                            flex-grow: 0;
+                        }
+
+                        .li-shop:hover, .li-recipes:hover, .li-community:hover {
+                            .global-nav__menu-dropdown {
+                                display: none;
+                            }
+                        }
+
+                        .global-nav__menu-item--more {
+                            display: flex;
+                            position: relative;
+                            padding-right: 5px;
+
+                            .global-nav__menu-link {
+                                display: flex;
+                                width: 100%;
+                                height: 20px;
+                                font-weight: 500;
+                                color: inherit;
+                                text-transform: uppercase;
+                                align-items: center;
+                                justify-content: center;
+                                border: none;
+                                position: relative;
+                            }
+
+                            .global-nav__menu-link:before {
+                                content: " ";
+                                background: linear-gradient(#717171, #717171 1px, transparent 1px, transparent);
+                                background-size:100% 6px;
+                                width: 17px;
+                                height: 13px;
+                                margin-right: 6px;
+                            }
+
+                            .btn--link {
+                                background: transparent;
+                                padding: 0;
+                                border: none;
+                                outline: none;
+                                font-size: inherit;
+                                font-family: inherit;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .global-nav__menu-item--more:before {
+                            content: " ";
+                            background: #eaeaea;
+                            width: 1px;
+                            height: 50px;
+                            position: absolute;
+                            right: -1px;
+                            
+                        }
+
+                    }
+
+                    
+                }
+
+                .global-nav__menu--expanded {
+                    height: auto;
+                    border-bottom: 1px solid #eaeaea;
+                    -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);
+                    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);
+
+                    .global-nav__menu-list {
+                        padding: 5px 16px 0 16px;
+                        flex-grow: 1;
+
+                        .global-nav__menu-item:nth-child(n + 6), .global-nav__menu-item:nth-child(n + 7),
+                            .global-nav__menu-item:nth-child(n + 8){
+                            display: flex;
+                        }
+
+                        .global-nav__menu-item {
+                            padding: 11px 0;
+                            text-align: left;
+
+                            .global-nav__menu-dropdown {
+                                .global-nav__recipes--row {
+                                    .hidden-l-screen {
+                                        display: flex;             
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+
+    }
+    
+
+    
+}
+
+@media only screen and (min-width: 768px) {
+    .wrapper-header {
+        .header {
+            .global-nav {
+                .global-nav__menu--expanded {
+            
+                    .global-nav__menu-list {
+                        padding: 5px 22px 0 22px;
+            
+                        .global-nav__menu-item {
+                            padding: 0 51px 0 0;
+                        }
+
+                        .global-nav__menu-item--more {
+                            pointer-events: none;
+                            position: relative;
+                        }
+                    }
+
+                }
+
+                .global-nav__menu-list {
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    overflow: hidden;
+                }
+
+            }
+        }
+    }
+}
+

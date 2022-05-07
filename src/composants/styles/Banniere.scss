@@ -1,0 +1,55 @@
+.banniere {
+    background: rgb(186, 187, 190);
+    min-height: 40px;
+    padding: 5px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clear: both;
+    position: sticky;
+    top: 144px;
+    z-index: 1000;
+
+    .shipping {
+        font-style: italic;
+
+        &::before {
+            content: "|";
+            font-style: normal;
+            padding: 0px 10px;
+        }
+    }
+
+    .lien {
+        margin-left: 6px;
+        text-decoration: underline;
+        color: #444;
+    }
+
+
+    .lien1 {
+        font-weight: 700;
+    }
+
+    .lien2 {
+        font-style: italic;
+        font-weight: 400;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .banniere {
+        font-size: 12px;
+        line-height: 1.69em;
+    }
+}
+
+@media only screen and (min-width: 1006px){
+    .banniere {
+        top: 94px;
+    }
+}

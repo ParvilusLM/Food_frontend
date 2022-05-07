@@ -1,0 +1,17 @@
+.global--wrapper-ContenuSp {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .global--wrapper-ContenuSp {
+        background: #fafafa;
+        min-height: 111px;
+        margin: 0;
+        border-bottom: 1px solid #f1f1f1;
+        padding: 10px 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
