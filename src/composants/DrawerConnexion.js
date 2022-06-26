@@ -9,12 +9,18 @@ function DrawerConnexion() {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = () => {
-    var el = document.getElementById('anchor-el');
+    let el = document.getElementById('anchor-el');
     setAnchorEl(el);
+    document.querySelector('.overlay').classList.add('show-layer');
+    document.querySelector('.overlay').classList.remove('hidden-layer');
+    
   };
 
   const handleClose = () => {
     setAnchorEl(null);
+    document.querySelector('.overlay').classList.add('hidden-layer');
+    document.querySelector('.overlay').classList.remove('show-layer');
+
   };
 
   const open = Boolean(anchorEl);
@@ -69,6 +75,7 @@ function DrawerConnexion() {
       <div className="global--wrapper-popoverC">
         <button onClick={handleClick}>Log In/Sign Up</button>
         <span className="anchor-reference" id='anchor-el'></span>
+        <div className='overlay'></div>
         
         <Popover
           id={id}
