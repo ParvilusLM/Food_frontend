@@ -5,6 +5,11 @@ import {
   Route,
 } from "react-router-dom";
 import loadable from '@loadable/component'
+import ScrollToTop from './composants/ScrollToTop'
+
+const ContenuSponsorise = loadable( () => import('./composants/ContenuSponsorise'))
+const Header = loadable( () => import('./composants/Header'))
+const Footer = loadable( () => import('./composants/Footer'))
 
 const Accueil = loadable( () => import('./pages/Accueil'))
 const Apropos = loadable( () => import('./pages/Apropos'))
@@ -28,6 +33,9 @@ const Travel = loadable( () => import('./pages/Travel'))
 function App() {
   return (
     <Router>
+      <ScrollToTop />
+      <ContenuSponsorise />
+      <Header />
       <Routes>
         <Route path="/" element={<Accueil/>} />
         <Route path="/apropos" element={<Apropos/>} />
@@ -47,7 +55,7 @@ function App() {
         <Route path="/team" element={<Team/>} />
         <Route path="/travel" element={<Travel/>} />
       </Routes>
-      
+      <Footer />
     </Router>
   );
 }

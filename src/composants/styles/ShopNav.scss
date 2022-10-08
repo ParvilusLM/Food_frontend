@@ -1,0 +1,151 @@
+.shop--nav {
+    display: flex;
+    width: 100%;
+    height: 44px;
+    color: #fff;
+    font-size: 15px;
+    background-color: rgb(87, 105, 109);
+    position:sticky;
+    top: 100px;
+
+    @media only screen and (min-width: 1024px) {
+        & {
+            font-size: 13px;
+            top: 50px;
+        }
+    }
+
+    .shop--nav-container {
+        display: flex;
+        max-width: 100%;
+        height: 44px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        @media only screen and (min-width: 1024px){
+            & {
+                max-width: 1024px;
+            }
+        }
+
+        .shop-nav__button {
+            display: none;
+            width: 100%;
+            height: 100%;
+            padding-left: 16px;
+            color: #fff;
+            font-weight: 400;
+            font-family: "Chronicle SSm A", serif;
+            font-style: italic;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn--link {
+            background: transparent;
+            padding: 0;
+            border: none;
+            outline: none;
+            font-size: inherit;
+            font-family: inherit;
+
+            @media only screen and (max-width: 1023px) {
+                & {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 16px;
+                    color: #fff;
+                    font-weight: 400;
+                    font-family: "Chronicle SSm A", serif;
+                    font-style: italic;
+                    align-items: center;
+                    justify-content: center; 
+                    
+
+                    .span1 {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 16px;
+                    }
+
+                    .icon__arrow {
+                        display: flex;
+                        margin-left: 5px;
+                        margin-top: 2px;
+                        padding-top: 1px;
+                        font-size: 16px;
+                        height: 8px;
+                        align-items: flex-end;
+                        cursor: pointer;
+                    }
+
+
+                    .icon__arrow::before, .icon__arrow::after {
+                        content: " ";
+                        width: 0.5em;
+                        border-top: 1px solid;
+                        border-radius: 1px;
+                        border-color: white;
+                        transform: rotate(45deg);
+                        transform-origin: right;
+                    }
+        
+                    .icon__arrow:after {
+                        transform: rotate(-45deg);
+                        transform-origin: left;
+                    }
+                }
+            }
+        }
+
+        .shop--nav-list {
+            list-style: none;
+
+            @media only screen and (max-width: 1023px) {
+                & {
+                    display: none;
+                }
+            }
+
+            @media only screen and (min-width: 1024px) {
+                & {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            .shop--nav-list--item {
+                padding: 11px 0;
+                border-bottom: 1px solid #fff;
+
+                @media only screen and (min-width: 1024px) {
+                    & {
+                        padding: 0;
+                        border: none;
+                    }
+                }
+
+                .nav--lien {
+                    display: flex;
+                    justify-content: space-between;
+                    overflow: hidden;
+                    line-height: 34px;
+                    color: #fff;
+                    text-decoration: none;
+
+                    @media only screen and (min-width: 1024px) {
+                        & {
+                            padding: 0 10.5px;
+                            line-height: 45px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

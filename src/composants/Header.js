@@ -56,7 +56,7 @@ function Header() {
                                 </button>
                             </li>
                             <li className="global-nav__menu-item li-shop">
-                                <Link aria-haspopup='true' aria-expanded='true' aria-controls='the_shopDropdown' className='lien-nav lien-nav__shop' to='/shop'>
+                                <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_shopDropdown' className='lien-nav lien-nav__shop' to='/shop'>
                                     <span>The shop</span>
                                     <span class="global-nav__menu-caret" aria-label="Toggle The Shop sub menu">
                                         <span class="icon icon__arrow"></span>
@@ -364,7 +364,7 @@ function Header() {
                                 </div>
                             </li>
                             <li className="global-nav__menu-item li-recipes">
-                                <Link aria-haspopup='true' aria-expanded='true' aria-controls='the_recipesDropdown' className='lien-nav' to='/recipes'>
+                                <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_recipesDropdown' className='lien-nav' to='/recipes'>
                                     <span>Recipes</span>
                                     <span class="global-nav__menu-caret" aria-label="Toggle Recipes sub menu">
                                         <span class="icon icon__arrow"></span>
@@ -560,7 +560,7 @@ function Header() {
                                 </Link>
                             </li>
                             <li className="global-nav__menu-item li-community">
-                                <Link aria-haspopup='true' aria-expanded='true' aria-controls='communityDropdown' className='lien-nav' to='/hotline'>
+                                <Link aria-haspopup='true' aria-expanded='false' aria-controls='communityDropdown' className='lien-nav' to='/hotline'>
                                     <span>Community</span>
                                     <span class="global-nav__menu-caret" aria-label="Toggle The Shop sub menu">
                                         <span class="icon icon__arrow"></span>

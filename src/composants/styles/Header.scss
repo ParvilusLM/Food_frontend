@@ -103,6 +103,7 @@
                             
     
                             .global-nav__shop {
+                                display: flex;
                                 width: 100%;
                                 height: calc(100vh - 50px);
                                 margin-bottom: 2rem;
@@ -378,14 +379,11 @@
             }
 
             .global-nav__menu--expanded {
-                display: flex;
                 width: 100%;
-                max-height: calc(100vh - 50px);
+                height: calc(100vh - 50px);
                 flex-direction: column;
                 font-size: 14px;
                 text-transform: uppercase;
-                overflow-y: auto;
-                padding-block: 5px auto;
 
                 .close {
                     background: none;
@@ -398,7 +396,7 @@
                     font-size: 19px;
                     right: 15px;
                     top: 50px;
-                    z-index: 1;
+                    z-index: 100;
                     appearance: none;
                     cursor: pointer;
                     opacity: 0.65;
@@ -416,10 +414,11 @@
                 .global-nav__menu-list {
                     display: block;
                     flex-direction: column;
-                    max-height: 5000px;
-                    padding: 0px 16px 0 16px;
+                    height: fit-content;
+                    padding: 5px 16px 0 16px;
                     flex-grow: 1;
                     overflow-y: auto;
+                    -webkit-overflow-scrolling: touch;
 
 
                     .global-nav__menu-item.global-nav__menu-item--more {
@@ -516,6 +515,7 @@
                             visibility: visible;
 
                             .global-nav__shop {
+                                display: flex;
                                 width: 100%;
                                 padding-right: auto;
                                 overflow:initial;
@@ -666,7 +666,38 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .wrapper-header {
+        .header {
+            .global-nav {
+                .global-nav__menu--expanded {
+            
+                    .global-nav__menu-list {
+                        padding: 5px 22px 0 22px;
+            
+                        .global-nav__menu-item {
+                            padding: 0 51px 0 0;
+                        }
 
+                        .global-nav__menu-item--more {
+                            pointer-events: none;
+                            position: relative;
+                        }
+                    }
+
+                }
+
+                .global-nav__menu-list {
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    overflow: hidden;
+                }
+
+            }
+        }
+    }
+}
 
 @media only screen and (max-width: 1005px) {
 
@@ -688,6 +719,13 @@
                 .logo {
                     margin-inline:22px 0;
                     margin-block: auto;
+
+                    .lien-logo {
+                        img {
+                            width: 87px;
+                            height: 18px;
+                        }
+                    }
     
                 }
 
@@ -702,18 +740,26 @@
                     order: 1;
                     font-size: 12px;
 
+                    
+
                     .global-nav__menu-list {
+                        display: flex;
                         width: 100%;
                         justify-content: space-around;
                         margin-inline: auto;
+
                         
-                        .global-nav__menu-item:nth-child(n + 6), .global-nav__menu-item:nth-child(n + 7),
-                            .global-nav__menu-item:nth-child(n + 8){
+                        
+                        .global-nav__menu-item:nth-child(5), .global-nav__menu-item:nth-child(n + 7){
                             display: none;
                         }
     
                         .global-nav__menu-item {
-                            flex-grow: 0;
+                            flex-grow: 1;
+
+                            .lien-nav {
+                                padding-inline: 4px;
+                            }
                         }
 
                         .li-shop:hover, .li-recipes:hover, .li-community:hover {
@@ -770,6 +816,13 @@
                             
                         }
 
+                        @media (max-width:768px) {
+                            .global-nav__menu-item {
+                                line-height:20px;
+                                font-weight:400;
+                            }
+                        }
+
                     }
 
                     
@@ -784,9 +837,14 @@
                     .global-nav__menu-list {
                         padding: 5px 16px 0 16px;
                         flex-grow: 1;
+                        display: block;
+                        flex-direction: column;
+                        height: -moz-fit-content;
+                        height: fit-content;
+                        overflow-y: auto;
+                        -webkit-overflow-scrolling: touch;
 
-                        .global-nav__menu-item:nth-child(n + 6), .global-nav__menu-item:nth-child(n + 7),
-                            .global-nav__menu-item:nth-child(n + 8){
+                        .global-nav__menu-item:nth-child(5), .global-nav__menu-item:nth-child(n + 7){
                             display: flex;
                         }
 
@@ -813,38 +871,5 @@
     
 
     
-}
-
-@media only screen and (min-width: 768px) {
-    .wrapper-header {
-        .header {
-            .global-nav {
-                .global-nav__menu--expanded {
-            
-                    .global-nav__menu-list {
-                        padding: 5px 22px 0 22px;
-            
-                        .global-nav__menu-item {
-                            padding: 0 51px 0 0;
-                        }
-
-                        .global-nav__menu-item--more {
-                            pointer-events: none;
-                            position: relative;
-                        }
-                    }
-
-                }
-
-                .global-nav__menu-list {
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    justify-content: center;
-                    overflow: hidden;
-                }
-
-            }
-        }
-    }
 }
 

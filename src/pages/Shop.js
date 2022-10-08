@@ -1,21 +1,15 @@
 import React, {Fragment} from 'react'
 import loadable from '@loadable/component'
 
-const ContenuSponsorise = loadable( () => import('../composants/ContenuSponsorise'))
-const Header = loadable( () => import('../composants/Header'))
-const Navbar = loadable( () => import('../composants/Navbar'))
+const ShopNav = loadable( () => import('../composants/ShopNav'))
 const Banniere = loadable( () => import('../composants/Banniere'))
-const Footer = loadable( () => import('../composants/Footer'))
 
 function Shop() {
   return (
     <Fragment>
-      <ContenuSponsorise />
-      <Header />
-      <Navbar />
+      <ShopNav />
       <Banniere />
       <h1>Shop</h1>
-      <Footer />
     </Fragment>
     
   )
