@@ -600,7 +600,6 @@ function DrawerShopCat() {
     </Box>
   )
 
-
   return (
     <Fragment>
       <div className="global__wrapper-drawerS">

@@ -20,6 +20,37 @@ function Header() {
             $('.global-nav__menu').removeClass('global-nav__menu--expanded');
         });
 
+
+        $('.li-shop').on('click',function() {
+            const valAttr = $('.lien-nav--shop-exp').attr('aria-expanded');
+            if(valAttr === 'true') {
+                $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
+            } else {
+                $('.lien-nav--shop-exp').attr('aria-expanded', 'true');
+            }
+            
+        });
+
+        $('.li-recipes').on('click',function() {
+            const valAttr = $('.lien-nav--recipes-exp').attr('aria-expanded');
+            if(valAttr === 'true') {
+                $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
+            } else {
+                $('.lien-nav--recipes-exp').attr('aria-expanded', 'true');
+            }
+            
+        });
+
+        $('.li-community').on('click',function() {
+            const valAttr = $('.lien-nav--community-exp').attr('aria-expanded');
+            if(valAttr === 'true') {
+                $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+            } else {
+                $('.lien-nav--community-exp').attr('aria-expanded', 'true');
+            }
+            
+        });
+
         
 
         $(window).on('resize', function() {
@@ -28,10 +59,13 @@ function Header() {
                 let vp = $(window).width() + 17;
                 if(vp >= 1006) {
                     $('.global-nav__menu').removeClass('global-nav__menu--expanded');
+                    
                 }
             }
             
         })
+
+        
         
     });
 
@@ -56,12 +90,13 @@ function Header() {
                                 </button>
                             </li>
                             <li className="global-nav__menu-item li-shop">
-                                <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_shopDropdown' className='lien-nav lien-nav__shop' to='/shop'>
+                                <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_shopDropdown' className='lien-nav lien-nav__shop lien-nav--shop-exp' to='/shop'>
                                     <span>The shop</span>
-                                    <span class="global-nav__menu-caret" aria-label="Toggle The Shop sub menu">
-                                        <span class="icon icon__arrow"></span>
+                                    <span className="global-nav__menu-caret shop--caret" aria-label="Toggle The Shop sub menu">
+                                        <span className="icon icon__arrow"></span>
                                     </span>
                                 </Link>
+                                
                                 <div className="global-nav__menu-dropdown" id='the_shopDropdown'>
                                     <div className="global-nav__shop global-nav__shop--column">
                                         <ul className="global-nav__shop-groups">
@@ -364,10 +399,10 @@ function Header() {
                                 </div>
                             </li>
                             <li className="global-nav__menu-item li-recipes">
-                                <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_recipesDropdown' className='lien-nav' to='/recipes'>
+                                <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_recipesDropdown' className='lien-nav lien-nav--recipes-exp' to='/recipes'>
                                     <span>Recipes</span>
-                                    <span class="global-nav__menu-caret" aria-label="Toggle Recipes sub menu">
-                                        <span class="icon icon__arrow"></span>
+                                    <span className="global-nav__menu-caret recipes--caret" aria-label="Toggle Recipes sub menu">
+                                        <span className="icon icon__arrow"></span>
                                     </span>
                                 </Link>
                                 <div className="global-nav__menu-dropdown" id='the_recipesDropdown'>
@@ -376,10 +411,10 @@ function Header() {
                                             <img src="img-downl/explore.svg" width='113px' height='70px' alt="" />
                                         </div>
                                         <div className="global-nav__recipes-groups hidden-l-screen">
-                                            <ul class="global-nav__recipes-list">
+                                            <ul className="global-nav__recipes-list">
                                                 <li>
                                                     <Link className='lien-allRecipes' to="/recipes" >All Recipes</Link>
-                                                    <div class="explore-text">EXPLORE</div>
+                                                    <div className="explore-text">EXPLORE</div>
                                                 </li>
                                             </ul>
                                         </div>
@@ -560,10 +595,10 @@ function Header() {
                                 </Link>
                             </li>
                             <li className="global-nav__menu-item li-community">
-                                <Link aria-haspopup='true' aria-expanded='false' aria-controls='communityDropdown' className='lien-nav' to='/hotline'>
+                                <Link aria-haspopup='true' aria-expanded='false' aria-controls='communityDropdown' className='lien-nav lien-nav--community-exp' to='/hotline'>
                                     <span>Community</span>
-                                    <span class="global-nav__menu-caret" aria-label="Toggle The Shop sub menu">
-                                        <span class="icon icon__arrow"></span>
+                                    <span className="global-nav__menu-caret community--caret" aria-label="Toggle The Shop sub menu">
+                                        <span className="icon icon__arrow"></span>
                                     </span>
                                 </Link>
                                 <div className="global-nav__menu-dropdown" id='communityDropdown'>

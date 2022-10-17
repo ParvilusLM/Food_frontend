@@ -440,6 +440,14 @@
                             border-top: none;
                         }
 
+                        .lien-nav--shop-exp, .lien-nav--recipes-exp, .lien-nav--community-exp {
+                            pointer-events: none;
+                        }
+
+                        .lien-nav--shop-exp:hover {
+                            background-color: #2d45588e;
+                        }
+
                         .lien-nav {
                             display: flex;
                             flex-direction: row;
@@ -592,6 +600,8 @@
                         }
 
                         
+
+                        
                     }
 
                     .li-shop .lien-nav[aria-expanded='true']~#the_shopDropdown {
@@ -605,6 +615,8 @@
                     .li-community .lien-nav[aria-expanded='true']~#communityDropdown {
                         display: flex;
                     }
+
+                    
 
                 }
 
@@ -658,9 +670,6 @@
     
                 
             }
-        
-            
-            
             
         }
     }
@@ -829,7 +838,7 @@
                 }
 
                 .global-nav__menu--expanded {
-                    height: auto;
+                    height: calc(100vh - 50px);
                     border-bottom: 1px solid #eaeaea;
                     -webkit-box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);
                     box-shadow: 0 2px 4px 0 rgb(0 0 0 / 5%);

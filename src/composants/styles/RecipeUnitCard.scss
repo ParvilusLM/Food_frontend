@@ -1,0 +1,84 @@
+.recipe--unit-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto 15px auto;
+    width: 100%;
+
+    .recipe--unit-img--link {
+        text-decoration: none;
+        color: #444;
+        width: 41%;
+
+        .recipe--unit-img--container {
+            display: flex;
+            justify-content: center;
+            .dr1 {
+                max-width: 100%;
+                width: 228px;
+
+                .dr1--1 {
+                    height: 0;
+                    padding-bottom: 66.66666666666666%;
+                    position: relative;
+
+                    .image {
+                        max-width: 100%;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            & {
+                width: auto;
+            }
+        }
+    }
+
+    .recipe--unit-details {
+        text-align: left;
+        width: 56%;
+
+        .recipe--unit-headline {
+            font-weight: 400;
+            font-family: "Gotham SSm A", sans-serif;
+            font-size: 16px;
+            line-height: 23px;
+            margin-left: 6px;
+
+            .feature--headline-link {
+                text-decoration: none;
+                color: #444;
+            }
+
+            @media only screen and (min-width: 768px) {
+                & {
+                    font-size: 15px;
+                    margin: 5px auto 0 auto;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            & {
+                text-align: center;
+                width: auto;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        & {
+            display: inline;
+            margin: 0;
+            width: 228px;
+        }
+    }
+}

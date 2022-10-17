@@ -10,7 +10,7 @@ function Navbar() {
     <Fragment>
         <nav className='navbar'>
             <div className='container__navbar'>
-                <button type='button' className="btn--link shop-nav__button">
+                <button type='button' className="btn--link-nav shop-nav__button">
                   <span className='span1'>
                     Shop Categories
                     <DrawerShopCat />

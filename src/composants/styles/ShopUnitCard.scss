@@ -1,0 +1,233 @@
+.shop--unit-container {
+    margin: 39px auto 0 auto;
+    width: 100%;
+    
+    .shop--unit-img--link {
+        text-decoration: none;
+        color: #444;
+
+        .shop--unit-img--container {
+            margin: 0 auto;
+            position: relative;
+            width: 296px;
+
+            .d1 {
+                max-width: 100%;
+                width: 320px;
+
+                .d1--1 {
+                    height: 0;
+                    padding-bottom: 100.0%;
+                    position: relative;
+                    
+                    .image {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: block;
+                    }
+                }
+            }
+
+            .ribbon {
+                border-color: rgba(247,247,247,0.95);
+                padding: 0 5px;
+                font-size: 22px;
+                line-height: 1em;
+                display: inline-flex;
+                align-items: center;
+                position: relative;
+                overflow: hidden;
+                z-index: 0; 
+
+                &::before {
+                    transform: skew(20deg) translateX(-50%);
+                }
+
+                &::after {
+                    transform: skew(-20deg) translateX(-50%);
+                }
+
+                &::before, &::after {
+                    content: " ";
+                    width: calc(100% - 1em * 0.364);
+                    height: 0;
+                    border-top: 1em solid;
+                    border-top-color: inherit;
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                }
+
+                .ribbon--text {
+                    padding: 0 10px;
+                    position: relative;
+                    z-index: 1;
+                    font-weight: 500;
+                    font-family: "Chronicle SSm A", serif;
+                    color: #57696d;
+                    font-size: 13px;
+                    font-style: italic;
+                    display: block;
+                    white-space: nowrap;
+
+                    @media only screen and (min-width: 768px) {
+                        & {
+                            font-size: 15px;
+                        }
+                    }
+                }
+
+                @media only screen and (min-width: 768px) {
+                    & {
+                        font-size: 24px;
+                    }
+                }
+            }
+
+            .ribbon--left {
+                padding: 0;
+                position: absolute;
+                top: 10px;
+                left: 0;
+
+                &::before, &::after {
+                    left: calc(50% - (0.5em * 0.364));
+                }
+
+                .ribbon--text {
+                    padding: 0 18px 0 9px;
+                }
+
+                @media only screen and (min-width: 768px) {
+                    top: 12px;
+                }
+
+                
+            }
+
+            .shop--unit-ribbon {
+                top: 8px;
+            }
+
+            
+
+            @media only screen and (min-width: 768px) {
+                & {
+                    width: 320px;
+                }
+            }
+
+            @media only screen and (min-width: 1024px) {
+                & {
+                    width: 180px;
+                }
+            }
+
+            
+        }
+    }
+
+    .shop--unit-details {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 343px;
+
+        .shop--unit-headline {
+            font-weight: 500;
+            font-family: "Gotham SSm A", sans-serif;
+            font-size: 20px;
+            line-height: 27px;
+            margin: 0 auto 8px auto;
+            padding-top: 4%;
+            width: 100%;
+
+            .feature--headline-link {
+                text-decoration: none;
+                color: #444;
+                font-weight: 500;
+
+                &:hover {
+                    color: #444;
+
+                    @media only screen and (min-width: 768px) {
+                        & {
+                            color: #959595;
+                        }
+                    }
+                }
+            }
+        }
+
+        .shop--unit-dek {
+            font-weight: 400;
+            font-family: "Chronicle SSm A", serif;
+            font-size: 15px;
+            line-height: 24px;
+            margin: 0 auto 5px auto;
+            width: 306px;
+            padding: 0;
+        }
+    }
+
+    .feature--cta {
+        text-decoration: none;
+        color: #444;
+
+        &:hover, &:focus {
+            text-decoration: none;
+            color: #959595;
+        }
+    }
+
+    .shop--unit-cta {
+        font-weight: 500;
+        font-family: "Gotham SSm A", sans-serif;
+        align-items: center;
+        color: #a18f7a;
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+        line-height: 24px;
+        text-transform: uppercase;
+
+        .icon--arrow {
+            height: 1em;
+            border-color: inherit;
+            display: inline-flex;
+            font-size: 10px;
+            transform: rotate(180deg);
+            font-size: 8px;
+            margin-left: 2px;
+
+            &::before, &::after {
+                content: " ";
+                width: 1em;
+                height: 0;
+                border-top: 1px solid;
+                border-radius: 1px;
+                border-color: inherit;
+                transform: rotate(-45deg);
+                transform-origin: right;
+            }
+
+            &::after {
+                transform: rotate(45deg);
+                transform-origin: left;
+            }
+        }
+
+        .icon--arrow-right {
+            transform: rotate(90deg);
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        & {
+            margin-top: 0;
+            width: 343px;
+        }
+    }
+}

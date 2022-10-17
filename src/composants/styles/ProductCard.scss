@@ -1,0 +1,114 @@
+.product--container {
+    display: flex;
+    flex-direction: column;
+    width: 203px;
+    position: relative;
+
+    .product--lien {
+        text-decoration: none;
+        color: #444;
+        font-size: 13px;
+        line-height: 1.4;
+        display: block;
+
+        &:hover, &:focus {
+            text-decoration: none;
+            color: #959595;
+        }
+
+        .product--image {
+            margin-bottom: 10px;
+            position: relative;
+
+            .e1 {
+                max-width: 100%;
+
+                .e1--1 {
+                    height: 0px;
+                    padding-bottom: 100%;
+                    position: relative;
+
+                    .image {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .product--details {
+            text-align: left;
+            color: #444;
+
+            .product--details-heading {
+                margin-bottom: 3px;
+                font-weight: 400;
+                font-family: "Gotham SSm A", sans-serif;
+                font-size: 13px;
+
+                .produit--prix {
+                    color: #a18f7a;
+                }
+
+                @media only screen and (min-width: 768px) {
+                    & {
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .product--variant {
+                font-weight: 400;
+                font-family: "Chronicle SSm A", serif;
+                font-size: 13px;
+                color: #909090;
+                font-style: italic;
+                text-transform: lowercase;
+
+                @media only screen and (min-width: 768px) {
+                    & {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            & {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .produit--bouton {
+        background: transparent;
+        width: 39px;
+        height: 39px;
+        border: none;
+        border-radius: 2px;
+        padding: 0px;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 1;
+        appearance: none;
+        cursor: pointer;
+        transition: background 0.35s ease 0s;
+
+        .produit--bouton-icon {
+            color: white;
+        }
+
+        @media only screen and (min-width: 768px) {
+            & {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+
+}
