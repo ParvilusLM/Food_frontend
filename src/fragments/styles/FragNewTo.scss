@@ -1,0 +1,118 @@
+.new--arrivals--container {
+    display: block;
+
+    .new--arrivals {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 16px;
+        overflow: hidden;
+
+        .new--arrivals-header {
+            margin-bottom: 20px;
+            padding-right: 100px;
+            position: relative;
+            padding: 0;
+            text-align: center;
+
+            .new--arrivals-heading {
+                font-weight: 500;
+                font-family: "Chronicle SSm A", serif;
+                font-size: 24px;
+                line-height: normal; 
+
+                span {
+                    background: url(../../../public/img/the-shop.svg) 100% no-repeat;
+                    background-size: 100%;
+                    width: 141px;
+                    height: 48px;
+                    text-indent: -9999px;
+                    vertical-align: text-bottom;
+                    display: inline-block;
+                }
+
+                @media only screen and (min-width: 768px) {
+                    font-size: 33px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            .nah--shop {
+                display: none;
+            }
+
+            .new--arrivals-dek {
+                margin: 0 0 20px;
+                font-size: 14px;
+            }
+
+            .view--more {
+                text-decoration: none;
+                color: #a18f7a;
+                font-weight: 500;
+                font-family: "Gotham SSm A", sans-serif;
+                font-size: 12px;
+                line-height: normal;
+                text-transform: uppercase;
+                display: inline-flex;
+                align-items: center;
+                position: static;
+                right: 0;
+                bottom: 7px;
+                margin-top: 13px;
+                
+                .icon--arrow {
+                    height: 1em;
+                    border-color: inherit;
+                    display: inline-flex;
+                    font-size: 10px;
+                    transform: rotate(180deg);
+                    margin-left: 4px;
+                    font-size: 7px;
+
+                    &::before, &::after {
+                        content: " ";
+                        width: 1em;
+                        height: 0;
+                        border-top: 1px solid;
+                        border-radius: 1px;
+                        border-color: inherit;
+                        transform: rotate(-45deg);
+                        transform-origin: right;
+                    }
+
+                    &::after {
+                        transform: rotate(45deg);
+                        transform-origin: left;
+                    }
+                }
+
+                .icon--arrow-right {
+                    transform: rotate(90deg);
+                }
+
+                @media only screen and (min-width: 768px) {
+                    & {
+                        position: absolute;
+                    }
+                }
+            }
+
+            @media only screen and (min-width: 768px) {
+                & {
+                    margin-bottom: 25px;
+                    padding: 0;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            & {
+                padding: 0 22px;
+            }
+        }
+    }
+}
