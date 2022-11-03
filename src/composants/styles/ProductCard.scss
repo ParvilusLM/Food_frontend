@@ -1,7 +1,5 @@
 .product--container {
-    display: flex;
-    flex-direction: column;
-    width: 203px;
+    width: 100%;
     position: relative;
 
     .product--lien {
@@ -11,7 +9,8 @@
         line-height: 1.4;
         display: block;
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
             text-decoration: none;
             color: #959595;
         }

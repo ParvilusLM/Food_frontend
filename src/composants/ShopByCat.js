@@ -20,7 +20,7 @@ const categories = [
 function ShopByCat() {
   return (
     <Fragment>
-      <section className='shop--by'>
+      <section className='shop--by-global--wrapper'>
         <div className='shop--by-content'>
           <h3 className="shop--by-headline">Shop By Category</h3>
           <div className="shop--by-carousel">

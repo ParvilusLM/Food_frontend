@@ -1,0 +1,107 @@
+.mailing-list__form {
+    display: flex;
+    margin: 0 auto;
+
+
+    div {
+        margin-top: -18px;
+        flex-grow: 1;
+
+        .css-197voio {
+            padding-bottom: 2px;
+            color: inherit;
+            font-size: 12px;
+            line-height: 1.25em;
+            text-align: left;
+            display: block;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease, visibility 0.2s ease, color 0.2s ease;
+        }
+
+        input[type="email"] {
+
+            border-right: none;
+            border-radius: 1px 0 0 1px;
+            padding: 10px;
+        }
+
+        .css-10auspp {
+            background: rgb(255, 255, 255);
+            width: 100%;
+            height: 45px;
+            border: 1px solid rgb(234, 234, 234);
+            outline: none;
+            padding: 10px 12px;
+            color: rgb(68, 68, 68);
+            font-size: 16px;
+            font-family: inherit;
+            border-radius: 1px;
+            appearance: none;
+            transition: border-color 0.2s ease 0s;
+        }
+
+    }
+
+    .mailing-list__btn {
+        width: 98px;
+        margin: 0;
+        border-radius: 0 1px 1px 0;
+        font-size: 14px;
+        line-height: 45px;
+        flex-shrink: 0;
+        text-transform: none;
+    }
+
+    .btn--default {
+        background: #2d4558;
+    }
+
+    .btn {
+        border: none;
+        padding: 0 8px;
+        outline: none;
+        display: inline-block;
+        color: #fff;
+        font-weight: 400;
+        font-family: "Gotham SSm A", sans-serif;
+        text-align: center;
+        white-space: nowrap;
+        transition: background-color 0.2s;
+    }
+
+    .btn--default:hover {
+        background: #1c2b36;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.mailing-list__form:focus-within {
+    .css-197voio {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .css-10auspp {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    .mailing-list__form input[type="email"] {
+        font-size: 13px;
+    }
+}
+
+
+
+@media only screen and (max-width: 1005px) {
+    .mailing-list__form {
+        display: flex;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    ::selection {
+        background: #57696d;
+        color: #fff;
+    }
+
+    p {
+        margin: 0 0 20px;
+    }
+
+    .lien {
+        text-decoration: none;
+        color: #444;
+    }
+
+    .icon--arrow {
+        height: 1em;
+        border-color: inherit;
+        display: inline-flex;
+        font-size: 10px;
+        transform: rotate(180deg);
+
+        &:before,
+        &::after {
+            content: " ";
+            width: 1em;
+            height: 0;
+            border-top: 1px solid;
+            border-radius: 1px;
+            border-color: inherit;
+            transform: rotate(-45deg);
+            transform-origin: right;
+        }
+
+        &::after {
+            transform: rotate(45deg);
+            transform-origin: left;
+        }
+    }
+
+    .icon--arrow-right {
+        transform: rotate(90deg);
+    }
+
+    .btn {
+        background: #c4c4c4;
+        border: none;
+        border-radius: 1px;
+        padding: 0 8px;
+        outline: none;
+        display: inline-block;
+        color: #fff;
+        font-weight: 400;
+        font-family: "Gotham SSm A", sans-serif;
+        font-size: 13px;
+        line-height: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        transition: background-color 0.2s; 
+
+        &:hover, &:focus {
+            background: #ababab;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .btn--secondary {
+        background: #a18f7a;
+        font-size: 14px;
+        text-transform: none;
+
+        &:hover, &:focus {
+            background: #887660;
+        }
+    }
+
+
+}

@@ -1,9 +1,4 @@
-.shop--by {
-    padding: 0 16px;
-    font-size: 13px;
-    line-height: normal;
-    overflow: hidden;
-    position: relative;
+.shop--by-global--wrapper {
 
     .shop--by-content {
         padding: 40px 16px;
@@ -258,25 +253,10 @@
             }
         }
     }
-
-    @media only screen and (min-width: 768px) {
-        & {
-            padding: 0 0 0 22px;
-        }
-    }
-
-    @media only screen and (min-width: 1024px) {
-        & {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 0 12px;
-            font-size: 15px;
-        }
-    }
 }
 
 @media only screen and (min-width: 768px) {
-    .shop--by {
+    .shop--by-global--wrapper {
         .shop--by-content {
             .shop--by-headline {
 

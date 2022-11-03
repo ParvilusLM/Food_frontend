@@ -1,33 +1,1012 @@
-.image {
-    max-width: 100%;
-    object-fit: contain;
+.homepage {
+    overflow: hidden;
+
+    .content--container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 16px;
+        position: relative;
+
+        .lien {
+            font-weight: inherit;
+        }
+    }
+
+    .homepage--hero-container {
+        margin-bottom: 37px;
+
+        .homepage--hero {
+            .homepage--hero-editorial--unit {
+
+
+                .editorial--unit {
+                    .editorial--unit-image--link {
+                        .editorial--unit-image--container {
+                            width: calc(100% + 32px);
+                            margin-left: -16px;
+
+                            .hv1 {
+                                max-width: 100%;
+                                width: 805px;
+
+                                .hv1--1 {
+                                    height: 0;
+                                    padding-bottom: 66.83229813664596%;
+                                    position: relative;
+
+                                    .image {
+                                        max-width: 100%;
+                                        opacity: 1;
+                                        transition: opacity 0.5s;
+                                        width: 100%;
+                                        height: 100%;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    .editorial--unit-details {
+                        max-width: 375px;
+                        margin: 0 auto;
+                        text-align: center;
+
+                        .editorial--unit-tag {
+                            margin: 17px auto 9px auto;
+                        }
+
+                        .editorial--unit-headline {
+                            font-weight: 500;
+                            font-family: "Chronicle SSm A", serif;
+                            background-size: 124px 10px;
+                            background-position: center bottom;
+                            font-size: 22px;
+                            line-height: 32px;
+                            margin-bottom: 9px;
+
+                            background-image: url('../../../public/img/decor3.svg');
+                            background-repeat: no-repeat;
+                            margin-bottom: 13px;
+                            padding-bottom: 23px;
+
+                            .feature--headline-link {}
+                        }
+
+                        .editorial--unit-dek {
+                            font-weight: 400;
+                            font-family: "Chronicle SSm A", serif;
+                            font-size: 15px;
+                            line-height: 1.69;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+
+            .homepage--hero-shop--units {
+                max-width: 375px;
+                border-bottom: 1px solid #eaeaea;
+                margin: 0 auto 25px auto;
+                padding: 0 23px 34px 23px;
+
+                .shop-unit {
+                    margin: 39px auto 0 auto;
+                    width: 100%;
+                }
+            }
+
+            .homepage--hero-recipe--units {
+                max-width: 375px;
+                margin: 0 auto;
+
+                .homepage--hero-recipe--units-header {
+                    font-weight: 400;
+                    font-family: "Chronicle SSm A", serif;
+                    background-image: url('../../../public/img/decor4.svg');
+                    background-repeat: no-repeat;
+                    background-size: 60px 15px;
+                    background-position: center bottom;
+                    font-size: 20px;
+                    font-style: italic;
+                    line-height: 21px;
+                    padding-bottom: 22px;
+                    margin-bottom: 24px;
+                }
+
+                .homepage--hero-recipe--units-features {
+                    .recipe--unit {
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-around;
+                        margin: 0 auto 15px auto;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .sponsor--promo {
+        margin-bottom: 28px;
+
+        .sponsor--promo--lien {
+
+
+            .sponsor--promo-img {
+                display: block;
+                margin-inline: auto;
+
+                @media only screen and (max-width: 374px) {
+                    & {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .newArrivals--root {}
+
+    .shop--by {
+        padding: 0 16px;
+        font-size: 13px;
+        line-height: normal;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .content--commerce {
+        .content--commerce-container {
+            .content--commerce-article {
+                .content--commerce-article--content {
+                    background-color: #eeeff3;
+                    padding: 34px 34px 0 34px;
+
+                    .content--commerce-article--image {
+                        margin-bottom: 21.3px;
+                        min-width: 0;
+
+                        .com1 {
+                            max-width: 100%;
+                            width: 778px;
+
+                            .com1--1 {
+                                height: 0;
+                                padding-bottom: 66.70951156812339%;
+                                position: relative;
+
+                                .image {
+                                    max-width: 100%;
+                                    opacity: 1;
+                                    transition: opacity 0.5s;
+                                    width: 100%;
+                                    height: 100%;
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+
+                    .content--commerce-article--text-container {
+                        text-align: center;
+
+                        .content--commerce-article--text {
+                            .content--commerce-article--heading {
+                                background-image: url('../../../public/img/spotlight.svg');
+                                background-repeat: no-repeat;
+                                background-size: 93px 34px;
+                                height: 34px;
+                                margin: 0 auto 11px;
+                                text-indent: -9999px;
+                                width: 93px;
+                            }
+
+                            .content--commerce-article--headline-link {
+                                .content--commerce-article--headline {
+                                    font-weight: 500;
+                                    font-family: "Chronicle SSm A", serif;
+                                    font-size: 23px;
+                                    line-height: 32px;
+                                    margin: 0 auto 16px auto;
+                                    max-width: 343px;
+
+                                    background-image: url('../../../public/img/decor3.svg');
+                                    background-repeat: no-repeat;
+                                    background-size: 123.1px 10px;
+                                    background-position: center bottom;
+                                    margin-bottom: 17px;
+                                    padding-bottom: 22px;
+                                }
+                            }
+
+                            .content--commerce-article--dek {
+                                font-weight: 400;
+                                font-family: "Chronicle SSm A", serif;
+                                font-size: 15px;
+                                font-style: italic;
+                                margin: 0 auto 20px auto;
+                                max-width: 343px;
+                            }
+
+                            .content--commerce-article--dek-mo--snippet {
+                                font-style: normal;
+                                margin-bottom: 19px;
+                            }
+
+                            .content--commerce-article--cta {
+                                font-weight: 500;
+                                font-family: "Gotham SSm A", sans-serif;
+                                align-items: center;
+                                color: #a18f7a;
+                                display: flex;
+                                font-size: 12px;
+                                justify-content: center;
+                                line-height: 24px;
+                                text-transform: uppercase;
+                                padding-bottom: 47px;
+
+                                .icon--arrow {
+                                    font-size: 8px;
+                                    margin-left: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .content--commerce-article--arrow {
+                    border-left: 21px solid transparent;
+                    border-right: 21px solid transparent;
+                    border-top: 30px solid #eeeff3;
+                    height: 0;
+                    margin: 0 auto 16px;
+                    width: 0;
+                }
+            }
+
+            .content--commerce-products {
+                text-align: center;
+
+                .content--commerce-products--headline {
+                    font-weight: 400;
+                    font-family: "Chronicle SSm A", serif;
+                    background-size: 90.1px 13.8px;
+                    background-position: center bottom;
+                    font-size: 20px;
+                    font-style: italic;
+                    margin: 0 auto 24.2px;
+                    padding-bottom: 24.8px;
+                    max-width: 370px;
+                    background-image: url('../../../public/img/decor5.svg');
+                    background-repeat: no-repeat;
+                }
+
+                .content--commerce-products--tiles {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    margin: 0 auto 40px auto;
+                    max-width: 343px;
+
+                    .content--commerce-products--tile {
+                        width: calc(50% - 5px);
+                        margin-bottom: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .homepage--video {
+        background-color: #2d4558;
+        padding-top: 42px;
+        padding-bottom: 34px;
+        text-align: left;
+
+        .homepage--video-container {
+            .homepage--video-see--all {
+                font-weight: 500;
+                font-family: "Gotham SSm A", sans-serif;
+                align-items: center;
+                color: #a18f7a;
+                display: flex;
+                font-size: 12px;
+                justify-content: center;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #a18f7a;
+                display: none;
+                justify-content: left;
+                margin-bottom: 0;
+
+                &:hover {
+                    color: #a18f7a;
+                }
+
+                .tag {
+                    color: #a18f7a;
+                    font-size: 12px;
+                    font-weight: 500;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+
+                .icon--arrow {
+                    font-size: 8px;
+                    margin-left: 2px;
+                }
+            }
+
+            .homepage--video-content {
+                .homepage--video-rubric {
+                    color: #eaeaea;
+                    font-size: 14px;
+                    font-weight: normal;
+                    margin-bottom: 16px;
+                    text-transform: uppercase;
+
+                    &::after {
+                        background-image: url('../../../public/img/decor6.svg');
+                        background-repeat: no-repeat;
+                        content: '';
+                        display: block;
+                        margin-top: 9px;
+                        width: 49px;
+                        height: 12px;
+                    }
+                }
+
+                .homepage--video-headline {
+                    font-weight: 500;
+                    font-family: "Chronicle SSm A", serif;
+                    color: #fff;
+                    font-size: 24px;
+                    line-height: 33px;
+                    margin-bottom: 18px;
+                }
+
+                .homepage--video-dek {
+                    font-weight: 300;
+                    font-family: "Gotham SSm A", sans-serif;
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 25px;
+                    margin-bottom: 25px;
+                }
+
+                .homepage--video-cta {
+                    border-radius: 0;
+                    margin-bottom: 41px;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    line-height: 40px;
+
+                    &:hover {
+                        background-color: #a18f7a;
+                    }
+                }
+
+                .homepage--video-see--all {
+                    
+                    .tag {}
+
+                    .icon--arrow {}
+                }
+            }
+
+            .homepage--video-player {
+                .homepage--video-mount {}
+            }
+
+            .homepage--video-see--al {}
+        }
+    }
+
+    .ad--slot {}
+
+    .homepage--ad-slot {}
+
+
+
+    .food--section {}
+
+    .home52--section {}
+
+    .homepage--value-prop--mount {
+        .homepage--value-prop {
+            .homepage--value-prop--container {
+                .homepage--value-prop--statement {}
+
+                .homepage--value-prop--phrase {}
+            }
+        }
+    }
+
+    .social--section {}
+
+    .clearfix {}
 }
 
-.icon--arrow {
-    height: 8px;
-    border-color: inherit;
-    display: inline-flex;
-    transform: rotate(180deg);
-    font-size: 8px;
-    margin-left: 2px;
-  }
+@media only screen and (min-width: 768px) {
+    .homepage {
+        .content--container {
+            padding: 0 22px;
 
-  .icon--arrow:before, .icon--arrow:after {
-    content: " ";
-    width: 1em;
-    height: 0;
-    border-top: 1px solid;
-    border-radius: 1px;
-    border-color: inherit;
-    transform: rotate(-45deg);
-    transform-origin: right;
-  }
 
-  .icon--arrow:after {
-    transform: rotate(45deg);
-    transform-origin: left;
-  }
+        }
 
-  .icon--arrow-right {
-    transform: rotate(90deg);
-  }
+        .homepage--hero-container {
+            margin-top: 50px;
+            margin-bottom: 45px;
+
+            .homepage--hero {
+                max-width: 724px;
+                margin: 0 auto;
+
+                .homepage--hero-editorial--unit {
+                    border-bottom: 0.5px solid #eaeaea;
+                    margin-bottom: 30px;
+                    padding-bottom: 30px;
+
+                    .editorial--unit {
+                        .editorial--unit-image--link {
+                            .editorial--unit-image--container {
+                                width: 100%;
+                                margin-left: 0;
+
+                                .hv1 {
+                                    .hv1--1 {
+                                        .image {}
+                                    }
+                                }
+                            }
+                        }
+
+                        .editorial--unit-details {
+                            max-width: 600px;
+
+                            .editorial--unit-tag {
+                                margin-top: 20px;
+                            }
+
+                            .editorial--unit-headline {
+                                font-size: 30px;
+                                line-height: 40px;
+                                margin-bottom: 13px;
+
+                                margin-bottom: 15px;
+                                padding-bottom: 26px;
+
+                                .feature--headline-link {}
+                            }
+
+                            .editorial--unit-dek {
+                                font-size: 16px;
+                                padding: 0 50px;
+                            }
+                        }
+                    }
+                }
+
+                .homepage--hero-shop--units {
+                    max-width: none;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 30px;
+                    padding: 0 0 30px 0;
+
+                    .shop-unit {
+                        margin-top: 0;
+                        width: 343px;
+                    }
+                }
+
+                .homepage--hero-recipe--units {
+                    max-width: none;
+
+                    .homepage--hero-recipe--units-header {
+                        margin-bottom: 20px;
+                    }
+
+                    .homepage--hero-recipe--units-features {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .recipe--unit {
+                            display: inline;
+                            margin: 0;
+                            width: 228px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .sponsor--promo {
+            margin-bottom: 38px;
+
+            .sponsor--promo--lien {
+                .sponsor--promo-img {
+                    .sponsor--promo-img {}
+                }
+            }
+        }
+
+        .newArrivals--root {}
+
+        .shop--by {
+            padding: 0 22px;
+        }
+
+        .content--commerce {
+            
+            .content--commerce-container {
+                .content--commerce-article {
+                    .content--commerce-article--content {
+                        margin: 0 auto;
+                        max-width: 724px;
+                        padding: 30px 30px 0 30px;
+
+                        .content--commerce-article--image {
+                            margin-bottom: 30.6px;
+
+                            .com1 {
+                                .com1--1 {
+                                    .image {}
+                                }
+                            }
+                        }
+
+                        .content--commerce-article--text-container {
+                            .content--commerce-article--text {
+                                .content--commerce-article--heading {
+                                    margin-bottom: 18px;
+                                }
+
+                                .content--commerce-article--headline-link {
+                                    .content--commerce-article--headline {
+                                        font-size: 26px;
+                                        line-height: 34px;
+                                        margin-bottom: 12px;
+                                        max-width: 449px;
+
+                                        font-size: 30px;
+                                        line-height: 43px;
+                                        margin-bottom: 20px;
+                                        max-width: 565px;
+                                        padding-bottom: 25px;
+                                    }
+                                }
+
+                                .content--commerce-article--dek {
+                                    font-size: 16px;
+                                    margin-bottom: 24px;
+                                    max-width: 565px;
+                                }
+
+                                .content--commerce-article--cta {
+                                    padding-bottom: 30px;
+
+                                    .icon--arrow {}
+                                }
+                            }
+                        }
+                    }
+
+                    .content--commerce-article--arrow {
+                        margin-bottom: 30px;
+                    }
+                }
+
+                .content--commerce-products {
+                    .content--commerce-products--headline {
+                        font-size: 22px;
+                        margin-bottom: 33px;
+                    }
+
+                    .content--commerce-products--tiles {
+                        flex-wrap: nowrap;
+                        margin-bottom: 45px;
+                        max-width: 724px;
+
+                        .content--commerce-products--tile {
+                            width: calc(25% - 60px / 4);
+                        }
+                    }
+                }
+            }
+        }
+
+        .homepage--video {
+            text-align: center;
+            .homepage--video-container {
+                .homepage--video-see--all {
+                    justify-content: center;
+
+                    &:hover {
+                        color: #959595;
+                    }
+                }
+
+                .homepage--video-content {
+                    padding: 0;
+
+                    .homepage--video-rubric {
+                        margin-bottom: 19px;
+
+                        &::after {
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+
+                    .homepage--video-headline {
+                        font-size: 30px;
+                        line-height: 43px;
+                        margin: 0 auto 12px auto;
+                        width: 600px;
+                    }
+
+                    .homepage--video-dek {
+                        width: 500px;
+                        margin: 0 auto 25px;
+                    }
+
+                    .homepage--video-cta {
+                        background-color: #887660;
+                    }
+
+                    .homepage--video-see--all {
+                        .tag {}
+
+                        .icon--arrow {}
+                    }
+                }
+
+                .homepage--video-player {
+                    .homepage--video-mount {}
+                }
+
+                .homepage--video-see--al {}
+            }
+        }
+
+        .ad--slot {}
+
+        .homepage--ad-slot {}
+
+
+
+        .food--section {}
+
+        .home52--section {}
+
+        .homepage--value-prop--mount {
+            .homepage--value-prop {
+                .homepage--value-prop--container {
+                    .homepage--value-prop--statement {}
+
+                    .homepage--value-prop--phrase {}
+                }
+            }
+        }
+
+        .social--section {}
+
+        .clearfix {}
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .homepage {
+        .content--container {
+            max-width: 1024px;
+            padding: 0 12px;
+        }
+
+        .homepage--hero-container {
+            margin-bottom: 30px;
+
+            .homepage--hero {
+                max-width: none;
+                align-items: stretch;
+                display: flex;
+
+                .homepage--hero-editorial--unit {
+                    border-bottom: none;
+                    margin-left: 24px;
+                    margin-right: 26px;
+                    order: 2;
+                    width: 591px;
+
+                    .editorial--unit {
+                        .editorial--unit-image--link {
+                            .editorial--unit-image--container {
+                                .hv1 {
+                                    .hv1--1 {
+                                        .image {}
+                                    }
+                                }
+                            }
+                        }
+
+                        .editorial--unit-details {
+                            max-width: 530px;
+
+                            .editorial--unit-tag {}
+
+                            .editorial--unit-headline {
+                                font-size: 28px;
+                                line-height: 38px;
+                                margin-bottom: 12px;
+
+                                .feature--headline-link {}
+                            }
+
+                            .editorial--unit-dek {
+                                padding: 0 10px;
+                            }
+                        }
+                    }
+                }
+
+                .homepage--hero-shop--units {
+                    border-bottom: none;
+                    border-right: 0.5px solid #eaeaea;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    margin: 0;
+                    order: 1;
+                    padding-bottom: 0;
+                    padding-right: 25px;
+                    width: 205px;
+
+                    .shop-unit {
+                        width: 100%;
+
+                        &:first-child {
+                            margin-bottom: 21px;
+                        }
+                    }
+                }
+
+                .homepage--hero-recipe--units {
+                    order: 3;
+                    width: 150px;
+
+                    .homepage--hero-recipe--units-header {
+                        font-size: 15px;
+                        letter-spacing: -.2px;
+                    }
+
+                    .homepage--hero-recipe--units-features {
+                        flex-direction: column;
+
+                        .recipe--unit {
+                            width: 100%;
+
+                            &::after {
+                                content: " ";
+                                background: #eaeaea;
+                                display: block;
+                                height: 1px;
+                                margin: 15px auto 25px auto;
+                                width: 133px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .sponsor--promo {
+            padding-top: 18px;
+
+            .sponsor--promo--lien {
+                .sponsor--promo-img {
+                    .sponsor--promo-img {}
+                }
+            }
+        }
+
+        .newArrivals--root {}
+
+        .shop--by {
+            max-width: 1024px;
+            margin: 0 auto;
+            padding: 0 12px;
+            font-size: 15px;
+        }
+
+        .content--commerce {
+            
+
+            .content--commerce-container {
+                .content--commerce-article {
+                    margin: 0 auto 40px auto;
+                    position: relative;
+                    width: 1000px;
+
+                    .content--commerce-article--content {
+                        display: flex;
+                        max-width: 1000px;
+                        padding: 0;
+
+                        .content--commerce-article--image {
+                            margin-bottom: 0;
+                            order: 2;
+
+                            .com1 {
+                                .com1--1 {
+                                    .image {}
+                                }
+                            }
+                        }
+
+                        .content--commerce-article--text-container {
+                            display: flex;
+                            flex-direction: column;
+                            flex-shrink: 0;
+                            justify-content: center;
+                            order: 1;
+                            width: 423px;
+
+                            .content--commerce-article--text {
+                                .content--commerce-article--heading {
+                                    margin-bottom: 15px;
+                                }
+
+                                .content--commerce-article--headline-link {
+                                    .content--commerce-article--headline {
+                                        background-size: 102px 8px;
+                                        font-size: 22px;
+                                        line-height: 32px;
+                                        margin-bottom: 12px;
+                                        max-width: 355px;
+
+                                        font-size: 25px;
+                                        line-height: 38px;
+                                        margin-bottom: 16px;
+                                        max-width: 355px;
+                                        padding-bottom: 21px;
+                                    }
+                                }
+
+                                .content--commerce-article--dek {
+                                    line-height: 23px;
+                                    margin-bottom: 22px;
+                                    max-width: 355px;
+                                }
+
+                                .content--commerce-article--dek-mo--snippet {
+                                    line-height: 23px;
+                                    margin-bottom: 15px;
+                                    max-width: 355px;
+                                }
+
+                                .content--commerce-article--cta {
+                                    padding-bottom: 0;
+
+                                    .icon--arrow {}
+                                }
+                            }
+                        }
+                    }
+
+                    .content--commerce-article--arrow {
+                        border-top: 14px solid transparent;
+                        border-bottom: 14px solid transparent;
+                        border-left: 20px solid #eeeff3;
+                        position: absolute;
+                        top: 190px;
+                        left: 423px;
+                        z-index: 2;
+                    }
+                }
+
+                .content--commerce-products {
+                    .content--commerce-products--headline {}
+
+                    .content--commerce-products--tiles {
+                        margin-bottom: 73px;
+                        max-width: 1020px;
+                        padding: 0 10px;
+
+                        .content--commerce-products--tile {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        .homepage--video {
+            padding-bottom: 84px;
+            padding-top: 75px;
+
+            .homepage--video-container {
+                display: flex;
+
+                .homepage--video-see--all {
+                    display: flex;
+                    justify-content: left;
+                }
+
+                .homepage--video-content {
+                    flex: 1;
+                    padding: 0 8px 0 0;
+                    text-align: left;
+
+                    .homepage--video-rubric {
+                        &::after {
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+                    }
+
+                    .homepage--video-headline {
+                        font-size: 27px;
+                        line-height: 38px;
+                        margin: 0 0 12px 0;
+                        width: 320px;
+                    }
+
+                    .homepage--video-dek {
+                        margin: 0 0 16px;
+                        width: 320px;
+                    }
+
+                    .homepage--video-cta {
+                        margin-bottom: 21px;
+                    }
+
+                    .homepage--video-see--all {
+                        .tag {}
+
+                        .icon--arrow {}
+                    }
+                }
+
+                .homepage--video-player {
+                    .homepage--video-mount {}
+                }
+
+                .homepage--video-see--al {}
+            }
+        }
+
+        .ad--slot {}
+
+        .homepage--ad-slot {}
+
+
+
+        .food--section {}
+
+        .home52--section {}
+
+        .homepage--value-prop--mount {
+            .homepage--value-prop {
+                .homepage--value-prop--container {
+                    .homepage--value-prop--statement {}
+
+                    .homepage--value-prop--phrase {}
+                }
+            }
+        }
+
+        .social--section {}
+
+        .clearfix {}
+    }
+}

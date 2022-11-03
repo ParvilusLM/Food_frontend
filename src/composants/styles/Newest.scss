@@ -1,0 +1,118 @@
+.newest {
+    max-width: 375px;
+    margin: 0 auto 45px auto;
+    text-align: left;
+    position: relative;
+
+    .newest--headline {
+        font-weight: 400;
+        font-family: "Chronicle SSm A", serif;
+        font-size: 21px;
+        line-height: normal;
+        font-style: italic;
+        margin-bottom: 22px;
+    }
+
+    .newest--listing {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .newest--listing-feature {
+            flex-basis: 48.7%;
+            margin-bottom: 22px;
+            min-width: 0;
+        }
+    }
+
+    .newest--cta {
+        font-weight: 500;
+        font-family: "Gotham SSm A", sans-serif;
+        align-items: center;
+        color: #a18f7a;
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 49px;
+
+        .newest--cta-lien {
+            color: #a18f7a;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .icon--arrow {
+            font-size: 8px;
+            margin-left: 2px;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .newest {
+        max-width: none;
+        margin-bottom: 57px;
+
+        .newest--headline {
+            font-size: 24px;
+        }
+
+        .newest--listing {
+            flex-wrap: nowrap;
+
+            .newest--listing-feature {
+                flex: 1 0;
+                margin-left: 20px;
+                width: 100%;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .newest--cta {
+            margin: 0;
+            position: absolute;
+            right: 0;
+            top: 5px;
+
+            .newest--cta-lien {}
+
+            .icon--arrow {}
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .newest {
+        margin-bottom: 74px;
+
+        .newest--headline {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .newest--listing {
+            .newest--listing-feature {
+                margin-bottom: 0;
+            }
+        }
+
+        .newest--cta {
+            top: 3px;
+
+            .newest--cta-lien {}
+
+            .icon--arrow {}
+        }
+
+    }
+}

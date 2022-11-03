@@ -2,6 +2,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 :root {
@@ -9,13 +10,16 @@ body {
   font-family: 'Gotham SSm A', sans-serif;
   font-weight: 500;
 
-  /* les couleurs */
-  
+  -webkit-font-smoothing: antialiased;
+  line-height: 20px;
+  max-width: 1440px;
+  margin-inline: auto;
+
+  /* les couleurs font-size:14 */
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
