@@ -215,7 +215,10 @@ function FragAccueil() {
                         <div className="homepage--video-player">
                             <div className="homepage--video-mount"></div>
                         </div>
-                        <p className="homepage--video-see--all homepage--video-see--all-mobile"></p>
+                        <p className="homepage--video-see--all homepage--video-see--all-mobile">
+                            <Link className="tag" to=''>See All Food52 Videos</Link>
+                            <span className="icon--arrow icon--arrow-right"></span>
+                        </p>
                     </div>
                 </div>
                 <div className='ad--slot homepage--ad-slot'></div>

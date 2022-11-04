@@ -405,10 +405,15 @@
             }
 
             .homepage--video-player {
+                margin-bottom: 32px;
                 .homepage--video-mount {}
             }
 
             .homepage--video-see--al {}
+
+            .homepage--video-see--all-mobile {
+                display: flex;
+            }
         }
     }
 
@@ -424,10 +429,93 @@
 
     .homepage--value-prop--mount {
         .homepage--value-prop {
-            .homepage--value-prop--container {
-                .homepage--value-prop--statement {}
+            background-color: #57696d;
+            padding: 31.5px 0;
+            text-align: center;
 
-                .homepage--value-prop--phrase {}
+            .homepage--value-prop--container {
+                background-image: url('../../../public/img/m1.svg') ;
+                background-origin: padding-box;
+                background-repeat: no-repeat;
+
+                .homepage--value-prop--statement {
+                    font-weight: 500;
+                    font-family: "Chronicle SSm A", serif;
+                    color: #fff;
+                    font-size: 21px;
+                    line-height: 35px;
+                    max-width: 330px;
+                    margin: 0 auto 28px auto;
+                    padding-top: 57px;
+                }
+
+                .homepage--value-prop--phrase {
+                    font-weight: 400;
+                    font-family: "Gotham SSm A", sans-serif;
+                    color: #fff;
+                    font-size: 15px;
+                    margin: 0 auto;
+                    padding-bottom: 57px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+
+    .homepage--newletter-sign--up-mount {
+        .homepage--newsletter-sign--up-unit {
+            background-color: rgba(87, 105, 109, 0.84);
+            padding: 38px 0 45px 0;
+
+            .homepage--newsletter-sign--up-unit--container {
+                color: #f1f1f1;
+                margin: 0 auto;
+                max-width: 343px;
+
+                .mailing--list {
+                    position: relative;
+
+                    .mailing--list-copy {
+                        .mailing--list-header, .mailing--list-blurb {
+                            max-width: 300px;
+                            margin: 0 auto;
+                            font-weight: 400;
+                            font-family: "Gotham SSm A", sans-serif;
+                            font-size: 15px;
+                            line-height: 24px;
+                            text-align: center;
+
+                            @media only screen and (min-width: 880px) {
+                                margin: 0;
+                                text-align: left;
+                                text-align: center;
+                            }
+                        }
+
+                        .mailing--list-header {
+                            font-weight: 700;
+                            display: block;
+
+                            background-image: url('../../../public/img/n1.svg');
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            height: 35px;
+                            margin-bottom: 16px;
+                            text-indent: -9999px;
+                            vertical-align: text-bottom;
+                        }
+
+                        .mailing--list-blurb {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .mailing--list-form--container {
+                        margin-inline: auto;
+                        position: relative;
+                        max-width: 350px;
+                    }
+                }
             }
         }
     }
@@ -693,10 +781,46 @@
 
         .homepage--value-prop--mount {
             .homepage--value-prop {
-                .homepage--value-prop--container {
-                    .homepage--value-prop--statement {}
+                padding: 0;
 
-                    .homepage--value-prop--phrase {}
+                .homepage--value-prop--container {
+                    background-image: url('../../../public/img/m2.svg');
+                    background-position: center left;
+
+                    .homepage--value-prop--statement {
+                        font-size: 24px;
+                        max-width: 600px;
+                        padding-top: 138px;
+                    }
+
+                    .homepage--value-prop--phrase {
+                        padding-bottom: 138px;
+                    }
+                }
+            }
+        }
+
+        .homepage--newletter-sign--up-mount {
+            .homepage--newsletter-sign--up-unit {
+                .homepage--newsletter-sign--up-unit--container {
+                    max-width: 724px;
+
+                    .mailing--list {
+                        .mailing--list-copy {
+                            .mailing--list-header, .mailing--list-blurb {
+                                max-width: none;
+                            }
+
+                            .mailing--list-header {}
+
+                            .mailing--list-blurb {}
+                        }
+
+                        .mailing--list-form--container {
+                            
+                            max-width: 424px;
+                        }
+                    }
                 }
             }
         }
@@ -978,10 +1102,17 @@
                 }
 
                 .homepage--video-player {
+                    flex: 2;
+                    margin-bottom: 0;
+
                     .homepage--video-mount {}
                 }
 
-                .homepage--video-see--al {}
+                .homepage--video-see--all {}
+
+                .homepage--video-see--all-mobile {
+                    display: none;
+                }
             }
         }
 
@@ -998,9 +1129,43 @@
         .homepage--value-prop--mount {
             .homepage--value-prop {
                 .homepage--value-prop--container {
+                    background-image: url('../../../public/img/m3.svg') ;
+                    background-position: center left 77px;
+
                     .homepage--value-prop--statement {}
 
                     .homepage--value-prop--phrase {}
+                }
+            }
+        }
+
+        .homepage--newletter-sign--up-mount {
+            .homepage--newsletter-sign--up-unit {
+                .homepage--newsletter-sign--up-unit--container {
+                    max-width: 1000px;
+
+                    .mailing--list {
+                        align-items: flex-end;
+                        display: flex;
+                        justify-content: space-between;
+
+                        .mailing--list-copy {
+                            .mailing--list-header, .mailing--list-blurb {
+                                text-align: left;
+                            }
+
+                            .mailing--list-header {
+                                background-position: left;
+                            }
+
+                            .mailing--list-blurb {}
+                        }
+
+                        .mailing--list-form--container {
+                            margin: 0;
+                            width: 383px;
+                        }
+                    }
                 }
             }
         }
