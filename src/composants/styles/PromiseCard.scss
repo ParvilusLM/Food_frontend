@@ -1,0 +1,71 @@
+.promise--card {
+    .promise--card-icon {
+        width: 30px;
+        margin-right: 20px;
+        flex-shrink: 0;
+
+        .image {
+            
+        }
+    }
+
+    .promise--card-content {
+        text-align: center;
+        .promise--card-content--headline {
+            margin-bottom: 2px;
+            font-weight: 500;
+            font-family: "Chronicle SSm A", serif;
+            font-size: 16px;
+            line-height: 1.38;
+        }
+
+        .promise--card-content--dek {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .promise--card {
+        .promise--card-icon {
+            width: 40px;
+            height: 27px;
+            margin: 0 auto 15px auto;
+            background-position: center bottom;
+
+            .image {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .promise--card-content {
+            .promise--card-content--headline {
+                margin: 0 10px 8px 10px;
+                font-size: 18px;
+                line-height: 1.44;
+            }
+
+            .promise--card-content--dek {}
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+.promise--card {
+        .promise--card-icon {
+            margin-bottom: 20px;
+            .image {
+                
+            }
+        }
+
+        .promise--card-content {
+            .promise--card-content--headline {}
+
+            .promise--card-content--dek {}
+        }
+    }
+}

@@ -1,0 +1,107 @@
+.collection--card {
+
+    .collection--card-lien {
+        .o1 {
+            margin-inline: auto;
+            width: 436px;
+            max-width: 100%;
+
+            .o1--1 {
+                height: 0px;
+                padding-bottom: 100%;
+                position: relative;
+
+                .image {
+                    
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    display: block;
+            }
+            }
+        }
+    }
+
+    .collection--card-content {
+        background: rgba(161, 143, 122, 0.1);
+        padding: 20px 16px 25px 16px;
+        flex-grow: 1;
+        position: relative;
+        text-align: center;
+        width:100%;
+
+        &:before, &:after {
+            content: '';
+            margin-left: -24px;
+            border-left: 24px solid transparent;
+            border-right: 24px solid transparent;
+            border-bottom: 24px solid rgba(161, 143, 122, 0.1);
+            position: absolute;
+            bottom: calc(100% - 1px);
+            left: 50%;
+        }
+
+        &:before {
+            border-bottom: 24px solid #fff;
+        }
+
+        .collection--card-headline {
+            max-width: 250px;
+            margin: 0 auto 10px auto;
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.36;
+        }
+
+        .dek {
+            max-width: 250px;
+            margin: 0 auto 15px auto;
+            line-height: 1.57;
+        }
+
+        .collection--card-content--lien {
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .collection--card {
+        .collection--card-lien {
+            .o1 {
+                .o1--1 {
+                    .image {}
+                }
+            }
+        }
+
+        .collection--card-content {
+            .collection--card-headline {}
+
+            .dek {}
+
+            .collection--card-content--lien {}
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .collection--card {
+        .collection--card-lien {
+            .o1 {
+                .o1--1 {
+                    .image {}
+                }
+            }
+        }
+
+        .collection--card-content {
+            .collection--card-headline {}
+
+            .dek {}
+
+            .collection--card-content--lien {}
+        }
+    }
+}

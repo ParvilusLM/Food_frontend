@@ -28,11 +28,12 @@
                 transform: translate3d(0px, 0px, 0px);
 
                 .el {
-                    display: flex;
+                    display: block;
                     background-color: white;
                     margin: 0 15px 0;
                     justify-content: center;
                     width: 203px;
+                    min-width: 100px;
                 }
 
                 .el:nth-child(n+5) {
@@ -80,6 +81,10 @@
                     }
                 }
             }
+
+            @media  only screen and (max-width: 380px){
+                margin-inline: 10px;
+            }
         }
 
         .bouton {
@@ -100,6 +105,9 @@
             outline: none;
             top: 0px;
             margin-top: calc((25% - 19px) / 2);
+
+            width: 20px;
+            height: 20px;
 
             &::after {
                 content: " ";

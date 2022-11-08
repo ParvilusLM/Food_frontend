@@ -1,9 +1,60 @@
 import React, {Fragment} from 'react'
+import './styles/FragShop.scss'
+import loadable from '@loadable/component'
+
+const CollectionCard = loadable( () => import('../composants/CollectionCard'))
+const PromiseCard = loadable(() => import('../composants/PromiseCard'))
+const SFBestseller = loadable(() => import('./sousFrag/SFBestseller'))
+
+const collections = [
+    {'lien':'','image':'img/q1.webp', 'image1':'img/q1-1.webp', 'titre':'These Just In', 'sousTitre':'New Block Shop collab! Napkins & more textiles, handmade with love in India.', 'cta':'Shop Collection', 'lienCTA':''},
+    {'lien':'','image':'img/q2.webp', 'image1':'img/q2-1.webp', 'titre':'Easy as Pie', 'sousTitre':'Thanksgiving prep, minus the fuss—these helpers make it happen.', 'cta':'Shop Collection', 'lienCTA':''},
+    {'lien':'','image':'img/q3.webp', 'image1':'img/q3-1.webp', 'titre':'Cook & Go', 'sousTitre':'Sit back and relax—these pots and pans go right from oven to table.', 'cta':'Shop Collection', 'lienCTA':''}
+]
+
+const promisesCard = [
+    {'image':'img/icon1.svg', 'titre':'Kitchen & Home Products', 'sousTitre':'Handpicked gems for the kitchen and home—with plenty of new finds'},
+    {'image':'img/icon2.svg', 'titre':'Free Shipping & Easy Returns', 'sousTitre':'Free standard shipping on orders $149+ and easy-breezy returns'},
+    {'image':'img/icon3.svg', 'titre':'Dedicated Customer Care', 'sousTitre':'A team of customer care pros that\'s dedicated to making your day'}
+]
 
 function FragShop() {
-  return (
-    <div>FragShop </div>
-  )
+    return (
+        <Fragment>
+            <section className='shop--hero-carousel'>
+                <ul className="shop--hero-list">
+                    {collections.map( (item, index) => (
+                        <li key={index} className='shop--hero-listItem'>
+                            <CollectionCard donnees={item}/>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+            <section className='shop--promise'>
+                <ul className="shop--promise-list">
+                    {promisesCard.map( (item, index) => (
+                        <li key={index} className='shop--promise-listItem'>
+                            <PromiseCard donnees={item}/>
+                        </li>
+                    ))}
+                </ul>
+            </section>
+            <section className='shop--bestSellers'>
+                <SFBestseller />
+            </section>
+            <section className='shop--see-all-collection'></section>
+            <section className='shop--top-rated'></section>
+            <section className='shop--by'></section>
+            <section className='shop--Five-Two'></section>
+            <section className='shop--see-collection'></section>
+            <section className='shop--expert'></section>
+            <section className='shop--maker'></section>
+            <section className='shop--new-arrivals'></section>
+            <section className='shop--mailing-list--banner'></section>
+            <section className='shop--gifts'></section>
+            <div className="clear--fix"></div>
+        </Fragment>
+    )
 }
 
 export default FragShop

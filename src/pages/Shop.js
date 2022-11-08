@@ -4,6 +4,7 @@ import './styles/Shop.scss'
 
 const ShopNav = loadable( () => import('../composants/ShopNav'))
 const Banniere = loadable( () => import('../composants/Banniere'))
+const FragShop = loadable( () => import('../fragments/FragShop'))
 
 const typeShop= true;
 function Shop() {
@@ -11,7 +12,7 @@ function Shop() {
     <Fragment>
       <ShopNav />
       <Banniere typeShop={typeShop}/>
-      <h1>Shop</h1>
+      <FragShop />
     </Fragment>
     
   )

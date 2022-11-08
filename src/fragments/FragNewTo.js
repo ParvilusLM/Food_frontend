@@ -3,8 +3,9 @@ import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import './styles/FragNewTo.scss'
 
-const Slideshow = loadable(() => import('../composants/Slideshow'))
 const SwiperCat = loadable(() => import('../composants/SwiperCat'))
+const Slideshow = loadable(() => import('../composants/Slideshow'))
+
 
 const produits = [
     { 'lien': '', 'image': 'img/e1.jpg', 'titre': 'Hand-Embroidered Holiday Napkins (Set of 2)', 'prix': '50', 'variantTexte': 'more sizes' },
