@@ -102,84 +102,84 @@ function Header() {
                                             <ul className="global-nav__shop-groups">
                                                 <li className="global-nav__shop-group">
                                                     <h5 className="global-nav__shop-heading">
-                                                        <Link className='lien' to='/'>New Arrivals</Link>
+                                                        <Link className='lien' to=''>New Arrivals</Link>
                                                     </h5>
                                                     <h5 className="global-nav__shop-heading">
-                                                        <Link className='lien five-two' to='/'>Five Two</Link>
+                                                        <Link className='lien five-two' to=''>Five Two</Link>
                                                     </h5>
                                                     <h5 className="global-nav__shop-heading">
-                                                        <Link className='lien' to='/'>Experiences</Link>
+                                                        <Link className='lien' to=''>Experiences</Link>
                                                     </h5>
                                                     <h5 className="global-nav__shop-heading">
-                                                        <Link className='lien' to='/'>Cookware</Link>
+                                                        <Link className='lien' to=''>Cookware</Link>
                                                     </h5>
                                                     <ul className="global-nav__shop-sub-group">
                                                         <li>
-                                                            <Link className='lien' to='/'>Baking & Roasting Pans</Link>
+                                                            <Link className='lien' to=''>Baking & Roasting Pans</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className='lien' to='/'>Cookware Sets</Link>
+                                                            <Link className='lien' to=''>Cookware Sets</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className='lien' to='/'>Dutch Ovens & Stock Pots</Link>
+                                                            <Link className='lien' to=''>Dutch Ovens & Stock Pots</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className='lien' to='/'>Frying Pans & Skillets</Link>
+                                                            <Link className='lien' to=''>Frying Pans & Skillets</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className='lien' to='/'>Griddles & Grill Pans</Link>
+                                                            <Link className='lien' to=''>Griddles & Grill Pans</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className='lien' to='/'>Sauce & Saute Pans</Link>
+                                                            <Link className='lien' to=''>Sauce & Saute Pans</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className='lien' to='/'>Specialty Cookware</Link>
+                                                            <Link className='lien' to=''>Specialty Cookware</Link>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li className="global-nav__shop-group">
                                                     <h5 className="global-nav__shop-heading--kitchen">
-                                                        <Link className="lien" to='/'>Kitchen</Link>
+                                                        <Link className="lien" to=''>Kitchen</Link>
                                                     </h5>
                                                     <ul className="global-nav__shop-sub-group">
                                                         <li>
-                                                            <Link className="lien" to='/'>Appliances</Link>
+                                                            <Link className="lien" to=''>Appliances</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Aprons</Link>
+                                                            <Link className="lien" to=''>Aprons</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Bakeware</Link>
+                                                            <Link className="lien" to=''>Bakeware</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Coffee & Tea Accessories</Link>
+                                                            <Link className="lien" to=''>Coffee & Tea Accessories</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Cookbooks</Link>
+                                                            <Link className="lien" to=''>Cookbooks</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Cutting Boards</Link>
+                                                            <Link className="lien" to=''>Cutting Boards</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Food Storage</Link>
+                                                            <Link className="lien" to=''>Food Storage</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Grill Accessories</Link>
+                                                            <Link className="lien" to=''>Grill Accessories</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Kitchen Storage & Organisation</Link>
+                                                            <Link className="lien" to=''>Kitchen Storage & Organisation</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Kitchen Towels & Dish Cloths</Link>
+                                                            <Link className="lien" to=''>Kitchen Towels & Dish Cloths</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Kitchen Utensils & Tools</Link>
+                                                            <Link className="lien" to=''>Kitchen Utensils & Tools</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Knives</Link>
+                                                            <Link className="lien" to=''>Knives</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Water Bottle</Link>
+                                                            <Link className="lien" to=''>Water Bottle</Link>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -189,210 +189,210 @@ function Header() {
                                                     </h5>
                                                     <ul className="global-nav__shop-sub-group">
                                                         <li>
-                                                            <Link className="lien" to='/'>Bathroom Accessories</Link>
+                                                            <Link className="lien" to=''>Bathroom Accessories</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Beding</Link>
+                                                            <Link className="lien" to=''>Beding</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Cleaning & Laundry</Link>
+                                                            <Link className="lien" to=''>Cleaning & Laundry</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Furniture</Link>
+                                                            <Link className="lien" to=''>Furniture</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Games & Puzzles</Link>
+                                                            <Link className="lien" to=''>Games & Puzzles</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Holiday Decorations</Link>
+                                                            <Link className="lien" to=''>Holiday Decorations</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Home & Wall Decor</Link>
+                                                            <Link className="lien" to=''>Home & Wall Decor</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Home Organisation & Storage</Link>
+                                                            <Link className="lien" to=''>Home Organisation & Storage</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Kids & Baby</Link>
+                                                            <Link className="lien" to=''>Kids & Baby</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Lamps & Lighting</Link>
+                                                            <Link className="lien" to=''>Lamps & Lighting</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Office Supplies</Link>
+                                                            <Link className="lien" to=''>Office Supplies</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Pet Supplies & Bolws</Link>
+                                                            <Link className="lien" to=''>Pet Supplies & Bolws</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Rugs, Mats & Runners</Link>
+                                                            <Link className="lien" to=''>Rugs, Mats & Runners</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Trow Pillow & Blankets</Link>
+                                                            <Link className="lien" to=''>Trow Pillow & Blankets</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Travel Accessories & Bags</Link>
+                                                            <Link className="lien" to=''>Travel Accessories & Bags</Link>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li className="global-nav__shop-group">
                                                     <h5 className="global-nav__shop-heading--table">
-                                                        <Link className="lien" to='/'>Table</Link>
+                                                        <Link className="lien" to=''>Table</Link>
                                                     </h5>
                                                     <ul className="global-nav__shop-sub-group">
                                                         <li>
-                                                            <Link className="lien" to='/'>Barware</Link>
+                                                            <Link className="lien" to=''>Barware</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Candles & Candle Holders</Link>
+                                                            <Link className="lien" to=''>Candles & Candle Holders</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Coffee Mugs & Tea Cups</Link>
+                                                            <Link className="lien" to=''>Coffee Mugs & Tea Cups</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Dinnerware</Link>
+                                                            <Link className="lien" to=''>Dinnerware</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Flatware & Serving Utensils</Link>
+                                                            <Link className="lien" to=''>Flatware & Serving Utensils</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Glassware</Link>
+                                                            <Link className="lien" to=''>Glassware</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Outdoor Dinning</Link>
+                                                            <Link className="lien" to=''>Outdoor Dinning</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Serveware</Link>
+                                                            <Link className="lien" to=''>Serveware</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Table Decor</Link>
+                                                            <Link className="lien" to=''>Table Decor</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Tablecloths & Linens</Link>
+                                                            <Link className="lien" to=''>Tablecloths & Linens</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Vases & Decorative Objects</Link>
+                                                            <Link className="lien" to=''>Vases & Decorative Objects</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Vintage</Link>
+                                                            <Link className="lien" to=''>Vintage</Link>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li className="global-nav__shop-group">
                                                     <h5 className="global-nav__shop-heading--outdoor">
-                                                        <Link className="lien" to='/'>Outdoor</Link>
+                                                        <Link className="lien" to=''>Outdoor</Link>
                                                     </h5>
                                                     <ul className="global-nav__shop-sub-group">
                                                         <li>
-                                                            <Link className="lien" to='/'>Beach Umbrellas, Towels & Accessories</Link>
+                                                            <Link className="lien" to=''>Beach Umbrellas, Towels & Accessories</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Coolers & Picnic</Link>
+                                                            <Link className="lien" to=''>Coolers & Picnic</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Doormats & Outdoor Rugs</Link>
+                                                            <Link className="lien" to=''>Doormats & Outdoor Rugs</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Flowers & Plants</Link>
+                                                            <Link className="lien" to=''>Flowers & Plants</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Outdoor Entertaining</Link>
+                                                            <Link className="lien" to=''>Outdoor Entertaining</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Outdoor Furniture & Decor</Link>
+                                                            <Link className="lien" to=''>Outdoor Furniture & Decor</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Outdoor Lighting</Link>
+                                                            <Link className="lien" to=''>Outdoor Lighting</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Planters & Gardening Tools</Link>
+                                                            <Link className="lien" to=''>Planters & Gardening Tools</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Wreaths & Garlands</Link>
+                                                            <Link className="lien" to=''>Wreaths & Garlands</Link>
                                                         </li>
                                                     </ul>
                                                     <h5 className="global-nav__shop-heading--pantry spacingTop">
-                                                        <Link className="lien" to='/'>Pantry</Link>
+                                                        <Link className="lien" to=''>Pantry</Link>
                                                     </h5>
                                                     <ul className="global-nav__shop-sub-group">
                                                         <li>
-                                                            <Link className="lien" to='/'>Candy & Chocolate</Link>
+                                                            <Link className="lien" to=''>Candy & Chocolate</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Coffee & Tea</Link>
+                                                            <Link className="lien" to=''>Coffee & Tea</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Drinks & Cocktails</Link>
+                                                            <Link className="lien" to=''>Drinks & Cocktails</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Holiday Snacks & Treats</Link>
+                                                            <Link className="lien" to=''>Holiday Snacks & Treats</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Non-Alcoholic Drinks</Link>
+                                                            <Link className="lien" to=''>Non-Alcoholic Drinks</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Oils & Vinegars</Link>
+                                                            <Link className="lien" to=''>Oils & Vinegars</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Pantry Staples</Link>
+                                                            <Link className="lien" to=''>Pantry Staples</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Specialty & Seasonal Foods</Link>
+                                                            <Link className="lien" to=''>Specialty & Seasonal Foods</Link>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li className="global-nav__shop-group">
                                                     <h5 className="global-nav__shop-heading--gifts">
-                                                        <Link className="lien" to='/'>Gifts</Link>
+                                                        <Link className="lien" to=''>Gifts</Link>
                                                     </h5>
                                                     <ul className="global-nav__shop-sub-group">
                                                         <li>
-                                                            <Link className="lien" to='/'>Cooking Gifts</Link>
+                                                            <Link className="lien" to=''>Cooking Gifts</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Easter Decorations</Link>
+                                                            <Link className="lien" to=''>Easter Decorations</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Father's Day Gifts</Link>
+                                                            <Link className="lien" to=''>Father's Day Gifts</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Food Gifts</Link>
+                                                            <Link className="lien" to=''>Food Gifts</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Gardening Gifts</Link>
+                                                            <Link className="lien" to=''>Gardening Gifts</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Gift Cards</Link>
+                                                            <Link className="lien" to=''>Gift Cards</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Gifts for the Host</Link>
+                                                            <Link className="lien" to=''>Gifts for the Host</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Gifts from Underrepresented Makers</Link>
+                                                            <Link className="lien" to=''>Gifts from Underrepresented Makers</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Gifts under $100</Link>
+                                                            <Link className="lien" to=''>Gifts under $100</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Gifts under $50</Link>
+                                                            <Link className="lien" to=''>Gifts under $50</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Handmade Gifts</Link>
+                                                            <Link className="lien" to=''>Handmade Gifts</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Mother's Day Gifts</Link>
+                                                            <Link className="lien" to=''>Mother's Day Gifts</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien" to='/'>Unique Gifts</Link>
+                                                            <Link className="lien" to=''>Unique Gifts</Link>
                                                         </li>
                                                     </ul>
                                                     <h5 className="global-nav__shop-heading--registry spacingTop">
-                                                        <Link className="lien lien-registry" to='/'>
+                                                        <Link className="lien lien-registry" to=''>
                                                             Wedding Registry
                                                             <span className='icon__registry'></span>
                                                         </Link>
                                                     </h5>
-                                                    <Link className="global-nav__shop-link" to='/'>Go to The Shop</Link>
+                                                    <Link className="global-nav__shop-link" to='/shop'>Go to The Shop</Link>
                                                 </li>
                                             </ul>
                                         </div>
@@ -423,64 +423,22 @@ function Header() {
                                                     <div className="vector-6 first"></div>
                                                     <ul className="global-nav__recipes-list">
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Brussel Sprouts</Link>
+                                                            <Link className="lien-recipes" to=''>Brussel Sprouts</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Chicken</Link>
+                                                            <Link className="lien-recipes" to=''>Chicken</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Ground Beef</Link>
+                                                            <Link className="lien-recipes" to=''>Ground Beef</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Salmon</Link>
+                                                            <Link className="lien-recipes" to=''>Salmon</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Shrimp</Link>
+                                                            <Link className="lien-recipes" to=''>Shrimp</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Sweet Potato/Yam</Link>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                                <div className="global-nav__recipes-tags">
-                                                    <div className="vector-6"></div>
-                                                    <ul className="global-nav__recipes-list">
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Gluten-Free</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Kid-Friendly</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Raw Food</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Vegan</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Vegetarian</Link>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div className="global-nav__recipes-groups">
-                                                <div className="global-nav__recipes-tags">
-                                                    <div className="vector-6"></div>
-                                                    <ul className="global-nav__recipes-list">
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Breakfast</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Dinner</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Drink</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Lunch</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Side</Link>
+                                                            <Link className="lien-recipes" to=''>Sweet Potato/Yam</Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -488,25 +446,19 @@ function Header() {
                                                     <div className="vector-6"></div>
                                                     <ul className="global-nav__recipes-list">
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>American</Link>
+                                                            <Link className="lien-recipes" to=''>Gluten-Free</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Chinese</Link>
+                                                            <Link className="lien-recipes" to=''>Kid-Friendly</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>French</Link>
+                                                            <Link className="lien-recipes" to=''>Raw Food</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Indian</Link>
+                                                            <Link className="lien-recipes" to=''>Vegan</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Italian</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Korean</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Mexican</Link>
+                                                            <Link className="lien-recipes" to=''>Vegetarian</Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -516,22 +468,19 @@ function Header() {
                                                     <div className="vector-6"></div>
                                                     <ul className="global-nav__recipes-list">
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Bread</Link>
+                                                            <Link className="lien-recipes" to=''>Breakfast</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Brownie</Link>
+                                                            <Link className="lien-recipes" to=''>Dinner</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Cookie</Link>
+                                                            <Link className="lien-recipes" to=''>Drink</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Meatball</Link>
+                                                            <Link className="lien-recipes" to=''>Lunch</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Pancake</Link>
-                                                        </li>
-                                                        <li>
-                                                            <Link className="lien-recipes" to='/'>Pasta</Link>
+                                                            <Link className="lien-recipes" to=''>Side</Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -539,16 +488,25 @@ function Header() {
                                                     <div className="vector-6"></div>
                                                     <ul className="global-nav__recipes-list">
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Bake</Link>
+                                                            <Link className="lien-recipes" to=''>American</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Instant Pot</Link>
+                                                            <Link className="lien-recipes" to=''>Chinese</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Roast</Link>
+                                                            <Link className="lien-recipes" to=''>French</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Slow Cooker</Link>
+                                                            <Link className="lien-recipes" to=''>Indian</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Italian</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Korean</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Mexican</Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -558,19 +516,61 @@ function Header() {
                                                     <div className="vector-6"></div>
                                                     <ul className="global-nav__recipes-list">
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Mardi Gras</Link>
+                                                            <Link className="lien-recipes" to=''>Bread</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Persian New Year</Link>
+                                                            <Link className="lien-recipes" to=''>Brownie</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Purim</Link>
+                                                            <Link className="lien-recipes" to=''>Cookie</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>Ramadan</Link>
+                                                            <Link className="lien-recipes" to=''>Meatball</Link>
                                                         </li>
                                                         <li>
-                                                            <Link className="lien-recipes" to='/'>St. Patrick's Day</Link>
+                                                            <Link className="lien-recipes" to=''>Pancake</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Pasta</Link>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div className="global-nav__recipes-tags">
+                                                    <div className="vector-6"></div>
+                                                    <ul className="global-nav__recipes-list">
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Bake</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Instant Pot</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Roast</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Slow Cooker</Link>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="global-nav__recipes-groups">
+                                                <div className="global-nav__recipes-tags">
+                                                    <div className="vector-6"></div>
+                                                    <ul className="global-nav__recipes-list">
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Mardi Gras</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Persian New Year</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Purim</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>Ramadan</Link>
+                                                        </li>
+                                                        <li>
+                                                            <Link className="lien-recipes" to=''>St. Patrick's Day</Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -604,7 +604,7 @@ function Header() {
                                     <div className="global-nav__menu-dropdown" id='communityDropdown'>
                                         <ul className="global-nav__community">
                                             <li>
-                                                <Link className="lien-community" to='/'>
+                                                <Link className="lien-community" to=''>
                                                     <div className="wrapper1">
                                                         <div className="wrapper2">
                                                             <picture>
@@ -617,7 +617,7 @@ function Header() {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link className="lien-community" to='/'>
+                                                <Link className="lien-community" to=''>
                                                     <div className="wrapper1">
                                                         <div className="wrapper2">
                                                             <picture>
@@ -630,7 +630,7 @@ function Header() {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link className="lien-community" to='/'>
+                                                <Link className="lien-community" to=''>
                                                     <div className="wrapper1">
                                                         <div className="wrapper2">
                                                             <picture>
@@ -643,11 +643,11 @@ function Header() {
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link className="lien-community" to='/'>
+                                                <Link className="lien-community" to=''>
                                                     <div className="wrapper1">
                                                         <div className="wrapper2">
                                                             <picture>
-                                                                <img src="/img-downl/add-recipe.webp" width='100px' height='100px' alt="" className="img-community" loading='lazy' />
+                                                                <img src="/img-downl/add-recipe.webp" width='100px' height='100px' alt="" className="img-community" loading='laz' />
                                                             </picture>
                                                         </div>
                                                     </div>
@@ -659,7 +659,7 @@ function Header() {
                                     </div>
                                 </li>
                                 <li className="global-nav__menu-item">
-                                    <Link className='lien-nav' to='/'>
+                                    <Link className='lien-nav' to=''>
                                         <span>Watch</span>
                                     </Link>
                                 </li>

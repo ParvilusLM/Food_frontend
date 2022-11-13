@@ -1,0 +1,190 @@
+.see--all-collection--container {
+    padding: 40px 16px;
+    position: relative;
+    margin-bottom: -10px;
+
+    padding-top: 20px;
+
+    &::before {
+        content: '';
+        border-top: 1px solid #eaeaea;
+        position: absolute;
+        top: -10px;
+        left: 16px;
+        right: 16px;
+    }
+
+    .see--all-collection--lien {
+        .d1 {
+            max-width: 100%;
+            width: 778px;
+
+            .d1--1 {
+                height: 0;
+                padding-bottom: 100.0%;
+                position: relative;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .see--all-collection--content {
+
+        .see--all-collection--text {
+            max-width: 310px;
+            margin: 0 auto;
+            padding: 20px 0 25px 0;
+            font-weight: 400;
+            font-family: "Chronicle SSm A", serif;
+
+            .see--all-collection--headline {
+                margin-bottom: 10px;
+                font-size: 24px;
+                font-weight: 500;
+                line-height: 1.21;
+            }
+
+            .see--all-collection--dek {
+                margin-bottom: 15px;
+                font-size: 15px;
+                line-height: 1.6;
+            }
+        }
+
+        .see--all-collection--products {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            max-width: 310px;
+            margin: 0 auto;
+
+            .produit--el {
+                width: calc(50% - 5px);
+                margin-bottom: 10px;
+                display: none;
+
+                &:nth-child(-n + 4) {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .see--all-collection--container {
+        padding: 40px 22px;
+
+        &::before {
+            left: 22px;
+            right: 22px;
+        }
+
+        .see--all-collection--lien {
+            display: block;
+            max-width: 600px;
+            margin: 0 auto;
+            display: block;
+
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+        }
+
+        .see--all-collection--content {
+            .see--all-collection--text {
+                max-width: 476px;
+                padding: 25px 0 30px 0;
+
+                .see--all-collection--headline {
+                    font-size: 30px;
+                    line-height: 1.27;
+                }
+
+                .see--all-collection--dek {
+                    font-size: 16px;
+                    line-height: 1.75;
+                }
+            }
+
+            .see--all-collection--products {
+                max-width: none;
+                flex-wrap: nowrap;
+
+                .produit--el {
+                    max-width: calc(25% - 60px / 4);
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .see--all-collection--container {
+        max-width: 1024px;
+        margin: 0 auto;
+        padding: 50px 12px;
+
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+
+        padding-top: 30px;
+
+        &::before {
+            left: 12px;
+            right: 12px;
+        }
+
+        .see--all-collection--lien {
+            max-width: 622px;
+
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+        }
+
+        .see--all-collection--content {
+            padding-right: 28px;
+            .see--all-collection--text {
+                padding-top: 0;
+                text-align: left;
+
+                .see--all-collection--headline {
+                    font-size: 26px;
+                    line-height: 1.31;
+                }
+
+                .see--all-collection--dek {
+                    font-size: 14px;
+                    line-height: 1.71;
+                }
+            }
+
+            .see--all-collection--products {
+                max-width: 315px;
+                margin-left: 0;
+                flex-wrap: wrap;
+
+                .produit--el {
+                    max-width: calc(50% - 15px / 2);
+                }
+            }
+        }
+    }
+}

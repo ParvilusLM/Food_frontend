@@ -15,11 +15,14 @@ function Slideshow(props) {
 
     useEffect(() => {
         $('.swiper--pagination-bullet').first().addClass('swiper--pagination-bullet--active');
+        
     },[])
+
+    
 
     return (
         <Fragment>
-            <div className="swiper--global-wrapper">
+            <div className="swiper--global-wrapper" >
                 <div className='swiper--container'>
                     <div className='swiper'>
                         <div className="swiper--wrapper">
@@ -37,6 +40,15 @@ function Slideshow(props) {
                     </div>
                     <button type='button' className='bouton b__prec'></button >
                     <button type='button' className='bouton b__suiv'></button >
+                </div>
+                <div className="grid--products">
+                    <ul className="products--list">
+                        {Array(4).fill(0).map((item, index) => (
+                            <li key={index} className="products--list-item">
+                                <ProductCard produit={props.produits[index]} />
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
             

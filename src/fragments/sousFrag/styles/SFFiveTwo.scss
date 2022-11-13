@@ -1,0 +1,171 @@
+.five--two-section--container {
+
+    .five--two-section--image {
+        position: relative;
+        background: url(../../../../public/img/t3.jpg) no-repeat;
+
+        &::before {
+            content: "";
+            width: 100%;
+            padding-bottom: 100%;
+            display: block;
+        }
+
+        &::after {
+            content: "";
+            background: url(../../../../public/img/t3-1.svg) no-repeat;
+            width: 225px;
+            height: 64px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0px);
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    .five--two-section--content {
+        min-height: 515px;
+        padding: 35px 16px;
+        text-align: center;
+
+        @media only screen and (min-width: 1400px){
+            & {
+                max-width: 650px;
+                margin: 0px auto;
+                
+            }
+        }
+        
+        .five--two-section--content-headline {
+            margin-bottom: 20px;
+            font: 500 18px / 1.17 "Chronicle SSm A", "Chronicle SSm B", serif;
+
+            @media only screen and (min-width: 1400px){
+                & {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+
+        .five--two-section--content-dek {
+            margin-bottom: 20px;
+            line-height: 1.71;
+
+            @media only screen and (min-width: 1400px){
+                & {
+                    max-width: 540px;
+                    margin-bottom: 25px;
+                    font-size: 16px;
+                    line-height: 1.63;
+                }
+            }
+        }
+
+        .lien--cta {
+            margin-bottom: 30px;
+            color: rgb(104, 143, 150);
+
+            @media only screen and (min-width: 1400px){
+                & {
+                    margin-bottom: 55px;
+                }
+            }
+        }
+
+        .products--container {
+            position: relative;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .five--two-section--container {
+        padding-top: 40px;
+
+        .five--two-section--image {
+            max-width: 600px;
+            margin: 0px auto;
+
+            &::after {
+                width: 306px;
+                height: 87px;
+            }
+
+            .image {}
+        }
+
+        .five--two-section--content {
+            min-height: 539px;
+            padding: 32px 22px 40px;
+            .five--two-section--content-headline {
+                margin-bottom: 15px;
+                font-size: 22px;
+                line-height: 0.95;
+            }
+
+            .five--two-section--content-dek {
+                max-width: 476px;
+                margin: 0px auto 25px;
+            }
+
+            .lien--cta {
+                margin-bottom: 35px;
+            }
+
+            .products--container {}
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .five--two-section--container {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 0px;
+
+        .five--two-section--image {
+            width: 45%;
+            max-width: 546px;
+            min-height: 546px;
+            margin: 0px;
+
+            &::after {
+                width: 280px;
+                height: 80px;
+            }
+
+            .image {}
+        }
+
+        .five--two-section--content {
+            width: 100%;
+            max-width: 500px;
+            min-height: auto;
+            margin: 0px calc((100% - 990px) / 2) 0px auto;
+            padding: 0px 10px;
+
+            .five--two-section--content-headline {
+                margin-bottom: 18px;
+                font-size: 24px;
+                line-height: 0.88;
+            }
+
+            .five--two-section--content-dek {
+                margin-bottom: 20px;
+            }
+
+            .lien--cta {}
+
+            .products--container {
+                padding-inline: 50px;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.see--collection-container {
+    font-weight: 400;
+    font-family: "Chronicle SSm A", serif;
+
+    .see--collection-image {
+        display: block;
+        
+        .d1 {
+            max-width: 100%;
+            width: 891px;
+
+            .d1--1 {
+                height: 0;
+                padding-bottom: 49.943883277216614%;
+                position: relative;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .see--collection-content {
+        text-align: center;
+
+        .see--collection-content-headline {
+            background: url('../../../../public/img/decor8.svg') center top no-repeat;
+            background-size: 47px 16px;
+            margin-top: 18px;
+            padding: 27px 0 10px 0;
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 1.13;
+        }
+
+        .see--collection-content-dek {
+            margin-bottom: 20px;
+            line-height: 1.86;
+        }
+
+        .lien--cta {
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .see--collection-container {
+        display: flex;
+        align-items: center;
+
+        .see--collection-image {
+            max-width: 414px;
+            
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+            
+            
+        }
+
+        .see--collection-content {
+            max-width: 280px;
+            margin: 0 auto;
+
+            .see--collection-content-headline {
+                background-size: 64px 22px;
+                margin-top: 0;
+                padding-top: 34px;
+                line-height: 1.33;
+            }
+
+            .see--collection-content-dek {
+                margin-bottom: 15px;
+            }
+
+            .lien--cta {
+                
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .see--collection-container {
+        
+
+        .see--collection-image {
+            max-width: 574px;
+
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+
+            
+        }
+
+        .see--collection-content {
+            max-width: 330px;
+
+            .see--collection-content-headline {
+                padding-top: 37px;
+                font-size: 26px;
+                line-height: 1.31;
+            }
+
+            .see--collection-content-dek {
+                
+            }
+
+            .lien--cta {}
+        }
+    }
+}
