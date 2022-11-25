@@ -1,0 +1,285 @@
+.shop--gift {
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    .shop--gift-image {
+        max-width: 149px;
+        margin-right: 15px;
+
+        .d1 {
+            max-width: 100%;
+            width: 436px;
+
+            .d1--1 {
+                height: 0;
+                padding-bottom: 100.0%;
+                position: relative;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .shop--gift-content {
+
+    }
+
+    .shop--gift-content--registry {
+        
+
+        .shop--gift-headline {
+            margin-bottom: 8px;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .shop--gift-dek {
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-family: "Chronicle SSm A", serif;
+            line-height: 1.57;
+        }
+
+        .shop--gift-mobile {
+            .icon--arrow {
+
+            }
+        }
+
+        .shop--gift-details {
+            display: none;
+            .shop--gift-list {
+
+            }
+        }
+    }
+
+    .shop--gift-content--card {
+        .shop--gift-headline {
+            margin-bottom: 8px;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: normal;
+        }
+
+        .shop--gift-dek {
+            margin-bottom: 15px;
+            font-weight: 400;
+            font-family: "Chronicle SSm A", serif;
+            line-height: 1.57;
+        }
+
+        .shop--gift-mobile {
+            .icon--arrow {
+
+            }
+        }
+
+        .shop--gift-details {
+            display: none;
+
+            .shop--gift-list--heading {
+
+            }
+
+            .shop--gift-list {
+                span {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .shop--gift {
+        .shop--gift-image {
+            max-width: 290px;
+            margin-right: 22px;
+
+            .d1 {
+                .d1--1 {
+    
+                }
+            }
+        }
+    
+        .shop--gift-content {
+    
+        }
+    
+        .shop--gift-content--registry {
+            width: 364px;
+            margin: 0 auto;
+
+            .shop--gift-headline {
+                margin-bottom: 15px;
+                font-size: 30px;
+            }
+    
+            .shop--gift-dek {
+                margin-bottom: 20px;
+                line-height: normal;
+            }
+    
+            .shop--gift-mobile {
+                display: none;
+                .icon--arrow {
+    
+                }
+            }
+    
+            .shop--gift-details {
+                display: block;
+                margin-top: 28px;
+                border-top: 1px solid #444;
+                padding-top: 28px;
+                position: relative;
+
+                .shop--gift-list {
+                    margin-bottom: 15px;
+                    line-height: 1.86;
+
+                    &::after {
+                        content: " ";
+                        background: #fff url('../../../public/img/decor10.svg') center no-repeat;
+                        background-size: 26px 23px;
+                        width: 46px;
+                        height: 23px;
+                        position: absolute;
+                        top: -11px;
+                        left: calc(50% - 23px)
+                    }
+
+                    span {
+                        padding: 0 8px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    
+        .shop--gift-content--card {
+            width: 384px;
+            margin: 0 auto;
+
+            .shop--gift-headline {
+                margin-bottom: 15px;
+                font-size: 30px;
+            }
+    
+            .shop--gift-dek {
+                margin-bottom: 20px;
+                line-height: normal;
+            }
+    
+            .shop--gift-mobile {
+                display: none;
+                .icon--arrow {
+    
+                }
+            }
+    
+            .shop--gift-details {
+                display: block;
+                margin-top: 28px;
+                border-top: 1px solid #444;
+                padding-top: 28px;
+                position: relative;
+
+                .shop--gift-list--heading {
+                    margin-bottom: 10px;
+                    color: #a18f7a;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+
+                .shop--gift-list {
+                    margin-bottom: 15px;
+                    line-height: 1.86;
+
+                    span {
+                        padding: 0 8px;
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .shop--gift {
+        flex-direction: column-reverse;
+
+        .shop--gift-image {
+            max-width: 436px;
+            margin: 30px 0 0 0;
+
+            .d1 {
+                .d1--1 {
+    
+                }
+            }
+        }
+    
+        .shop--gift-content {
+    
+        }
+    
+        .shop--gift-content--registry {
+            .shop--gift-headline {
+    
+            }
+    
+            .shop--gift-dek {
+    
+            }
+    
+            .shop--gift-mobile {
+                .icon--arrow {
+    
+                }
+            }
+    
+            .shop--gift-details {
+                .shop--gift-list {
+    
+                }
+            }
+        }
+    
+        .shop--gift-content--card {
+            .shop--gift-headline {
+    
+            }
+    
+            .shop--gift-dek {
+    
+            }
+    
+            .shop--gift-mobile {
+                .icon--arrow {
+    
+                }
+            }
+    
+            .shop--gift-details {
+                .shop--gift-list {
+                    
+                }
+            }
+        }
+    } 
+}

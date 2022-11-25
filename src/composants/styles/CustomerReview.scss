@@ -1,11 +1,22 @@
 .customer--review-container {
     width: 100%;
     padding: 0px 16px;
+    text-align: center;
+    background: #f7f7f7;
+
+    .customer--review-content--headline-mobile {
+        width: 275px;
+        height: 30px;
+        display: block;
+        background: url('../../../public/img/whatcustsay.svg') 0% 0% / 100% no-repeat;
+        margin: 0px auto 14px;
+    }
 
     .customer--review-link {
         max-width: 230px;
         margin: 0px auto 16px;
         display: block;
+
 
         .d1 {
             width: 230px;
@@ -42,17 +53,19 @@
         flex-direction: column;
         flex: 1;
         max-width: 343px;
+        margin-inline: auto;
 
         .customer--review-content--headline {
+            display: none;
             width: 275px;
             height: 30px;
-            display: block;
-            background: url('../../../public/img/whatcustsay.svg') no-repeat;
+            background: url('../../../public/img/whatcustsay.svg') 0% 0% / 100% no-repeat;
             margin: 0px auto 14px;
         }
         
         .rating {
-            margin: 0 0 10px -2px;
+            margin-inline: auto ;
+            //margin: 0 0 10px -2px;
             font-size: 14px;
             display: flex;
             align-items: center;
@@ -70,6 +83,7 @@
             }
 
             .rating--text {
+                display: none;
                 margin-left: 6px;
             }
         }
@@ -100,6 +114,7 @@
             display: inline-flex;
             align-items: center;
             margin-top: auto;
+            margin-inline: auto;
 
             .icon--arrow {
                 margin-left: 4px;
@@ -115,6 +130,11 @@
         display: flex;
         padding: 0px 86px;
         text-align: left;
+        
+
+        .customer--review-content--headline-mobile {
+            display: none;
+        }
 
         .customer--review-link {
             max-width: 208px;
@@ -136,8 +156,10 @@
 
         .customer--review-content {
             max-width: none;
+            margin-inline: 0;
 
             .customer--review-content--headline {
+                display: block;
                 width: 312px;
                 height: 34px;
                 margin: 0px 0px 6px;
@@ -146,12 +168,15 @@
             .rating {
                 margin-bottom: 12px;
                 font-weight: 300;
+                margin-inline: 0;
 
                 .etoile--remplie {
                     .fa {}
                 }
 
-                .rating--text {}
+                .rating--text {
+                    display: block;
+                }
             }
 
             .commentaire {

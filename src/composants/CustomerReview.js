@@ -7,6 +7,7 @@ function CustomerReview(props) {
     return(
         <Fragment>
             <div className="customer--review-container">
+                <span className="customer--review-content--headline-mobile"></span>
                 <Link className="customer--review-link lien" to={props.review.lienImage}>
                     <div className="d1">
                         <div className="d1--1">

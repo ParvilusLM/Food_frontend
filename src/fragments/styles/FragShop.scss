@@ -1,20 +1,273 @@
-.shop--index-container {
-    padding: 40px 16px;
-    position: relative;
+.global--wrapper-fragShop {
 
-    @media only screen and (min-width: 768px) {
-        & {
-            padding: 40px 22px;
+    .shop--hero-carousel {
+        display: flex;
+        .shop--hero-list {
+            max-width: 100%;
+            padding: 16px 0 0 16px;
+            display: inline-flex;
+            align-items: stretch;
+            overflow: hidden;
+
+            .shop--hero-listItem {
+                max-width: 285px;
+                margin: 0 16px 40px 0;
+                display: flex;
+                flex-direction: column;
+            }
         }
-        
     }
 
-    @media only screen and (min-width: 1024px) {
-        & {
-            max-width: 1024px;
-            margin: 0 auto;
-            padding: 50px 12px;
+    .shop--promise {
+        background: rgba(134,159,174,0.15);
+
+        .shop--promise-list {
+            padding: 22px 0;
+            font-size: 13px;
+            line-height: 1.69;
+            text-align: left;
+
+            .shop--promise-listItem {
+                max-width: 325px;
+                margin: 0 auto;
+                display: flex;
+                align-items: stretch;
+            }
         }
-        
     }
+
+    .shop--bestSellers {
+
+    }
+
+    .shop--see-all-collection {
+
+    }
+
+    .shop--top-rated {
+        background: #f7f7f7;
+    }
+
+    .shop--by {
+        display: block;
+        width: 100%;
+    }
+
+    .shop--Five-Two {
+        background: #688f96;
+        overflow: hidden;
+    }
+
+    .shop--see-collection {
+
+    }
+
+    .shop--expert {
+
+    }
+
+    .shop--maker {
+
+    }
+
+    .shop--new-arrivals {
+
+    }
+
+    .shop--mailing-list--banner {
+
+    }
+
+    .shop--gifts {
+        .shop--gift-el {
+
+        }
+    }
+
+    .shop--index-container {
+        padding: 40px 16px;
+        position: relative;
+    
+        @media only screen and (min-width: 768px) {
+            & {
+                padding: 40px 22px;
+            }
+            
+        }
+    
+        @media only screen and (min-width: 1024px) {
+            & {
+                max-width: 1024px;
+                margin: 0 auto;
+                padding: 50px 12px;
+            }
+            
+        }
+    }
+    
+    
 }
+
+@media only screen and (min-width: 768px) {
+    .global--wrapper-fragShop {
+        .shop--hero-carousel {
+            .shop--hero-list {
+                position: relative;
+                padding: 22px 0 0 22px;
+                margin: 0 auto;
+
+                .shop--hero-listItem {
+    
+                }
+            }
+        }
+    
+        .shop--promise {
+            .shop--promise-list {
+                max-width: 844px;
+                margin: 0 auto;
+                padding: 25px 22px;
+                font-size: 14px;
+                line-height: 1.57;
+                text-align: center;
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .shop--promise-listItem {
+                    max-width: 205px;
+                    margin: 0;
+                    display: block;
+                }
+            }
+        }
+    
+        .shop--bestSellers {
+    
+        }
+    
+        .shop--see-all-collection {
+    
+        }
+    
+        .shop--top-rated {
+    
+        }
+    
+        .shop--by {
+            display: block;
+            width: 100%;
+        }
+    
+        .shop--Five-Two {
+    
+        }
+    
+        .shop--see-collection {
+    
+        }
+    
+        .shop--expert {
+    
+        }
+    
+        .shop--maker {
+    
+        }
+    
+        .shop--new-arrivals {
+    
+        }
+    
+        .shop--mailing-list--banner {
+    
+        }
+    
+        .shop--gifts {
+            .shop--gift-el {
+    
+            }
+        }
+    } 
+}
+
+@media only screen and (min-width: 1024px) {
+    .global--wrapper-fragShop {
+        .shop--hero-carousel {
+    
+            .shop--hero-list {
+                width: 100%;
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 50px 0 0 0;
+                justify-content: space-between;
+
+                .shop--hero-listItem {
+                    max-width: calc(33.333% - 40px / 3);
+                    margin: 0 0 50px 0;
+                }
+            }
+        }
+    
+        .shop--promise {
+            .shop--promise-list {
+                max-width: 1024px;
+                padding: 30px 12px;
+                font-size: 15px;
+                line-height: 1.67;
+
+                .shop--promise-listItem {
+                    max-width: 300px;
+                }
+            }
+        }
+    
+        .shop--bestSellers {
+    
+        }
+    
+        .shop--see-all-collection {
+    
+        }
+    
+        .shop--top-rated {
+    
+        }
+    
+        .shop--by {
+            display: block;
+            width: 100%;
+        }
+    
+        .shop--Five-Two {
+    
+        }
+    
+        .shop--see-collection {
+    
+        }
+    
+        .shop--expert {
+    
+        }
+    
+        .shop--maker {
+    
+        }
+    
+        .shop--new-arrivals {
+    
+        }
+    
+        .shop--mailing-list--banner {
+    
+        }
+    
+        .shop--gifts {
+            .shop--gift-el {
+    
+            }
+        }
+    } 
+}
+

@@ -33,7 +33,7 @@
                     margin: 0 15px 0;
                     justify-content: center;
                     width: 203px;
-                    min-width: 100px;
+                    min-width: 125px;
 
                     &:nth-child(n+5) {
                         display: none;
@@ -107,7 +107,7 @@
             cursor: pointer;
             outline: none;
             top: 0px;
-            margin-top: calc((25% - 19px) / 2);
+            margin-top: calc(24% / 2);
 
             width: 20px;
             height: 20px;
@@ -162,27 +162,28 @@
 
             @media only screen and (min-width: 768px) {
                 & {
-                    left: -52px;
+                    left: -25px;
                 }
             }
 
             @media only screen and (min-width: 1024px) {
                 & {
-                    left: -62px;
+                    left: -25px;
                 }
             }
         }
 
         .b__suiv {
+            right: -10px;
             @media only screen and (min-width: 768px) {
                 & {
-                    right: -52px;
+                    right: -10px;
                 }
             }
 
-            @media only screen and (min-width: 768px) {
+            @media only screen and (min-width: 1024px) {
                 & {
-                    right: -62px;
+                    right: -10px;
                 }
             }
         }

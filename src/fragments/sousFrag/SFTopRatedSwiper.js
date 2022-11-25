@@ -1,11 +1,11 @@
 import React, {Fragment} from 'react'
-import './styles/TopRatedSwiper.scss'
+import './styles/SFTopRatedSwiper.scss'
 import loadable from '@loadable/component'
 
 const CustomerReview = loadable(() => import('../../composants/CustomerReview'))
 
 
-function TopRatedSwiper(props) {
+function SFTopRatedSwiper(props) {
     return(
         <Fragment>
             <div className="top--rated-global-wrapper">
@@ -27,4 +27,4 @@ function TopRatedSwiper(props) {
     )
 }
 
-export default TopRatedSwiper
+export default SFTopRatedSwiper

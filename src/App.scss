@@ -12,6 +12,8 @@
         margin: 0 0 20px;
     }
 
+    
+
     .lien {
         text-decoration: none;
         color: #444;
@@ -91,7 +93,20 @@
         color: #444;
     }
 
-    
+    .view--more {
+        color: #a18f7a;
+        font-weight: 400;
+        font-family: "Gotham SSm A", sans-serif;
+        font-size: 12px;
+        line-height: normal;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .view--more-medium {
+        font-weight: 500;
+    }
 
 
 }
