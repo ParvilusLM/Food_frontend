@@ -1,8 +1,11 @@
-import React from 'react'
+import React, {Fragment} from 'react'
+import './styles/FragRecipes.scss'
 
 function FragRecipes() {
   return (
-    <div>FragRecipes</div>
+    <Fragment>
+      
+    </Fragment>
   )
 }
 
