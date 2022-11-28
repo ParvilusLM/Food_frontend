@@ -79,8 +79,20 @@
     }
 
     .shop--gifts {
-        .shop--gift-el {
+        text-align: left;
 
+        .shop--gift-el {
+            display: flex;
+            align-items: center;
+
+            &+.shop--gift-el {
+                margin-top: 35px;
+                border-top: 1px solid #eaeaea;
+                padding-top: 35px;
+    
+            }
+
+            
         }
     }
 
@@ -184,6 +196,8 @@
         }
     
         .shop--gifts {
+            text-align: center;
+
             .shop--gift-el {
     
             }
@@ -215,6 +229,7 @@
                 padding: 30px 12px;
                 font-size: 15px;
                 line-height: 1.67;
+
 
                 .shop--promise-listItem {
                     max-width: 300px;
@@ -264,9 +279,22 @@
         }
     
         .shop--gifts {
+            display: flex;
+            justify-content: space-between;
+
             .shop--gift-el {
-    
+                width: 50%;
+                padding-right: 64px;
+                flex-direction: column-reverse;
+
+                &:nth-child(2) {
+                    margin: 0;
+                    border: none;
+                    border-left: 1px solid #eaeaea;
+                    padding: 0 0 0 64px;
+                }
             }
+
         }
     } 
 }

@@ -86,15 +86,21 @@ function FragShop() {
                 <section className='shop--maker'>
                     <SFMaker />
                 </section>
-                <section className='shop--new-arrivals'>
+                <section className='shop--new-arrivals shop--index-container'>
                     <FragNewTo />
                 </section>
                 <section className='shop--mailing-list--banner'>
                     <SFMailingListBanner />
                 </section>
-                <section className='shop--gifts'>
-                    <ShopGiftCard donnees={giftsCard[0]} className='shop--gift-el'/>
-                    <ShopGiftCard donnees={giftsCard[1]} className='shop--gift-el'/>
+                <section className='shop--gifts shop--index-container'>
+                    <div className="shop--gift-el">
+                        <ShopGiftCard donnees={giftsCard[0]}/>
+                    </div>
+                    <div className="shop--gift-el">
+                        <ShopGiftCard donnees={giftsCard[1]}/>
+                    </div>
+                    
+                    
                 </section>
                 <div className="clear--fix"></div>
             </div>
