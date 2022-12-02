@@ -104,6 +104,28 @@
         align-items: center;
     }
 
+    .btn--default {
+        background: #2d4558;
+        width: 100%;
+        font-size: 17px;
+        line-height: 50px;
+    }
+
+    .btn--outline {
+        background: none;
+        border: 1px solid #2d4558;
+        font-size: 14px;
+        line-height: 48px;
+        color: #2d4558;
+        text-transform: none;
+    }
+
+    .btn--inline {
+        width: auto;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
     .view--more-medium {
         font-weight: 500;
     }

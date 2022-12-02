@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {Fragment} from 'react'
+import loadable, { loadableReady } from '@loadable/component'
+
+const FragRecipes = loadable(() => import('../fragments/FragRecipes'))
 
 function Recipes() {
   return (
-    <div>Recipes</div>
+    <Fragment>
+      <FragRecipes />
+    </Fragment>
   )
 }
 

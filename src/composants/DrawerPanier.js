@@ -19,7 +19,7 @@ function DrawerPanier() {
     <Box
       role="presentation"
       onKeyDown={toggleDrawer(anchor, false)}
-      className='container__box'
+      className='container--box-Panier'
       
     >
       <div className='panel--basket-preview'>
@@ -54,17 +54,17 @@ function DrawerPanier() {
     <Fragment>
       <div className="global__wrapper-drawerP">
         {['right'].map((anchor) => (
-          <React.Fragment key={anchor}>
+          <div key={anchor}>
             <span onClick={toggleDrawer(anchor, true)} className="fa-solid fa-cart-shopping"></span>
             <Drawer
               anchor={anchor}
               open={state[anchor]}
               onClose={toggleDrawer(anchor, false)}
-              className='drawer'
+              className='drawerPanier'
             >
               {containerDrawerP(anchor)}
             </Drawer>
-          </React.Fragment>
+          </div>
         ))}
       </div>
     </Fragment>
