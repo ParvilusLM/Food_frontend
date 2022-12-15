@@ -1,0 +1,263 @@
+.card--collectable {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 1px 5px 1px #eaeaea;
+    text-align: center;
+    
+
+    .card--img-link {
+        transition: opacity 0.2s;
+        font-weight: inherit;
+        border-bottom: none;
+
+        .d1 {
+            max-width: 100%;
+            width: 610px;
+
+            .d1--1 {
+                height: 0;
+                padding-bottom: 71.47540983606558%;
+                position: relative;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .card--details {
+        padding: 10px;
+        min-height: 126px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        .collectable--name {
+            font-weight: 400;
+            font-family: "Gotham SSm A", sans-serif;
+            color: #444;
+            font-size: 13px;
+            line-height: 1.4;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            overflow: hidden;
+        }
+
+        .meta {
+            margin-bottom: 22px;
+            font-size: 13px;
+            line-height: 1.35;
+            color: #909090;
+            display: none;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .meta--author {
+                .meta--author-link {
+                    color: #909090;
+                    font-size: 12px;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .rating {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            flex-shrink: 0;
+            flex-wrap: wrap;
+            position: relative;
+            font-weight: 300;
+            font-family: "Gotham SSm A", sans-serif;
+            color: #2d4558;
+            font-size: 13px;
+            margin: 6px 0 8px 0;
+
+            span {
+                margin-left: 6px;
+            }
+
+            .rating--star {
+                padding: 0 2px 2px 2px;
+                color: #e0e0e0;
+                position: relative;
+
+                svg {
+                    width: 13px;
+                    height: auto;
+                    display: block;
+                }
+            }
+        }
+
+        .collectable--footer {
+            margin-top: auto;
+
+            .collection--widget-root {
+                .collection--widget {
+                    .collection--save {
+                        background: none;
+                        border: solid 1px #57696d;
+                        border-radius: 18px;
+                        padding: 0 16px 0 18px;
+                        outline: none;
+                        font-weight: 400;
+                        font-family: "Gotham SSm A", sans-serif;
+                        color: #57696d;
+                        font-size: 14px;
+                        line-height: 34px;
+                        letter-spacing: -0.1px;
+                        text-transform: uppercase;
+                        display: inline-flex;
+                        align-items: center;
+                        cursor: pointer;
+                        margin: 0;
+
+                        .collection--save-icon {
+                            background-size: 100% auto;
+                            background-repeat: no-repeat;
+                            width: 1em;
+                            height: 1em;
+                            display: inline-block;
+                            color: transparent;
+                            transition: color 0.1s linear;
+                            margin-right: 8px;
+                            font-size: 17px;
+                        }
+                    }
+
+                    .btn--pill {
+                        background-color: #fff;
+                        color: #57696d;
+                        cursor: pointer;
+                        text-decoration: none;
+                        pointer-events: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.card {
+    width: auto;
+    margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .card--collectable {
+        
+
+        .card--img-link {
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+        }
+
+        .card--details {
+            min-height: 160px;
+            padding-bottom: 18px;
+
+            .collectable--name {
+                font-size: 15px;
+            }
+
+            .meta {
+                .meta--author {
+                    .meta--author-link {
+                        font-size: 13px;
+                        letter-spacing: normal;
+                    }
+                }
+            }
+
+            .rating {
+                margin-bottom: 0;
+
+                .rating--star {}
+            }
+
+            .collectable--footer {
+                .collection--widget-root {
+                    .collection--widget {
+                        .collection--save {
+                            .collection--save-icon {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .card--collectable {
+        .card--img-link {
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+        }
+
+        .card--details {
+            min-height: 180px;
+
+            .collectable--name {}
+
+            .meta {
+                margin: 6px 0;
+                display: block;
+
+                .meta--author {
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    display: -webkit-box;
+                    overflow: hidden;
+
+                    span {
+                        font-weight: 400;
+                        font-family: "Chronicle SSm A", serif;
+                        font-size: 11px;
+                        font-style: italic;
+                    }
+
+                    .meta--author-link {
+                        font-size: 11px;
+                    }
+                }
+            }
+
+            .rating {
+                margin: 0;
+
+                .rating--star {}
+            }
+
+            .collectable--footer {
+                .collection--widget-root {
+                    .collection--widget {
+                        .collection--save {
+                            .collection--save-icon {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

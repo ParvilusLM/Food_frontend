@@ -1,0 +1,84 @@
+.recipe--article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .lien {
+        color: rgb(255, 255, 255);
+    }
+
+    .recipe--article-tag {
+        margin-bottom: 20px;
+        font-size: 12px;
+        text-transform: uppercase;
+        display: inline-block;
+        position: relative;
+        
+
+        &::after {
+            content: " ";
+            background: url('../../../public/img//decor14.svg') no-repeat;
+            width: 80px;
+            height: 15px;
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .recipe--article-titre {
+        span {
+            max-width: 276px;
+            margin: 20px auto;
+            font: 500 20px / 1.3 "Chronicle SSm A", "Chronicle SSm B", serif;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            display: -webkit-box;
+            overflow: hidden;
+        }
+    }
+
+    .recipe--article-cta {
+        height: 40px;
+        margin-bottom: 4px;
+        line-height: 40px;
+        padding: 0px 20px;
+        font-size: 14px;
+        background: #a18f7a;
+        margin-inline: 30%;
+
+        &:hover {
+            background: #887660;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .recipe--article {
+        .recipe--article-tag {}
+
+        .recipe--article-titre {
+            span {
+                max-width: 430px;
+                font-size: 28px;
+            }
+        }
+
+        .recipe--article-cta {}
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .recipe--article {
+        .recipe--article-tag {}
+
+        .recipe--article-titre {
+            span {
+                max-width: 486px;
+            }
+        }
+
+        .recipe--article-cta {}
+    }
+}

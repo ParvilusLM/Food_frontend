@@ -1,0 +1,161 @@
+.resident--section-wrapper {
+    margin-bottom: 30px;
+    text-align: center;
+
+    .residents--grid-all {
+        color: rgb(161, 143, 122);
+        font: 400 12px "Gotham SSm A", "Gotham SSm B", sans-serif;
+        text-transform: uppercase;
+        display: none;
+        -webkit-box-align: center;
+        align-items: center;
+        text-decoration: none;
+
+        .icon--arrow {
+            margin-left: 4px;
+            font-size: 7px;
+        }
+    }
+
+    .resident--grid-header {
+        margin-bottom: 16px;
+        font: 400 1em / 1.43 "Chronicle SSm A", "Chronicle SSm B", serif;
+        text-align: center;
+
+        .residents--grid-heading {
+            margin-bottom: 9px;
+            font-size: 22px;
+            font-weight: 500;
+            font-style: italic;
+            line-height: 1.27;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+
+            &::before, &::after {
+                content: "";
+                background: url('../../../../public/img/decor13.svg') no-repeat;
+                width: 36px;
+                height: 16px;
+                margin-right: 20px;
+            }
+
+            &::after {
+                margin: 0px 0px 0px 20px;
+                transform: scaleX(-1);
+            }
+        }
+
+        .residents--grid-dek {
+
+        }
+
+        .residents--grid-all--desktop {
+
+        }
+    }
+
+    .residents--grid-list {
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        list-style: none;
+
+        .residents--grid-list--item {
+            background: rgb(250, 250, 250);
+            width: calc(50% - 5px);
+            margin: 47px 0px 10px;
+            border: 1px solid rgb(234, 234, 234);
+            padding: 0px 10px 21px;
+        }
+    }
+
+    .residents--grid-all--mobile {
+        color: rgb(161, 143, 122);
+        font: 400 12px "Gotham SSm A", "Gotham SSm B", sans-serif;
+        text-transform: uppercase;
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .resident--section-wrapper {
+        margin-bottom: 35px;
+
+        .residents--grid-all {
+            display: inline-flex;
+            margin-top: 16px;
+            font-size: 12px;
+        }
+
+        .resident--grid-header {
+            margin-bottom: 20px;
+            line-height: 1.71;
+
+            .residents--grid-heading {
+                font-size: 24px;
+                line-height: 1.38;
+            }
+
+            .residents--grid-dek {}
+
+            .residents--grid-all--desktop {
+                display: inline-flex;
+                margin-top: 16px;
+                font-size: 12px;
+            }
+        }
+
+        .residents--grid-list {
+            flex-wrap: nowrap;
+
+            .residents--grid-list--item {
+                width: calc(25% - 15px);
+                margin-top: 55px;
+            }
+        }
+
+        .residents--grid-all--mobile {
+            display: none;
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .resident--section-wrapper {
+        margin-bottom: 50px;
+        padding-left: 75px;
+        padding-right: 75px;
+
+        .residents--grid-all {}
+
+        .resident--grid-header {
+            max-width: 800px;
+            margin: 0px auto 15px;
+            font-size: 16px;
+            line-height: 1.5;
+
+            .residents--grid-heading {
+                margin-bottom: 5px;
+                font-size: 26px;
+            }
+
+            .residents--grid-dek {}
+
+            .residents--grid-all--desktop {}
+        }
+
+        .residents--grid-list {
+            .residents--grid-list--item {}
+        }
+
+        .residents--grid-all--mobile {}
+    }
+}

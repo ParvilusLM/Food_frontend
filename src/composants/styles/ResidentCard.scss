@@ -1,0 +1,130 @@
+.resident {
+    text-align: center;
+    .resident--img {
+        max-width: 94px;
+        margin: -47px auto 10px;
+        border-radius: 50%;
+        box-shadow: rgb(68 68 68 / 25%) 0px 0px 7px 0px;
+        overflow: hidden;
+
+        .d1 {
+            width: 150px;
+            max-width: 100%;
+
+            .d1--1 {
+                height: 0px;
+                padding-bottom: 100%;
+                position: relative;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .lien--nom {
+        .resident--nom {
+            max-width: 110px;
+            margin: 0px auto 6px;
+            font-size: 16px;
+            line-height: 1.44;
+            height: 60px;
+        }
+    }
+
+    .lien--description {
+        .resident--description {
+            margin-bottom: 14px;
+            color: rgb(144, 144, 144);
+            font-size: 12px;
+            font-weight: 300;
+            font-style: italic;
+            line-height: normal;
+        }
+    }
+
+    .lien--cta {
+        color: rgb(161, 143, 122);
+        font: 400 12px "Gotham SSm A", "Gotham SSm B", sans-serif;
+        text-transform: uppercase;
+        display: inline-flex;
+        -webkit-box-align: center;
+        align-items: center;
+
+        .icon__arrow {
+            margin-left: 4px;
+            font-size: 7px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .resident {
+        .resident--img {
+            max-width: 90px;
+            margin: -55px auto 15px;
+
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+        }
+
+        .lien--nom {
+            .resident--nom {
+                max-width: 125px;
+                margin-bottom: 9px;
+                font-size: 18px;
+            }
+        }
+
+        .lien--description {
+            .resident--description {
+                margin-bottom: 24px;
+                font-size: 14px;
+            }
+        }
+
+        .lien--cta {
+            display: inline-flex;
+            font-size: 14px;
+
+            .icon__arrow {}
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .resident {
+        .resident--img {
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+        }
+
+        .lien--nom {
+            .resident--nom {
+
+            }
+        }
+
+        .lien--description {
+            .resident--description {
+
+            }
+        }
+
+        .lien--cta {
+            .icon__arrow {}
+        }
+    }
+}

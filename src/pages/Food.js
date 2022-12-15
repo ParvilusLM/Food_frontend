@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {Fragment} from 'react'
+import './styles/Food.scss'
 
 
 function Food() {
   return (
-    <div>Food</div>
+    <Fragment>
+    </Fragment>
+    
   )
 }
 

@@ -1,0 +1,156 @@
+.featured--content {
+    margin-bottom: 30px;
+
+    .featured--content-header {
+        text-align: center;
+        margin-bottom: 20px;
+        font: 400 1em / 1.43 "Chronicle SSm A", "Chronicle SSm B", serif;
+
+        .featured--content-headline {
+            margin-bottom: 5px;
+            font-size: 22px;
+            font-weight: 500;
+            font-style: italic;
+            line-height: 1.27;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+
+            span {
+                max-width: 220px;
+            }
+
+            &::before, &::after {
+                content: "";
+                background: url('../../../public/img/decor13.svg') no-repeat;
+                width: 36px;
+                height: 16px;
+                margin-right: 20px;
+            }
+
+            &::after {
+                margin: 0px 0px 0px 20px;
+                transform: scaleX(-1);
+            }
+        }
+
+        .featured--content-dek {
+            font-size: 16px;
+            line-height: 22.8px;
+        }
+    }
+
+    .featured--content-article--list {
+        list-style: none;
+
+        .featured--content-article--item {
+            padding-inline: 5%;
+            &:first-child {
+                background-image: linear-gradient(rgba(68, 68, 68, 0.46), rgba(68, 68, 68, 0.46)), url('../../../public/img/fnd-1.jpg');
+                background-position: center center;
+                min-height: 210px;
+                margin-bottom: 10px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                color: rgb(255, 255, 255);
+            }
+
+            &:nth-child(2) {
+                background-image: linear-gradient(rgba(68, 68, 68, 0.46), rgba(68, 68, 68, 0.46)), url('../../../public/img/fnd-2.jpg');
+                background-position: center center;
+                min-height: 210px;
+                margin-bottom: 10px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                color: rgb(255, 255, 255);
+            }
+
+            &:nth-child(3) {
+                background-image: linear-gradient(rgba(68, 68, 68, 0.46), rgba(68, 68, 68, 0.46)), url('../../../public/img/fnd-3.jpg');
+                background-position: center center;
+                min-height: 210px;
+                margin-bottom: 10px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .featured--content {
+        margin-bottom: 45px;
+
+        .featured--content-header {
+            font-size: 16px;
+
+            .featured--content-headline {
+                font-size: 24px;
+                line-height: 1.38;
+
+                span {
+                    max-width: none;
+                }
+            }
+
+            .featured--content-dek {}
+        }
+
+        .featured--content-article--list {
+            .featured--content-article--item {
+                &:first-child {
+                    min-height: 373px;
+                    margin-bottom: 20px;
+                }
+
+                &:nth-child(n+2) {
+                    min-height: 373px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .featured--content {
+        margin-bottom: 56px;
+
+        .featured--content-header {
+            .featured--content-headline {
+                font-size: 29px;
+            }
+
+            .featured--content-dek {}
+        }
+
+        .featured--content-article--list {
+            display: flex;
+            flex-wrap: wrap;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+
+            .featured--content-article--item {
+                &:first-child {
+                    width: 100%;
+                }
+
+                &:nth-child(n+2) {
+                    width: calc(50% - 10px);
+                }
+            }
+        }
+    }
+}
