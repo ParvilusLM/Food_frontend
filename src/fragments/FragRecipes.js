@@ -9,10 +9,10 @@ const SFMailingListBanner = loadable(() => import('./sousFrag/SFMailingListBanne
 const FeaturedRecipe = loadable(() => import('../composants/FeaturedRecipe'))
 const AddRecipe = loadable(() => import('../composants/AddRecipe'))
 const FeaturedContent = loadable(() => import('../composants/FeaturedContent'))
-
+const SFNewestProduct = loadable(() => import('./sousFrag/SFNewestProduct'))
  
 const recipesList = [
-  {'nom':'Cake','image':'img/t8','lien':''},
+  {'nom':'Cake','image':'img/t8.jpg','lien':''},
   {'nom':'Dinner','image':'img/t8-1.jpg','lien':''},
   {'nom':'Potato','image':'img/t8-2.jpg','lien':''},
   {'nom':'Salad','image':'img/t8-3.jpg','lien':''},
@@ -68,12 +68,14 @@ const residentsListe = [
 ]
 
 
-
 const residentSect = {'titre':'Meet Our Residents', 'sousTitre':'The ultimate dream team—our residents will teach you everything ever you wanted know about dinner-wrangling, dessert-whispering, and then some.', 'lienAllResidents':'', 'listeResidents': residentsListe}
 
 const featuredRecipe = {'tag':'AMERICAN','lienTag':'','image':'img/u3.webp', 'lienImage':'', 'entete':'AMERICAN', 'lienEntete':'', 'titre':'Doritos Furikake', 'lienTitre':'', 'sousTitre':'This crunchy, savory seasoning from Romel Bruno is good on rice bowls, salads, you name it.', 'lienCTA':'','cta':'VIEW RECIPE'}
 
 const featuredContent = {'titre':'A Few of Our Faves','sousTitre':'Ripened on the vine, picked by our editors, and ready to eat.'}
+
+const newestProduct = {'titre':'Our curated tools to make recipes easy.','sousTitre':'','cta':'Explore the Shop'}
+
 
 function FragRecipes() {
   return (
@@ -113,7 +115,7 @@ function FragRecipes() {
                     <div className="recipes--index-featured--tags-img">
                       <div className="d1">
                         <div className="d1--1">
-                          <img src={item.image} alt="" />
+                          <img src={item.image} alt="" className='image'/>
                         </div>
                       </div>
                     </div>
@@ -126,7 +128,9 @@ function FragRecipes() {
         </div>
         <section className="recipes--index-video">
           <div className="homepage--video-container content--container">
+            <div className="content--text-container">
               <div className="homepage--video-content">
+                <div className="homepage--video-desktop">
                   <h3 className="homepage--video-rubric">Featured Video</h3>
                   <h2 className="homepage--video-headline">Rose & Pistachio Mississippi Mud Cake </h2>
                   <p className="homepage--video-dek">This chokolate cake has hints of rosewater and is topped with ganache,
@@ -137,14 +141,17 @@ function FragRecipes() {
                       <Link className="tag" to=''>See All Food52 Videos</Link>
                       <span className="icon--arrow icon--arrow-right"></span>
                   </p>
-              </div>
-              <div className="homepage--video-player">
+                </div>
+                <div className="homepage--video-player">
                   <div className="homepage--video-mount"></div>
+                </div>
+                <div className="recipes--video-mobile">
+                  <h2 class="recipes--video-heading">Epic Snickerdoodles From Jessie Sheehan</h2>
+                  <p class="recipes--video-dek">These snickerdoodles from Jessie Sheehan are slightly puffy, soft-middled, crispy-edged, and delish!</p>
+                  <Link className="btn btn--default btn--secondary btn--inline lien recipes--video-btn" to=''>View Recipe</Link>
+                </div>
               </div>
-              <p className="homepage--video-see--all homepage--video-see--all-mobile">
-                  <Link className="tag" to=''>See All Food52 Videos</Link>
-                  <span className="icon--arrow icon--arrow-right"></span>
-              </p>
+            </div>
           </div>
         </section>
         <div className="content--container">
@@ -173,20 +180,54 @@ function FragRecipes() {
           </section>
           <div className="content--text-container">
             <section className="recipes--index-grid">
-
+              <SFRecipeSect donnees={recipeSect1}/>
             </section>
           </div>
         </div>
-        <div className="content--container">
-          <div className="add--new-recipe--mount-point">
-            <AddRecipe />
-          </div>
-          <section className='featured--content-root'>
-            <FeaturedContent donnees={featuredContent} />
-          </section>
-        </div>
-        <section className="recipes--index-shop">
+        
+        <div className="ad--slot"></div>
 
+        <div className="content--container">
+          <div className="content--text-container">
+            <section className="recipes--index-grid">
+              <SFRecipeSect donnees={recipeSect1}/>
+            </section>
+            <section className="recipes--index-grid">
+              <SFRecipeSect donnees={recipeSect2}/>
+            </section>
+
+            <div className="add--new-recipe--mount-point">
+              <AddRecipe />
+            </div>
+            <section className='featured--content-root'>
+              <FeaturedContent donnees={featuredContent} />
+            </section>
+          </div>
+        </div>
+
+        <div className="ad--slot"></div>
+
+        <div className="content--container">
+          <div className="content--text-container">
+            <section className="recipes--index-grid">
+              <SFRecipeSect donnees={recipeSect1}/>
+            </section>
+            <section className="recipes--index-grid">
+              <SFRecipeSect donnees={recipeSect2}/>
+            </section>
+            <section className="recipes--index-grid">
+              <SFRecipeSect donnees={recipeSect3}/>
+            </section>
+            <section className="recipes--index-grid">
+              <SFRecipeSect donnees={recipeSect4}/>
+            </section>
+          </div>
+        </div>
+
+        <section className="recipes--index-shop">
+          <div className="content--container">
+            <SFNewestProduct donnees={newestProduct}/>
+          </div>
         </section>
       </section>
       <div className="clearfix"></div>

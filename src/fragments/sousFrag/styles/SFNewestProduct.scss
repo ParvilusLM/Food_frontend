@@ -1,0 +1,177 @@
+.recipe--new-arrivals--container {
+    display: block;
+
+    .new--arrivals {
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 16px;
+        overflow: hidden;
+        text-align: center;
+
+        .cta--mobile {
+            display: inline-flex;
+        }
+
+        .cta--desktop {
+            display: none;
+        }
+
+        .view--more {
+            margin-top: 14px;
+            
+            align-items: center;
+            font-weight: 400;
+            font-family: "Gotham SSm A", sans-serif;
+            color: #a18f7a;
+            font-size: 12px;
+            line-height: normal;
+            text-transform: uppercase;
+            text-decoration: none;
+    
+            .icon--arrow {
+                margin-left: 4px;
+                font-size: 7px;
+            }
+        }
+
+        .new--arrivals-header {
+            margin-bottom: 20px;
+            padding-right: 100px;
+            position: relative;
+            padding: 0;
+            text-align: center;
+
+            .new--arrivals-heading {
+                margin-bottom: 18px;
+                font: 500 28px "Chronicle SSm A", "Chronicle SSm B", serif;
+
+                span {
+                    background: url(../../../../public/img/the-shop.svg) 100% no-repeat;
+                    background-size: 100%;
+                    width: 141px;
+                    height: 48px;
+                    text-indent: -9999px;
+                    vertical-align: text-bottom;
+                    display: inline-block;
+
+                    @media only screen and (min-width: 768px) {
+                        height: 58px;
+                        width: 168px;
+                    }
+                }
+
+                @media only screen and (min-width: 768px) {
+                    font-size: 33px;
+                }
+            }
+
+            .nah--shop {
+                margin-bottom: 26px;
+                font: 400 15px / 24px "Chronicle SSm A", "Chronicle SSm B", serif;
+                color: rgb(68,68,68);
+
+
+                @media only screen and (min-width: 768px) {
+                    font-size: 16px;
+                    line-height: normal;
+                    margin-bottom: 13px;
+                }
+
+                @media only screen and (min-width: 1024px) {
+                    margin-bottom: 14px;
+                }
+            }
+
+            .new--arrivals-dek {
+                margin: 0 0 20px;
+                font-size: 14px;
+            }
+
+            
+
+            @media only screen and (min-width: 768px) {
+                & {
+                    margin-bottom: 25px;
+                    padding: 0;
+                }
+            }
+        }
+
+        .new--arrivals-content {
+            .new--arrivals-products {
+                margin-bottom: 5px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .produit--el {
+                    width: calc(50% - 5px);
+                    margin-bottom: 20px;
+                    display: none;
+
+                    &:nth-child(-n + 4) {
+                        display: block;
+                    }
+
+                    @media only screen and (min-width: 768px) {
+                        width: calc(33% - 10px);
+
+                        &:last-child {
+                            display: none;
+                        }
+                    }
+
+                    @media only screen and (min-width: 1024px) {
+                        width: calc(25% - 10px);
+
+                        &:last-child {
+                            display: block;
+                        }
+                    } 
+                }
+            }
+        }
+
+        @media only screen and (min-width: 768px) {
+            & {
+                padding: 0 22px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .recipe--new-arrivals--container {
+        .new--arrivals {
+            .cta--mobile {
+                display: none;
+            }
+            
+            .cta--desktop {
+                display: inline-flex;
+            }
+
+            .new--arrivals-content {
+                .new--arrivals-products {
+                    .produit--el {}
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .recipe--new-arrivals--container {
+        padding-top: 44px;
+
+        .new--arrivals {
+            .new--arrivals-content {
+                .new--arrivals-products {
+                    .produit--el {}
+                }
+            }
+        }
+    }
+}
