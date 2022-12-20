@@ -127,23 +127,23 @@ function FragRecipes() {
           </div>
         </div>
         <section className="recipes--index-video">
-          <div className="homepage--video-container content--container">
+          <div className="recipes--video-container content--container">
             <div className="content--text-container">
-              <div className="homepage--video-content">
-                <div className="homepage--video-desktop">
-                  <h3 className="homepage--video-rubric">Featured Video</h3>
-                  <h2 className="homepage--video-headline">Rose & Pistachio Mississippi Mud Cake </h2>
-                  <p className="homepage--video-dek">This chokolate cake has hints of rosewater and is topped with ganache,
-                      pistachios,  and marshmallows. Sign us up!
-                  </p>
-                  <Link className="homepage--video-cta btn btn--secondary lien">View the Recipe</Link>
-                  <p className="homepage--video-see--all">
-                      <Link className="tag" to=''>See All Food52 Videos</Link>
-                      <span className="icon--arrow icon--arrow-right"></span>
-                  </p>
+              <div className="recipes--video-content">
+                <div className="recipes--video">
+                  <div class="recipes--video-rubric">Featured Recipe</div>
+                  <div className="recipes--video-desktop">
+                    <div className="recipes--video-heading">Rose & Pistachio Mississippi Mud Cake </div>
+                    <p className="recipes--video-dek">These snickerdoodles from Jessie Sheehan are slightly puffy,
+                      soft-middled, crispy-edged, and delish!
+                    </p>
+                    <Link className="btn btn--secondary btn--inline lien recipes--video-btn">View Recipe</Link>
+                  </div>
                 </div>
-                <div className="homepage--video-player">
-                  <div className="homepage--video-mount"></div>
+                <div className="recipes--video-player">
+                  <div className="recipes--video-mount">
+                    <video src="" controls className='video'></video>
+                  </div>
                 </div>
                 <div className="recipes--video-mobile">
                   <h2 class="recipes--video-heading">Epic Snickerdoodles From Jessie Sheehan</h2>
@@ -156,7 +156,7 @@ function FragRecipes() {
         </section>
         <div className="content--container">
           <div className="content--text-container">
-            <section className="recipes--index-grid">
+            <section className="recipes--index-grid recipes--index-grid--ornament">
               <SFRecipeSect donnees={recipeSect1}/>
             </section>
             <section className="recipes--index-grid">
