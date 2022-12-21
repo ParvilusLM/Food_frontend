@@ -1,15 +1,23 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './styles/RecipeUnitCard.scss'
+import $ from 'jquery'
 
 function RecipeUnitCard(props) {
+
+    useEffect(() => {
+        if(props.info.isAfficheEnRangee === true) {
+            $('.recipe--unit-container').addClass('row')
+        }
+    })
+
     return (
         <Fragment>
             <div className="recipe--unit-container">
                 <Link className="recipe--unit-img--link" to={props.info.lien}>
                     <div className="recipe--unit-img--container">
                         <div className="dr1">
-                            <div className="dr1--1">
+                            <div className="dr1--1"> 
                                 <img className='image' src={props.info.image} alt={props.info.titre} loading='lazy' />
                             </div>
                         </div>

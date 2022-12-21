@@ -15,9 +15,9 @@ const NewsletterForm = loadable(() => import('../composants/NewsletterForm'))
 const info = { 'image': 'img/b1.webp', 'titre': 'Oven Ready', 'texte': 'These lovelies will protect your wrists through all that pie baking.', 'lien': '' };
 const info2 = { 'image': 'img/b2.webp', 'titre': 'You\'re Golden', 'texte': 'From our very own line: pastry flour & chocolate for best-ever bakes.', 'lien': '' };
 
-const infoR = { 'image': 'img/c1.webp', 'titre': 'Sheet-Pan Apple Crisp', 'lien': '' };
-const infoR2 = { 'image': 'img/c2.webp', 'titre': 'Toasty Cinnamon Meringue Cake', 'lien': '' };
-const infoR3 = { 'image': 'img/c3.webp', 'titre': 'Pumpkin Banana Bread With Toasty Pecans', 'lien': '' };
+const infoR = { 'image': 'img/c1.webp', 'titre': 'Sheet-Pan Apple Crisp', 'lien': '', 'isAfficheEnRangee': true };
+const infoR2 = { 'image': 'img/c2.webp', 'titre': 'Toasty Cinnamon Meringue Cake', 'lien': '', 'isAfficheEnRangee': true };
+const infoR3 = { 'image': 'img/c3.webp', 'titre': 'Pumpkin Banana Bread With Toasty Pecans', 'lien': '', 'isAfficheEnRangee': true };
 
 
 const produits = [
@@ -68,10 +68,11 @@ const newestRecipes = {
         { 'image': 'img/k1.jpg', 'titre': '\'Maroon Shrooms\' From Ghetto Gastro', 'lien': '' },
         { 'image': 'img/k2.jpg', 'titre': 'Watermelon Granita From Ghetto Gastro', 'lien': '' },
         { 'image': 'img/k3.jpg', 'titre': 'Fig Leaf Dumplings', 'lien': '' },
-        { 'image': 'img/k3.jpg', 'titre': 'Fancy Fairy Bread', 'lien': '' }
+        { 'image': 'img/k4.jpg', 'titre': 'Fancy Fairy Bread', 'lien': '' }
 
     ],
-    'produits': []
+    'produits': [],
+    'isAfficheEnRangee': false
 }
 
 const newestProducts = {
@@ -84,7 +85,8 @@ const newestProducts = {
         { 'lien': '', 'image': 'img/l2.jpg', 'titre': 'Onyx Coffee Lab Advent Calendar', 'prix': '135', 'variantTexte': '' },
         { 'lien': '', 'image': 'img/l3.jpg', 'titre': 'Terrace Candle Holder (Set of 2)', 'prix': '50', 'variantTexte': 'more options' },
         { 'lien': '', 'image': 'img/l4.jpg', 'titre': 'Shiny-Brite Vintage-Inspired Icicle Glass Ornaments (Set of 9)', 'prix': '55', 'variantTexte': '' }
-    ]
+    ],
+    'isAfficheEnRangee': false
 }
 
 function FragAccueil() {
@@ -198,6 +200,7 @@ function FragAccueil() {
                         </div>
                     </div>
                 </div>
+                <div className='ad--slot homepage--ad-slot'></div>
                 <div className='homepage--video'>
                     <div className="homepage--video-container content--container">
                         <div className="homepage--video-content">
@@ -213,7 +216,9 @@ function FragAccueil() {
                             </p>
                         </div>
                         <div className="homepage--video-player">
-                            <div className="homepage--video-mount"></div>
+                            <div className="homepage--video-mount">
+                                <video src="" controls className='video'></video>
+                            </div>
                         </div>
                         <p className="homepage--video-see--all homepage--video-see--all-mobile">
                             <Link className="tag" to=''>See All Food52 Videos</Link>
