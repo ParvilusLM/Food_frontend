@@ -131,7 +131,7 @@ function FragRecipes() {
             <div className="content--text-container">
               <div className="recipes--video-content">
                 <div className="recipes--video">
-                  <div class="recipes--video-rubric">Featured Recipe</div>
+                  <div className="recipes--video-rubric">Featured Recipe</div>
                   <div className="recipes--video-desktop">
                     <div className="recipes--video-heading">Rose & Pistachio Mississippi Mud Cake </div>
                     <p className="recipes--video-dek">These snickerdoodles from Jessie Sheehan are slightly puffy,
@@ -146,8 +146,8 @@ function FragRecipes() {
                   </div>
                 </div>
                 <div className="recipes--video-mobile">
-                  <h2 class="recipes--video-heading">Epic Snickerdoodles From Jessie Sheehan</h2>
-                  <p class="recipes--video-dek">These snickerdoodles from Jessie Sheehan are slightly puffy, soft-middled, crispy-edged, and delish!</p>
+                  <h2 className="recipes--video-heading">Epic Snickerdoodles From Jessie Sheehan</h2>
+                  <p className="recipes--video-dek">These snickerdoodles from Jessie Sheehan are slightly puffy, soft-middled, crispy-edged, and delish!</p>
                   <Link className="btn btn--default btn--secondary btn--inline lien recipes--video-btn" to=''>View Recipe</Link>
                 </div>
               </div>
