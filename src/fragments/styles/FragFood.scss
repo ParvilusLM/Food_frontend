@@ -12,6 +12,7 @@
 
         .blog--hero {
             display: flex;
+            flex-direction: column;
             justify-content: center;
 
             .blog--latest {
@@ -19,7 +20,7 @@
             }
 
             .blog--sidebar {
-                margin-left: 48px;
+                
             }
         }
     }
@@ -73,9 +74,13 @@
             .blog--title {}
 
             .blog--hero {
+                flex-direction: row;
+
                 .blog--latest {}
 
-                .blog--sidebar {}
+                .blog--sidebar {
+                    margin-left: 48px;
+                }
             }
         }
 
