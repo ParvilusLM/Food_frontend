@@ -1,0 +1,84 @@
+.featuresPod {
+    border: solid 1px #c4c4c4;
+    background-color: #ffffff;
+    margin: 30px auto 0;
+    padding: 10px 20px;
+    width: 300px;
+    text-align: center;
+    
+
+    .features--pod-headline {
+        background-image: url('../../../public/img/decor18.svg');
+        background-repeat: no-repeat;
+        font-weight: 500;
+        font-family: "Chronicle SSm A", serif;
+        background-size: 124px 10px;
+        background-position: center bottom;
+        font-size: 28px;
+        line-height: 1.39;
+        margin-top: 12px;
+        margin-bottom: 18px;
+        padding-bottom: 15px;
+    }
+
+    .features--pod-links {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+
+        .features--pod-item {
+            margin-bottom: 20px;
+
+            .features--pod-link {
+                color: #a18f7a;
+                font-size: 14px;
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 375px) {
+        width: 343px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .featuresPod {
+        padding: 0;
+        width: 724px;
+        height: 301px;
+
+        .features--pod-headline {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            padding-bottom: 18px;
+        }
+
+        .features--pod-links {
+            flex-flow: row wrap;
+            justify-content: center;
+            max-width: 500px;
+
+            .features--pod-item {
+                margin-right: 20px;
+
+                .features--pod-link {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .featuresPod {
+        .features--pod-headline {}
+
+        .features--pod-links {
+            .features--pod-item {
+                .features--pod-link {}
+            }
+        }
+    }
+}

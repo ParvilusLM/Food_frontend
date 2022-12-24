@@ -40,15 +40,17 @@ function SFContentSect(props) {
                             <span>{props.donnees.entete}</span>
                             <img src={props.donnees.decorImg} alt="" />
                         </div>
-                        <div className="content--section-latest-feature">
-                            <ArticleSimple info={props.donnees.article1} />
-                        </div>
-                        <div className="content--section-latest-feature">
-                            <ArticleSimple info={props.donnees.article2} />
-                        </div>
-                        <div className="content--section-latest-feature">
-                            <ArticleSimple info={props.donnees.article3} />
-                        </div>
+                        
+                        {props.donnees.articles.map((item, index) => (
+                            <div key={index} className="content--section-latest-feature">
+                                <ArticleSimple info={item} />
+                            </div>
+                        ))}
+                        
+                        <Link className="content--section-view--more-link lien">
+                            View All
+                            <span className="icon--arrow icon--arrow-right"></span>
+                        </Link>
                     </div>
                 </div>
 

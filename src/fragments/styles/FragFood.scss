@@ -1,0 +1,95 @@
+.fragFood {
+    .content--container {
+        .blog--title {
+            color: #444;
+            font-weight: bold;
+            font-family: "Chronicle SSm A", serif;
+            font-size: 36px;
+            line-height: 1.31;
+            margin: 18px 0;
+            text-align: center;
+        }
+
+        .blog--hero {
+            display: flex;
+            justify-content: center;
+
+            .blog--latest {
+                min-width: 0;
+            }
+
+            .blog--sidebar {
+                margin-left: 48px;
+            }
+        }
+    }
+
+    .ad--slot {
+        text-align: center;
+        overflow: hidden;
+        border: none;
+        background-color: #fafafa;
+    }
+
+    .features--pod {
+
+    }
+
+    .blog--index-section {
+        .content--section {
+            margin: 20px auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 728px) {
+    .fragFood {
+        .content--container {
+            .blog--title {
+                margin: 30px 0;
+            }
+
+            .blog--hero {
+                .blog--latest {}
+
+                .blog--sidebar {}
+            }
+        }
+
+        .ad--slot {
+        }
+
+        .features--pod {}
+
+        .blog--index-section {
+            .content--section {}
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .fragFood {
+        .content--container {
+            .blog--title {}
+
+            .blog--hero {
+                .blog--latest {}
+
+                .blog--sidebar {}
+            }
+        }
+
+        .ad--slot {
+            margin-bottom: 0;
+            margin-top: 60px;
+        }
+
+        .features--pod {}
+
+        .blog--index-section {
+            .content--section {
+                margin: 50px auto;
+            }
+        }
+    }
+}

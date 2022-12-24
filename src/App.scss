@@ -3,6 +3,27 @@
     margin: 0;
     box-sizing: border-box;
 
+    .content--container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 16px;
+        position: relative;
+
+        .lien {
+            font-weight: inherit;
+        }
+
+        @media only screen and (min-width: 768px) {
+            padding: 0 22px;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            max-width: 1024px;
+            padding: 0 12px;
+        }
+    }
+
     ::selection {
         background: #57696d;
         color: #fff;
@@ -12,7 +33,7 @@
         margin: 0 0 20px;
     }
 
-    ul {
+    ul, ol {
         list-style: none;
     }
 

@@ -1,0 +1,86 @@
+.topArticles {
+    background-color: #f7f7f7;
+    padding: 30px 20px 32px 28px;
+    margin: 0 auto 30px;
+    width: 301px;
+
+    .topArticles--heading {
+        font-weight: 500;
+        font-family: "Chronicle SSm A", serif;
+        color: #57696d;
+        font-size: 21px;
+        text-align: center;
+
+        &::after {
+            background-image: url('../../../public/img/decor17.svg');
+            background-repeat: no-repeat;
+            content: "";
+            display: block;
+            height: 13px;
+            margin: 7px auto 0;
+            width: 48px;
+        }
+    }
+
+    .topArticles--posts {
+        margin-left: 20px;
+        counter-reset: tags-popular;
+        font-size: 16px;
+        text-align: left;
+
+        .topArticles--post {
+            margin-top: 20px;
+
+            &::before {
+                font-weight: 500;
+                font-family: "Chronicle SSm A", serif;
+                counter-increment: tags-popular;
+                content: counter(tags-popular);
+                color: #57696d;
+                display: inline-block;
+                font-size: 16px;
+                position: absolute;
+                margin-left: -26px;
+                text-align: right;
+            }
+
+            .post--link {
+                display: block;
+                font-weight: 400;
+                font-family: "Gotham SSm A", sans-serif;
+                color: #444;
+                font-size: 13px;
+                line-height: 18px;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .topArticles {
+        width: 100%;
+
+        .topArticles--heading {}
+
+        .topArticles--posts {
+            .topArticles--post {
+                .post--link {}
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .topArticles {
+        width: 300px;
+        margin-bottom: 60px;
+
+        .topArticles--heading {}
+
+        .topArticles--posts {
+            .topArticles--post {
+                .post--link {}
+            }
+        }
+    }
+}

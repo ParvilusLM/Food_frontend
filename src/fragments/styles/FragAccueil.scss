@@ -1,18 +1,6 @@
 .homepage {
     overflow: hidden;
 
-    .content--container {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 16px;
-        position: relative;
-
-        .lien {
-            font-weight: inherit;
-        }
-    }
-
     .homepage--hero-container {
         margin-bottom: 37px;
 
@@ -557,11 +545,6 @@
 
 @media only screen and (min-width: 768px) {
     .homepage {
-        .content--container {
-            padding: 0 22px;
-
-
-        }
 
         .homepage--hero-container {
             margin-top: 50px;
@@ -863,10 +846,6 @@
 
 @media only screen and (min-width: 1024px) {
     .homepage {
-        .content--container {
-            max-width: 1024px;
-            padding: 0 12px;
-        }
 
         .homepage--hero-container {
             margin-bottom: 30px;

@@ -39,10 +39,14 @@ const foodSect = {
     'sousTitre': 'Plus, two recipes from the new book.',
     'entete': 'Latest',
     'decorImg': 'img/decor1.svg',
-    'article1': { 'lienTag': '', 'tag': 'THANKSGIVING', 'titreLien': '', 'titre': 'Your Thanksgiving Turkey Might Be Twice As Expensive This Year', 'sousTitre': 'A looming turkey shortage coupled with inflation means that an old-fashioned Thanksgiving is going to really cost you this year.' },
-    'article2': { 'lienTag': '', 'tag': 'POP CULTURE', 'titreLien': '', 'titre': 'How to Make Apple Cake, As Seen on \'The Great British Bake Off\'', 'sousTitre': 'A treat from the scariest episode since Mexican Week.' },
-    'article3': { 'lienTag': '', 'tag': 'ADVENT CALENDAR', 'titreLien': '', 'titre': 'It\’s Advent Calendar Season! Here Are Our 5 Favorites', 'sousTitre': 'The holidays don\’t happen for a while, but you can count down in style with these fun, festive, food-filled treats.' }
+    'articles': [
+        { 'lienTag': '', 'tag': 'THANKSGIVING', 'titreLien': '', 'titre': 'Your Thanksgiving Turkey Might Be Twice As Expensive This Year', 'sousTitre': 'A looming turkey shortage coupled with inflation means that an old-fashioned Thanksgiving is going to really cost you this year.' },
+        { 'lienTag': '', 'tag': 'POP CULTURE', 'titreLien': '', 'titre': 'How to Make Apple Cake, As Seen on \'The Great British Bake Off\'', 'sousTitre': 'A treat from the scariest episode since Mexican Week.' },
+        { 'lienTag': '', 'tag': 'ADVENT CALENDAR', 'titreLien': '', 'titre': 'It\’s Advent Calendar Season! Here Are Our 5 Favorites', 'sousTitre': 'The holidays don\’t happen for a while, but you can count down in style with these fun, festive, food-filled treats.' }
+    ],
+    
 }
+
 const homeSect = {
     'lienSect': '',
     'titreSect': 'Home52',
@@ -55,9 +59,12 @@ const homeSect = {
     'sousTitre': 'And five reasons I do want more space!',
     'entete': 'Latest',
     'decorImg': 'img/decor2.svg',
-    'article1': { 'lienTag': '', 'tag': 'HOLIDAY', 'titreLien': '', 'titre': '15 Scandi-Inspired Christmas Decorations for All the Holiday Hygge', 'sousTitre': 'Everything you need to create the coziest vibes at home this season.' },
-    'article2': { 'lienTag': '', 'tag': 'HOME DECOR', 'titreLien': '', 'titre': '15 Stylish Desk Accessories to Make Your Office Shine', 'sousTitre': 'All that glimmers is not gold, but these office supplies are!' },
-    'article3': { 'lienTag': '', 'tag': 'WHAT TO BUY', 'titreLien': '', 'titre': '13 Cozy Throw Blankets of 2022 to Ward Off Chilly Nights', 'sousTitre': 'Winter, we\’re ready for you.' }
+    'articles': [
+        { 'lienTag': '', 'tag': 'HOLIDAY', 'titreLien': '', 'titre': '15 Scandi-Inspired Christmas Decorations for All the Holiday Hygge', 'sousTitre': 'Everything you need to create the coziest vibes at home this season.' },
+        { 'lienTag': '', 'tag': 'HOME DECOR', 'titreLien': '', 'titre': '15 Stylish Desk Accessories to Make Your Office Shine', 'sousTitre': 'All that glimmers is not gold, but these office supplies are!' },
+        { 'lienTag': '', 'tag': 'WHAT TO BUY', 'titreLien': '', 'titre': '13 Cozy Throw Blankets of 2022 to Ward Off Chilly Nights', 'sousTitre': 'Winter, we\’re ready for you.' }
+    ],
+    
 }
 
 const newestRecipes = {

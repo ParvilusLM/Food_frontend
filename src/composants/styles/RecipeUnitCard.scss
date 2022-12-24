@@ -10,8 +10,8 @@
 
         .recipe--unit-img--container {
             display: flex;
-            
             justify-content: center;
+
             .dr1 {
                 max-width: 100%;
                 width: 228px;
@@ -34,11 +34,7 @@
             }
         }
 
-        @media only screen and (min-width: 768px) {
-            & {
-                width: auto;
-            }
-        }
+        
     }
 
     .recipe--unit-details {
@@ -67,7 +63,6 @@
 
         @media only screen and (min-width: 768px) {
             & {
-                text-align: center;
                 width: auto;
             }
         }
@@ -98,6 +93,8 @@
 @media only screen and (min-width: 768px) {
     .recipe--unit-container {
         .recipe--unit-img--link {
+            width: auto;
+            
             .recipe--unit-img--container {
                 .dr1 {
                     .dr1--1 {
