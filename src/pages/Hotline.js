@@ -1,8 +1,15 @@
-import React from 'react'
+import React, {Fragment} from 'react'
+import './styles/Hotline.scss'
+import loadable from '@loadable/component'
+
+const FragHotline = loadable(() => import('../fragments/FragHotline'))
 
 function Hotline() {
   return (
-    <div>Hotline</div>
+    <Fragment>
+      <FragHotline />
+    </Fragment>
+
   )
 }
 

@@ -1,8 +1,12 @@
-import React from 'react'
+import React, {Fragment} from 'react'
+import './styles/FragHotline.scss'
+import loadable from '@loadable/component'
 
 function FragHotline() {
   return (
-    <div>FragHotline</div>
+    <Fragment>
+      <h1>FragHotline </h1>
+    </Fragment>
   )
 }
 

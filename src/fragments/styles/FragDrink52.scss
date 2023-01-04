@@ -1,0 +1,115 @@
+.fragDrink52 {
+    .content--container {
+        .img--mobile-full {
+            width: calc(100% + 32px);
+            margin-left: -16px;
+
+            .tag--page-hero--img {
+                .d1 {
+                    max-width: 100%;
+                    width: 1348px;
+
+                    .d1--1 {
+                        height: 0;
+                        padding-bottom: 50.0%;
+                        position: relative;
+
+                        .image {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tag--page-section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .content--section {
+
+        }
+    }
+
+    .ad--slot {
+        margin-bottom: 30px;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .tag--page-ad--slot {
+        background: #fafafa;
+        margin: 50px 0;
+        padding: 15px 0 40px;
+    }
+
+    .tag--page-section {
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .fragDrink52 {
+        .content--container {
+            .img--mobile-full {
+                width: 100%;
+                margin-left: 0;
+
+                .tag--page-hero--img {
+                    .d1 {
+                        .d1--1 {
+                            .image {}
+                        }
+                    }
+                }
+            }
+        }
+
+        .tag--page-section {
+            .content--section {}
+        }
+
+        .ad--slot {}
+
+        .tag--page-ad--slot {
+            padding: 32px 0;
+        }
+
+        .tag--page-section {
+            
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .fragDrink52 {
+        .content--container {
+            .img--mobile-full {
+                .tag--page-hero--img {
+                    margin-top: 30px;
+
+                    .d1 {
+                        .d1--1 {
+                            .image {}
+                        }
+                    }
+                }
+            }
+        }
+
+        .tag--page-section {
+            .content--section {}
+        }
+
+        .ad--slot {}
+
+        .tag--page-section {
+            
+        }
+    }
+}

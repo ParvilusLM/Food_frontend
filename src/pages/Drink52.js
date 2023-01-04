@@ -1,10 +1,13 @@
 import React, {Fragment} from 'react'
+import loadable from '@loadable/component'
+
+const FragDrink52 = loadable(() => import('../fragments/FragDrink52'))
 
 
 function Drink52() {
   return (
     <Fragment>
-        <div>Drink52</div>
+      <FragDrink52 />
     </Fragment>
   )
 }

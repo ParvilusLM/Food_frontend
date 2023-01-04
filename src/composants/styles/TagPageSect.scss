@@ -1,0 +1,78 @@
+.fragPageSect {
+    .content--row {
+
+
+        .content--main {
+            .tag--post {
+                margin-bottom: 18px;
+                position: relative;
+                text-align: left;
+            }
+
+            .pagination--text {
+                margin-bottom: 26px;
+                font-weight: 400;
+                font-family: "Chronicle SSm A", serif;
+                font-size: 13px;
+                color: #909090;
+                font-style: italic;
+                text-align: center;
+            }
+        }
+
+        .sidebar {
+            display: none;
+            top: -651px;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .fragPageSect {
+        .content--row {
+            .content--main {
+                .tag--post {
+                    display: flex;
+                    margin-bottom: 30px;
+                }
+    
+                .pagination--text {}
+            }
+    
+            .sidebar {
+                .ad--slot-aside {
+                    width: 300px;
+                    min-height: 250px;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .fragPageSect {
+        .content--row {
+            display: flex;
+            align-items: flex-start;
+    
+            .content--main {
+                .tag--post {}
+    
+                .pagination--text {}
+            }
+    
+            .sidebar {
+                display: block;
+                padding-left: 40px;
+                flex-shrink: 0;
+                -webkit-position: -webkit-sticky;
+                position: sticky;
+    
+                .ad--slot-aside {
+                    margin-bottom: 45px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,294 @@
+.tagPost {
+    display: flex;
+    flex-direction: column;
+
+    .collection--widget-root {
+        .collection--widget {
+            .collection--save {
+                background: none;
+                border: solid 1px #57696d;
+                border-radius: 18px;
+                padding: 0 16px 0 18px;
+                outline: none;
+                font-weight: 400;
+                font-family: "Gotham SSm A", sans-serif;
+                color: #57696d;
+                font-size: 14px;
+                line-height: 34px;
+                letter-spacing: -0.1px;
+                text-transform: uppercase;
+                display: inline-flex;
+                align-items: center;
+                cursor: pointer;
+                margin: 0;
+
+                .collection--save-icon {
+                    background-size: 100% auto;
+                    background-repeat: no-repeat;
+                    width: 1em;
+                    height: 1em;
+                    display: inline-block;
+                    color: transparent;
+                    transition: color 0.1s linear;
+                    margin-right: 8px;
+                    font-size: 17px;
+                }
+            }
+
+            .btn--pill {
+                background-color: #fff;
+                color: #57696d;
+                cursor: pointer;
+                text-decoration: none;
+                pointer-events: auto;
+            }
+        }
+    }
+
+    .tagPost--save-flag {
+        position: absolute;
+        top: 10px;
+        left: 0;
+        z-index: 2;
+
+        .collection--widget {
+            .collection--save {
+                background: rgba(255, 255, 255, 0.94);
+                color: #57696d;
+                padding: 0 8px;
+                font-weight: 500;
+                font-family: "Gotham SSm A", sans-serif;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                text-decoration: none;
+                pointer-events: auto;
+                height: 25px;
+                border: none;
+                outline: none;
+                font-size: 13px;
+                font-weight: inherit;
+                line-height: 25px;
+                border-radius: 0;
+
+                
+            }
+        }
+    }
+
+    .tagPost--image-link {
+        position: relative;
+
+        .tagPost--save-flag {
+            display: block;
+        }
+
+        .d1 {
+            max-width: 100%;
+            width: 764px;
+
+            .d1--1 {
+                height: 0;
+                padding-bottom: 64.66%;
+                position: relative;
+
+                .image {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                }
+            }
+        }
+
+        
+    }
+
+    .tagPost--body {
+        min-width: 0;
+        padding: 21px 0 14px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .tagPost--tag-link {
+            color: #a18f7a;
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .tagPost--header {
+            font-weight: 500;
+            font-family: "Chronicle SSm A", serif;
+            font-size: 19px;
+            line-height: 1.42;
+            margin-bottom: 9px;
+
+            .tagPost--header-link {
+                font-weight: 600;
+            }
+        }
+
+        .dek {
+            margin: 0;
+
+            .dek--link {
+                font-weight: 500;
+                font-family: "Chronicle SSm A", serif;
+                display: block;
+                font-size: 14px;
+                font-style: italic;
+                line-height: 1.41;
+                color: #444;
+            }
+        }
+
+        .tagPost--meta {
+            display: none;
+            margin-bottom: 22px;
+            font-size: 14px;
+            line-height: 1.35;
+            color: #909090;
+
+            .tagPost--meta-author {
+               .meta--by {
+
+               }
+
+               .meta--caps-link {
+                    font-size: 12px;
+                    letter-spacing: 0.6px;
+                    text-transform: uppercase;
+                    color: #909090;
+                }
+            }
+
+            .meta--date {
+                font-weight: 400;
+                font-family: "Chronicle SSm A", serif;
+                font-style: italic;
+                margin-left: 10px;
+                border-left: 1px solid #c4c4c4;
+                padding-left: 10px;
+            }
+        }
+
+        
+
+        .tagPost--save-pill {
+            display: none;
+        }
+
+        
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .tagPost {
+        flex-direction: row;
+
+        .tagPost--image-link {
+            margin-right: 21px;
+            width: 290px;
+
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+        }
+
+        .tagPost--body {
+            padding: 0;
+
+            .tagPost--tag-link {}
+
+            .tagPost--header {
+                .tagPost--header-link {}
+            }
+
+            .dek {
+                .dek--link {}
+            }
+
+            .tagPost--meta {
+                margin: 20px 0;
+                line-height: 19px;
+                display: flex;
+                justify-content: flex-start;
+
+                .tagPost--meta-author {
+                    .meta--by {
+                        font-weight: 400;
+                        font-family: "Chronicle SSm A", serif;
+                        font-size: 11px;
+                        font-style: italic;
+                    }
+
+                    .meta--caps-link {
+                        font-size: 13px;
+                        letter-spacing: normal;
+                    }
+                }
+
+                .meta--date {
+                    margin-left: 10px;
+                    border-left: 1px solid #c4c4c4;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .tagPost {
+        .tagPost--image-link {
+            width: 322px;
+
+            .tagPost--save-flag {
+                display: none;
+            }
+
+            .d1 {
+                .d1--1 {
+                    .image {}
+                }
+            }
+
+            
+        }
+
+        .tagPost--body {
+            .tagPost--tag-link {}
+
+            .tagPost--header {
+                .tagPost--header-link {}
+            }
+
+            .dek {
+                .dek--link {}
+            }
+
+            .tagPost--meta {
+                .tagPost--meta-author {
+                    .meta--by {}
+
+                    .meta--caps-link {}
+                }
+
+                .meta--date {}
+            }
+
+            .tagPost--save-pill {
+                display: block;
+            }
+        }
+    }
+}

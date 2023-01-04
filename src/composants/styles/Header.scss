@@ -237,6 +237,7 @@
                                     width: 130px;
                                     margin-right: 4px;
                                     padding: 0;
+                                    margin-inline: auto;
 
                                     .global-nav__recipes-tags {
                                         display: flex;
@@ -598,9 +599,6 @@
                                 }
                             }
                         }
-
-                        
-
                         
                     }
 
@@ -614,6 +612,22 @@
 
                     .li-community .lien-nav[aria-expanded='true']~#communityDropdown {
                         display: flex;
+                        
+                        .global-nav__community {
+                            flex-direction: column;
+
+                            li {
+                                margin-inline: auto;
+                                width: auto;
+
+                                .wrapper1, p {
+                                    display: none;
+                                }
+
+                                
+                            }
+                        }
+                        
                     }
 
                     

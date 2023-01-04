@@ -50,7 +50,7 @@
                     justify-content: space-between;
                     overflow: hidden;
                     text-decoration: none;
-                    line-height: 34px;
+                    line-height: 34px; 
                     color: #fff;
 
                     .shop-nav__menu-caret {
@@ -101,8 +101,45 @@
                     }
                 }
 
+                .shop-nav__menu-dropdown {
+                    display: none;
+                }
+
                 
             }
+
+            .li--cookware .shop-nav__menu-link[aria-expanded='true']~#cookwareDropdown {
+                display: flex;
+            }
+
+            .li--appliances .shop-nav__menu-link[aria-expanded='true']~#appliancesDropdown {
+                display: flex;
+            }
+
+            .li--kitchen .shop-nav__menu-link[aria-expanded='true']~#kitchenDropdown {
+                display: flex;
+            }
+
+            .li--table .shop-nav__menu-link[aria-expanded='true']~#tableDropdown {
+                display: flex;
+            }
+
+            .li--home .shop-nav__menu-link[aria-expanded='true']~#homeDropdown {
+                display: flex;
+            }
+
+            .li--outdoor .shop-nav__menu-link[aria-expanded='true']~#outdoorDropdown {
+                display: flex;
+            }
+
+            .li--pantry .shop-nav__menu-link[aria-expanded='true']~#pantryDropdown {
+                display: flex;
+            }
+
+            .li--gifts .shop-nav__menu-link[aria-expanded='true']~#giftsDropdown {
+                display: flex;
+            }
+
 
         }
         

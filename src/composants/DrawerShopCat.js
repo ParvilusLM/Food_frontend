@@ -1,12 +1,89 @@
 import React, {Fragment, useEffect, useState} from 'react'
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Popover from '@mui/material/Popover';
 import { Link } from 'react-router-dom';
 import './styles/DrawerShopCat.scss'
+import $ from 'jquery'
 
 function DrawerShopCat() {
   const [state, setState] = React.useState({top: false});
+
+  useEffect(() => {
+
+      $('.li--cookware').on('click', function () {
+          const valAttr = $('.lien--nav-cookware--exp').attr('aria-expanded');
+          if (valAttr === 'true') {
+              $('.lien--nav-cookware--exp').attr('aria-expanded', 'false');
+          } else {
+              $('.lien--nav-cookware--exp').attr('aria-expanded', 'true');
+          }
+      });
+
+      $('.li--appliances').on('click', function () {
+          const valAttr = $('.lien--nav-appliances--exp').attr('aria-expanded');
+          if (valAttr === 'true') {
+              $('.lien--nav-appliances--exp').attr('aria-expanded', 'false');
+          } else {
+              $('.lien--nav-appliances--exp').attr('aria-expanded', 'true');
+          }
+
+      });
+
+      $('.li--kitchen').on('click', function () {
+          const valAttr = $('.lien--nav-kitchen--exp').attr('aria-expanded');
+          if (valAttr === 'true') {
+              $('.lien--nav-kitchen--exp').attr('aria-expanded', 'false');
+          } else {
+              $('.lien--nav-kitchen--exp').attr('aria-expanded', 'true');
+          }
+      });
+
+      $('.li--table').on('click', function () {
+          const valAttr = $('.lien--nav-table--exp').attr('aria-expanded');
+          if (valAttr === 'true') {
+              $('.lien--nav-table--exp').attr('aria-expanded', 'false');
+          } else {
+              $('.lien--nav-table--exp').attr('aria-expanded', 'true');
+          }
+      });
+
+      $('.li--home').on('click', function () {
+          const valAttr = $('.lien--nav-home--exp').attr('aria-expanded');
+          if (valAttr === 'true') {
+              $('.lien--nav-home--exp').attr('aria-expanded', 'false');
+          } else {
+              $('.lien--nav-home--exp').attr('aria-expanded', 'true');
+          }
+      });
+
+      $('.li--outdoor').on('click', function () {
+          const valAttr = $('.lien--nav-outdoor--exp').attr('aria-expanded');
+          if (valAttr === 'true') {
+              $('.lien--nav-outdoor--exp').attr('aria-expanded', 'false');
+          } else {
+              $('.lien--nav-outdoor--exp').attr('aria-expanded', 'true');
+          }
+      });
+
+      $('.li--pantry').on('click', function () {
+          const valAttr = $('.lien--nav-pantry--exp').attr('aria-expanded');
+          if (valAttr === 'true') {
+              $('.lien--nav-pantry--exp').attr('aria-expanded', 'false');
+          } else {
+              $('.lien--nav-pantry--exp').attr('aria-expanded', 'true');
+          }
+      });
+
+      $('.li--gifts').on('click', function () {
+          const valAttr = $('.lien--nav-gifts--exp').attr('aria-expanded');
+          if (valAttr === 'true') {
+              $('.lien--nav-gifts--exp').attr('aria-expanded', 'false');
+          } else {
+              $('.lien--nav-gifts--exp').attr('aria-expanded', 'true');
+          }
+      });
+
+  }, []);
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -31,12 +108,12 @@ function DrawerShopCat() {
         <ul className="shop-nav__menu-list">
           <li className="shop-nav__menu-heading">Shop Categories</li>
           <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+            <Link to='' className="shop-nav__menu-link">
               <span>New Arrivals</span>
             </Link>
           </li>
-          <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+          <li className="shop-nav__menu-item li--cookware">
+            <Link aria-haspopup='true' aria-expanded='false' aria-controls='cookwareDropdown' to='' className="shop-nav__menu-link lien--nav-cookware--exp">
               <span>Cookware</span>
               <span className="shop-nav__menu-caret">
                 <span className="icon icon__arrow"></span>
@@ -102,8 +179,8 @@ function DrawerShopCat() {
               </div>
             </div>
           </li>
-          <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+          <li className="shop-nav__menu-item li--appliances">
+            <Link aria-haspopup='true' aria-expanded='false' aria-controls='appliancesDropdown' to='' className="shop-nav__menu-link lien--nav-appliances--exp">
               <span>Appliances</span>
               <span className="shop-nav__menu-caret">
                 <span className="icon icon__arrow"></span>
@@ -140,8 +217,8 @@ function DrawerShopCat() {
               </div>
             </div>
           </li>
-          <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+          <li className="shop-nav__menu-item li--kitchen">
+            <Link aria-haspopup='true' aria-expanded='false' aria-controls='kitchenDropdown' to='' className="shop-nav__menu-link lien--nav-kitchen--exp">
               <span>Kitchen</span>
               <span className="shop-nav__menu-caret">
                 <span className="icon icon__arrow"></span>
@@ -225,8 +302,8 @@ function DrawerShopCat() {
               </div>
             </div>
           </li>
-          <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+          <li className="shop-nav__menu-item li--table">
+            <Link aria-haspopup='true' aria-expanded='false' aria-controls='tableDropdown' to='' className="shop-nav__menu-link lien--nav-table--exp">
               <span>Table</span>
               <span className="shop-nav__menu-caret">
                 <span className="icon icon__arrow"></span>
@@ -301,8 +378,8 @@ function DrawerShopCat() {
               </div>
             </div>
           </li>
-          <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+          <li className="shop-nav__menu-item li--home">
+            <Link aria-haspopup='true' aria-expanded='false' aria-controls='homeDropdown' to='' className="shop-nav__menu-link lien--nav-home--exp">
               <span>Home</span>
               <span className="shop-nav__menu-caret">
                 <span className="icon icon__arrow"></span>
@@ -389,36 +466,36 @@ function DrawerShopCat() {
               </div>
             </div>
           </li>
-          <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+          <li className="shop-nav__menu-item li--outdoor">
+            <Link aria-haspopup='true' aria-expanded='false' aria-controls='outdoorDropdown' to='' className="shop-nav__menu-link lien--nav-outdoor--exp">
               <span>Outdoor</span>
               <span className="shop-nav__menu-caret">
                 <span className="icon icon__arrow"></span>
               </span>
             </Link>
             <div className="shop-nav__menu-dropdown" id='outdoorDropdown'>
-            <div className="shop-nav__menu-cats shop-nav__menu-cats--wide">
-                <ul>
-                  <li>
-                    <Link className="lien" to='/'>All Outdoor</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Beach & Picnic Accessories</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Doormats & Outdoor Rugs</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Gardening Tools</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Outdoor Lighting</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Plants, Wreaths, & Garlands</Link>
-                  </li>
-                  
-                </ul>
+              <div className="shop-nav__menu-cats shop-nav__menu-cats--wide">
+                  <ul>
+                    <li>
+                      <Link className="lien" to='/'>All Outdoor</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Beach & Picnic Accessories</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Doormats & Outdoor Rugs</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Gardening Tools</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Outdoor Lighting</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Plants, Wreaths, & Garlands</Link>
+                    </li>
+                    
+                  </ul>
               </div>
               <div className="shop-nav__menu-brans">
                 <h4>Shop by Brand</h4>
@@ -448,53 +525,53 @@ function DrawerShopCat() {
               </div>
             </div>
           </li>
-          <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+          <li className="shop-nav__menu-item li--pantry">
+            <Link aria-haspopup='true' aria-expanded='false' aria-controls='pantryDropdown' to='' className="shop-nav__menu-link lien--nav-pantry--exp">
               <span>Pantry</span>
               <span className="shop-nav__menu-caret">
                 <span className="icon icon__arrow"></span>
               </span>
             </Link>
-            <div className="shop-nav__menu-dropdown" id='pantrytDropdown'>
-            <div className="shop-nav__menu-cats shop-nav__menu-cats--wide">
-                <ul>
-                  <li>
-                    <Link className="lien" to='/'>All Pantry</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Candy & CHocolate</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Cheese & Charcuterie</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Coffee, Tea & Hot Chocolate</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Holiday Snacks & Treats</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Honey, Syrus & Jam</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>International Pantry</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Non-Alcoholic Drinks</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Oils & Vinegars</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Salt, Spices & Herbs</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Sauces & Condiments</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Specialty & Seaaonal Foods</Link>
-                  </li>
-                </ul>
+            <div className="shop-nav__menu-dropdown" id='pantryDropdown'>
+              <div className="shop-nav__menu-cats shop-nav__menu-cats--wide">
+                  <ul>
+                    <li>
+                      <Link className="lien" to='/'>All Pantry</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Candy & CHocolate</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Cheese & Charcuterie</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Coffee, Tea & Hot Chocolate</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Holiday Snacks & Treats</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Honey, Syrus & Jam</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>International Pantry</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Non-Alcoholic Drinks</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Oils & Vinegars</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Salt, Spices & Herbs</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Sauces & Condiments</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Specialty & Seaaonal Foods</Link>
+                    </li>
+                  </ul>
               </div>
               <div className="shop-nav__menu-brans">
                 <h4>Shop by Brand</h4>
@@ -524,74 +601,74 @@ function DrawerShopCat() {
               </div>
             </div>
           </li>
-          <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+          <li className="shop-nav__menu-item li--gifts">
+            <Link aria-haspopup='true' aria-expanded='false' aria-controls='giftsDropdown' to='' className="shop-nav__menu-link lien--nav-gifts--exp">
               <span>Gifts</span>
               <span className="shop-nav__menu-caret">
                 <span className="icon icon__arrow"></span>
               </span>
             </Link>
             <div className="shop-nav__menu-dropdown" id='giftsDropdown'>
-            <div className="shop-nav__menu-cats shop-nav__menu-cats--wide">
-                <ul>
-                  <li>
-                    <Link className="lien" to='/'>All Gifts</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Cooking Gifts</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Easther Decorations</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Father's Day Gifts</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Food Gifts</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Gardening Gifts</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Gift Cards</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Gifts for the Host</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Gifts from Underrepresented Makers</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Gifts under $100</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Gifts under $50</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Handmade Gifts</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Mother's Day Gifts</Link>
-                  </li>
-                  <li>
-                    <Link className="lien" to='/'>Unique Gifts</Link>
-                  </li>
-                </ul>
+              <div className="shop-nav__menu-cats shop-nav__menu-cats--wide">
+                  <ul>
+                    <li>
+                      <Link className="lien" to='/'>All Gifts</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Cooking Gifts</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Easther Decorations</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Father's Day Gifts</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Food Gifts</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Gardening Gifts</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Gift Cards</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Gifts for the Host</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Gifts from Underrepresented Makers</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Gifts under $100</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Gifts under $50</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Handmade Gifts</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Mother's Day Gifts</Link>
+                    </li>
+                    <li>
+                      <Link className="lien" to='/'>Unique Gifts</Link>
+                    </li>
+                  </ul>
               </div>
             </div>
           </li>
           <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+            <Link to='' className="shop-nav__menu-link">
               <span>Dansk</span>
             </Link>
           </li>
           <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+            <Link to='' className="shop-nav__menu-link">
               <span>FIVE.TWO</span>
             </Link>
           </li>
           <li className="shop-nav__menu-item">
-            <Link to='/' className="shop-nav__menu-link">
+            <Link to='' className="shop-nav__menu-link">
               <span>SCHOOLHOUSE</span>
             </Link>
           </li>
@@ -599,6 +676,8 @@ function DrawerShopCat() {
       </div>
     </Box>
   )
+
+  
 
   return (
     <Fragment>

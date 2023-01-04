@@ -36,7 +36,7 @@ function RecipeCard(props) {
                         <div className="collection--widget">
                             <button className="btn-pill collection--save-caret collection--save">
                                 <svg className="icon collection--save-icon">
-                                    <path fill="#a18f7a" stroke="#57696d" d="M12.5,16.5l-6-2.8l-6,2.8v-16h12V16.5z"></path>
+                                    <path fill="transparent" stroke="#57696d" d="M12.5,16.5l-6-2.8l-6,2.8v-16h12V16.5z"></path>
                                 </svg>
                                 Save
                             </button>
