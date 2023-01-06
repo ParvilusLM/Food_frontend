@@ -6,84 +6,7 @@ import './styles/DrawerShopCat.scss'
 import $ from 'jquery'
 
 function DrawerShopCat() {
-  const [state, setState] = React.useState({top: false});
-
-  useEffect(() => {
-
-      $('.li--cookware').on('click', function () {
-          const valAttr = $('.lien--nav-cookware--exp').attr('aria-expanded');
-          if (valAttr === 'true') {
-              $('.lien--nav-cookware--exp').attr('aria-expanded', 'false');
-          } else {
-              $('.lien--nav-cookware--exp').attr('aria-expanded', 'true');
-          }
-      });
-
-      $('.li--appliances').on('click', function () {
-          const valAttr = $('.lien--nav-appliances--exp').attr('aria-expanded');
-          if (valAttr === 'true') {
-              $('.lien--nav-appliances--exp').attr('aria-expanded', 'false');
-          } else {
-              $('.lien--nav-appliances--exp').attr('aria-expanded', 'true');
-          }
-
-      });
-
-      $('.li--kitchen').on('click', function () {
-          const valAttr = $('.lien--nav-kitchen--exp').attr('aria-expanded');
-          if (valAttr === 'true') {
-              $('.lien--nav-kitchen--exp').attr('aria-expanded', 'false');
-          } else {
-              $('.lien--nav-kitchen--exp').attr('aria-expanded', 'true');
-          }
-      });
-
-      $('.li--table').on('click', function () {
-          const valAttr = $('.lien--nav-table--exp').attr('aria-expanded');
-          if (valAttr === 'true') {
-              $('.lien--nav-table--exp').attr('aria-expanded', 'false');
-          } else {
-              $('.lien--nav-table--exp').attr('aria-expanded', 'true');
-          }
-      });
-
-      $('.li--home').on('click', function () {
-          const valAttr = $('.lien--nav-home--exp').attr('aria-expanded');
-          if (valAttr === 'true') {
-              $('.lien--nav-home--exp').attr('aria-expanded', 'false');
-          } else {
-              $('.lien--nav-home--exp').attr('aria-expanded', 'true');
-          }
-      });
-
-      $('.li--outdoor').on('click', function () {
-          const valAttr = $('.lien--nav-outdoor--exp').attr('aria-expanded');
-          if (valAttr === 'true') {
-              $('.lien--nav-outdoor--exp').attr('aria-expanded', 'false');
-          } else {
-              $('.lien--nav-outdoor--exp').attr('aria-expanded', 'true');
-          }
-      });
-
-      $('.li--pantry').on('click', function () {
-          const valAttr = $('.lien--nav-pantry--exp').attr('aria-expanded');
-          if (valAttr === 'true') {
-              $('.lien--nav-pantry--exp').attr('aria-expanded', 'false');
-          } else {
-              $('.lien--nav-pantry--exp').attr('aria-expanded', 'true');
-          }
-      });
-
-      $('.li--gifts').on('click', function () {
-          const valAttr = $('.lien--nav-gifts--exp').attr('aria-expanded');
-          if (valAttr === 'true') {
-              $('.lien--nav-gifts--exp').attr('aria-expanded', 'false');
-          } else {
-              $('.lien--nav-gifts--exp').attr('aria-expanded', 'true');
-          }
-      });
-
-  }, []);
+  const [state, setState] = useState({top: false});
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -95,7 +18,7 @@ function DrawerShopCat() {
 
   const containerDrawerSC = (anchor) => (
     <Box
-      sx={{minWidth: '100%', Height: '100vh' }}
+      sx={{minWidth: '100%', Height: '100%' }}
       role="presentation"
       className="container__boxSC"
       backgroundColor='#57696d'
@@ -675,8 +598,86 @@ function DrawerShopCat() {
         </ul>
       </div>
     </Box>
-  )
+  );
 
+
+  useEffect(() => {
+
+    $(() => {
+      $('.li--cookware').on('click', function () {
+        const valAttr = $('.lien--nav-cookware--exp').attr('aria-expanded');
+        if (valAttr === 'true') {
+            $('.lien--nav-cookware--exp').attr('aria-expanded', 'false');
+        } else {
+            $('.lien--nav-cookware--exp').attr('aria-expanded', 'true');
+        }
+      });
+
+      $('.li--appliances').on('click', function () {
+        const valAttr = $('.lien--nav-appliances--exp').attr('aria-expanded');
+        if (valAttr === 'true') {
+            $('.lien--nav-appliances--exp').attr('aria-expanded', 'false');
+        } else {
+            $('.lien--nav-appliances--exp').attr('aria-expanded', 'true');
+        }
+      });
+
+      $('.li--kitchen').on('click', function () {
+        const valAttr = $('.lien--nav-kitchen--exp').attr('aria-expanded');
+        if (valAttr === 'true') {
+            $('.lien--nav-kitchen--exp').attr('aria-expanded', 'false');
+        } else {
+            $('.lien--nav-kitchen--exp').attr('aria-expanded', 'true');
+        }
+      });
+
+      $('.li--table').on('click', function () {
+        const valAttr = $('.lien--nav-table--exp').attr('aria-expanded');
+        if (valAttr === 'true') {
+            $('.lien--nav-table--exp').attr('aria-expanded', 'false');
+        } else {
+            $('.lien--nav-table--exp').attr('aria-expanded', 'true');
+        }
+      });
+
+      $('.li--home').on('click', function () {
+        const valAttr = $('.lien--nav-home--exp').attr('aria-expanded');
+        if (valAttr === 'true') {
+            $('.lien--nav-home--exp').attr('aria-expanded', 'false');
+        } else {
+            $('.lien--nav-home--exp').attr('aria-expanded', 'true');
+        }
+      });
+
+      $('.li--outdoor').on('click', function () {
+        const valAttr = $('.lien--nav-outdoor--exp').attr('aria-expanded');
+        if (valAttr === 'true') {
+            $('.lien--nav-outdoor--exp').attr('aria-expanded', 'false');
+        } else {
+            $('.lien--nav-outdoor--exp').attr('aria-expanded', 'true');
+        }
+      });
+
+      $('.li--pantry').on('click', function () {
+        const valAttr = $('.lien--nav-pantry--exp').attr('aria-expanded');
+        if (valAttr === 'true') {
+            $('.lien--nav-pantry--exp').attr('aria-expanded', 'false');
+        } else {
+            $('.lien--nav-pantry--exp').attr('aria-expanded', 'true');
+        }
+      });
+
+      $('.li--gifts').on('click', function () {
+        const valAttr = $('.lien--nav-gifts--exp').attr('aria-expanded');
+        if (valAttr === 'true') {
+            $('.lien--nav-gifts--exp').attr('aria-expanded', 'false');
+        } else {
+            $('.lien--nav-gifts--exp').attr('aria-expanded', 'true');
+        }
+      });
+    })
+
+  });
   
 
   return (

@@ -397,7 +397,7 @@
                     font-size: 19px;
                     right: 15px;
                     top: 50px;
-                    z-index: 100;
+                    z-index: 5000;
                     appearance: none;
                     cursor: pointer;
                     opacity: 0.65;
@@ -608,17 +608,22 @@
 
                     .li-recipes .lien-nav[aria-expanded='true']~#the_recipesDropdown {
                         display: flex;
+
+                        .global-nav__recipes--row {
+                            padding: 20px 0 20px 0;
+                        }
                     }
 
                     .li-community .lien-nav[aria-expanded='true']~#communityDropdown {
                         display: flex;
-                        
+
                         .global-nav__community {
                             flex-direction: column;
 
                             li {
-                                margin-inline: auto;
+                                margin-right: auto;
                                 width: auto;
+                                text-align: left;
 
                                 .wrapper1, p {
                                     display: none;
