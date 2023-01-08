@@ -1,11 +1,44 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './styles/Footer.scss'
 import loadable from '@loadable/component'
+import $ from 'jquery'
 
 const NewsletterForm = loadable(() => import('./NewsletterForm'))
 
 function Footer() {
+
+    useEffect(() => {
+        $(() => {
+            $('.nav--company-exp').on('click', function () {
+            const valAttr = $('.nav--company-exp').attr('aria-expanded');
+            if (valAttr === 'true') {
+                $('.nav--company-exp').attr('aria-expanded', 'false');
+            } else {
+                $('.nav--company-exp').attr('aria-expanded', 'true');
+            }
+            });
+
+            $('.nav--help-exp').on('click', function () {
+            const valAttr = $('.nav--help-exp').attr('aria-expanded');
+            if (valAttr === 'true') {
+                $('.nav--help-exp').attr('aria-expanded', 'false');
+            } else {
+                $('.nav--help-exp').attr('aria-expanded', 'true');
+            }
+            });
+
+            $('.nav--explore-exp').on('click', function () {
+            const valAttr = $('.nav--explore-exp').attr('aria-expanded');
+            if (valAttr === 'true') {
+                $('.nav--explore-exp').attr('aria-expanded', 'false');
+            } else {
+                $('.nav--explore-exp').attr('aria-expanded', 'true');
+            }
+            });
+        })
+    });
+
     return (
         <Fragment>
             <footer className='footer'>
@@ -16,8 +49,8 @@ function Footer() {
                         </div>
                         <div className="footerLinksRoot">
                             <div className="footer__column">
-                                <h5 className="footer__subHeading">COMPANY</h5>
-                                <ul>
+                                <h5 aria-haspopup='true' aria-expanded='false' aria-controls='' className="footer__subHeading nav--company-exp">COMPANY</h5>
+                                <ul className='footer--nav-menu--dropdown' id='companyDropdown'>
                                     <li>
                                         <Link className='lien' to='/'>About Us</Link>
                                     </li>
@@ -51,8 +84,8 @@ function Footer() {
                                 </ul>
                             </div>
                             <div className="footer__column">
-                                <h5 className="footer__subHeading">GET HELP</h5>
-                                <ul>
+                                <h5 aria-haspopup='true' aria-expanded='false' aria-controls='' className="footer__subHeading nav--help-exp">GET HELP</h5>
+                                <ul className='footer--nav-menu--dropdown' id='helpDropdown'>
                                     <li>
                                         <Link className='lien' to='/'>Contact & FAQ</Link>
                                     </li>
@@ -80,8 +113,8 @@ function Footer() {
                                 </ul>
                             </div>
                             <div className="footer__column">
-                                <h5 className="footer__subHeading">EXPLORE</h5>
-                                <ul>
+                                <h5 aria-haspopup='true' aria-expanded='false' aria-controls='' className="footer__subHeading nav--explore-exp">EXPLORE</h5>
+                                <ul className='footer--nav-menu--dropdown' id='exploreDropdown'>
                                     <li>
                                         <Link className='lien' to='/'>The Shop</Link>
                                     </li>

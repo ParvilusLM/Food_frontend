@@ -1,0 +1,62 @@
+.fragHome {
+    .content--container {
+        .img--mobile-full {
+
+        }
+    }
+
+    .tag--page-section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+
+        .home52--section {
+            text-align: left;
+        }
+    }
+
+    .ad--slot {
+
+    }
+
+    .tag--page-ad--slot {
+
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .fragHome {
+        .content--container {
+            .img--mobile-full {}
+        }
+
+        .tag--page-section {
+            .home52--section {}
+        }
+
+        .ad--slot {}
+
+        .tag--page-ad--slot {}
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .fragHome {
+        .content--container {
+
+            @media only screen and (min-width: 1400px) {
+                max-width: 1400px;
+                padding: 0 26px;
+            }
+
+            .img--mobile-full {}
+        }
+
+        .tag--page-section {
+            .home52--section {}
+        }
+
+        .ad--slot {}
+
+        .tag--page-ad--slot {}
+    }
+} 

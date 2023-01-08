@@ -3,9 +3,13 @@
 .footer {
     display: flex;
     background-color: #57696d;
-    color: white;
     width: 100%;
     padding: 20px 0 50px;
+    background: #57696d;
+    color: #fff;
+    font-size: 13px;
+    line-height: 2.77em;
+    clear: both;
 
     .footer__container {
         display: flex;
@@ -21,7 +25,6 @@
                 display: flex;
                 height: 60px;
                 width: 100%;
-
             }
 
             .footerLinksRoot {
@@ -175,8 +178,10 @@
 
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 768px) {
     .footer {
+        padding: 18px 16px 92px 16px;
+
         .footer__container {
             .footer__nav {
                 .footerLinksRoot {
@@ -202,18 +207,43 @@
                         }
 
                         ul {
+                            display: none;
+                            flex-direction: column;
                             margin-top: -7px;
                             padding-bottom: 25px;
                             font-weight: 400;
                             text-transform: none;
                             list-style: none;
                         }
+
+                        .nav--company-exp[aria-expanded='true']~#companyDropdown {
+                            display: flex;
+                            
+                        }
+
+                        .nav--help-exp[aria-expanded='true']~#helpDropdown {
+                            display: flex;
+                        }
+
+                        .nav--explore-exp[aria-expanded='true']~#exploreDropdown {
+                            display: flex;
+                        }
+                    }
+                }
+
+                .footer__fine-print {
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    .footer__copyright, .lien {
+                        height: fit-content;
                     }
                 }
             }
 
             .footer__actions {
                 padding-top: 10px;
+                min-width: calc(320px - 32px);
             }
         }
     }
@@ -224,7 +254,7 @@
 
 
 
-@media only screen and (max-width: 1005px) {
+@media only screen and (max-width: 1024px) {
     .footer {
         .footer__container {
             display: flex;
