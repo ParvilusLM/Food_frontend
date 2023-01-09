@@ -204,6 +204,58 @@
                         .footer__subHeading {
                             padding: 22px 0 19px 0;
                             line-height: normal;
+                            margin-bottom: 0;
+                            justify-content: space-between;
+                            align-items: center;
+                            display: flex;
+                            cursor: pointer;
+
+                            .company--exp-icon, .help--exp-icon, .explore--exp-icon {
+                                height: 1em;
+                                border-color: inherit;
+                                font-size: 11px;
+                                position: relative;
+                                display: inline-flex;
+                                -webkit-box-align: center;
+                                align-items: center;
+                            }
+
+                            .plus--caret {
+                                &::before, &::after {
+                                    content: " ";
+                                    width: 1em;
+                                    height: 0px;
+                                    border-top-width: 1px;
+                                    border-top-style: solid;
+                                    border-radius: 0.5px;
+                                    border-color: inherit;
+                                    transform: rotate(0deg);
+                                    transform-origin: center center;
+                                }
+
+                                &::after {
+                                    content: " ";
+                                    transform: rotate(90deg);
+                                    transform-origin: center center;
+                                    position: absolute;
+                                    top: calc(50% - 0.5px);
+                                    left: 0px;
+                                }
+                            }
+
+                            .minus--caret {
+                                &::before {
+                                    content: " ";
+                                    width: 1em;
+                                    height: 0px;
+                                    border-top-width: 1px;
+                                    border-top-style: solid;
+                                    border-radius: 0.5px;
+                                    border-color: inherit;
+                                    transform: rotate(0deg);
+                                    transform-origin: center center;
+                                }
+                            }
                         }
 
                         ul {

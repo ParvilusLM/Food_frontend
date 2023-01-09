@@ -14,8 +14,14 @@ function Footer() {
             const valAttr = $('.nav--company-exp').attr('aria-expanded');
             if (valAttr === 'true') {
                 $('.nav--company-exp').attr('aria-expanded', 'false');
+
+                $('.company--exp-icon').addClass('plus--caret');
+                $('.company--exp-icon').removeClass('minus--caret');
             } else {
                 $('.nav--company-exp').attr('aria-expanded', 'true');
+
+                $('.company--exp-icon').addClass('minus--caret');
+                $('.company--exp-icon').removeClass('plus--caret');
             }
             });
 
@@ -23,8 +29,14 @@ function Footer() {
             const valAttr = $('.nav--help-exp').attr('aria-expanded');
             if (valAttr === 'true') {
                 $('.nav--help-exp').attr('aria-expanded', 'false');
+
+                $('.help--exp-icon').addClass('plus--caret');
+                $('.help--exp-icon').removeClass('minus--caret');
             } else {
                 $('.nav--help-exp').attr('aria-expanded', 'true');
+
+                $('.help--exp-icon').addClass('minus--caret');
+                $('.help--exp-icon').removeClass('plus--caret');
             }
             });
 
@@ -32,8 +44,14 @@ function Footer() {
             const valAttr = $('.nav--explore-exp').attr('aria-expanded');
             if (valAttr === 'true') {
                 $('.nav--explore-exp').attr('aria-expanded', 'false');
+
+                $('.explore--exp-icon').addClass('plus--caret');
+                $('.explore--exp-icon').removeClass('minus--caret');
             } else {
                 $('.nav--explore-exp').attr('aria-expanded', 'true');
+
+                $('.explore--exp-icon').addClass('minus--caret');
+                $('.explore--exp-icon').removeClass('plus--caret');
             }
             });
         })
@@ -49,7 +67,7 @@ function Footer() {
                         </div>
                         <div className="footerLinksRoot">
                             <div className="footer__column">
-                                <h5 aria-haspopup='true' aria-expanded='false' aria-controls='' className="footer__subHeading nav--company-exp">COMPANY</h5>
+                                <h5 aria-haspopup='true' aria-expanded='false' aria-controls='' className="footer__subHeading nav--company-exp">COMPANY <span className='company--exp-icon plus--caret'></span></h5>
                                 <ul className='footer--nav-menu--dropdown' id='companyDropdown'>
                                     <li>
                                         <Link className='lien' to='/'>About Us</Link>
@@ -84,7 +102,7 @@ function Footer() {
                                 </ul>
                             </div>
                             <div className="footer__column">
-                                <h5 aria-haspopup='true' aria-expanded='false' aria-controls='' className="footer__subHeading nav--help-exp">GET HELP</h5>
+                                <h5 aria-haspopup='true' aria-expanded='false' aria-controls='' className="footer__subHeading nav--help-exp">GET HELP <span className='help--exp-icon plus--caret'></span></h5>
                                 <ul className='footer--nav-menu--dropdown' id='helpDropdown'>
                                     <li>
                                         <Link className='lien' to='/'>Contact & FAQ</Link>
@@ -113,7 +131,7 @@ function Footer() {
                                 </ul>
                             </div>
                             <div className="footer__column">
-                                <h5 aria-haspopup='true' aria-expanded='false' aria-controls='' className="footer__subHeading nav--explore-exp">EXPLORE</h5>
+                                <h5 aria-haspopup='true' aria-expanded='false' aria-controls='' className="footer__subHeading nav--explore-exp">EXPLORE <span className='explore--exp-icon plus--caret'></span></h5>
                                 <ul className='footer--nav-menu--dropdown' id='exploreDropdown'>
                                     <li>
                                         <Link className='lien' to='/'>The Shop</Link>

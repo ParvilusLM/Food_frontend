@@ -34,11 +34,12 @@
 
             .shop-nav__menu-heading {
                 padding-bottom: 7px;
-                font-weight: 500;
                 font-family: "Chronicle SSm A", serif;
                 font-size: 20px;
                 font-style: italic;
                 text-align: center;
+                font-weight: bolder;
+                line-height: 22px;
             }
 
             .shop-nav__menu-item {
@@ -52,6 +53,7 @@
                     text-decoration: none;
                     line-height: 34px; 
                     color: #fff;
+                    font-weight: bold;
 
                     .shop-nav__menu-caret {
                         transition: transform 0.1s linear;
@@ -103,6 +105,25 @@
 
                 .shop-nav__menu-dropdown {
                     display: none;
+                    flex-direction: column;
+
+                    h4 {
+                        font-weight: bold;
+                    }
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        margin-left: 20px;
+                        margin-right: auto;
+
+                        li .lien {
+                            color: rgb(224, 216, 216);
+                            width: fit-content;
+                        }
+                    }
+
+                    
                 }
 
                 
