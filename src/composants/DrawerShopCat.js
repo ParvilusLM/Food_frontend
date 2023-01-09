@@ -18,7 +18,7 @@ function DrawerShopCat() {
 
   const containerDrawerSC = (anchor) => (
     <Box
-      sx={{minWidth: '100%', Height: '100%' }}
+      sx={{minWidth: '100%',minHeight: '100vh', Height: '100%' }}
       role="presentation"
       className="container__boxSC"
       backgroundColor='#57696d'
