@@ -377,6 +377,17 @@
                         }
                     }
 
+                    .mailing-list {
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        .mailing-list__form-container {
+                            width: 424px;
+                        }
+                    }
+
 
                 }
             }

@@ -525,6 +525,7 @@
 
                         .mailing--list-blurb {
                             font-size: 14px;
+                            margin-bottom: 30px;
                         }
                     }
 
@@ -532,6 +533,7 @@
                         margin-inline: auto;
                         position: relative;
                         max-width: 350px;
+                        
                     }
                 }
             }
@@ -1167,7 +1169,9 @@
                                 background-position: left;
                             }
 
-                            .mailing--list-blurb {}
+                            .mailing--list-blurb {
+                                margin-bottom: 0;
+                            }
                         }
 
                         .mailing--list-form--container {
