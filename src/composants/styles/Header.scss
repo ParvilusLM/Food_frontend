@@ -359,23 +359,26 @@
                         display: none;
                     }
 
-                    .li-shop:hover {
-                        .global-nav__menu-dropdown {
-                            display: flex;
-                        } 
-                    } 
-
-                    .li-recipes:hover {
-                        .global-nav__menu-dropdown {
-                            display: flex;
-                        } 
+                    .lien-nav--shop-exp, .lien-nav--recipes-exp, .lien-nav--community-exp {
+                        @media only screen and (min-width: 1024px) {
+                            pointer-events: none;
+                        }
+                        
                     }
 
-                    .li-community:hover {
-                        .global-nav__menu-dropdown {
-                            display: flex;
-                        } 
+                    .li-shop .lien-nav[aria-expanded='true']~#the_shopDropdown {
+                        display: flex;
                     }
+
+                    .li-recipes .lien-nav[aria-expanded='true']~#the_recipesDropdown {
+                        display: flex;
+                    }
+
+                    .li-community .lien-nav[aria-expanded='true']~#communityDropdown {
+                        display: flex;
+                    }
+
+                                        
                 }
             }
 

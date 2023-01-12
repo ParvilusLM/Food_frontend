@@ -12,60 +12,78 @@ function Header() {
 
     useEffect(() => {
 
-        $('.btn--link').on('click', function () {
-            $('.global-nav__menu').addClass('global-nav__menu--expanded');
-        });
+        $(() => {
+            $('.btn--link').on('click', function () {
+                $('.global-nav__menu').addClass('global-nav__menu--expanded');
+            });
 
-        $('.close').on('click', function () {
-            $('.global-nav__menu').removeClass('global-nav__menu--expanded');
-        });
-
-
-        $('.li-shop').on('click', function () {
-            const valAttr = $('.lien-nav--shop-exp').attr('aria-expanded');
-            if (valAttr === 'true') {
+            $('.close').on('click', function () {
+                $('.global-nav__menu').removeClass('global-nav__menu--expanded');
                 $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
-            } else {
-                $('.lien-nav--shop-exp').attr('aria-expanded', 'true');
-            }
-
-        });
-
-        $('.li-recipes').on('click', function () {
-            const valAttr = $('.lien-nav--recipes-exp').attr('aria-expanded');
-            if (valAttr === 'true') {
                 $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
-            } else {
-                $('.lien-nav--recipes-exp').attr('aria-expanded', 'true');
-            }
-
-        });
-
-        $('.li-community').on('click', function () {
-            const valAttr = $('.lien-nav--community-exp').attr('aria-expanded');
-            if (valAttr === 'true') {
                 $('.lien-nav--community-exp').attr('aria-expanded', 'false');
-            } else {
-                $('.lien-nav--community-exp').attr('aria-expanded', 'true');
-            }
+            });
 
-        });
-
-
-
-        $(window).on('resize', function () {
-            let hasClassIn = $('.global-nav__menu').hasClass('global-nav__menu--expanded');
-            if (hasClassIn) {
-                let vp = $(window).width() + 17;
-                if (vp >= 1006) {
-                    $('.global-nav__menu').removeClass('global-nav__menu--expanded');
-
+            $('.li-shop').on('click', function () {
+                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || $(window).width() >= 1024) {
+                    const valAttr = $('.lien-nav--shop-exp').attr('aria-expanded');
+                    if (valAttr === 'true') {
+                        $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
+                    } else {
+                        $('.lien-nav--shop-exp').attr('aria-expanded', 'true');
+                        $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
+                        $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+                    }
                 }
-            }
+            });
+
+            $('.li-recipes').on('click', function () {
+                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || $(window).width() >= 1024) {
+                    const valAttr = $('.lien-nav--recipes-exp').attr('aria-expanded');
+                    if (valAttr === 'true') {
+                        $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
+                    } else {
+                        $('.lien-nav--recipes-exp').attr('aria-expanded', 'true');
+                        $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
+                        $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+                    }
+                }
+            });
+
+            $('.li-community').on('click', function () {
+                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || $(window).width() >= 1024) {
+                    const valAttr = $('.lien-nav--community-exp').attr('aria-expanded');
+                    if (valAttr === 'true') {
+                        $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+                    } else {
+                        $('.lien-nav--community-exp').attr('aria-expanded', 'true');
+                        $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
+                        $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
+                    }
+                }
+            });
+
+            $("#the_shopDropdown:has(.lien), #the_recipesDropdown:has(.lien-recipes), #communityDropdown:has(.lien-community) , .li--food, .li--drink52, .li--home52, .li--watch").on('click', function () {
+                if($('.global-nav__menu').hasClass('global-nav__menu--expanded')) {
+                    $('.global-nav__menu').removeClass('global-nav__menu--expanded');
+                }
+                
+                $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
+                $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
+                $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+            });
+
+            $(window).on('resize', function () {
+                let hasClassIn = $('.global-nav__menu').hasClass('global-nav__menu--expanded');
+                if (hasClassIn) {
+                    let vp = $(window).width() + 17;
+                    if (vp >= 1006) {
+                        $('.global-nav__menu').removeClass('global-nav__menu--expanded');
+                    }
+                }
+            })
 
         })
-
-
 
     });
 
@@ -574,22 +592,22 @@ function Header() {
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <Link className="global-nav__shop-link" to='/'>Find More Recipes</Link>
+                                                <Link className="global-nav__shop-link" to='/recipes'>Find More Recipes</Link>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li className="global-nav__menu-item">
+                                <li className="global-nav__menu-item li--food">
                                     <Link className='lien-nav' to='/food'>
                                         <span>Food</span>
                                     </Link>
                                 </li>
-                                <li className="global-nav__menu-item">
+                                <li className="global-nav__menu-item li--drink">
                                     <Link className='lien-nav' to='/drink52'>
                                         <span>Drink52</span>
                                     </Link>
                                 </li>
-                                <li className="global-nav__menu-item">
+                                <li className="global-nav__menu-item li--home52">
                                     <Link className='lien-nav' to='/home52'>
                                         <span>Home52</span>
                                     </Link>
@@ -604,7 +622,7 @@ function Header() {
                                     <div className="global-nav__menu-dropdown" id='communityDropdown'>
                                         <ul className="global-nav__community">
                                             <li>
-                                                <Link className="lien-community" to=''>
+                                                <Link className="lien-community" to='/hotline'>
                                                     <div className="wrapper1">
                                                         <div className="wrapper2">
                                                             <picture>
@@ -658,7 +676,7 @@ function Header() {
                                         </ul>
                                     </div>
                                 </li>
-                                <li className="global-nav__menu-item">
+                                <li className="global-nav__menu-item li--watch">
                                     <Link className='lien-nav' to=''>
                                         <span>Watch</span>
                                     </Link>
