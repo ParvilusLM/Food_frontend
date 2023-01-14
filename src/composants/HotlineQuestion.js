@@ -7,7 +7,10 @@ function HotlineQuestion(props) {
     <Fragment>
         <div className="hotlineQuestion">
             <h3 className="hotline--q-heading">
-                <Link className="lien" to={props.donnees.lienQuestion}>{props.donnees.titreQuestion}</Link>
+                <Link className="lien" to={props.donnees.lienQuestion}>
+                    {props.donnees.questionUrgent && <span className='hotline--urgent'></span>}
+                    {props.donnees.titreQuestion}
+                </Link>
             </h3>
             <div className="hotline--q-recipe--details">
                 <span>Recipe Question For:</span>
@@ -19,6 +22,9 @@ function HotlineQuestion(props) {
                     <Link className="lien" to={props.donnees.lienUtilisateur}>{props.donnees.nomUtilisateur}</Link>
                 </li>
                 <li>{props.donnees.date}</li>
+                <li className="hotline--q-updated">
+                    <span>{props.donnees.statusUpdate}</span>
+                </li>
             </ul>
             <div className="hotline--q-meta">
                 <ul className='tag--list'>
