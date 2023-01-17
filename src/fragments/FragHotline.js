@@ -289,6 +289,27 @@ const questions = [
   'nbCommentaires':2},
 ]
 
+const topUserWeekly = [
+  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Nancy'},
+  {'lienUtilisateur':'','image':'img/avatar1.png','nomUtilisateur':'702551'},
+  {'lienUtilisateur':'','image':'img/avatar4.jpg','nomUtilisateur':'drbabs'},
+  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Happygoin'},
+  {'lienUtilisateur':'','image':'img/avatar3.jpg','nomUtilisateur':'Miss_Karen'}
+]
+
+const topUserMonthly = [
+  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Lori T.'},
+  {'lienUtilisateur':'','image':'img/avatar1.png','nomUtilisateur':'702551'},
+  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Nancy'},
+  {'lienUtilisateur':'','image':'img/avatar2.jpg','nomUtilisateur':'MMH'},
+  {'lienUtilisateur':'','image':'img/avatar3.jpg','nomUtilisateur':'Miss_Karen'},
+  {'lienUtilisateur':'','image':'img/avatar4.jpg','nomUtilisateur':'drbabs'},
+  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Happygoin'},
+  {'lienUtilisateur':'','image':'img/avatar5.jpg','nomUtilisateur':'HalfPint'},
+  {'lienUtilisateur':'','image':'img/avatar6.jpg','nomUtilisateur':'Windischgirl'},
+  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Stephanie G.'}
+]
+
 function FragHotline() {
   return (
     <Fragment>
@@ -349,7 +370,7 @@ function FragHotline() {
               <div className="hotline--content">
                 <ul>
                   {questions.map((item, index) => (
-                    <li className="question--el">
+                    <li key={index} className="question--el">
                       <HotlineQuestion donnees={item} />
                     </li>
                   ))}
@@ -358,7 +379,62 @@ function FragHotline() {
               </div>
             </section>
           </div>
-          <aside className="sidebar"></aside>
+          <aside className="sidebar">
+            <div className="ad--slot ad--slot-aside"></div>
+            <div className="sidebarRoot">
+              <div className="mailingListBanner">
+                <div className="mailing--list">
+                  <div className="mailing--list-copy">
+                    <h4 className="mailing--list-header">
+                      Want more Food52?
+                    </h4>
+                    <p className="mailing--blurb">
+                      Our best tips for eating thoughtfully and living joyfully, right to your inbox.
+                    </p>
+                  </div>
+                  <div className="mailing--list-form--container">
+                    <form className="mailing--list-form">
+                      <div>
+                        <label htmlFor="sidebar-email" aria-label="Email">
+                          <span aria-hidden="true" className="email--label">Email</span>
+                        </label>
+                        <input id="sidebar-email" placeholder="hello@food52.com" type="email" name="emailInput" className="email--input" value="" />
+                      </div>
+                      <button className="btn btn--default mailing--list-btn" type="submit">Sign Me Up</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="top--user">
+              <h3 className="sidebar--heading">Top Commenters</h3>
+              <input type="radio" id='weekly' name='duration' checked className="top--user-radio top--user-radio--weekly" />
+              <label htmlFor="weekly" className="top--user-label">Weekly</label>
+              <input type="radio" id='monthly' name='duration' className="top--user-radio top--user-radio--monthly" />
+              <label htmlFor="monthly" className="top--user-label"></label>
+              <ol className="top--user-list top--user-list-weekly">
+                {topUserWeekly.map((item,index) => (
+                  <li key={index} className='top--user-item'>
+                    <Link className="lien" to={item.lienUtilisateur}>
+                      <img src={item.image} alt="" className='image'/>
+                      {item.nomUtilisateur}
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+              <ol className="top--user-list top--user-list-monthly">
+                {topUserMonthly.map((item,index) => (
+                  <li key={index} className='top--user-item'>
+                    <Link className="lien" to={item.lienUtilisateur}>
+                      <img src={item.image} alt="" className='image'/>
+                      {item.nomUtilisateur}
+                    </Link>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          </aside>
         </div>
       </div>
       <div className="clearfix"></div>

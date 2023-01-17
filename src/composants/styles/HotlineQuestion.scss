@@ -1,10 +1,189 @@
-.hotline--urgent {
-    background-image: url('../../../public/img/icon-urgent.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 18px;
-    height: 22px;
-    margin: 0 8px 2px 0;
-    display: inline-block;
-    vertical-align: middle;
+.hotlineQuestion {
+    .hotline--q-heading {
+        margin-bottom: 11px;
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 1.53;
+        word-wrap: break-word;
+
+        .lien--question {
+            font-weight: inherit;
+
+            .hotline--urgent {
+                background-image: url('../../../public/img/icon-urgent.svg');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 18px;
+                height: 22px;
+                margin: 0 8px 2px 0;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    .hotline--q-recipe--details {
+        margin: 10px 0;
+
+        span {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .lien--titre-recipe {
+            color: #a18f7a;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+
+    .hotline--q-meta--list {
+        color: #909090;
+        font-size: 13px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        span {
+            margin-right: 3px;
+            font-weight: 400;
+            font-family: "Chronicle SSm A", serif;
+            font-size: 11px;
+            font-style: italic;
+        }
+
+        li+li {
+            margin-left: 10px;
+            border-left: 1px solid #c4c4c4;
+            padding-left: 10px;
+        }
+    }
+
+    .hotline--q-user {
+        .lien--utilisateur {
+
+        }
+
+        .hotline--q-updated {
+            font-size: 13px;
+        }
+    }
+
+    .hotline--q-meta {
+        margin-top: 10px;
+        .tag--list {
+            line-height: 2;
+            display: flex;
+            flex-wrap: wrap;
+
+            .lien--tag {
+                color: #a18f7a;
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+                text-decoration: none;
+            }
+        }
+
+        .hotline--q-counts {
+            width: 100%;
+            margin-top: 12px;
+            
+            .hotline--q-first {
+                span {
+                    font-size: 13px;
+                    text-transform: none;
+                    color: rgb(144,144,144);
+                }
+                
+            }
+        }
+    }
 }
+
+@media only screen and (min-width: 728px) {
+    .hotlineQuestion {
+        .hotline--q-heading {
+            font-size: 19px;
+
+            .lien--question {
+
+                .hotline--urgent {}
+            }
+        }
+
+        .hotline--q-recipe--details {
+            margin-bottom: 15px;
+
+            span {}
+
+            .lien--titre-recipe {}
+        }
+
+        .hotline--q-meta--list {
+            li+li {}
+        }
+
+        .hotline--q-user {
+            .lien--utilisateur {}
+
+            .hotline--q-updated {}
+        }
+
+        .hotline--q-meta {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+
+            .tag--list {
+                .lien--tag {}
+            }
+
+            .hotline--q-counts {
+                width: auto;
+                margin: 0;
+                flex-shrink: 0;
+
+                .hotline--q-first {}
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .hotlineQuestion {
+        .hotline--q-heading {
+            .lien--question {
+                .hotline--urgent {}
+            }
+        }
+
+        .hotline--q-recipe--details {
+            span {}
+
+            .lien--titre-recipe {}
+        }
+
+        .hotline--q-meta--list {
+            li+li {}
+        }
+
+        .hotline--q-user {
+            .lien--utilisateur {}
+
+            .hotline--q-updated {}
+        }
+
+        .hotline--q-meta {
+            .tag--list {
+                .lien--tag {}
+            }
+
+            .hotline--q-counts {
+                .hotline--q-first {}
+            }
+        }
+    }
+}
+
