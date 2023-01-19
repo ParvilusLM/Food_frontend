@@ -1,0 +1,477 @@
+.fragHotline {
+    padding-bottom: 30px;
+    text-align: left;
+
+    .hotline--welcome {
+        background: #728997;
+        padding-top: 55px;
+        margin-top: -55px;
+        color: #2d4558;
+        min-height: 258px;
+        position: relative;
+        text-align: center;
+    }
+
+    .content--row {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 20px;
+
+        .content--main {
+            width: 100%;
+            min-width: 0;
+            flex-grow: 1;
+            position: relative;
+
+            .hotline--topics {
+                margin-bottom: 20px;
+                border: 1px solid #eaeaea;
+                padding: 20px 5px;
+                text-align: center;
+
+                .hotline--topics-heading {
+                    margin-bottom: 15px;
+                    color: #2d4558;
+                    font-weight: 500;
+                    font-family: "Chronicle SSm A", serif;
+                    font-size: 20px;
+                    line-height: normal;
+                }
+
+                .hotline--topics-list {
+                    font-size: 12.5px;
+                    line-height: 2.56;
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    li {
+                        width: 50%;
+                        padding: 0 6px;
+
+                        .lien {
+                            color: #2d4558;
+                        }
+                    }
+                }
+            }
+
+            .hotline--questions {
+                .hotline--nav {
+                    padding-bottom: 20px;
+
+                    .hotline--search-btn {
+                        margin-bottom: 30px;
+                        border-bottom: 1px solid #eaeaea;
+                            
+                        .search--toggle {
+                            height: auto;
+                            width: auto;
+                            padding-bottom: 6px;
+                            float: none;
+                            display: flex;
+                            justify-content: space-between;
+
+                            &::before {
+                                content: "Search Hotline Posts";
+                                color: #c4c4c4;
+                                font-weight: 400;
+                                font-family: "Chronicle SSm A", serif;
+                                font-size: 15px;
+                                font-style: italic;
+                                line-height: normal;
+                            }
+
+                            .icon--search {
+                                background-image: url('../../../public/img/icon-search3.svg');
+                                background-size: 100% auto;
+                                background-repeat: no-repeat;
+                                width: 1em;
+                                height: 1em;
+                                display: inline-block;
+                                font-size: 21px;
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+
+                    .hotline--filters {
+                        border: 1px solid #eaeaea;
+                        border-left: none;
+                        display: flex;
+
+                        li {
+                            width: 33.333%;
+
+                            .hotline--filters-link {
+                                border-left: 1px solid #eaeaea;
+                                font-weight: 300;
+                                font-family: "Gotham SSm A", sans-serif;
+                                font-size: 13px;
+                                line-height: 37px;
+                                text-align: center;
+                                text-transform: capitalize;
+                                display: block;
+
+                                &:hover {
+                                    background: #70799a;
+                                    color: #fff;
+                                    font-weight: 500;
+                                }
+                            }
+
+                            .hotline--filters-link--active {
+                                background: #70799a;
+                                color: #fff;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+
+                .hotline--content {
+                    ul {
+                        .question--el {
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .sidebar {
+            display: none;
+
+            .ad--slot-aside {
+
+            }
+
+            .sidebarRoot {
+                .mailingListBanner {
+                    .mailing--list {
+                        .mailing--list-copy {
+                            .mailing--list-header {
+
+                            }
+
+                            .mailing--blurb {
+
+                            }
+                        }
+
+                        .mailing--list-form--container {
+                            .mailing--list-form {
+                                .input--container {
+                                    label {
+                                        .email--label {
+
+                                        }
+                                    }
+
+                                    .email--input {
+
+                                    }
+                                }
+
+                                .mailing--list-btn {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .top--user {
+                .sidebar--heading {
+
+                }
+
+                .top--user-radio {
+
+                }
+
+                .top--user-radio--weekly {
+
+                }
+
+                .top--user-label {
+
+                }
+
+                .top--user-radio--monthly {
+
+                }
+
+                .top--user-list {
+                    .top--user-item {
+                        .lien {
+                            .image {
+
+                            }
+                        }
+                    }
+                }
+
+                .top--user-list-weekly {
+                    
+                }
+
+                .top--user-list-monthly {
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 728px) {
+    .fragHotline {
+        .hotline--welcome {
+            padding-top: 40px;
+            margin-top: -40px;
+        }
+
+        .content--row {
+            margin-top: 40px;
+
+            .content--main {
+                .hotline--topics {
+                    margin-bottom: 33px;
+                    padding: 20px 13px 20px 0;
+                    text-align: left;
+
+                    .hotline--topics-heading {
+                        margin-left: 35px;
+                        font-size: 24px;
+                    }
+
+                    .hotline--topics-list {
+                        font-size: 12px;
+                        line-height: 2.25;
+
+                        li {
+                            width: 25%;
+                            padding: 0 2px 0 35px;
+                            .lien {}
+                        }
+                    }
+                }
+
+                .hotline--questions {
+                    .hotline--nav {
+                        padding-bottom: 30px;
+                        display: flex;
+                        align-items: flex-end;
+
+                        .hotline--search-btn {
+                            margin-bottom: 0;
+                            text-align: right;
+                            flex-grow: 1;
+                            flex-shrink: 0;
+                            order: 1;
+
+                            .search--toggle {
+                                display: inline-flex;
+
+                                &::before {
+                                    font-size: 14px;
+                                }
+
+                                .icon--search {
+                                    margin-left: 10px;
+                                }
+                            }
+                        }
+
+                        .hotline--filters {
+                            width: 465px;
+
+                            li {
+                                .hotline--filters-link {
+                                    line-height: 29px;
+                                }
+
+                                .hotline--filters-link--active {}
+                            }
+                        }
+                    }
+
+                    .hotline--content {
+                        ul {
+                            .question--el {}
+                        }
+                    }
+                }
+            }
+
+            .sidebar {
+                display: none;
+
+                .ad--slot-aside {}
+
+                .sidebarRoot {
+                    .mailingListBanner {
+                        .mailing--list {
+                            .mailing--list-copy {
+                                .mailing--list-header {}
+
+                                .mailing--blurb {}
+                            }
+
+                            .mailing--list-form--container {
+                                .mailing--list-form {
+                                    .input--container {
+                                        label {
+                                            .email--label {}
+                                        }
+
+                                        .email--input {}
+                                    }
+
+                                    .mailing--list-btn {}
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .top--user {
+                    .sidebar--heading {}
+
+                    .top--user-radio {}
+
+                    .top--user-radio--weekly {}
+
+                    .top--user-label {}
+
+                    .top--user-radio--monthly {}
+
+                    .top--user-list {
+                        .top--user-item {
+                            .lien {
+                                .image {}
+                            }
+                        }
+                    }
+
+                    .top--user-list-weekly {}
+
+                    .top--user-list-monthly {}
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .fragHotline {
+        .hotline--welcome {}
+
+        .content--row {
+            .content--main {
+                .hotline--topics {
+                    max-width: 660px;
+                    padding: 20px 10px 20px 3px;
+
+                    .hotline--topics-heading {
+                        margin-left: 20px;
+                    }
+
+                    .hotline--topics-list {
+                        li {
+                            padding: 0 0 0 20px;
+                            .lien {}
+                        }
+                    }
+                }
+
+                .hotline--questions {
+                    .hotline--nav {
+                        .hotline--search-btn {
+                            .search--toggle {
+                                .icon--search {}
+                            }
+                        }
+
+                        .hotline--filters {
+                            li {
+                                .hotline--filters-link {}
+
+                                .hotline--filters-link--active {}
+                            }
+                        }
+                    }
+
+                    .hotline--content {
+                        ul {
+                            .question--el {}
+                        }
+                    }
+                }
+            }
+
+            .sidebar {
+                display: block;
+                width: 340px;
+                padding-left: 40px;
+                flex-shrink: 0;
+                -webkit-position: -webkit-sticky;
+                position: sticky;
+                visibility: visible;
+                top: -809px;
+
+                .ad--slot-aside {}
+
+                .sidebarRoot {
+                    .mailingListBanner {
+                        .mailing--list {
+                            .mailing--list-copy {
+                                .mailing--list-header {}
+
+                                .mailing--blurb {}
+                            }
+
+                            .mailing--list-form--container {
+                                .mailing--list-form {
+                                    .input--container {
+                                        label {
+                                            .email--label {}
+                                        }
+
+                                        .email--input {}
+                                    }
+
+                                    .mailing--list-btn {}
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .top--user {
+                    .sidebar--heading {}
+
+                    .top--user-radio {}
+
+                    .top--user-radio--weekly {}
+
+                    .top--user-label {}
+
+                    .top--user-radio--monthly {}
+
+                    .top--user-list {
+                        .top--user-item {
+                            .lien {
+                                .image {}
+                            }
+                        }
+                    }
+
+                    .top--user-list-weekly {}
+
+                    .top--user-list-monthly {}
+                }
+            }
+        }
+    }
+}

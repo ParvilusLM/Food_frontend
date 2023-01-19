@@ -357,13 +357,13 @@ function FragHotline() {
                 </div>
                 <ul className="hotline--filters">
                   <li>
-                    <Link className="hotline--filters-link hotline--filters-link--active" to=''>all</Link>
+                    <Link className="lien hotline--filters-link hotline--filters-link--active" to=''>all</Link>
                   </li>
                   <li>
-                    <Link className="hotline--filters-link" to=''>urgent</Link>
+                    <Link className="lien hotline--filters-link" to=''>urgent</Link>
                   </li>
                   <li>
-                    <Link className="hotline--filters-link" to=''>unanswer</Link>
+                    <Link className="lien hotline--filters-link" to=''>unanswer</Link>
                   </li>
                 </ul>
               </nav>
@@ -393,8 +393,8 @@ function FragHotline() {
                     </p>
                   </div>
                   <div className="mailing--list-form--container">
-                    <form className="mailing--list-form">
-                      <div>
+                    <form className="mailing--list-form"> 
+                      <div className='input--container'>
                         <label htmlFor="sidebar-email" aria-label="Email">
                           <span aria-hidden="true" className="email--label">Email</span>
                         </label>
