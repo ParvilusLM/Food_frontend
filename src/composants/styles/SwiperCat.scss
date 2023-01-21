@@ -3,7 +3,7 @@
     width: calc(100% + 32px);
     margin: 0 0 20px -16px;
     flex-grow:0;
-    padding-left: 16px;
+    padding-left: 16px; 
 
     .cat--container {
         display:flex;
@@ -41,6 +41,13 @@
                     transition-property: transform;
                     transform: translateZ(0px);
                     backface-visibility: hidden;
+                    overflow-y: scroll;
+                    scroll-behavior: smooth;
+                    &::-webkit-scrollbar {
+                        height: 0;
+                    }
+
+                    
 
                     .new--arrivals-cats-carousel {
                         display: inline-flex;

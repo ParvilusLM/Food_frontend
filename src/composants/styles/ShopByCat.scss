@@ -1,7 +1,7 @@
 .shop--by-global--wrapper {
 
     .shop--by-content {
-        padding: 40px 16px;
+        padding: 40px 0 40px 16px;
         margin: 36px auto;
         border-top: 1px solid #eaeaea;
         border-bottom: 1px solid #eaeaea;
@@ -47,7 +47,7 @@
         .shop--by-carousel {
             overflow: hidden;
             .sww1 {
-                width: calc(100% + 32px);
+                width: 100%;
 
                 .sww1--1 {
                     .swiper {
@@ -58,8 +58,7 @@
                         list-style: none;
                         z-index: 1;
                         padding-bottom: 24px;
-                        margin-left: -16px;
-                        padding: 0px 16px;
+                        padding: 0;
                         touch-action: pan-y;
                          
                         .swiper--wrapper {
@@ -69,7 +68,6 @@
                             z-index: 1;
                             display: flex;
                             transition-property: transform;
-                            box-sizing: content-box;
 
                             transition-timing-function: ease-out;
                             margin: 0px auto;
@@ -78,13 +76,16 @@
                             transition-duration: 0ms;
 
                             .swiper--slide {
-                                flex-shrink: 0;
+                                width: inherit;
                                 height: 100%;
                                 position: relative;
-                                transition-property: transform;
-                                transform: translateZ(0px);
-                                backface-visibility: hidden;
-                                width: auto;
+                                overflow-y: scroll;
+                                scroll-behavior: smooth;
+                            
+                                &::-webkit-scrollbar {
+                                    height: 0;
+                                }
+
 
                                 .liste {
                                     display: inline-flex;
@@ -109,19 +110,14 @@
 
                                     
                                 }
-
-                                @media only screen and (min-width: 1024px) {
-                                    & {
-                                        width: auto;
-                                    }
-                                }
                             }
                         }
 
                         @media only screen and (min-width: 768px) {
                             & {
                                 margin-left: -22px;
-                                padding: 0px 22px;
+                                padding: 0px 0 0 22px;
+                                
                             }
                         }
 
@@ -228,7 +224,7 @@
 
                 @media only screen and (min-width: 768px) {
                     & {
-                        width: calc(100% + 44px);
+                        width: 100%;
                     }
                 }
 

@@ -14,6 +14,9 @@ function Slideshow(props) {
     }
 
     useEffect(() => {
+        
+        
+
         $('.swiper--pagination-bullet').first().addClass('swiper--pagination-bullet--active');
         
     },[])

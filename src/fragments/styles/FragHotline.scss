@@ -218,7 +218,7 @@
                                     label {
                                         .email--label {
                                             padding-bottom: 0.333em;
-                                            color: inherit;
+                                            color: rgb(68, 68, 68);
                                             font-size: 12px;
                                             line-height: 1.25em;
                                             text-align: left;
@@ -226,6 +226,11 @@
                                             opacity: 0;
                                             visibility: hidden;
                                             transition: opacity 0.2s ease 0s, visibility 0.2s ease 0s, color 0.2s ease 0s;
+                                        }
+
+                                        .show--label {
+                                            opacity: 1;
+                                            visibility: visible;
                                         }
                                     }
 
@@ -404,10 +409,6 @@
                         .mailing--list {
                             .mailing--list-copy {
                                 .mailing--list-header,.mailing--blurb {
-
-                                    @media only screen and (min-width: 880px) {
-                                        margin: 0;
-                                    }
                                 }
 
                                 .mailing--list-header {}

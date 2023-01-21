@@ -1,7 +1,8 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './styles/FragHotline.scss'
 import loadable from '@loadable/component'
+import $ from 'jquery'
 
 const HotlineWelcome = loadable(() => import('../composants/HotlineWelcome'))
 const PaginationDrink52 = loadable(() => import('../composants/PaginationDrink52'))
@@ -311,6 +312,17 @@ const topUserMonthly = [
 ]
 
 function FragHotline() {
+
+  useEffect(() => {
+    $(() => {
+      $('.email--input').on('focusin', function() {
+        $('.email--label').addClass('show--label');
+      }).on('focusout', function() {
+        $('.email--label').removeClass('show--label');
+      })
+    })
+  })
+
   return (
     <Fragment>
       <div className="fragHotline">
@@ -398,7 +410,7 @@ function FragHotline() {
                         <label htmlFor="sidebar-email" aria-label="Email">
                           <span aria-hidden="true" className="email--label">Email</span>
                         </label>
-                        <input id="sidebar-email" placeholder="hello@food52.com" type="email" name="emailInput" className="email--input" value="" />
+                        <input id="sidebar-email" placeholder="hello@food52.com" type="email" name="emailInput" className="email--input" />
                       </div>
                       <button className="btn btn--default mailing--list-btn" type="submit">Sign Me Up</button>
                     </form>
@@ -409,7 +421,7 @@ function FragHotline() {
 
             <div className="top--user">
               <h3 className="sidebar--heading">Top Commenters</h3>
-              <input type="radio" id='weekly' name='duration' checked className="top--user-radio top--user-radio--weekly" />
+              <input type="radio" id='weekly' name='duration' defaultChecked className="top--user-radio top--user-radio--weekly" />
               <label htmlFor="weekly" className="top--user-label">Weekly</label>
               <input type="radio" id='monthly' name='duration' className="top--user-radio top--user-radio--monthly" />
               <label htmlFor="monthly" className="top--user-label">Monthly</label>

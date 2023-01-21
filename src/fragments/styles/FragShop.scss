@@ -7,7 +7,12 @@
             padding: 16px 0 0 16px;
             display: inline-flex;
             align-items: stretch;
-            overflow: hidden;
+            overflow-y: scroll;
+            scroll-behavior: smooth;
+        
+            &::-webkit-scrollbar {
+                height: 0;
+            }
 
             .shop--hero-listItem {
                 max-width: 285px;
