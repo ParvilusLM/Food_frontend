@@ -12,10 +12,13 @@ function HotlineQuestion(props) {
                     {props.donnees.titreQuestion}
                 </Link>
             </h3>
-            <div className="hotline--q-recipe--details">
-                <span>Recipe Question For:</span>
-                <Link className="lien lien--titre-recipe" to={props.donnees.lienRecipe}>{props.donnees.titreRecipe}</Link>
-            </div>
+            { props.donnees.titreRecipe && 
+                <div className="hotline--q-recipe--details">
+                    <span>Recipe Question For:</span>
+                    <Link className="lien lien--titre-recipe" to={props.donnees.lienRecipe}>{props.donnees.titreRecipe}</Link>
+                </div>
+            }
+            
             <ul className="hotline--q-user hotline--q-meta--list">
                 <li>
                     <span>Posted by:</span>

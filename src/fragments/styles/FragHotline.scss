@@ -131,7 +131,14 @@
                 .hotline--content {
                     ul {
                         .question--el {
+                            margin-bottom: 25px;
+                            border-bottom: 1px solid #eaeaea;
+                            padding-bottom: 18px;
 
+                            &:last-child {
+                                margin-bottom: 17px;
+                                border: none;
+                            }
                         }
                     }
                 }
@@ -141,39 +148,114 @@
         .sidebar {
             display: none;
 
-            .ad--slot-aside {
+            .add--slot {
+                margin-bottom: 30px;
+                text-align: center;
+                overflow: hidden;
+            }
 
+            .ad--slot-aside {
+                display: none;
             }
 
             .sidebarRoot {
                 .mailingListBanner {
                     .mailing--list {
-                        .mailing--list-copy {
-                            .mailing--list-header {
+                        background: rgb(247, 247, 247);
+                        padding: 30px 25px;
+                        position: relative;
+                        text-align: center;
 
+                        .mailing--list-copy {
+                            .mailing--list-header,.mailing--blurb {
+                                max-width: 300px;
+                                margin: 0 auto;
+                                font-weight: 400;
+                                font-family: "Gotham SSm A", sans-serif;
+                                font-size: 15px;
+                                line-height: 24px;
+                                line-height: 1.86;
+                                text-align: center;
+                            }
+
+                            .mailing--list-header {
+                                font-weight: 700;
+                                display: block;
+                                color: rgb(45, 69, 88);
+                                font: 500 24px / 1.33 "Chronicle SSm A", "Chronicle SSm B", serif;
                             }
 
                             .mailing--blurb {
-
+                                margin-bottom: 20px;
+                                font-size: 14px;
+                                color: rgb(68, 68, 68);
                             }
                         }
 
                         .mailing--list-form--container {
+                            position: relative;
+
                             .mailing--list-form {
+                                max-width: 350px;
+                                margin: 10px auto 0 auto;
+                                display: flex;
+                                align-items: flex-end;
+                                margin: 0px 5px;
+                                display: block;
+
+                                &>div {
+                                    margin-top: -18px;
+                                    flex-grow: 1;
+                                }
+
                                 .input--container {
+                                    input[type="email"] {
+                                        border-right: 1px solid rgb(234, 234, 234);
+                                        border-radius: 1px;
+                                        padding: 10px;
+                                    }
+
                                     label {
                                         .email--label {
-
+                                            padding-bottom: 0.333em;
+                                            color: inherit;
+                                            font-size: 12px;
+                                            line-height: 1.25em;
+                                            text-align: left;
+                                            display: block;
+                                            opacity: 0;
+                                            visibility: hidden;
+                                            transition: opacity 0.2s ease 0s, visibility 0.2s ease 0s, color 0.2s ease 0s;
                                         }
                                     }
 
                                     .email--input {
-
+                                        background: rgb(255, 255, 255);
+                                        width: 100%;
+                                        height: 45px;
+                                        border: 1px solid rgb(234, 234, 234);
+                                        outline: none;
+                                        padding: 10px 12px;
+                                        color: rgb(68, 68, 68);
+                                        font-size: 16px;
+                                        font-family: inherit;
+                                        border-radius: 1px;
+                                        appearance: none;
+                                        transition: border-color 0.2s ease 0s;
                                     }
                                 }
 
                                 .mailing--list-btn {
-
+                                    margin: 0;
+                                    width: auto;
+                                    margin-top: 25px;
+                                    padding: 0px 18px;
+                                    line-height: 36px;
+                                    border-radius: 0 1px 1px 0;
+                                    font-size: 14px;
+                                    line-height: 45px;
+                                    flex-shrink: 0;
+                                    text-transform: none;
                                 }
                             }
                         }
@@ -184,6 +266,10 @@
             .top--user {
                 .sidebar--heading {
 
+                }
+
+                input[type="radio"] {
+                    border-radius: 10px;
                 }
 
                 .top--user-radio {
@@ -307,25 +393,50 @@
             .sidebar {
                 display: none;
 
-                .ad--slot-aside {}
+                .ad--slot-aside {
+                    width: 300px;
+                    min-height: 250px;
+                    display: block;
+                }
 
                 .sidebarRoot {
                     .mailingListBanner {
                         .mailing--list {
                             .mailing--list-copy {
+                                .mailing--list-header,.mailing--blurb {
+
+                                    @media only screen and (min-width: 880px) {
+                                        margin: 0;
+                                    }
+                                }
+
                                 .mailing--list-header {}
 
                                 .mailing--blurb {}
                             }
 
                             .mailing--list-form--container {
+
                                 .mailing--list-form {
+                                    
+                                    @media only screen and (min-width: 880px) {
+                                        margin: 10px auto 0 0;
+                                    }
+
                                     .input--container {
+                                        @media only screen and (min-width: 880px) { 
+                                            input[type="email"] {
+                                                font-size: 13px;
+                                            }
+                                        }
+
                                         label {
                                             .email--label {}
                                         }
 
-                                        .email--input {}
+                                        .email--input {
+                                            font-size: 15px;
+                                        }
                                     }
 
                                     .mailing--list-btn {}
@@ -420,12 +531,24 @@
                 visibility: visible;
                 top: -809px;
 
-                .ad--slot-aside {}
+                &>* {
+                    margin-bottom: 30px;
+                }
+
+                &>div {
+                    margin-bottom: 45px;
+                }
+
+                .ad--slot-aside {
+                    
+                }
 
                 .sidebarRoot {
                     .mailingListBanner {
                         .mailing--list {
                             .mailing--list-copy {
+                                .mailing--list-header,.mailing--blurb {}
+
                                 .mailing--list-header {}
 
                                 .mailing--blurb {}
@@ -449,22 +572,91 @@
                 }
 
                 .top--user {
-                    .sidebar--heading {}
+                    padding: 0 25px;
+                    display: flex;
+                    flex-wrap: wrap;
 
-                    .top--user-radio {}
+                    .sidebar--heading {
+                        width: 100%;
+                        margin-bottom: 15px;
+                        color: #2d4558;
+                        font-size: 13px;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                    }
+
+                    .top--user-radio {
+                        height: 0;
+                        width: 0;
+                        margin: 0;
+                        overflow: hidden;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        appearance: none;
+                    }
+
+                    .top--user-radio:checked+.top--user-label {
+                        border-bottom: 2px solid #2d4558;
+                    }
 
                     .top--user-radio--weekly {}
 
-                    .top--user-label {}
+                    .top--user-label {
+                        width: 50%;
+                        border-bottom: 1px solid #c4c4c4;
+                        padding-bottom: 10px;
+                        color: #2d4558;
+                        text-align: center;
+                    }
 
                     .top--user-radio--monthly {}
 
                     .top--user-list {
+                        width: 100%;
+                        padding: 8px 10px;
+                        display: none;
+                        counter-reset: users;
+
                         .top--user-item {
+                            margin-top: 12px;
+                            color: #2d4558;
+                            font-size: 12px;
+                            display: flex;
+                            align-items: center;
+
+                            &::before {
+                                counter-increment: users;
+                                content: counter(users) ".";
+                                width: 28px;
+                            }
+
                             .lien {
-                                .image {}
+                                display: flex;
+                                align-items: center;
+
+                                .avatar {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    display: block;
+                                    overflow: hidden;
+                                }
+
+                                .image {
+                                    margin-right: 15px;
+                                    opacity: 1;
+                                    transition: opacity 0.5s;
+                                }
                             }
                         }
+                    }
+
+                    .top--user-radio--monthly:checked~.top--user-list--monthly {
+                        display: block;
+                    }
+
+                    .top--user-radio--weekly:checked~.top--user-list--weekly {
+                        display: block;
                     }
 
                     .top--user-list-weekly {}

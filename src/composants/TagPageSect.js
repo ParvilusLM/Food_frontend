@@ -18,10 +18,6 @@ function TagPageSect(props) {
                         </div>
                     ))}
 
-                    <p className="pagination--text">
-                        Showing 14 of 117 results
-                    </p>
-
                     <PaginationDrink52 /> 
                 </div>
 

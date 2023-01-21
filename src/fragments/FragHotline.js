@@ -412,22 +412,22 @@ function FragHotline() {
               <input type="radio" id='weekly' name='duration' checked className="top--user-radio top--user-radio--weekly" />
               <label htmlFor="weekly" className="top--user-label">Weekly</label>
               <input type="radio" id='monthly' name='duration' className="top--user-radio top--user-radio--monthly" />
-              <label htmlFor="monthly" className="top--user-label"></label>
-              <ol className="top--user-list top--user-list-weekly">
+              <label htmlFor="monthly" className="top--user-label">Monthly</label>
+              <ol className="top--user-list top--user-list--weekly">
                 {topUserWeekly.map((item,index) => (
                   <li key={index} className='top--user-item'>
                     <Link className="lien" to={item.lienUtilisateur}>
-                      <img src={item.image} alt="" className='image'/>
+                      <img loading='lazy' src={item.image} alt="" className='image avatar'/>
                       {item.nomUtilisateur}
                     </Link>
                   </li>
                 ))}
               </ol>
-              <ol className="top--user-list top--user-list-monthly">
+              <ol className="top--user-list top--user-list--monthly">
                 {topUserMonthly.map((item,index) => (
                   <li key={index} className='top--user-item'>
                     <Link className="lien" to={item.lienUtilisateur}>
-                      <img src={item.image} alt="" className='image'/>
+                      <img loading='lazy' src={item.image} alt="" className='image avatar'/>
                       {item.nomUtilisateur}
                     </Link>
                   </li>
