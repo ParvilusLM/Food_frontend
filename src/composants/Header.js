@@ -24,53 +24,91 @@ function Header() {
                 $('.lien-nav--community-exp').attr('aria-expanded', 'false');
             });
 
-            $('.li-shop').on('click', function () {
-                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || $(window).width() >= 1024) {
+            $('.wrapper--link-shop').on('click', function () {
+                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || ($(window).width() >= 1024 && !$('.global-nav__menu').hasClass('global-nav__menu--expanded')) ) {
                     const valAttr = $('.lien-nav--shop-exp').attr('aria-expanded');
                     if (valAttr === 'true') {
                         $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
+                        $('#the_shopDropdown').removeClass('dropdown--shop-visible');
+
                     } else {
                         $('.lien-nav--shop-exp').attr('aria-expanded', 'true');
                         $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
                         $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+                        $('#the_shopDropdown').addClass('dropdown--shop-visible');
+                        $('#communityDropdown').removeClass('dropdown--community-visible');
+                        $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
                     }
                 }
+                console.log('click sur li-shop'); 
             });
 
-            $('.li-recipes').on('click', function () {
-                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || $(window).width() >= 1024) {
+            $('.wrapper--link-recipes').on('click', function () {
+                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || ($(window).width() >= 1024 && !$('.global-nav__menu').hasClass('global-nav__menu--expanded')) ) {
                     const valAttr = $('.lien-nav--recipes-exp').attr('aria-expanded');
                     if (valAttr === 'true') {
                         $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
+                        $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
                     } else {
                         $('.lien-nav--recipes-exp').attr('aria-expanded', 'true');
                         $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
                         $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+                        $('#the_recipesDropdown').addClass('dropdown--recipes-visible');
+                        $('#communityDropdown').removeClass('dropdown--community-visible');
+                        $('#the_shopDropdown').removeClass('dropdown--shop-visible');
+
                     }
                 }
+                console.log('click sur li-recipes');
             });
 
-            $('.li-community').on('click', function () {
-                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || $(window).width() >= 1024) {
+            $('.wrapper--link-community').on('click', function () {
+                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || ($(window).width() >= 1024 && !$('.global-nav__menu').hasClass('global-nav__menu--expanded')) ) {
                     const valAttr = $('.lien-nav--community-exp').attr('aria-expanded');
                     if (valAttr === 'true') {
                         $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+                        $('#communityDropdown').removeClass('dropdown--community-visible');
                     } else {
                         $('.lien-nav--community-exp').attr('aria-expanded', 'true');
                         $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
                         $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
+                        $('#communityDropdown').addClass('dropdown--community-visible');
+                        $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
+                        $('#the_shopDropdown').removeClass('dropdown--shop-visible');
+                        
                     }
                 }
+                console.log('click sur li-community');
             });
 
-            $("#the_shopDropdown:has(.lien), #the_recipesDropdown:has(.lien-recipes), #communityDropdown:has(.lien-community) , .li--food, .li--drink52, .li--home52, .li--watch").on('click', function () {
+            $(".li--food, .li--drink52, .li--home52, .li--watch").on('click', function () {
                 if($('.global-nav__menu').hasClass('global-nav__menu--expanded')) {
                     $('.global-nav__menu').removeClass('global-nav__menu--expanded');
+                    
+                }
+
+                $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
+                $('#the_shopDropdown').removeClass('dropdown--shop-visible');
+                $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
+                $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
+                $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+                $('#communityDropdown').removeClass('dropdown--community-visible');
+                console.log('bammmm');
+            });
+
+            $("#the_shopDropdown:has(.lien), #the_recipesDropdown:has(.lien-recipes), #communityDropdown:has(.lien-community)").on('click', function () {
+                if($('.global-nav__menu').hasClass('global-nav__menu--expanded')) {
+                    $('.global-nav__menu').removeClass('global-nav__menu--expanded');
+                    console.log('ouuffff');
                 }
                 
                 $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
+                $('#the_shopDropdown').removeClass('dropdown--shop-visible');
                 $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
+                $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
                 $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+                $('#communityDropdown').removeClass('dropdown--community-visible');
+                console.log('oooooooo');
             });
 
             $(window).on('resize', function () {
@@ -108,13 +146,15 @@ function Header() {
                                     </button>
                                 </li>
                                 <li className="global-nav__menu-item li-shop">
-                                    <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_shopDropdown' className='lien-nav lien-nav__shop lien-nav--shop-exp' to='/shop'>
-                                        <span>The shop</span>
-                                        <span className="global-nav__menu-caret shop--caret" aria-label="Toggle The Shop sub menu">
-                                            <span className="icon icon__arrow"></span>
-                                        </span>
-                                    </Link>
-
+                                    <div className="wrapper--link-shop">
+                                        <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_shopDropdown' className='lien-nav lien-nav__shop lien-nav--shop-exp texte--lien' to='/shop'>
+                                            <span>The shop</span>
+                                            <span className="global-nav__menu-caret shop--caret" aria-label="Toggle The Shop sub menu">
+                                                <span className="icon icon__arrow"></span>
+                                            </span>
+                                        </Link>
+                                    </div>
+                                    
                                     <div className="global-nav__menu-dropdown" id='the_shopDropdown'>
                                         <div className="global-nav__shop global-nav__shop--column">
                                             <ul className="global-nav__shop-groups">
@@ -417,12 +457,15 @@ function Header() {
                                     </div>
                                 </li>
                                 <li className="global-nav__menu-item li-recipes">
-                                    <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_recipesDropdown' className='lien-nav lien-nav--recipes-exp' to='/recipes'>
-                                        <span>Recipes</span>
-                                        <span className="global-nav__menu-caret recipes--caret" aria-label="Toggle Recipes sub menu">
-                                            <span className="icon icon__arrow"></span>
-                                        </span>
-                                    </Link>
+                                    <div className="wrapper--link-recipes">
+                                        <Link aria-haspopup='true' aria-expanded='false' aria-controls='the_recipesDropdown' className='lien-nav lien-nav--recipes-exp' to='/recipes'>
+                                            <span>Recipes</span>
+                                            <span className="global-nav__menu-caret recipes--caret" aria-label="Toggle Recipes sub menu">
+                                                <span className="icon icon__arrow"></span>
+                                            </span>
+                                        </Link>
+                                    </div>
+                                    
                                     <div className="global-nav__menu-dropdown" id='the_recipesDropdown'>
                                         <div className="global-nav__recipes--row">
                                             <div className="global-nav__recipes-groups explore-arrow">
@@ -613,12 +656,15 @@ function Header() {
                                     </Link>
                                 </li>
                                 <li className="global-nav__menu-item li-community">
-                                    <Link aria-haspopup='true' aria-expanded='false' aria-controls='communityDropdown' className='lien-nav lien-nav--community-exp' to='/hotline'>
-                                        <span>Community</span>
-                                        <span className="global-nav__menu-caret community--caret" aria-label="Toggle The Shop sub menu">
-                                            <span className="icon icon__arrow"></span>
-                                        </span>
-                                    </Link>
+                                    <div className="wrapper--link-community">
+                                        <Link aria-haspopup='true' aria-expanded='false' aria-controls='communityDropdown' className='lien-nav lien-nav--community-exp' to='/hotline'>
+                                            <span>Community</span>
+                                            <span className="global-nav__menu-caret community--caret" aria-label="Toggle The Shop sub menu">
+                                                <span className="icon icon__arrow"></span>
+                                            </span>
+                                        </Link>
+                                    </div>
+                                    
                                     <div className="global-nav__menu-dropdown" id='communityDropdown'>
                                         <ul className="global-nav__community">
                                             <li>

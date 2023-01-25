@@ -47,6 +47,11 @@
                     justify-content: center;
                     list-style: none;
                     width: 640px;
+
+                    .wrapper--link-shop, .wrapper--link-recipes, .wrapper--link-community{
+                        width: 100%;
+                        height: 100%;
+                    }
             
                     .global-nav__menu-item {
                         text-transform: uppercase;
@@ -366,15 +371,15 @@
                         
                     }
 
-                    .li-shop .lien-nav[aria-expanded='true']~#the_shopDropdown {
+                    .li-shop .dropdown--shop-visible {
                         display: flex;
                     }
 
-                    .li-recipes .lien-nav[aria-expanded='true']~#the_recipesDropdown {
+                    .li-recipes .dropdown--recipes-visible {
                         display: flex;
                     }
 
-                    .li-community .lien-nav[aria-expanded='true']~#communityDropdown {
+                    .li-community .dropdown--community-visible {
                         display: flex;
                     }
 
@@ -578,6 +583,9 @@
                                 .global-nav__recipes-groups {
                                     font-size: 14px;
                                     color: rgb(68, 68, 68);
+                                    margin-inline: auto;
+                                    text-align: left;
+
                                     .global-nav__recipes-list {
                                         display: flex;
                                         flex-direction: column;
@@ -606,11 +614,11 @@
                         
                     }
 
-                    .li-shop .lien-nav[aria-expanded='true']~#the_shopDropdown {
+                    .li-shop .dropdown--shop-visible {
                         display: flex;
                     }
 
-                    .li-recipes .lien-nav[aria-expanded='true']~#the_recipesDropdown {
+                    .li-recipes .dropdown--recipes-visible {
                         display: flex;
 
                         .global-nav__recipes--row {
@@ -618,7 +626,7 @@
                         }
                     }
 
-                    .li-community .lien-nav[aria-expanded='true']~#communityDropdown {
+                    .li-community .dropdown--community-visible {
                         display: flex;
 
                         .global-nav__community {
@@ -794,11 +802,7 @@
                             }
                         }
 
-                        .li-shop:hover, .li-recipes:hover, .li-community:hover {
-                            .global-nav__menu-dropdown {
-                                display: none;
-                            }
-                        }
+                        
 
                         .global-nav__menu-item--more {
                             display: flex;
