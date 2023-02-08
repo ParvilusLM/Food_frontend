@@ -179,9 +179,9 @@ function FragCheckout() {
                 </p>
                 <div className="checkout--payment-quick">
                     <h3>Alternative Payment Methods</h3>
-                    <form method="post" action="https://sandbox.moncashbutton.digicelgroup.com/Moncash-middleware/Checkout/{WVhWaGNXZEVObU5uTjJjOSBURzVpTmtKa1JUVk5SR0ZTUkVrMVkzSXRlSFYxZHowOQ==}" >
-                        <input type="hidden" name="amount" value="base64(encrypt(50))"/>
-                        <input type="hidden" name="orderId" value="base64(encrypt(2))"/>
+                    <form method="post" action="https://sandbox.moncashbutton.digicelgroup.com/Moncash-middleware/Checkout/WVhWaGNXZEVObU5uTjJjOSBURzVpTmtKa1JUVk5SR0ZTUkVrMVkzSXRlSFYxZHowOQ==" >
+                        <input type="hidden" name="amount" value="50"/>
+                        <input type="hidden" name="orderId" value="2"/>
                         <input type="image" name="ap_image" src="https://sandbox.moncashbutton.digicelgroup.com/Moncash-middleware/resources/assets/images/MC_button.png"/>
                     </form>
                 </div>
