@@ -1,12 +1,19 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useState, useEffect} from 'react'
+import { useDispatch } from 'react-redux'
+import { login, logout, authError, startLoading } from '../store/authSlice'
 import Box from '@mui/material/Box';
 import Popover from '@mui/material/Popover';
 import './styles/DrawerConnexion.scss';
 import {Link} from 'react-router-dom'
+import $ from 'jquery'
 
 
 function DrawerConnexion() {
   const [anchorEl, setAnchorEl] = React.useState(null);
+  const dispatch = useDispatch()
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+
 
   const handleClick = () => {
     let el = document.getElementById('anchor-el');
@@ -44,15 +51,15 @@ function DrawerConnexion() {
               <form action="" className="formulaire">
                 <div className="email--container">
                   <label htmlFor="Email" className='label'>
-                    <span className="label--text">Email</span>
+                    <span className="label--text label--text-email">Email</span>
                   </label>
-                  <input type="email" name='email' placeholder='' id='Email' className="input" />
+                  <input type="email" name='email' placeholder='' id='email' className="input input--email" />
                 </div>
                 <div className="password--container">
                   <label htmlFor="Password" className='label'>
-                    <span className="label--text">Password</span>
+                    <span className="label--text label--text-password">Password</span>
                   </label>
-                  <input type="password" name='password' placeholder='' id='Password' className="input" />
+                  <input type="password" name='password' placeholder='' id='password' className="input input--password" />
                 </div>
                 <Link className="lien" to='/'>Forgot Password?</Link>
                 <button className="btn btn--default">LOG IN</button>
@@ -68,6 +75,29 @@ function DrawerConnexion() {
       </div>
     </Box>
   )
+
+  useEffect(() => {
+    $(function () {
+      $('.input--email').focusin(function() {
+        $('.label--text-email').addClass('label--text-onFocus');
+      }).focusout(function() {
+        if($('.input--email').val() === '') {
+          $('.label--text-email').removeClass('label--text-onFocus');
+        }
+        
+      });
+
+      $('.input--password').focusin(function() {
+        $('.label--text-password').addClass('label--text-onFocus');
+      }).focusout(function() {
+        if($('.input--password').val() === '') {
+          $('.label--text-password').removeClass('label--text-onFocus');
+        }
+        
+      });
+
+    })
+  })
 
   return (
     <Fragment>

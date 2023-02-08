@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import loadable from '@loadable/component'
 import ScrollToTop from './composants/ScrollToTop'
+import { Check } from '@material-ui/icons';
 
 const ContenuSponsorise = loadable(() => import('./composants/ContenuSponsorise'))
 const Header = loadable(() => import('./composants/Header'))
@@ -26,6 +27,7 @@ const Press = loadable(() => import('./pages/Press'))
 const Recipes = loadable(() => import('./pages/Recipes'))
 const Registry = loadable(() => import('./pages/Registry'))
 const Shop = loadable(() => import('./pages/Shop'))
+const Checkout = loadable(() => import('./pages/Checkout'))
 const Team = loadable(() => import('./pages/Team'))
 const Travel = loadable(() => import('./pages/Travel'))
 
@@ -52,6 +54,7 @@ function App() {
         <Route path="/recipes" element={<Recipes />} />
         <Route path="/registry" element={<Registry />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="/team" element={<Team />} />
         <Route path="/travel" element={<Travel />} />
       </Routes>

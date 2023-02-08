@@ -40,7 +40,6 @@ function Header() {
                         $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
                     }
                 }
-                console.log('click sur li-shop'); 
             });
 
             $('.wrapper--link-recipes').on('click', function () {
@@ -59,7 +58,6 @@ function Header() {
 
                     }
                 }
-                console.log('click sur li-recipes');
             });
 
             $('.wrapper--link-community').on('click', function () {
@@ -78,13 +76,11 @@ function Header() {
                         
                     }
                 }
-                console.log('click sur li-community');
             });
 
             $(".li--food, .li--drink52, .li--home52, .li--watch").on('click', function () {
                 if($('.global-nav__menu').hasClass('global-nav__menu--expanded')) {
                     $('.global-nav__menu').removeClass('global-nav__menu--expanded');
-                    
                 }
 
                 $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
@@ -93,13 +89,11 @@ function Header() {
                 $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
                 $('.lien-nav--community-exp').attr('aria-expanded', 'false');
                 $('#communityDropdown').removeClass('dropdown--community-visible');
-                console.log('bammmm');
             });
 
             $("#the_shopDropdown:has(.lien), #the_recipesDropdown:has(.lien-recipes), #communityDropdown:has(.lien-community)").on('click', function () {
                 if($('.global-nav__menu').hasClass('global-nav__menu--expanded')) {
                     $('.global-nav__menu').removeClass('global-nav__menu--expanded');
-                    console.log('ouuffff');
                 }
                 
                 $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
@@ -108,7 +102,6 @@ function Header() {
                 $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
                 $('.lien-nav--community-exp').attr('aria-expanded', 'false');
                 $('#communityDropdown').removeClass('dropdown--community-visible');
-                console.log('oooooooo');
             });
 
             $(window).on('resize', function () {

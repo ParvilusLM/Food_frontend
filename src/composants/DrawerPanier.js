@@ -43,7 +43,9 @@ function DrawerPanier() {
             <span>$0.00</span>
           </div>
           <div className="wrapper-button">
-            <button className="btn btn--default checkout--b" disabled>Checkout</button>
+            <button onClick={toggleDrawer(anchor, false)} className="btn btn--default checkout--b" >
+              <Link className="lien lien--checkout" to='/checkout'>Checkout</Link>
+            </button>
           </div>
         </div>
       </div>

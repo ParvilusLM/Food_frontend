@@ -28,10 +28,12 @@
 }
 
 .popover .MuiPaper-root {
-    min-width: 100vw !important;
-    min-height: 100vh !important;
     left: 0 !important;
     top: 0 !important;
+    min-width: 100vw !important;
+    min-height: 100vh !important;
+    max-height: 100vh;
+    
 
     @media only screen and (min-width: 768px) {
         top: 0 !important;
@@ -146,6 +148,13 @@
                                 font-size: 16px;
                                 line-height: normal;
                                 transform: translateY(20px);
+                                transition: color 0.2s ease-in-out 0s, font-size 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+                            }
+
+                            .label--text-onFocus {
+                                color: rgb(113,113,113);
+                                font-size: 12px;
+                                transform: translateY(0px);
                                 transition: color 0.2s ease-in-out 0s, font-size 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
                             }
                         }
