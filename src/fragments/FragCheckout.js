@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 
 function FragCheckout() {
-    const [etape, setEtape] = useState(3);
+    const [etape, setEtape] = useState(4);
 
     const orderSummary =(
         <section className="checkout--order">
@@ -174,7 +174,42 @@ function FragCheckout() {
             <div className="checkout--step-content">
                 <h3>Credit Card</h3>
                 <form action="" className="checkout--form checkout--payment-form">
-
+                    <div className="checkout--form-row">
+                        <div className="checkout--form-input">
+                            <div className="form--input-container">
+                               <label htmlFor="CardNumber" className="input--label">
+                                    <span className="input--label-text--CN">Card Number</span>
+                                </label>
+                                <input id='CardNumber' placeholder='' name='ccNumber' type="tel" className="input checkout--form-input checkout--paymentt-card--default" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="checkout--form-row">
+                        <div className="checkout--form-input checkout--payment-exp">
+                            <div className="form--input-container">
+                                <label htmlFor="MM/YY" className="input--label">
+                                    <span className="input--label-text--CCE">MM/YY</span>
+                                </label>
+                                <input id='MM/YY' placeholder='' name='ccExpiration' type="tel" className="input" />
+                            </div>
+                        </div>
+                        <div className="checkout--form-input checkout--paymentccv-">
+                            <div className="form--input-container">
+                                <label htmlFor="CVV" className="input--label">
+                                    <span className="input--label-text--CVV">CVV</span>
+                                </label>
+                                <input id='CVV' placeholder='' name='ccCvv' type="tel" maxLength='4' className="input" />
+                            </div>
+                        </div>
+                        <div className="checkout--form-input checkout--payment-zip">
+                            <div className="form--input-container">
+                                <label htmlFor="BillingZip" className="input--label">
+                                    <span className="input--label-text--zip">Billing Zip</span>
+                                </label>
+                                <input id='BillingZip' placeholder='' type="tel" maxLength='5' className="input" />
+                            </div>
+                        </div>
+                    </div>
                 </form>
                 <p className="checkout--small-print checkout--codes-note">
                     Note: Gift cards and promo codes can be entered on the next screen. For back-up purposes, we still require a credit card for all gift card orders.
@@ -188,7 +223,30 @@ function FragCheckout() {
     </div>)
 
     const sectEtape4 = (<div>
-        
+        <section className="checkout--step checkout--review">
+            <h2 className="checkout--subheading">Review</h2>
+            <div className="checkout--review-row">
+                <div className="checkout--review-section">
+                    <h3>Shipping Adress</h3>
+                </div>
+            </div>
+            <div className="checkout--review-row">
+                <div className="checkout--review-section">
+                    <h3>Delivery Options</h3>
+                </div>
+            </div>
+            <div className="checkout--review-row">
+                <div className="checkout--review-section">
+                    <h3>Payment Method</h3>
+                </div>
+            </div>
+            <div className="checkout--review-row">
+                <div className="checkout--review-section">
+                    <h3>Promo Code or Gift Card</h3>
+                </div>
+            </div>
+        </section>
+        {orderSummary}
     </div>)
 
   return (

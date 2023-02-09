@@ -130,6 +130,10 @@
     
                 .checkout--b {
                     margin: 0px;
+
+                    .lien--checkout {
+                        color: #fff;
+                    }
                 }
     
                 .btn[disabled] {
@@ -148,6 +152,8 @@
                     background-color: rgb(196, 196, 196);
                     color: rgb(255, 255, 255);
                     pointer-events: none;
+
+                    
                 }
             }
         }
