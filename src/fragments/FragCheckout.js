@@ -2,51 +2,6 @@ import React, {Fragment, useState} from 'react'
 import './styles/FragCheckout.scss'
 import { Link } from 'react-router-dom'
 
-import axios from 'axios';
-
-const getAccessToken = async () => {
-  try {
-    const response = await axios.post(
-      'https://5af75a7bf469fffaf5a810de95c26ad7:oHrr4tbnB1PH0uz6VQNUvU-XzkKLeHGbflVmYMpUE5aRC3M6Ce1ctSfogIoB7J77@sandbox.moncashbutton.digicelgroup.com/Api/oauth/token',
-      'scope=read,write&grant_type=client_credentials',
-      {
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/x-www-form-urlencoded'
-        }
-      }
-    );
-    return response.data.access_token;
-  } catch (error) {
-    console.error(error);
-    
-  }
-};
-
-const createPayment = async (amount, orderId) => {
-  try {
-    const accessToken = await getAccessToken();
-    const response = await axios.post(
-      'https://sandbox.moncashbutton.digicelgroup.com/Api/v1/CreatePayment',
-      {
-        amount: 500,
-        orderId: 1
-      },
-      {
-        headers: {
-          accept: 'application/json',
-          authorization: `Bearer ${accessToken}`,
-          'content-type': 'application/json'
-        }
-      }
-    );
-    return response.data;
-  } catch (error) {
-    console.error(error);
-  }
-};
-
-
 
 
 function FragCheckout() {
@@ -226,7 +181,6 @@ function FragCheckout() {
                 </p>
                 <div className="checkout--payment-quick">
                     <h3>Alternative Payment Methods</h3>
-                    <button type='button' onClick={createPayment}>Payment</button>
                 </div>
             </div>
         </section>
