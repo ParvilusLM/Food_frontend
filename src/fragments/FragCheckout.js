@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 
 function FragCheckout() {
-    const [etape, setEtape] = useState(4);
+    const [etape, setEtape] = useState(1);
 
     const orderSummary =(
         <section className="checkout--order">
@@ -37,10 +37,18 @@ function FragCheckout() {
             <div className="checkout--order-btns">
                 <button className="btn btn--default btn--secondary">Continue</button>
             </div>
+            <div className="checkout--order-btns checkout--order-btn--place-order">
+                <button className="btn btn--default ">
+                    <div className="checkout--order-btn--default">
+                        Place Order
+                        <span>$0.00</span>
+                    </div>
+                </button>
+            </div>
         </section>
     )
 
-    const sectEtape1 = (<div>
+    const sectEtape1 = (<div className='etape'>
         <section className="checkout--set checkout--shipping">
             <h2 className="checkout--subheading">Shipping</h2>
             <div className="checkout--step-content">
@@ -148,7 +156,7 @@ function FragCheckout() {
         {orderSummary}
     </div>)
 
-    const sectEtape2 = (<div>
+    const sectEtape2 = (<div className='etape'>
         <section className="checkout--step checkout--delivery">
             <h2 className="checkout--subheading">Delivery</h2>
             <div className="checkout--step-content">
@@ -168,7 +176,7 @@ function FragCheckout() {
         {orderSummary}
     </div>)
     
-    const sectEtape3 = (<div>
+    const sectEtape3 = (<div className='etape'>
         <section className="checkout--step checkout--payment">
             <h2 className="checkout--subheading">Payment</h2>
             <div className="checkout--step-content">
@@ -222,28 +230,56 @@ function FragCheckout() {
         {orderSummary}
     </div>)
 
-    const sectEtape4 = (<div>
+    const sectEtape4 = (<div className='etape'>
         <section className="checkout--step checkout--review">
             <h2 className="checkout--subheading">Review</h2>
             <div className="checkout--review-row">
                 <div className="checkout--review-section">
                     <h3>Shipping Adress</h3>
+                    <button type='button' className="btn--link checkout--btn-link checkout--btn-top">Edit</button>
+                    <span className="checkout--shipping-summary--name">Love Marckendy Parvilus</span>
+                    <span>Haiti, Cap-haitien, Charrier, rue de l'amitie no208</span>
+                    <span>Anchorage, AK 85001</span>
+                    <p>lovemarckendyparvilus@gmail.com</p>
+                </div>
+
+                <div className="checkout--review-section">
+                    <h3>Payment Method</h3>
+                    <button type='button' className="btn--link checkout--btn-link checkout--btn-top">Edit</button>
+                    <button className="btn--link checkout--btn-outline">Add Payment Method</button>
                 </div>
             </div>
             <div className="checkout--review-row">
                 <div className="checkout--review-section">
                     <h3>Delivery Options</h3>
-                </div>
-            </div>
-            <div className="checkout--review-row">
-                <div className="checkout--review-section">
-                    <h3>Payment Method</h3>
+                    <button type='button' className="btn--link checkout--btn-link checkout--btn-top">Edit</button>
+                    <ul></ul>
+                    <div className="checkout--small-print">
+                        Due to high package volume with UPS and USPS, 
+                        processing and delivery delays may occur — 
+                        we’ll keep you updated as we try to move everything along as quickly as possible.
+                    </div>
+                    <button type='button' className="btn--link checkout--btn-link checkout--delivery-estimates">See Shipping Estimates & Options</button>
+                    <button type='button' className="btn--link checkout--btn-outline">+ Add Gift Note</button>
                 </div>
             </div>
             <div className="checkout--review-row">
                 <div className="checkout--review-section">
                     <h3>Promo Code or Gift Card</h3>
+                    <form action="" className="checkout--form checkout--codes-form">
+                        <div className="checkout--form-input">
+                            <div className="input--container">
+                                <label htmlFor="" className='input--label'>
+                                    <span className="input--label-text">Enter Number</span>
+                                </label>
+                                <input id='EnterNumber' placeholder='' type="text" className="input" />
+                            </div>
+                        </div>
+                    </form>
                 </div>
+            </div>
+            <div>
+                <h3>Your Cart</h3>
             </div>
         </section>
         {orderSummary}
@@ -255,7 +291,7 @@ function FragCheckout() {
             <div className="checkoutMount">
                 <div className="checkout checkout--container">
                     <header className="checkout--header">
-                        <Link className="checkout--header-back" to='/shop'>
+                        <Link className="lien checkout--header-back" to='/shop'>
                             <svg className="checkout__header-arrow" aria-hidden="true" width="20" height="16" >
                                 <path d="M19.384 7.62H1.3L8.27.65a.38.38 0 10-.54-.538L.112 7.73a.385.385 0 00-.083.416c.02.046.047.088.083.124l7.618 7.618a.38.38 0 10.539-.538L1.3 8.38h18.084a.381.381 0 000-.762" 
                                     fill="currentColor" 
@@ -267,7 +303,7 @@ function FragCheckout() {
 
                         <div className="checout--header-title">
                             <Link className='lien' to='/'>
-                                <img src="img/logo52.svg" alt="Food52 Food Community" />
+                                <img src="img/logo52.svg" alt="Food52 Food Community" className='image'/>
                             </Link>
                             <h1 className="checkout--header-heading">Checkout</h1>
                         </div>
