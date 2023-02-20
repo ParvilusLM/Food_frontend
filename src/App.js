@@ -6,7 +6,8 @@ import {
 } from "react-router-dom";
 import loadable from '@loadable/component'
 import ScrollToTop from './composants/ScrollToTop'
-import { Check } from '@material-ui/icons';
+import DetectionChangementPage from './composants/DetectionChangementPage';
+import { useState } from 'react';
 
 const ContenuSponsorise = loadable(() => import('./composants/ContenuSponsorise'))
 const Header = loadable(() => import('./composants/Header'))
@@ -32,14 +33,19 @@ const Team = loadable(() => import('./pages/Team'))
 const Travel = loadable(() => import('./pages/Travel'))
 
 
-function App() {
+function App(props) {
+  const [showComponents, setShowComponents] = useState(window.location.pathname !== "/checkout");
+  const [currentPath, setCurrentPath] = useState('');
+
+
   return (
-    <Router>
+    <Router >
+      <DetectionChangementPage setCurrentPath={setCurrentPath} />
       <ScrollToTop />
-      <ContenuSponsorise />
-      <Header />
+      {currentPath !== '/checkout' && <ContenuSponsorise />}
+      {currentPath !== '/checkout' && <Header />}
       <Routes>
-        <Route path="/" element={<Accueil />} />
+        <Route path="/"  element={<Accueil />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/events" element={<Events />} />
@@ -58,7 +64,7 @@ function App() {
         <Route path="/team" element={<Team />} />
         <Route path="/travel" element={<Travel />} />
       </Routes>
-      <Footer />
+      {currentPath !== '/checkout' && <Footer />}
     </Router>
   );
 }

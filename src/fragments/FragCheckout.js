@@ -34,22 +34,24 @@ function FragCheckout() {
                     </tr>
                 </tfoot>
             </table>
-            <div className="checkout--order-btns">
+            {etape !== 4 && <div className="checkout--order-btns">
                 <button className="btn btn--default btn--secondary">Continue</button>
-            </div>
-            <div className="checkout--order-btns checkout--order-btn--place-order">
+            </div>}
+            
+            {etape===4 && <div className="checkout--order-btns checkout--order-btn--place-order">
                 <button className="btn btn--default ">
                     <div className="checkout--order-btn--default">
                         Place Order
                         <span>$0.00</span>
                     </div>
                 </button>
-            </div>
+            </div>}
+            
         </section>
     )
 
     const sectEtape1 = (<div className='etape'>
-        <section className="checkout--set checkout--shipping">
+        <section className="checkout--step checkout--shipping">
             <h2 className="checkout--subheading">Shipping</h2>
             <div className="checkout--step-content">
                 <h3>Shipping Address</h3>
@@ -112,7 +114,7 @@ function FragCheckout() {
                         <div className="checkout--form-input checkout--shipping-state">
                             <div className="input--container">
                                 <label htmlFor="State" className="label--input">
-                                    <span className="label--input-text">State</span>
+                                    <span className="label--select-text">State</span>
                                 </label>
                                 <select name="region" id="State" className='select--region'>
                                     <option hidden disabled></option>

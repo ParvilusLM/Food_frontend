@@ -7,7 +7,9 @@ const FragCheckout = loadable(() => import('../fragments/FragCheckout'))
 function Checkout() {
   return (
     <Fragment>
-        <FragCheckout />
+      <div className="checkout">
+        <FragCheckout /> 
+      </div>
     </Fragment>
   )
 }
