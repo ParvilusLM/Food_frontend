@@ -20,6 +20,11 @@
             padding: 0 16px 93px 16px;
             text-align: left;
 
+            p {
+                margin: 0;
+                line-height: 1.64;
+            }
+
             .checkout--header {
                 border-bottom: 1px solid #eaeaea;
                 padding: 18px 0 15px 0;
@@ -179,7 +184,7 @@
                                 margin-top: -2px;
                             }
 
-                            .chekout--form {
+                            .checkout--form {
                                 width: 100%;
                                 font-weight: 400;
 
@@ -331,14 +336,21 @@
                             }
 
                             .checkout--delivery-overview {
-                                .checkout--delivery-policy {
-                                    .checkout--btn-link {
+                                padding-bottom: 24px;
 
+                                .checkout--delivery-policy {
+                                    font-weight: 400;
+                                    font-family: "Chronicle SSm A", serif;
+                                    font-size: 13px;
+                                    font-style: italic;
+
+                                    .checkout--btn-link {
+                                        font-size: 14px;
                                     }
                                 }
 
                                 .checkout--btn-outline {
-
+                                    margin-top: 14px;
                                 }
                             }
 
@@ -349,11 +361,30 @@
                     }
 
                     .checkout--payment {
-                        .checkout--codes-note {
+                        
+                        h3 {
+                            padding-bottom: 9px;
+                            color: #2d4558;
+                            font-size: 13px;
+                            font-weight: 500;
+                            line-height: normal;
+                            text-transform: uppercase;
+                        }
 
+
+
+                        .checkout--codes-note {
+                            padding: 14px 0 18px 0;
+                            color: #909090;
+                            font-family: "Chronicle SSm A", serif;
+                            font-style: italic;
+                            font-size: 11px;
+                            font-weight: 500;
                         }
 
                         .checkout--payment-quick {
+                            border-top: 1px solid #eaeaea;
+
                             h3 {
 
                             }
@@ -443,18 +474,31 @@
                         padding: 20px 0 18px 0;
                         display: block;
 
-                        tbody {
-                            .checkout--order-row {
-                                td {
+                        .checkout--order-row {
+                            display: flex;
+                            justify-content: space-between;
+                            font-size: 13px;
+                            font-weight: 300;
+                            line-height: 1.77;
+                        }
 
-                                }
+                        tbody {
+                            tr {
+                                td {}
                             }
                         }
 
                         tfoot {
-                            tr {
-                                td {
 
+                            .checkout--order-row--total {
+                                margin-top: 15px;
+                                font-weight: 500;
+                                font-family: "Chronicle SSm A", serif;
+                                font-size: 18px;
+                                line-height: normal;
+                                justify-content: flex-end;
+
+                                td {
                                 }
                             }
                         }
@@ -608,7 +652,9 @@
                                         .checkout--btn-link {}
                                     }
 
-                                    .checkout--btn-outline {}
+                                    .checkout--btn-outline {
+                                        margin-bottom: 4px;
+                                    }
                                 }
 
                                 .checkout--delivery-shipments {}
@@ -619,7 +665,11 @@
                             .checkout--codes-note {}
 
                             .checkout--payment-quick {
-                                h3 {}
+                                padding-top: 20px;
+
+                                h3 {
+                                    padding-bottom: 12px;
+                                }
                             }
                         }
 
@@ -683,11 +733,6 @@
 
                             tbody {
                                 .checkout--order-row {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    font-size: 13px;
-                                    font-weight: 300;
-                                    line-height: 1.77;
 
                                     td {
 
@@ -697,13 +742,7 @@
 
                             tfoot {
                                 tr {
-                                    display: flex;
-                                    margin-top: 15px;
-                                    font-weight: 500;
-                                    font-family: "Chronicle SSm A", serif;
-                                    font-size: 18px;
-                                    line-height: normal;
-                                    justify-content: flex-end;
+                                    
 
                                     td {
                                     }

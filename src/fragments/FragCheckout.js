@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 
 function FragCheckout() {
-    const [etape, setEtape] = useState(1);
+    const [etape, setEtape] = useState(3);
 
     const orderSummary =(
         <section className="checkout--order">
@@ -35,7 +35,7 @@ function FragCheckout() {
                 </tfoot>
             </table>
             {etape !== 4 && <div className="checkout--order-btns">
-                <button className="btn btn--default btn--secondary">Continue</button>
+                <button className="btn btn--secondary btn--default">Continue</button>
             </div>}
             
             {etape===4 && <div className="checkout--order-btns checkout--order-btn--place-order">
@@ -55,7 +55,7 @@ function FragCheckout() {
             <h2 className="checkout--subheading">Shipping</h2>
             <div className="checkout--step-content">
                 <h3>Shipping Address</h3>
-                <form action="" className="chekout--form checkout--shipping-form">
+                <form action="" className="checkout--form checkout--shipping-form">
                     <div className="checkout--form-row">
                         <div className="checkout--form-input">
                             <div className="input--container">
@@ -167,7 +167,7 @@ function FragCheckout() {
                     <p className="checkout--delivery-policy">
                         Free Standard Shipping on Orders $99+. $9 flat rate for Standard Shipping on orders under $99.
                          If available, Express Shipping options are listed below per merchant (additional charges will be applied as specified).
-                        View our shipping policy 
+                        View our shipping policy  
                         <Link className="lien checkout--btn-link" target='_blank' to=''>here</Link>
                     </p>
                     <button type='button' className="btn--link checkout--btn-outline">+ Add Gift Note</button>
@@ -186,37 +186,37 @@ function FragCheckout() {
                 <form action="" className="checkout--form checkout--payment-form">
                     <div className="checkout--form-row">
                         <div className="checkout--form-input">
-                            <div className="form--input-container">
-                               <label htmlFor="CardNumber" className="input--label">
-                                    <span className="input--label-text--CN">Card Number</span>
+                            <div className="input--container">
+                               <label htmlFor="CardNumber" className="label--input">
+                                    <span className="label--input-text input--label-text--CN">Card Number</span>
                                 </label>
-                                <input id='CardNumber' placeholder='' name='ccNumber' type="tel" className="input checkout--form-input checkout--paymentt-card--default" />
+                                <input id='CardNumber' placeholder='' name='ccNumber' type="tel" className="input--el checkout--form-input checkout--paymentt-card--default" />
                             </div>
                         </div>
                     </div>
                     <div className="checkout--form-row">
                         <div className="checkout--form-input checkout--payment-exp">
-                            <div className="form--input-container">
-                                <label htmlFor="MM/YY" className="input--label">
-                                    <span className="input--label-text--CCE">MM/YY</span>
+                            <div className="input--container">
+                                <label htmlFor="MM/YY" className="label--input">
+                                    <span className="label--input-text labal--input-text--CCE">MM/YY</span>
                                 </label>
-                                <input id='MM/YY' placeholder='' name='ccExpiration' type="tel" className="input" />
+                                <input id='MM/YY' placeholder='' name='ccExpiration' type="tel" className="input--el" />
                             </div>
                         </div>
                         <div className="checkout--form-input checkout--paymentccv-">
-                            <div className="form--input-container">
-                                <label htmlFor="CVV" className="input--label">
-                                    <span className="input--label-text--CVV">CVV</span>
+                            <div className="input--container">
+                                <label htmlFor="CVV" className="label--input">
+                                    <span className="label--input-text labal--input-text--CVV">CVV</span>
                                 </label>
-                                <input id='CVV' placeholder='' name='ccCvv' type="tel" maxLength='4' className="input" />
+                                <input id='CVV' placeholder='' name='ccCvv' type="tel" maxLength='4' className="input--el" />
                             </div>
                         </div>
                         <div className="checkout--form-input checkout--payment-zip">
-                            <div className="form--input-container">
-                                <label htmlFor="BillingZip" className="input--label">
-                                    <span className="input--label-text--zip">Billing Zip</span>
+                            <div className="input--container">
+                                <label htmlFor="BillingZip" className="label--input">
+                                    <span className="label--input-text labal--input-text--zip">Billing Zip</span>
                                 </label>
-                                <input id='BillingZip' placeholder='' type="tel" maxLength='5' className="input" />
+                                <input id='BillingZip' placeholder='' type="tel" maxLength='5' className="input--el" />
                             </div>
                         </div>
                     </div>
