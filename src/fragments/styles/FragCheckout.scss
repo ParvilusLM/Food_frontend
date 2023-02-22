@@ -25,6 +25,15 @@
                 line-height: 1.64;
             }
 
+            h3 {
+                padding-bottom: 9px;
+                color: #2d4558;
+                font-size: 13px;
+                font-weight: 500;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+
             .checkout--header {
                 border-bottom: 1px solid #eaeaea;
                 padding: 18px 0 15px 0;
@@ -203,7 +212,7 @@
                                                 padding: 0px 5px;
                                                 position: absolute;
                                                 top: -7px;
-                                                left: 7px;
+                                                left: 7px; 
 
                                                 &::before {
                                                     content: "";
@@ -213,7 +222,7 @@
                                                     position: absolute;
                                                     top: 0px;
                                                     left: 0px;
-                                                    opacity: 1;
+                                                    opacity: 0;
                                                     transition: opacity 0.2s ease-in-out 0s;
                                                 }
 
@@ -225,6 +234,13 @@
                                                     font-size: 16px;
                                                     line-height: normal;
                                                     transform: translateY(20px);
+                                                    transition: color 0.2s ease-in-out 0s, font-size 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+                                                }
+
+                                                .label--text-onFocus {
+                                                    color: rgb(113, 113, 113);
+                                                    font-size: 12px;
+                                                    transform: translateY(0px);
                                                     transition: color 0.2s ease-in-out 0s, font-size 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
                                                 }
 
@@ -240,6 +256,13 @@
                                                 }
                                             }
 
+                                            .label--onFocus {
+                                                &::before {
+                                                    opacity: 1;
+                                                }
+                                                
+                                            }
+
                                             .input--el {
                                                 background: rgb(255, 255, 255);
                                                 width: 100%;
@@ -252,6 +275,13 @@
                                                 font-family: inherit;
                                                 border-radius: 1px;
                                                 appearance: none;
+                                            }
+
+                                            .checkout--payment-card {
+                                                background-image: url(../../../public/img/icon-creditCard.svg);
+                                                background-size: 35px 22px;
+                                                background-position: calc(100% - 13px) center;
+                                                background-repeat: no-repeat;
                                             }
 
                                             select {
@@ -371,6 +401,7 @@
                             text-transform: uppercase;
                         }
 
+                        
 
 
                         .checkout--codes-note {
@@ -393,7 +424,14 @@
 
                     .checkout--review {
                         .checkout--review-row {
+                            margin-bottom: 18px;
+                            border-bottom: 1px solid #eaeaea;
+                            padding-bottom: 20px;
+
                             .checkout--review-section {
+                                width: 100%;
+                                position: relative;
+
                                 h3 {
 
                                 }
@@ -403,7 +441,9 @@
                                 }
 
                                 .checkout--btn-top {
-
+                                    position: absolute;
+                                    top: 0;
+                                    right: 0;
                                 }
 
                                 .checkout--shipping-summary--name {
@@ -419,21 +459,33 @@
                                 }
 
                                 .checkout--small-print {
+                                    color: #909090;
+                                    font-weight: 400;
+                                    font-family: "Chronicle SSm A", serif;
+                                    font-size: 13px;
+                                    font-style: italic;
+                                }
 
+                                .checkout--small-print--strong {
+                                    color: #2d4558;
                                 }
 
                                 .checkout--delivery-estimates {
-                                    
+                                    margin-top: 14px;
                                 }
 
                                 .checkout--btn-outline {
-                                    
+                                    margin-top: 14px;
                                 }
 
                                 .checkout--codes-form {
+
                                     .checkout--form-input {
+
                                         .input--container {
                                             .input--label {
+                                                
+
                                                 .input--label-text {
 
                                                 }
@@ -692,10 +744,16 @@
 
                                     .checkout--delivery-estimates {}
 
-                                    .checkout--btn-outline {}
+                                    .checkout--btn-outline {
+                                        margin-top: 18px;
+                                    }
 
                                     .checkout--codes-form {
+                                        
+
                                         .checkout--form-input {
+                                            max-width: 343px;
+
                                             .input--container {
                                                 .input--label {
                                                     .input--label-text {}
@@ -871,6 +929,7 @@
 
                         .checkout--review {
                             .checkout--review-row {
+                                display: flex;
                                 .checkout--review-section {
                                     h3 {}
 
@@ -901,6 +960,14 @@
                                             }
                                         }
                                     }
+                                }
+
+                                .checkout--review-section+.checkout--review-section {
+                                    width: 50%;
+                                    margin-left: 16px;
+                                    border-left: 1px solid #eaeaea;
+                                    padding-left: 21px;
+                                    flex-shrink: 0;
                                 }
                             }
 

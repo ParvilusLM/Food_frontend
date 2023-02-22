@@ -50,13 +50,13 @@ function DrawerConnexion() {
               </p>
               <form action="" className="formulaire">
                 <div className="email--container">
-                  <label htmlFor="Email" className='label'>
+                  <label htmlFor="Email" className='label label--1'>
                     <span className="label--text label--text-email">Email</span>
                   </label>
                   <input type="email" name='email' placeholder='' id='email' className="input input--email" />
                 </div>
                 <div className="password--container">
-                  <label htmlFor="Password" className='label'>
+                  <label htmlFor="Password" className='label label--2'>
                     <span className="label--text label--text-password">Password</span>
                   </label>
                   <input type="password" name='password' placeholder='' id='password' className="input input--password" />
@@ -79,18 +79,22 @@ function DrawerConnexion() {
   useEffect(() => {
     $(function () {
       $('.input--email').focusin(function() {
+        $('.label--1').addClass('label--onFocus');
         $('.label--text-email').addClass('label--text-onFocus');
       }).focusout(function() {
         if($('.input--email').val() === '') {
+          $('.label--1').removeClass('label--onFocus');
           $('.label--text-email').removeClass('label--text-onFocus');
         }
         
       });
 
       $('.input--password').focusin(function() {
+        $('.label--2').addClass('label--onFocus');
         $('.label--text-password').addClass('label--text-onFocus');
       }).focusout(function() {
         if($('.input--password').val() === '') {
+          $('.label--2').removeClass('label--onFocus');
           $('.label--text-password').removeClass('label--text-onFocus');
         }
         

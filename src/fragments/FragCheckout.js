@@ -1,11 +1,151 @@
-import React, {Fragment, useState} from 'react'
+import React, {Fragment, useState, useEffect} from 'react'
 import './styles/FragCheckout.scss'
 import { Link } from 'react-router-dom'
+import $ from 'jquery'
 
 
 
 function FragCheckout() {
-    const [etape, setEtape] = useState(3);
+    const [etape, setEtape] = useState(1);
+
+    const goToNextSect = function() {
+        setEtape(etape+1);
+    }
+
+    useEffect(() => {
+        $(function () {
+            $('.input--1').focusin(function() {
+                $('.label--1').addClass('label--onFocus');
+                $('.label--text-1').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--1').val() === '') {
+                    $('.label--text-1').removeClass('label--text-onFocus');
+                    $('.label--1').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--2').focusin(function() {
+                $('.label--2').addClass('label--onFocus');
+                $('.label--text-2').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--2').val() === '') {
+                    $('.label--text-2').removeClass('label--text-onFocus');
+                    $('.label--2').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--3').focusin(function() {
+                $('.label--3').addClass('label--onFocus');
+                $('.label--text-3').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--3').val() === '') {
+                    $('.label--text-3').removeClass('label--text-onFocus');
+                    $('.label--3').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--4').focusin(function() {
+                $('.label--4').addClass('label--onFocus');
+                $('.label--text-4').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--4').val() === '') {
+                    $('.label--text-4').removeClass('label--text-onFocus');
+                    $('.label--4').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--5').focusin(function() {
+                $('.label--5').addClass('label--onFocus');
+                $('.label--text-5').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--5').val() === '') {
+                    $('.label--text-5').removeClass('label--text-onFocus');
+                    $('.label--5').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--6').focusin(function() {
+                $('.label--6').addClass('label--onFocus');
+                $('.label--text-6').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--6').val() === '') {
+                    $('.label--text-6').removeClass('label--text-onFocus');
+                    $('.label--6').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--7').focusin(function() {
+                $('.label--7').addClass('label--onFocus');
+                $('.label--text-7').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--7').val() === '') {
+                    $('.label--text-7').removeClass('label--text-onFocus');
+                    $('.label--7').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--8').focusin(function() {
+                $('.label--8').addClass('label--onFocus');
+                $('.label--text-8').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--8').val() === '') {
+                    $('.label--text-8').removeClass('label--text-onFocus');
+                    $('.label--8').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--9').focusin(function() {
+                $('.label--9').addClass('label--onFocus');
+                $('.label--text-9').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--9').val() === '') {
+                    $('.label--text-9').removeClass('label--text-onFocus');
+                    $('.label--9').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--10').focusin(function() {
+                $('.label--10').addClass('label--onFocus');
+                $('.label--text-10').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--10').val() === '') {
+                    $('.label--text-10').removeClass('label--text-onFocus');
+                    $('.label--10').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--11').focusin(function() {
+                $('.label--11').addClass('label--onFocus');
+                $('.label--text-11').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--11').val() === '') {
+                    $('.label--text-11').removeClass('label--text-onFocus');
+                    $('.label--11').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--12').focusin(function() {
+                $('.label--12').addClass('label--onFocus');
+                $('.label--text-12').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--12').val() === '') {
+                    $('.label--text-12').removeClass('label--text-onFocus');
+                    $('.label--12').removeClass('label--onFocus');
+                }
+            });
+
+            $('.input--13').focusin(function() {
+                $('.label--13').addClass('label--onFocus');
+                $('.label--text-13').addClass('label--text-onFocus');
+            }).focusout(function() {
+                if($('.input--13').val() === '') {
+                    $('.label--text-13').removeClass('label--text-onFocus');
+                    $('.label--13').removeClass('label--onFocus');
+                }
+            });
+
+        })
+  })
 
     const orderSummary =(
         <section className="checkout--order">
@@ -35,14 +175,14 @@ function FragCheckout() {
                 </tfoot>
             </table>
             {etape !== 4 && <div className="checkout--order-btns">
-                <button className="btn btn--secondary btn--default">Continue</button>
+                <button onClick={goToNextSect} className="btn btn--secondary btn--default btn--continue">Continue</button>
             </div>}
             
             {etape===4 && <div className="checkout--order-btns checkout--order-btn--place-order">
-                <button className="btn btn--default ">
+                <button className="btn btn--default btn--place-order">
                     <div className="checkout--order-btn--default">
                         Place Order
-                        <span>$0.00</span>
+                        <span> $0.00</span>
                     </div>
                 </button>
             </div>}
@@ -59,61 +199,61 @@ function FragCheckout() {
                     <div className="checkout--form-row">
                         <div className="checkout--form-input">
                             <div className="input--container">
-                                <label htmlFor="FirstName" className="label--input">
-                                    <span className="label--input-text">First Name</span>
+                                <label htmlFor="FirstName" className="label--input label--1">
+                                    <span className="label--input-text label--text-1">First Name</span>
                                 </label>
-                                <input id='FirstName' placeholder='' type="text" className="input--el" name='firstName'/>
+                                <input id='FirstName' placeholder='' type="text" className="input--el input--1" name='firstName'/>
                             </div>
                         </div>
                         <div className="checkout--form-input">
                             <div className="input--container">
-                                <label htmlFor="LastName" className="label--input">
-                                    <span className="label--input-text">Last Name</span>
+                                <label htmlFor="LastName" className="label--input label--2">
+                                    <span className="label--input-text label--text-2">Last Name</span>
                                 </label>
-                                <input id='LastName' placeholder='' type="text" className="input--el" name='lastName' />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="checkout--form-row">
-                        <div className="checkout--form-input">
-                            <div className="input--container">
-                                <label htmlFor="AddressLine1" className="label--input">
-                                    <span className="label--input-text">Address Line 1</span>
-                                </label>
-                                <input id='AddressLine1' placeholder='' type="text" className="input--el" />
+                                <input id='LastName' placeholder='' type="text" className="input--el input--2" name='lastName' />
                             </div>
                         </div>
                     </div>
                     <div className="checkout--form-row">
                         <div className="checkout--form-input">
                             <div className="input--container">
-                                <label htmlFor="AddressLine2" className="label--input">
-                                    <span className="label--input-text">Address Line 2</span>
+                                <label htmlFor="AddressLine1" className="label--input label--3">
+                                    <span className="label--input-text label--text-3">Address Line 1</span>
                                 </label>
-                                <input id='AddressLine2' placeholder='' type="text" className="input--el" />
+                                <input id='AddressLine1' placeholder='' type="text" className="input--el input--3" />
                             </div>
                         </div>
                     </div>
                     <div className="checkout--form-row">
                         <div className="checkout--form-input">
                             <div className="input--container">
-                                <label htmlFor="ZipCode" className="label--input">
-                                    <span className="label--input-text">Zip Code</span>
+                                <label htmlFor="AddressLine2" className="label--input label--4">
+                                    <span className="label--input-text label--text-4">Address Line 2</span>
                                 </label>
-                                <input id='ZipCode' name='postalCode' placeholder='' type="tel" maxLength='10' className="input--el" />
+                                <input id='AddressLine2' placeholder='' type="text" className="input--el input--4" />
+                            </div>
+                        </div>
+                    </div>
+                    <div className="checkout--form-row">
+                        <div className="checkout--form-input">
+                            <div className="input--container">
+                                <label htmlFor="ZipCode" className="label--input label--5">
+                                    <span className="label--input-text label--text-5">Zip Code</span>
+                                </label>
+                                <input id='ZipCode' name='postalCode' placeholder='' type="tel" maxLength='10' className="input--el input--5" />
                             </div>
                         </div>
                         <div className="checkout--form-input">
                             <div className="input--container">
-                                <label htmlFor="City" className="label--input">
-                                    <span className="label--input-text">City</span>
+                                <label htmlFor="City" className="label--input label--6">
+                                    <span className="label--input-text label--text-6">City</span>
                                 </label>
-                                <input id='City' name='locality' placeholder='' type="text" className="input--el" />
+                                <input id='City' name='locality' placeholder='' type="text" className="input--el input--6" />
                             </div>
                         </div>
                         <div className="checkout--form-input checkout--shipping-state">
                             <div className="input--container">
-                                <label htmlFor="State" className="label--input">
+                                <label htmlFor="State" className="label--input label--onFocus">
                                     <span className="label--select-text">State</span>
                                 </label>
                                 <select name="region" id="State" className='select--region'>
@@ -130,10 +270,10 @@ function FragCheckout() {
                     <div className="checkout--form-row">
                         <div className="checkout--form-input">
                             <div className="input--container">
-                                <label htmlFor="PhoneNumber(optional)" className="label--input">
-                                    <span className="label--input-text">Phone Number(optional)</span>
+                                <label htmlFor="PhoneNumber(optional)" className="label--input label--7">
+                                    <span className="label--input-text label--text-7">Phone Number(optional)</span>
                                 </label>
-                                <input id='PhoneNumber(optional)' placeholder='' type="tel" className="input--el" />
+                                <input id='PhoneNumber(optional)' placeholder='' type="tel" className="input--el input--7" />
                             </div>
                         </div>
                     </div>
@@ -141,10 +281,10 @@ function FragCheckout() {
                     <div className="checkout--form-row">
                         <div className="checkout--form-input">
                             <div className="input--container">
-                                <label htmlFor="ConfirmationEmail" className="label--input">
-                                    <span className="label--input-text">Confirmation Email</span>
+                                <label htmlFor="ConfirmationEmail" className="label--input label--8">
+                                    <span className="label--input-text label--text-8">Confirmation Email</span>
                                 </label>
-                                <input id='ConfirmationEmail' placeholder='' name='notificationEmail' type="email" className="input--el" />
+                                <input id='ConfirmationEmail' placeholder='' name='notificationEmail' type="email" className="input--el input--8" />
                             </div>
                         </div>
                     </div>
@@ -187,41 +327,41 @@ function FragCheckout() {
                     <div className="checkout--form-row">
                         <div className="checkout--form-input">
                             <div className="input--container">
-                               <label htmlFor="CardNumber" className="label--input">
-                                    <span className="label--input-text input--label-text--CN">Card Number</span>
+                               <label htmlFor="CardNumber" className="label--input label--9">
+                                    <span className="label--input-text label--text-9 input--label-text--CN">Card Number</span>
                                 </label>
-                                <input id='CardNumber' placeholder='' name='ccNumber' type="tel" className="input--el checkout--form-input checkout--paymentt-card--default" />
+                                <input id='CardNumber' placeholder='' name='ccNumber' type="tel" className="input--el input--9  checkout--payment-card checkout--payment-card--default" />
                             </div>
                         </div>
                     </div>
                     <div className="checkout--form-row">
                         <div className="checkout--form-input checkout--payment-exp">
                             <div className="input--container">
-                                <label htmlFor="MM/YY" className="label--input">
-                                    <span className="label--input-text labal--input-text--CCE">MM/YY</span>
+                                <label htmlFor="MM/YY" className="label--input label--10">
+                                    <span className="label--input-text label--text-10 labal--input-text--CCE">MM/YY</span>
                                 </label>
-                                <input id='MM/YY' placeholder='' name='ccExpiration' type="tel" className="input--el" />
+                                <input id='MM/YY' placeholder='' name='ccExpiration' type="tel" className="input--el input--10" />
                             </div>
                         </div>
                         <div className="checkout--form-input checkout--paymentccv-">
                             <div className="input--container">
-                                <label htmlFor="CVV" className="label--input">
-                                    <span className="label--input-text labal--input-text--CVV">CVV</span>
+                                <label htmlFor="CVV" className="label--input label--11">
+                                    <span className="label--input-text label--text-11 labal--input-text--CVV">CVV</span>
                                 </label>
-                                <input id='CVV' placeholder='' name='ccCvv' type="tel" maxLength='4' className="input--el" />
+                                <input id='CVV' placeholder='' name='ccCvv' type="tel" maxLength='4' className="input--el input--11" />
                             </div>
                         </div>
                         <div className="checkout--form-input checkout--payment-zip">
                             <div className="input--container">
-                                <label htmlFor="BillingZip" className="label--input">
-                                    <span className="label--input-text labal--input-text--zip">Billing Zip</span>
+                                <label htmlFor="BillingZip" className="label--input label--12">
+                                    <span className="label--input-text label--text-12 labal--input-text--zip">Billing Zip</span>
                                 </label>
-                                <input id='BillingZip' placeholder='' type="tel" maxLength='5' className="input--el" />
+                                <input id='BillingZip' placeholder='' type="tel" maxLength='5' className="input--el input--12" />
                             </div>
                         </div>
                     </div>
                 </form>
-                <p className="checkout--small-print checkout--codes-note">
+                <p className="checkout--small-print checkout--small-print--strong checkout--codes-note">
                     Note: Gift cards and promo codes can be entered on the next screen. For back-up purposes, we still require a credit card for all gift card orders.
                 </p>
                 <div className="checkout--payment-quick">
@@ -266,17 +406,20 @@ function FragCheckout() {
                 </div>
             </div>
             <div className="checkout--review-row">
-                <div className="checkout--review-section">
+                <div className="checkout--review-section checkout--step-content">
                     <h3>Promo Code or Gift Card</h3>
                     <form action="" className="checkout--form checkout--codes-form">
-                        <div className="checkout--form-input">
-                            <div className="input--container">
-                                <label htmlFor="" className='input--label'>
-                                    <span className="input--label-text">Enter Number</span>
-                                </label>
-                                <input id='EnterNumber' placeholder='' type="text" className="input" />
+                        <div className="checkout--form-row">
+                            <div className="checkout--form-input">
+                                <div className="input--container">
+                                    <label htmlFor="EnterNumber" className='label--input label--13'>
+                                        <span className="label--input-text label--text-13">Enter Number</span>
+                                    </label>
+                                    <input id='EnterNumber' placeholder='' type="text" className="input--el input--13" />
+                                </div>
                             </div>
                         </div>
+                        
                     </form>
                 </div>
             </div>
