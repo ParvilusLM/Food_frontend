@@ -443,7 +443,7 @@ function FragCheckout() {
                                     fillRule="evenodd">
                                 </path>
                             </svg>
-                            Back To Shop
+                            <span className='hide--sm'>Back To &nbsp;</span> Shop
                         </Link>
 
                         <div className="checout--header-title">
