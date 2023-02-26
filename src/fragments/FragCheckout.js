@@ -10,6 +10,18 @@ function FragCheckout() {
 
     const goToNextSect = function() {
         setEtape(etape+1);
+
+        if(etape+1 === 2) {
+            $('.step--2').addClass('checkout--header-step--active');
+        }
+
+        if(etape+1 === 3) {
+            $('.step--3').addClass('checkout--header-step--active');
+        }
+
+        if(etape+1 === 4) {
+            $('.step--4').addClass('checkout--header-step--active');
+        }
     }
 
     useEffect(() => {
@@ -459,16 +471,16 @@ function FragCheckout() {
 
                         <ol className="checkout--header-steps">
                             <li>
-                                <button className="checkout--header-step checkout--header-step--active" disabled>Shipping</button>
+                                <button className="checkout--header-step step--1 checkout--header-step--active" disabled>Shipping</button>
                             </li>
                             <li>
-                                <button className="checkout--header-step" disabled>Delivery</button>
+                                <button className="checkout--header-step step--2" disabled>Delivery</button>
                             </li>
                             <li>
-                                <button className="checkout--header-step" disabled>Payment</button>
+                                <button className="checkout--header-step step--3" disabled>Payment</button>
                             </li>
                             <li>
-                                <button className="checkout--header-step" disabled>Review</button>
+                                <button className="checkout--header-step step--4" disabled>Review</button>
                             </li>
                         </ol>
                     </header>

@@ -13,6 +13,9 @@ function LoginForm() {
     try {
       const user = await loginApi(email, password)
       dispatch(login(user))
+      // Stocker le token dans le localStorage
+      localStorage.setItem('token', user.token)
+
     } catch (error) {
       dispatch(authError(error))
     }

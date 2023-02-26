@@ -3,9 +3,14 @@ import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import { Link } from 'react-router-dom';
 import './styles/DrawerPanier.scss'
+import { useSelector } from 'react-redux'
+import loadable from '@loadable/component';
+
+const ProductInCartCard = loadable(() => import('../composants/ProductInCartCard'))
 
 function DrawerPanier() {
   const [state, setState] = React.useState({right: false});
+  const produitsP= useSelector(state => state.panier.produits)
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -32,10 +37,24 @@ function DrawerPanier() {
           <div className="decor__shipping"></div>
         </div>
         <div className='info__produits'>
-          <p className="panier-vide">
-            Your shopping cart is empty. Let's fix that!
-            <Link className="lien" to='/'>Shop now</Link>
-          </p>
+          {produitsP.length ===0 && 
+            <p className="panier-vide">
+              Your shopping cart is empty. Let's fix that!
+              <Link className="lien" to='/'>Shop now</Link>
+            </p>
+          }
+
+          {produitsP.length !==0 &&
+            <div className='wrapper--products'>
+              <ul>
+                {produitsP.map((item, index) => (
+                  <li key={index}>
+                    <ProductInCartCard donnees={item} />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          }
         </div>
         <div className='info__subtotal'>
           <div className="subtotal">

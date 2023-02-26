@@ -1,8 +1,16 @@
 import React, { Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import './styles/ProductCard.scss'
+import { useDispatch } from 'react-redux'
+import { ajoutProduit } from '../store/cartSlice'
 
 function ProductCard(props) {
+    const dispatch = useDispatch()
+
+    const handleAddToCart = () => {
+        dispatch(ajoutProduit(props.produit))
+    }
+
     return (
         <Fragment>
             <div className="product--container">
@@ -22,7 +30,7 @@ function ProductCard(props) {
                         <span className="product--variant">{props.produit.variantTexte}</span>
                     </div>
                 </Link>
-                <button className='produit--bouton' type='button'>
+                <button onClick={handleAddToCart} className='produit--bouton' type='button'>
                     <span className="produit--bouton-icon fa-solid fa-cart-shopping"></span>
                 </button>
             </div>

@@ -1,0 +1,186 @@
+.productInCartCard {
+    .produitInCart {
+        background: rgb(255, 255, 255);
+        margin-bottom: 13px;
+        padding: 13px;
+        display: flex;
+        position: relative;
+        color: rgb(68, 68, 68);
+        font-weight: 400;
+
+        .btn--supprimer {
+            background: transparent;
+            padding: 0;
+            border: none;
+            outline: none;
+            font-size: inherit;
+            font-family: inherit;
+            cursor: pointer;
+            display: inline;
+
+            position: absolute;
+            top: 3px;
+            right: 3px;
+
+            .icon--remove {
+                padding: 10px;
+                display: inline-block;
+
+                &::before {
+                    content: " ";
+                    background: url('../../../public/img/icon-cross.svg') #c4c4c4 no-repeat center;
+                    background-size: 8px;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    display: block;
+                }
+            }
+        }
+
+        .lien--image {
+            width: 75px;
+            height: 75px;
+            margin-right: 15px;
+            flex-shrink: 0;
+
+            .image {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        .contenu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: space-between;
+
+            .contenu--titre {
+                max-width: 175px;
+                line-height: 1.36;
+                font-weight: 300;
+                font-size: 14px;
+
+
+                .lien--titre-produit {
+                }
+            }
+
+            .contenu--sect {
+                width: 100%;
+                padding-top: 3px;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: justify;
+                justify-content: space-between;
+
+                .action--quantite {
+                    width: 78px;
+                    height: 24px;
+                    border: 1px solid rgb(234, 234, 234);
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    -webkit-box-align: center;
+                    align-items: center;
+                    font-size: 13px;
+                    font-weight: 500;
+
+                    .btn--dim-quantite, .btn--aug-quantite {
+                        width: 22px;
+                        color: rgb(196, 196, 196);
+                        font-size: 16px;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+
+                    .btn--dim-quantite {
+
+                    }
+
+                    .current--quantity {
+
+                    }
+
+                    .btn--aug-quantite {
+
+                    }
+                }
+
+                .prix {
+
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .productInCartCard {
+        .produitInCart {
+            .btn--supprimer {
+                .icon--remove {}
+            }
+
+            .lien--image {
+                width: 82px;
+                height: 82px;
+
+                .image {}
+            }
+
+            .contenu {
+                .contenu--titre {
+                    max-width: 175px;
+                    .lien--titre-produit {}
+                }
+
+                .contenu--sect {
+                    .action--quantite {
+                        .btn--dim-quantite {}
+
+                        .current--quantity {}
+
+                        .btn--aug-quantite {}
+                    }
+
+                    .prix {}
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .productInCartCard {
+        .produitInCart {
+            .btn--supprimer {
+                .icon--remove {}
+            }
+
+            .lien--image {
+                .image {}
+            }
+
+            .contenu {
+                .contenu--titre {
+                    .lien--titre-produit {}
+                }
+
+                .contenu--sect {
+                    .action--quantite {
+                        .btn--dim-quantite {}
+
+                        .current--quantity {}
+
+                        .btn--aug-quantite {}
+                    }
+
+                    .prix {}
+                }
+            }
+        }
+    }
+}

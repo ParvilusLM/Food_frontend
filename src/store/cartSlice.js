@@ -1,11 +1,16 @@
 import {createSlice} from "@reduxjs/toolkit";
 
+const initialState = {
+  produits: [],
+}
+
 const cartSlice = createSlice({
   name: "panier",
-  initialState: [],
+  initialState,
   reducers: {
     ajoutProduit: (state, action) => {
-
+      const product = {'quantite': 1, 'produit': action.payload};
+      state.produits.push(product);
     },
     suppressionProduit: (state, action) => {
 

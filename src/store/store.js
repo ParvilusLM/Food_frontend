@@ -1,10 +1,11 @@
-import { configureStore } from '@reduxjs/toolkit'
-import cartSlice from './cartSlice'
-import authSlice from './authSlice'
+import { configureStore } from '@reduxjs/toolkit';
+import { persistStore } from 'redux-persist';
+import persistedReducer from './persistConfig';
 
-export const store = configureStore({
-  reducer: {
-    panier: cartSlice,
-    auth: authSlice
-  },
-})
+const store = configureStore({
+  reducer: persistedReducer,
+});
+
+const persistor = persistStore(store);
+
+export { store, persistor };
