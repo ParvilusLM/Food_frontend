@@ -14,7 +14,7 @@ function LoginForm() {
       const user = await loginApi(email, password)
       dispatch(login(user))
       // Stocker le token dans le localStorage
-      localStorage.setItem('token', user.token)
+      // localStorage.setItem('token', user.token)
 
     } catch (error) {
       dispatch(authError(error))
@@ -23,6 +23,9 @@ function LoginForm() {
 
   return (
     <Fragment>
+      <div className="loginForm">
+
+      </div>
         <form onSubmit={handleSubmit}>
         <input type="email" onChange={(e) => setEmail(e.target.value)} />
         <input type="password" onChange={(e) => setPassword(e.target.value)} />

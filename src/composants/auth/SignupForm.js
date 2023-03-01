@@ -20,12 +20,18 @@ function SignupForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input type="username" onChange={(e) => setUsername(e.target.value)} />
-      <input type="email" onChange={(e) => setEmail(e.target.value)} />
-      <input type="password" onChange={(e) => setPassword(e.target.value)} />
-      <button type="submit">S'inscrire</button>
-    </form>
+    <Fragment>
+      <div className="signupForm">
+        
+      </div>
+      <form onSubmit={handleSubmit}>
+        <input type="username" onChange={(e) => setUsername(e.target.value)} />
+        <input type="email" onChange={(e) => setEmail(e.target.value)} />
+        <input type="password" onChange={(e) => setPassword(e.target.value)} />
+        <button type="submit">S'inscrire</button>
+      </form>
+    </Fragment>
+    
   )
 }
 

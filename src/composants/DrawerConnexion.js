@@ -6,6 +6,10 @@ import Popover from '@mui/material/Popover';
 import './styles/DrawerConnexion.scss';
 import {Link} from 'react-router-dom'
 import $ from 'jquery'
+import loadable from '@loadable/component'
+
+const LoginForm = loadable(() => import('./auth/LoginForm'))
+const SignupForm = loadable(() => import('./auth/SignupForm'))
 
 
 function DrawerConnexion() {
