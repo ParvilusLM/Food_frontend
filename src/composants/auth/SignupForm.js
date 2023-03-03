@@ -8,23 +8,23 @@ function SignupForm() {
   const [password, setPassword] = useState('')
   const [username, setUsername] = useState('')
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
-    dispatch(startLoading())
-    try {
-      const user = await signupApi(username, email, password)
-      dispatch(login(user))
-    } catch (error) {
-      dispatch(authError(error))
-    }
-  }
+//   const handleSubmit = async (e) => {
+//     e.preventDefault()
+//     dispatch(startLoading())
+//     try {
+//       const user = await signupApi(username, email, password)
+//       dispatch(login(user))
+//     } catch (error) {
+//       dispatch(authError(error))
+//     }
+//   }
 
   return (
     <Fragment>
       <div className="signupForm">
         
       </div>
-      <form onSubmit={handleSubmit}>
+      <form >
         <input type="username" onChange={(e) => setUsername(e.target.value)} />
         <input type="email" onChange={(e) => setEmail(e.target.value)} />
         <input type="password" onChange={(e) => setPassword(e.target.value)} />
