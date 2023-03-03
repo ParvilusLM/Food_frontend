@@ -11,7 +11,7 @@ function EditorialUnit(props) {
                 <div className="editorialUnit--img-container">
                     <div className="d1">
                         <div className="d1--1">
-                            <img src={props.donnees.image} alt="" className='image'/>
+                            <img src={props.donnees.image} loading='lazy' alt="" className='image'/>
                         </div>
                     </div>
                 </div>

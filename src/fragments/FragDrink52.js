@@ -147,7 +147,7 @@ function FragDrink52() {
                     <div className="tag--page-hero--img">
                         <div className="d1">
                             <div className="d1--1">
-                                <img src="img/u8.webp" alt="" className='image'/>
+                                <img src="img/u8.webp" loading='lazy' alt="" className='image'/>
                             </div>
                         </div>
                     </div>

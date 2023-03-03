@@ -19,7 +19,7 @@ function SFSeeAllCollection() {
                 <Link className="see--all-collection--lien lien" to=''>
                     <div className="d1">
                         <div className="d1--1">
-                            <img src="img/s1.jpg" alt="" className='image'/>
+                            <img src="img/s1.jpg" loading='lazy' alt="" className='image'/>
                         </div>
                     </div>
                 </Link>

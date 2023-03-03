@@ -51,13 +51,13 @@ const recipesListe3 = [
 const recipeSect3 = {'titre':'Count Your Chicken','sousTitre':'From cutlets','lienAllRecipes':'','listeRecipes': recipesListe3}
 
 const recipesListe4 = [
-  {'image':'img/t9.jpg','lienImage':'', 'nom':'Pineapple -Bacon Loaf with Hot Honey Glaze','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9.jpg','lienImage':'', 'nom':'Apple & Sharp Cheddar Crostini','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9.jpg','lienImage':'', 'nom':'Classic Cornbread From \'Savory Baking\' ','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9.jpg','lienImage':'', 'nom':'Cheesy Potato Bread','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
+  {'image':'img/t9-4.jpg','lienImage':'', 'nom':'Pineapple -Bacon Loaf with Hot Honey Glaze','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'img/t9-5.jpg','lienImage':'', 'nom':'Apple & Sharp Cheddar Crostini','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'img/t9-3.jpeg','lienImage':'', 'nom':'Classic Cornbread From \'Savory Baking\' ','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'img/t9-7.jpg','lienImage':'', 'nom':'Cheesy Potato Bread','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
 ]
 
-const recipeSect4 = {'titre':'Count Your Chicken','sousTitre':'From cutlets','lienAllRecipes':'','listeRecipes': recipesListe3}
+const recipeSect4 = {'titre':'Count Your Chicken','sousTitre':'From cutlets','lienAllRecipes':'','listeRecipes': recipesListe4}
 
 
 const residentsListe = [
@@ -115,7 +115,7 @@ function FragRecipes() {
                     <div className="recipes--index-featured--tags-img">
                       <div className="d1">
                         <div className="d1--1">
-                          <img src={item.image} alt="" className='image'/>
+                          <img src={item.image} loading='lazy' alt="" className='image'/>
                         </div>
                       </div>
                     </div>
@@ -180,7 +180,7 @@ function FragRecipes() {
           </section>
           <div className="content--text-container">
             <section className="recipes--index-grid">
-              <SFRecipeSect donnees={recipeSect1}/>
+              <SFRecipeSect donnees={recipeSect4}/>
             </section>
           </div>
         </div>

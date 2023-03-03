@@ -10,7 +10,7 @@ function CategoryCard(props) {
                 <div className="categorie--image">
                     <div className="ca1">
                         <div className="ca1-1">
-                            <img className='image' src={props.categorie.image} alt="" />
+                            <img className='image' src={props.categorie.image} loading='lazy' alt="" />
                         </div>
                     </div>
                 </div>

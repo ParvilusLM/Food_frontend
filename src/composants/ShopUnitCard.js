@@ -10,7 +10,7 @@ function ShopUnitCard(props) {
                     <div className="shop--unit-img--container">
                         <div className='d1'>
                             <div className="d1--1">
-                                <img src={props.info.image} alt={props.info.titre} className="image" loading='lazy' />
+                                <img src={props.info.image}  alt={props.info.titre} className="image" loading='lazy' />
                             </div>
                         </div>
                         <div className='ribbon ribbon--left shop--unit-ribbon'>

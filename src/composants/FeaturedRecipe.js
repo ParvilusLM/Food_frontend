@@ -1,7 +1,6 @@
 import React, {Fragment} from 'react'
 import {Link} from 'react-router-dom'
 import './styles/FeaturedRecipe.scss'
-import loadable from '@loadable/component'
 
 function FeaturedRecipe(props) {
   return (
@@ -10,7 +9,7 @@ function FeaturedRecipe(props) {
             <Link className="featured--recipe-img--link lien" to={props.donnees.lienImage}>
                 <div className="d1">
                     <div className="d1--1">
-                        <img src={props.donnees.image} alt="" className='image'/>
+                        <img src={props.donnees.image} loading='lazy' alt="" className='image'/>
                     </div>
                 </div>
             </Link>

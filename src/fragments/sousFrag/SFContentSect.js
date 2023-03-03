@@ -19,7 +19,7 @@ function SFContentSect(props) {
                                 <div className="content--section-main--feature-img--container">
                                     <div className="k1">
                                         <div className="k1--1">
-                                            <img className='image' src={props.donnees.image} alt="" />
+                                            <img className='image' loading='lazy' src={props.donnees.image} alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -38,7 +38,7 @@ function SFContentSect(props) {
                     <div className="content--section-latest">
                         <div className="content--section-latest-header">
                             <span>{props.donnees.entete}</span>
-                            <img src={props.donnees.decorImg} alt="" />
+                            <img src={props.donnees.decorImg} loading='lazy' alt="" />
                         </div>
                         
                         {props.donnees.articles.map((item, index) => (

@@ -11,7 +11,7 @@ function CustomerReview(props) {
                 <Link className="customer--review-link lien" to={props.review.lienImage}>
                     <div className="d1">
                         <div className="d1--1">
-                            <img src={props.review.image} alt="" className="image" />
+                            <img src={props.review.image} loading='lazy' alt="" className="image" />
                         </div>
                     </div>
                     <div className="titreImage">{props.review.titreImage}</div>

@@ -9,7 +9,7 @@ function ResidentCard(props) {
             <div className="resident--img">
                 <div className="d1">
                     <div className="d1--1">
-                        <img src={props.donneesResident.image} alt="" className='image'/>
+                        <img src={props.donneesResident.image} loading='lazy' alt="" className='image'/>
                     </div>
                 </div>
             </div>

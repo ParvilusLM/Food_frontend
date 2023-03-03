@@ -28,7 +28,7 @@ function SFExpert() {
                         <div className="expert--avatar">
                             <div className="d1">
                                 <div className="1--1">
-                                    <img src="img/t5.jpg" alt="" className='image'/>
+                                    <img src="img/t5.jpg" loading='lazy' alt="" className='image'/>
                                 </div>
                             </div>
                         </div>

@@ -11,7 +11,7 @@ function ProductInCartCard(props) {
                     <span className="icon--remove"></span>
                 </button>
                 <Link className="lien lien--image" to=''>
-                    <img src={props.donnees.produit.image} alt="" className='image'/>
+                    <img src={props.donnees.produit.image} loading='lazy' alt="" className='image'/>
                 </Link>
                 <div className="contenu">
                     <h6 className="contenu--titre">

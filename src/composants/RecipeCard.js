@@ -9,7 +9,7 @@ function RecipeCard(props) {
             <Link className="card--img-link lien" to={props.donneesRecipe.lienImage}>
                 <div className="d1">
                     <div className="d1--1">
-                        <img src={props.donneesRecipe.image} alt="" className='image'/>
+                        <img src={props.donneesRecipe.image} loading='lazy' alt="" className='image'/>
                     </div>
                 </div>
             </Link>

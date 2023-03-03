@@ -16,7 +16,7 @@ function SFMaker() {
                 <div className="maker--image">
                     <div className="d1">
                         <div className="d1--1">
-                            <img src="img/t6.jpg" alt="" className='image'/>
+                            <img src="img/t6.jpg" loading='lazy' alt="" className='image'/>
                         </div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ function SFMaker() {
                             <Link key={index} className="maker--content-products--link lien" to=''>
                                 <div className="d2">
                                     <div className="d2--1">
-                                        <img src={item.image} alt="" className='image'/>
+                                        <img src={item.image} loading='lazy' alt="" className='image'/>
                                     </div>
                                 </div>
                             </Link>

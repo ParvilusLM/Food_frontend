@@ -11,7 +11,7 @@ function CollectionCard(props) {
                     <div className="o1--1">
                         <picture>
                             <source srcSet={props.donnees.image1} media='(min-width: 1024px)' />
-                            <img src={props.donnees.image} alt="" className="image" />
+                            <img src={props.donnees.image} loading='lazy' alt="" className="image" />
                         </picture>
                     </div>
                 </div>

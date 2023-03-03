@@ -11,14 +11,14 @@ function AddRecipe() {
                    <div className="add--new-recipe--image-container img--small">
                         <div className="d1">
                             <div className="d1--1">
-                                <img src="img/u4.png" alt="" className="image" />
+                                <img src="img/u4.png" loading='lazy' alt="" className="image" />
                             </div>
                         </div>
                    </div>
                    <div className="add--new-recipe--image-container img--lg">
                         <div className="d1">
                             <div className="d1--1">
-                                <img src="img/u4-4.png" alt="" className="image" />
+                                <img src="img/u4-4.png" loading='lazy' alt="" className="image" />
                             </div>
                         </div>
                    </div> 
@@ -28,7 +28,7 @@ function AddRecipe() {
                         <div className="add--new-recipe--header">
                             <div className="d2">
                                 <div className="d2--1">
-                                    <img src="img/entete-decor.svg" alt="" className='image'/>
+                                    <img src="img/entete-decor.svg" loading='lazy' alt="" className='image'/>
                                 </div>
                             </div>
                         </div>
@@ -42,21 +42,21 @@ function AddRecipe() {
                             <div className="add--new-recipe--image-container img--small">
                                 <div className="d1">
                                     <div className="d1--1">
-                                        <img src="img/u4-2.jpg" alt="" className="image" />
+                                        <img src="img/u4-2.jpg" loading='lazy' alt="" className="image" />
                                     </div>
                                 </div>
                             </div>
                             <div className="add--new-recipe--image-container img--lg">
                                 <div className="d1">
                                     <div className="d1--1">
-                                        <img src="img/u4-3.png" alt="" className="image" />
+                                        <img src="img/u4-3.png" loading='lazy' alt="" className="image" />
                                     </div>
                                 </div>
                             </div> 
                             <div className="add--new-recipe--image-container img--small">
                                 <div className="d1">
                                     <div className="d1--1">
-                                        <img src="img/u4-5.png" alt="" className="image" />
+                                        <img src="img/u4-5.png" loading='lazy' alt="" className="image" />
                                     </div>
                                 </div>
                             </div>
@@ -66,21 +66,21 @@ function AddRecipe() {
                         <div className="add--new-recipe--image-container img--lg">
                             <div className="d1">
                                 <div className="d1--1">
-                                    <img src="img/u4-2.jpg" alt="" className="image" />
+                                    <img src="img/u4-2.jpg" loading='lazy' alt="" className="image" />
                                 </div>
                             </div>
                         </div>
                         <div className="add--new-recipe--image-container img--lg">
                             <div className="d1">
                                 <div className="d1--1">
-                                    <img src="img/u4-3.png" alt="" className="image" />
+                                    <img src="img/u4-3.png" loading='lazy' alt="" className="image" />
                                 </div>
                             </div>
                         </div> 
                         <div className="add--new-recipe--image-container img--lg">
                             <div className="d1">
                                 <div className="d1--1">
-                                    <img src="img/u4-5.png" alt="" className="image" />
+                                    <img src="img/u4-5.png" loading='lazy' alt="" className="image" />
                                 </div>
                             </div>
                         </div>
@@ -90,14 +90,14 @@ function AddRecipe() {
                     <div className="add--new-recipe--image-container img--small">
                         <div className="d1">
                             <div className="d1--1">
-                                <img src="img/u4-1.png" alt="" className="image" />
+                                <img src="img/u4-1.png" loading='lazy' alt="" className="image" />
                             </div>
                         </div>
                    </div> 
                    <div className="add--new-recipe--image-container img--lg">
                         <div className="d1">
                             <div className="d1--1">
-                                <img src="img/u4-6.png" alt="" className="image" />
+                                <img src="img/u4-6.png" loading='lazy' alt="" className="image" />
                             </div>
                         </div>
                    </div> 

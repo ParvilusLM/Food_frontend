@@ -6,7 +6,7 @@ function PromiseCard (props) {
         <Fragment>
             <div className="promise--card">
                 <div className="promise--card-icon">
-                    <img src={props.donnees.image} alt="" className='image'/>
+                    <img src={props.donnees.image} loading='lazy' alt="" className='image'/>
                 </div>
                 <div className="promise--card-content">
                     <div className="promise--card-content--headline">{props.donnees.titre}</div>
