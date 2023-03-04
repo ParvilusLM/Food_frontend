@@ -1,16 +1,18 @@
-import React, {Fragment} from 'react'
+import React, {Fragment, useState} from 'react'
 import Box from '@mui/material/Box';
-import Drawer from '@mui/material/Drawer';
-import { Link } from 'react-router-dom';
+import Drawer from '@mui/material/Drawer'
+import { Link } from 'react-router-dom'
 import './styles/DrawerPanier.scss'
 import { useSelector } from 'react-redux'
-import loadable from '@loadable/component';
+import loadable from '@loadable/component'
+import { useDispatch } from 'react-redux'
 
 const ProductInCartCard = loadable(() => import('../composants/ProductInCartCard'))
 
 function DrawerPanier() {
-  const [state, setState] = React.useState({right: false});
-  const produitsP= useSelector(state => state.panier.produits)
+  const [state, setState] = useState({right: false})
+  const produitsP = useSelector(state => state.panier.produits)
+  const total = useSelector(state => state.panier.total)
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -37,14 +39,14 @@ function DrawerPanier() {
           <div className="decor__shipping"></div>
         </div>
         <div className='info__produits'>
-          {produitsP.length ===0 && 
+          {produitsP.length === 0 && 
             <p className="panier-vide">
               Your shopping cart is empty. Let's fix that!
               <Link className="lien" to='/'>Shop now</Link>
             </p>
           }
 
-          {produitsP.length !==0 &&
+          {produitsP.length !== 0 &&
             <div className='wrapper--products'>
               <ul>
                 {produitsP.map((item, index) => (
@@ -59,7 +61,13 @@ function DrawerPanier() {
         <div className='info__subtotal'>
           <div className="subtotal">
             <span>Subtotal:</span>
-            <span>$0.00</span>
+            {produitsP.length !== 0 &&
+                <span>${total}</span>
+            }
+            {produitsP.length === 0 && 
+                <span>$0.00</span>
+            }
+            
           </div>
           <div className="wrapper-button">
             <button onClick={toggleDrawer(anchor, false)} className="btn btn--default checkout--b" >

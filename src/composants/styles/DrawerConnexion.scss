@@ -31,12 +31,14 @@
     left: 0 !important;
     top: 0 !important;
     min-width: 100vw !important;
-    min-height: 100vh !important;
-    max-height: 100vh;
+    height: 100vh;
+    max-height: 100vh !important;
+    border-radius: 0;
     
 
     @media only screen and (min-width: 768px) {
         top: 0 !important;
+        border-radius: 5px;
         min-width: 84vw !important;
         margin:5vh 8vw !important;
 

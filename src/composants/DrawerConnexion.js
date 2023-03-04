@@ -1,6 +1,4 @@
 import React, {Fragment, useState, useEffect} from 'react'
-import { useDispatch } from 'react-redux'
-import { login, logout, authError, startLoading } from '../store/authSlice'
 import Box from '@mui/material/Box';
 import Popover from '@mui/material/Popover';
 import './styles/DrawerConnexion.scss';
@@ -14,9 +12,6 @@ const SignupForm = loadable(() => import('./auth/SignupForm'))
 
 function DrawerConnexion() {
   const [anchorEl, setAnchorEl] = React.useState(null);
-  const dispatch = useDispatch()
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
 
 
   const handleClick = () => {
