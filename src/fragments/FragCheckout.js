@@ -397,8 +397,8 @@ function FragCheckout() {
                 <div className="checkout--review-section">
                     <h3>Shipping Adress</h3>
                     <button type='button' className="btn--link checkout--btn-link checkout--btn-top">Edit</button>
-                    <span className="checkout--shipping-summary--name">Love Marckendy Parvilus</span>
-                    <span>Haiti, Cap-haitien, Charrier, rue de l'amitie no208</span>
+                    <span className="checkout--shipping-summary--name">Love Marckendy Parvilus <br></br></span>
+                    <span>Haiti, Cap-haitien,</span>
                     <span>Anchorage, AK 85001</span>
                     <p>lovemarckendyparvilus@gmail.com</p>
                 </div>
