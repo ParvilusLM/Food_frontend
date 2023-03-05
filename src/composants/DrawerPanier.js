@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 import './styles/DrawerPanier.scss'
 import { useSelector } from 'react-redux'
 import loadable from '@loadable/component'
-import { useDispatch } from 'react-redux'
 
 const ProductInCartCard = loadable(() => import('../composants/ProductInCartCard'))
 

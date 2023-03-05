@@ -11,7 +11,7 @@ const SignupForm = loadable(() => import('./auth/SignupForm'))
 
 
 function DrawerConnexion() {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = useState(null);
 
 
   const handleClick = () => {
@@ -19,7 +19,6 @@ function DrawerConnexion() {
     setAnchorEl(el);
     document.querySelector('.overlay').classList.add('show-layer');
     document.querySelector('.overlay').classList.remove('hidden-layer');
-    
   };
 
   const handleClose = () => {

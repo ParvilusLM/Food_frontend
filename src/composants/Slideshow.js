@@ -25,7 +25,7 @@ function Slideshow(props) {
 
     return (
         <Fragment>
-            <div className="swiper--global-wrapper" >
+            <div className="swiper--global-wrapper slideshow" >
                 <div className='swiper--container'>
                     <div className='swiper'>
                         <div className="swiper--wrapper">

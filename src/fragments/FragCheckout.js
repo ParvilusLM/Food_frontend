@@ -2,11 +2,13 @@ import React, {Fragment, useState, useEffect} from 'react'
 import './styles/FragCheckout.scss'
 import { Link } from 'react-router-dom'
 import $ from 'jquery'
+import { useSelector } from 'react-redux'
 
 
 
 function FragCheckout() {
     const [etape, setEtape] = useState(1);
+    const total = useSelector(state => state.panier.total)
 
     const goToNextSect = function() {
         setEtape(etape+1);
@@ -166,7 +168,9 @@ function FragCheckout() {
                 <tbody>
                     <tr className="checkout--order-row">
                         <td>Subtotal</td>
-                        <td>$0.00</td>
+                        {total !== 0 && <td>${total}</td>}
+                        {total === 0 && <td>$0.00</td>}
+                        
                     </tr>
                     <tr className="checkout--order-row">
                         <td>
@@ -182,7 +186,8 @@ function FragCheckout() {
                 </tbody>
                 <tfoot>
                     <tr className="checkout--order-row checkout--order-row--total">
-                        <td rowSpan='2'>Total: $0.00</td>
+                        {total !== 0 && <td rowSpan='2'>Total: ${total}</td>}
+                        {total === 0 && <td rowSpan='2'>Total: $0.00</td>}
                     </tr>
                 </tfoot>
             </table>
@@ -194,7 +199,8 @@ function FragCheckout() {
                 <button className="btn btn--default btn--place-order">
                     <div className="checkout--order-btn--default">
                         Place Order
-                        <span> $0.00</span>
+                        {total !== 0 && <span> ${total}</span>}
+                        {total === 0 && <span> $0.00</span>}
                     </div>
                 </button>
             </div>}
