@@ -55,7 +55,7 @@ function Footer() {
             }
             });
         })
-    });
+    }, []);
 
     return (
         <Fragment>

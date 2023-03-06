@@ -116,7 +116,7 @@ function Header() {
 
         })
 
-    });
+    },[]);
 
     return (
         <Fragment>
