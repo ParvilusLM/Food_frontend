@@ -6,10 +6,10 @@ import loadable from '@loadable/component'
 const ProductCard = loadable(() => import('../../composants/ProductCard'))
 
 const produits = [
-    { 'lien': '', 'image': 'img/e1.jpg', 'titre': 'Hand-Embroidered Holiday Napkins (Set of 2)', 'prix': '50', 'variantTexte': 'more sizes' },
-    { 'lien': '', 'image': 'img/e2.jpg', 'titre': 'Hand-Embroidered Holiday Cocktail Napkins (Set of 4)', 'prix': '45', 'variantTexte': 'more sizes' },
-    { 'lien': '', 'image': 'img/e3.jpg', 'titre': 'COCO Single-Origin Chocolate Advent Calendar', 'prix': '80', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e4.jpg', 'titre': 'Whittard of Chelsea Hot CHocolate Advent Calendar for Two', 'prix': '100', 'variantTexte': '' }
+    { 'lien': '', 'image': '/img/e1.jpg', 'titre': 'Hand-Embroidered Holiday Napkins (Set of 2)', 'prix': '50', 'variantTexte': 'more sizes' },
+    { 'lien': '', 'image': '/img/e2.jpg', 'titre': 'Hand-Embroidered Holiday Cocktail Napkins (Set of 4)', 'prix': '45', 'variantTexte': 'more sizes' },
+    { 'lien': '', 'image': '/img/e3.jpg', 'titre': 'COCO Single-Origin Chocolate Advent Calendar', 'prix': '80', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e4.jpg', 'titre': 'Whittard of Chelsea Hot CHocolate Advent Calendar for Two', 'prix': '100', 'variantTexte': '' }
 ]
 
 function SFNewestProduct(props) {

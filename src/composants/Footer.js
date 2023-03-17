@@ -63,7 +63,7 @@ function Footer() {
                 <div className="footer__container">
                     <nav className="footer__nav">
                         <div className="footer__logo">
-                            <img src="logo2.svg" height='24px' width='116px' alt="" className="logo" loading='lazy' />
+                            <img src="/logo2.svg" height='24px' width='116px' alt="" className="logo" loading='lazy' />
                         </div>
                         <div className="footerLinksRoot">
                             <div className="footer__column">

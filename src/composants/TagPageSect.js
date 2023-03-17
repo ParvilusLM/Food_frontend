@@ -24,11 +24,11 @@ function TagPageSect(props) {
                 <aside className='sidebar sidebar--sticky'>
                     <div className="ad--slot ad--slot-mobile"></div>
                     <div className="ad--slot ad--slot-aside">
-                        <img src="img/pub.jpg" loading='lazy' alt="" className='image'/>
+                        <img src="/img/pub.jpg" loading='lazy' alt="" className='image'/>
                     </div>
                     <TopArticles />
                     <div className="ad--slot ad--slot-aside">
-                        <img src="img/pub2.gif" loading='lazy' alt="" className='image'/>
+                        <img src="/img/pub2.gif" loading='lazy' alt="" className='image'/>
                     </div>
                     <div className="ad--slot ad--slot-mobile"></div>
                 </aside>

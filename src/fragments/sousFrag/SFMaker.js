@@ -3,9 +3,9 @@ import './styles/SFMaker.scss'
 import {Link} from 'react-router-dom'
 
 const produits = [
-    {'image':'img/t7.jpg', 'lien':''},
-    {'image':'img/t7-1.jpg', 'lien':''},
-    {'image':'img/t7-2.jpg', 'lien':''}
+    {'image':'/img/t7.jpg', 'lien':''},
+    {'image':'/img/t7-1.jpg', 'lien':''},
+    {'image':'/img/t7-2.jpg', 'lien':''}
 ]
 
 function SFMaker() {

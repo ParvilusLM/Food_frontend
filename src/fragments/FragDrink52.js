@@ -6,7 +6,7 @@ const SFContentSect = loadable(() => import('../fragments/sousFrag/SFContentSect
 const TagPageSect = loadable(() => import('../composants/TagPageSect'))
 
 const tagPosts = [
-    {'image':'img/u10.webp', 
+    {'image':'/img/u10.webp', 
         'lienPost':'', 
         'tag':'HALLOWEEN', 
         'leinTag':'', 
@@ -17,7 +17,7 @@ const tagPosts = [
         'lienUtilisateur':'', 
         'date':'October 20, 2022'
     },
-    {'image':'img/u10-1.webp', 
+    {'image':'/img/u10-1.webp', 
         'lienPost':'', 
         'tag':'COCKTAIL', 
         'leinTag':'', 
@@ -28,7 +28,7 @@ const tagPosts = [
         'lienUtilisateur':'', 
         'date':'October  3, 2022'
     },
-    {'image':'img/u10-2.webp', 
+    {'image':'/img/u10-2.webp', 
         'lienPost':'', 
         'tag':'RED WINE', 
         'leinTag':'', 
@@ -39,7 +39,7 @@ const tagPosts = [
         'lienUtilisateur':'', 
         'date':'September  1, 2022'
     },
-    {'image':'img/u10-3.webp', 
+    {'image':'/img/u10-3.webp', 
         'lienPost':'', 
         'tag':'LABOR DAY', 
         'leinTag':'', 
@@ -50,7 +50,7 @@ const tagPosts = [
         'lienUtilisateur':'', 
         'date':'August 24, 2022'
     },
-    {'image':'img/u10-4.webp', 
+    {'image':'/img/u10-4.webp', 
         'lienPost':'', 
         'tag':'MARGARITA', 
         'leinTag':'', 
@@ -61,7 +61,7 @@ const tagPosts = [
         'lienUtilisateur':'', 
         'date':'August  8, 2022'
     },
-    {'image':'img/u10-5.webp', 
+    {'image':'/img/u10-5.webp', 
         'lienPost':'', 
         'tag':'COCKTAIL', 
         'leinTag':'', 
@@ -72,7 +72,7 @@ const tagPosts = [
         'lienUtilisateur':'', 
         'date':'August  8, 2022'
     },
-    {'image':'img/u10-6.webp', 
+    {'image':'/img/u10-6.webp', 
         'lienPost':'', 
         'tag':'COCKTAIL', 
         'leinTag':'', 
@@ -83,7 +83,7 @@ const tagPosts = [
         'lienUtilisateur':'', 
         'date':'August  8, 2022'
     },
-    {'image':'img/u10-7.webp', 
+    {'image':'/img/u10-7.webp', 
         'lienPost':'', 
         'tag':'IRISH', 
         'leinTag':'', 
@@ -94,7 +94,7 @@ const tagPosts = [
         'lienUtilisateur':'', 
         'date':'August  8, 2022'
     },
-    {'image':'img/u10-8.webp', 
+    {'image':'/img/u10-8.webp', 
         'lienPost':'', 
         'tag':'COCKTAIL', 
         'leinTag':'', 
@@ -105,7 +105,7 @@ const tagPosts = [
         'lienUtilisateur':'', 
         'date':'August  8, 2022'
     },
-    {'image':'img/u10-9.webp', 
+    {'image':'/img/u10-9.webp', 
         'lienPost':'', 
         'tag':'TEQUILA', 
         'leinTag':'', 
@@ -122,14 +122,14 @@ const contentSect1 = {
     'lienSect': '',
     'titreSect': 'Drinks52',
     'lienImg': '',
-    'image': 'img/u9.webp',
+    'image': '/img/u9.webp',
     'lienTag': '',
     'tag': 'WINE',
     'lienTitre': '',
     'titre': 'This French Region Has a Wine for Every Wintry Pairing',
     'sousTitre': 'From Alsace, with love.',
     'entete': 'Latest',
-    'decorImg': 'img/decor1.svg',
+    'decorImg': '/img/decor1.svg',
     'articles': [
       { 'lienTag': '', 'tag': 'HOLIDAY', 'titreLien': '', 'titre': 'Why All Your Holiday Cocktails Are Better Off With Bitters', 'sousTitre': 'Drinks made merrier with just a few dashes.' },
       { 'lienTag': '', 'tag': 'THANKSGIVING', 'titreLien': '', 'titre': 'This Cocktail Essential Is My Secret to the Best Thanksgiving Feast', 'sousTitre': 'From festive martinis to easy pie crusts, and beyond.' },
@@ -147,7 +147,7 @@ function FragDrink52() {
                     <div className="tag--page-hero--img">
                         <div className="d1">
                             <div className="d1--1">
-                                <img src="img/u8.webp" loading='lazy' alt="" className='image'/>
+                                <img src="/img/u8.webp" loading='lazy' alt="" className='image'/>
                             </div>
                         </div>
                     </div>

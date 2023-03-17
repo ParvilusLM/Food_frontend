@@ -1,0 +1,330 @@
+.signupForm {
+    .wrapper--contenu {
+        padding: 24px 0px;
+        text-align: center;
+
+        .contenu--login {
+            width: 100%;
+            max-width: 343px;
+            margin: 23px auto 0px;
+            border-top: 1px solid rgb(196, 196, 196);
+            padding-top: 24px;
+
+            .contenu--login-container {
+                font-size: 13px;
+                line-height: 1.54;
+
+                .titre {
+                    display: none;
+                }
+
+                .sous-titre {
+                    margin-bottom: 18px;
+                    font-size: 13px;
+                    line-height: 1.5;   
+                }
+
+                .btn {
+                    border-radius: 1px;
+                }
+            }
+        }
+
+        .contenu--signup {
+            width: 100%;
+            max-width: 380px;
+            margin: 0px auto;
+
+            .titre {
+                margin: 0px 0px 9px;
+                color: rgb(45, 69, 88);
+                font: 500 21px "Chronicle SSm A", "Chronicle SSm B", serif;
+            }
+
+            .sous-titre {
+                margin-bottom: 9px;
+            }
+
+            .formulaire {
+                width: 100%;
+                max-width: 343px;
+                margin: 0px auto;
+                padding-top: 4px;
+
+                .email--container, .password--container, .pseudo--container {
+                    margin-top: 7px;
+                    position: relative;
+
+                    .label {
+                        height: 16px;
+                        padding: 0px 5px;
+                        position: absolute;
+                        top: -7px;
+                        left: 7px;
+
+                        &::before {
+                            content: "";
+                            background: linear-gradient(rgb(255, 255, 255) 8px, transparent 8px);
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            opacity: 0;
+                            transition: opacity 0.2s ease-in-out 0s;
+                        }
+
+                        .label--text {
+                            color: rgb(144, 144, 144);
+                            position: relative;
+                            z-index: 1;
+                            display: block;
+                            font-size: 16px;
+                            line-height: normal;
+                            transform: translateY(20px);
+                            transition: color 0.2s ease-in-out 0s, font-size 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+                        }
+
+                        .label--text-onFocus {
+                            color: rgb(113,113,113);
+                            font-size: 12px;
+                            transform: translateY(0px);
+                            transition: color 0.2s ease-in-out 0s, font-size 0.2s ease-in-out 0s, transform 0.2s ease-in-out 0s;
+                        }
+                    }
+
+                    .label--onFocus {
+                        &::before {
+                            opacity: 1;
+                        }
+
+                    }
+
+                    .input {
+                        background: rgb(250, 250, 250);
+                        width: 100%;
+                        height: 45px;
+                        border: 1px solid rgb(234, 234, 234);
+                        outline: none;
+                        padding: 10px 12px;
+                        color: rgb(68, 68, 68);
+                        font-size: 16px;
+                        font-family: inherit;
+                        border-radius: 1px;
+                        appearance: none;
+                    }
+                }
+
+                .password--container, .pseudo--container {
+                    position: relative;
+                    margin-top: 15px;
+
+                    .label {
+                        .label--text {
+
+                        }
+                    }
+
+                    .input {
+                        
+                    }
+                }
+
+                .lien {
+                    margin: 4px 0px 20px;
+                    color: rgb(161, 143, 122);
+                    font-size: 12px;
+                    float: right;
+                }
+                
+                .btn {
+                    border-radius: 1px;
+                    max-width: 300px;
+                    margin: 20px auto 0px;
+                }
+
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .signupForm {
+        .wrapper--contenu {
+            height: calc(100vh - 10vh);
+            padding: 50px 0px;
+            display: flex;
+            -webkit-box-align: stretch;
+            align-items: stretch;
+            flex-direction: row-reverse;
+
+            .contenu--login {
+                width: 45%;
+                max-width: none;
+                margin: 0px;
+                border-top: none;
+                border-bottom: none;
+                border-left: none;
+                border-image: initial;
+                border-right: 1px solid rgb(196, 196, 196);
+                padding: 0px;
+                display: flex;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                
+
+                .contenu--login-container {
+                    font-size: 12px;
+                    line-height: 1.5;
+
+                    .titre {
+                        margin-bottom: 9px;
+                        color: rgb(45, 69, 88);
+                        font: 500 20px "Chronicle SSm A", "Chronicle SSm B", serif;
+                        display: block;
+                    }
+        
+                    .sous-titre {
+                        margin-bottom: 25px;
+                    }
+        
+                    .btn {
+        
+                    }   
+
+
+                    
+    
+                    
+                    
+                }
+            }
+    
+            .contenu--signup {
+                display: flex;
+                flex-direction: column;
+                -webkit-box-pack: center;
+                justify-content: center;
+
+                .titre {
+                    font-size: 20px;
+                }
+
+                .sous-titre {
+
+                }
+
+                .formulaire {
+                    padding-top: 10px;
+
+                    .email--container {
+                        .label {
+                            .label--text {
+                                font-size: 15px;
+                            }
+                        }
+    
+                        .input {
+                            font-size: 15px;
+                        }
+                    }
+    
+                    .password--container {
+                        .label {
+                            .label--text {
+    
+                            }
+                        }
+    
+                        .input {
+                            
+                        }
+                    }
+    
+                    .lien {
+    
+                    }
+                    
+                    .btn {
+    
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .signupForm {
+        .wrapper--contenu {
+            .contenu--login {
+
+                .titre {
+    
+                }
+
+                .sous-titre {
+
+                }
+
+                .btn {
+
+                }
+
+                .contenu--login-container {
+                }
+            }
+    
+            .contenu--signup {
+                .titre {
+    
+                }
+    
+                .sous-titre {
+    
+                }
+    
+                
+
+                .formulaire {
+                    width: 380px;
+                    max-width: 400px;
+                    .email--container {
+                        .label {
+                            .label--text {
+    
+                            }
+                        }
+    
+                        .input {
+    
+                        }
+                    }
+    
+                    .password--container {
+                        .label {
+                            .label--text {
+    
+                            }
+                        }
+    
+                        .input {
+                            
+                        }
+                    }
+    
+                    .lien {
+    
+                    }
+                    
+                    .btn {
+    
+                    }
+                }
+            }
+        }    
+    }
+} 

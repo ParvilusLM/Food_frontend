@@ -6,10 +6,10 @@ import loadable from '@loadable/component'
 const Slideshow = loadable(() => import('../../composants/Slideshow'))
 
 const produits = [
-    { 'lien': '', 'image': 'img/h1.jpg', 'titre': 'Food52 Gingham Linen Pot Holders (Set of 2)', 'prix': '35', 'variantTexte': 'more colors' },
-    { 'lien': '', 'image': 'img/h2.jpg', 'titre': 'Dansk Købenstyle Baker ', 'prix': '135', 'variantTexte': 'more colors' },
-    { 'lien': '', 'image': 'img/h3.jpg', 'titre': 'Recycled Clay Stacked Organic Dinnerware', 'prix': '90', 'variantTexte': 'more options' },
-    { 'lien': '', 'image': 'img/h4.jpg', 'titre': 'Staub Cast Iron Tall Cocotte, 5QT', 'prix': '199.9', 'variantTexte': 'more colors' }
+    { 'lien': '', 'image': '/img/h1.jpg', 'titre': 'Food52 Gingham Linen Pot Holders (Set of 2)', 'prix': '35', 'variantTexte': 'more colors' },
+    { 'lien': '', 'image': '/img/h2.jpg', 'titre': 'Dansk Købenstyle Baker ', 'prix': '135', 'variantTexte': 'more colors' },
+    { 'lien': '', 'image': '/img/h3.jpg', 'titre': 'Recycled Clay Stacked Organic Dinnerware', 'prix': '90', 'variantTexte': 'more options' },
+    { 'lien': '', 'image': '/img/h4.jpg', 'titre': 'Staub Cast Iron Tall Cocotte, 5QT', 'prix': '199.9', 'variantTexte': 'more colors' }
 ]
 
 function SFFiveTwo() {

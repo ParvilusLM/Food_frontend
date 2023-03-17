@@ -6,10 +6,10 @@ import loadable from '@loadable/component'
 const ProductCard = loadable(() => import('../../composants/ProductCard'))
 
 const produits = [
-    { 'lien': '', 'image': 'img/t1.jpg', 'titre': 'Chapon Chocolate Advent Calendar', 'prix': '110', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/t1-1.jpg', 'titre': 'Dally and Whiz Danish Wine Gum Advent Calendar', 'prix': '50', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/t1-2.jpg', 'titre': 'Venchi Artisanal Italian Chocolate Advent Calendar', 'prix': '99', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/t1-3.jpg', 'titre': 'La Maison du Chocolat Advent Calendar', 'prix': '90', 'variantTexte': '' }
+    { 'lien': '', 'image': '/img/t1.jpg', 'titre': 'Chapon Chocolate Advent Calendar', 'prix': '110', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/t1-1.jpg', 'titre': 'Dally and Whiz Danish Wine Gum Advent Calendar', 'prix': '50', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/t1-2.jpg', 'titre': 'Venchi Artisanal Italian Chocolate Advent Calendar', 'prix': '99', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/t1-3.jpg', 'titre': 'La Maison du Chocolat Advent Calendar', 'prix': '90', 'variantTexte': '' }
 ]
 
 function SFSeeAllCollection() {
@@ -19,7 +19,7 @@ function SFSeeAllCollection() {
                 <Link className="see--all-collection--lien lien" to=''>
                     <div className="d1">
                         <div className="d1--1">
-                            <img src="img/s1.jpg" loading='lazy' alt="" className='image'/>
+                            <img src="/img/s1.jpg" loading='lazy' alt="" className='image'/>
                         </div>
                     </div>
                 </Link>

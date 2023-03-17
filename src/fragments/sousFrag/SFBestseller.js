@@ -6,18 +6,18 @@ import loadable from '@loadable/component'
 const Slideshow = loadable(() => import('../../composants/Slideshow'))
 
 const produits = [
-    { 'lien': '', 'image': 'img/r1.jpg', 'titre': 'Cody Foster Vintage-Inspired Food Ornaments', 'prix': '63', 'variantTexte': 'more options' },
-    { 'lien': '', 'image': 'img/r2.jpg', 'titre': 'Food52 x Dansk Kobenstyle Saucepan & Butter Warmer', 'prix': '95', 'variantTexte': 'more options' },
-    { 'lien': '', 'image': 'img/r3.jpg', 'titre': 'Five Two Everyday Soft Cotton Cloth Napkins', 'prix': '30', 'variantTexte': 'more colors' },
-    { 'lien': '', 'image': 'img/r4.jpg', 'titre': 'Palais des Thés Parisian Tea Advent Calendar', 'prix': '36', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e5.jpg', 'titre': 'Whittard of Chelsea Tea Advent Calendar for Two', 'prix': '105', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e6.jpg', 'titre': 'Venchi Artisanal Italian Chocolate Advent Calendar', 'prix': '99', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e7.jpg', 'titre': 'Food52 x Maison Boissier Parisian Advent Calendar', 'prix': '99', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e8.jpg', 'titre': 'Mirzam Chocolate Advent Calendar', 'prix': '45', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e9.jpg', 'titre': 'Amedei Tuscany Chocolate Advent Calendar', 'prix': '190', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e10.jpg', 'titre': 'Sugarfina Eight Nights of Hanukkah Candy Collection', 'prix': '30', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e11.jpg', 'titre': 'Goodio Vegan Chocolate Advent Calendar', 'prix': '65', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e12.jpg', 'titre': 'Sugarfina Advent Calendar', 'prix': '60', 'variantTexte': '' }
+    { 'lien': '', 'image': '/img/r1.jpg', 'titre': 'Cody Foster Vintage-Inspired Food Ornaments', 'prix': '63', 'variantTexte': 'more options' },
+    { 'lien': '', 'image': '/img/r2.jpg', 'titre': 'Food52 x Dansk Kobenstyle Saucepan & Butter Warmer', 'prix': '95', 'variantTexte': 'more options' },
+    { 'lien': '', 'image': '/img/r3.jpg', 'titre': 'Five Two Everyday Soft Cotton Cloth Napkins', 'prix': '30', 'variantTexte': 'more colors' },
+    { 'lien': '', 'image': '/img/r4.jpg', 'titre': 'Palais des Thés Parisian Tea Advent Calendar', 'prix': '36', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e5.jpg', 'titre': 'Whittard of Chelsea Tea Advent Calendar for Two', 'prix': '105', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e6.jpg', 'titre': 'Venchi Artisanal Italian Chocolate Advent Calendar', 'prix': '99', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e7.jpg', 'titre': 'Food52 x Maison Boissier Parisian Advent Calendar', 'prix': '99', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e8.jpg', 'titre': 'Mirzam Chocolate Advent Calendar', 'prix': '45', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e9.jpg', 'titre': 'Amedei Tuscany Chocolate Advent Calendar', 'prix': '190', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e10.jpg', 'titre': 'Sugarfina Eight Nights of Hanukkah Candy Collection', 'prix': '30', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e11.jpg', 'titre': 'Goodio Vegan Chocolate Advent Calendar', 'prix': '65', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e12.jpg', 'titre': 'Sugarfina Advent Calendar', 'prix': '60', 'variantTexte': '' }
 ]
 
 function SFBestseller() {

@@ -125,7 +125,7 @@ function Header() {
                     <nav className='global-nav'>
                         <div className="logo">
                             <Link className="lien-logo" to='/'>
-                                <img src="logo.svg" height='24px' width='116px' alt="" loading='lazy' />
+                                <img src="/logo.svg" height='24px' width='116px' alt="" loading='lazy' />
                             </Link>
                         </div>
                         <div className="global-nav__menu ">

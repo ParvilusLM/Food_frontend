@@ -12,6 +12,7 @@ const SignupForm = loadable(() => import('./auth/SignupForm'))
 
 function DrawerConnexion() {
   const [anchorEl, setAnchorEl] = useState(null);
+  const [etapeAuth, setEtapeAuth] = useState('connexion');
 
 
   const handleClick = () => {
@@ -39,67 +40,12 @@ function DrawerConnexion() {
         <button width='20px' onClick={handleClose} type='button' className="btn--link shop-nav__menu-close">
           <span className="close--icon"></span>
         </button>
-        <div className="wrapper--contenu">
-          <div className="contenu--login">
-            <div className="contenu--login-container">
-              <h2 className="titre">Log In</h2>
-              <p className="sous-titre">
-                Hey you, Welcome back!
-              </p>
-              <form action="" className="formulaire">
-                <div className="email--container">
-                  <label htmlFor="Email" className='label label--1'>
-                    <span className="label--text label--text-email">Email</span>
-                  </label>
-                  <input type="email" name='email' placeholder='' id='email' className="input input--email" />
-                </div>
-                <div className="password--container">
-                  <label htmlFor="Password" className='label label--2'>
-                    <span className="label--text label--text-password">Password</span>
-                  </label>
-                  <input type="password" name='password' placeholder='' id='password' className="input input--password" />
-                </div>
-                <Link className="lien" to='/'>Forgot Password?</Link>
-                <button className="btn btn--default">LOG IN</button>
-              </form>
-            </div>
-          </div>
-          <div className="contenu--signup">
-            <h2 className="titre">Create a New Account</h2>
-            <div className="sous-titre">Not a member yet? Create your account here!</div>
-            <button className="btn btn--default btn--inline btn--outline">Sign Up</button>
-          </div>
-        </div>
+        {etapeAuth === 'connexion' && <LoginForm setEtapeAuth={setEtapeAuth}/> }
+        {etapeAuth === 'inscription' && <SignupForm setEtapeAuth={setEtapeAuth}/> }
+        
       </div>
     </Box>
   )
-
-  useEffect(() => {
-    $(function () {
-      $('.input--email').focusin(function() {
-        $('.label--1').addClass('label--onFocus');
-        $('.label--text-email').addClass('label--text-onFocus');
-      }).focusout(function() {
-        if($('.input--email').val() === '') {
-          $('.label--1').removeClass('label--onFocus');
-          $('.label--text-email').removeClass('label--text-onFocus');
-        }
-        
-      });
-
-      $('.input--password').focusin(function() {
-        $('.label--2').addClass('label--onFocus');
-        $('.label--text-password').addClass('label--text-onFocus');
-      }).focusout(function() {
-        if($('.input--password').val() === '') {
-          $('.label--2').removeClass('label--onFocus');
-          $('.label--text-password').removeClass('label--text-onFocus');
-        }
-        
-      });
-
-    })
-  })
 
   return (
     <Fragment>

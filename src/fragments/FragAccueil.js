@@ -12,26 +12,26 @@ const SFContentSect = loadable(() => import('./sousFrag/SFContentSect'))
 const Newest = loadable(() => import('../composants/Newest'))
 const NewsletterForm = loadable(() => import('../composants/NewsletterForm'))
 
-const info = { 'image': 'img/b1.webp', 'titre': 'Oven Ready', 'texte': 'These lovelies will protect your wrists through all that pie baking.', 'lien': '' };
-const info2 = { 'image': 'img/b2.webp', 'titre': 'You\'re Golden', 'texte': 'From our very own line: pastry flour & chocolate for best-ever bakes.', 'lien': '' };
+const info = { 'image': '/img/b1.webp', 'titre': 'Oven Ready', 'texte': 'These lovelies will protect your wrists through all that pie baking.', 'lien': '' };
+const info2 = { 'image': '/img/b2.webp', 'titre': 'You\'re Golden', 'texte': 'From our very own line: pastry flour & chocolate for best-ever bakes.', 'lien': '' };
 
-const infoR = { 'image': 'img/c1.webp', 'titre': 'Sheet-Pan Apple Crisp', 'lien': '', 'isAfficheEnRangee': true };
-const infoR2 = { 'image': 'img/c2.webp', 'titre': 'Toasty Cinnamon Meringue Cake', 'lien': '', 'isAfficheEnRangee': true };
-const infoR3 = { 'image': 'img/c3.webp', 'titre': 'Pumpkin Banana Bread With Toasty Pecans', 'lien': '', 'isAfficheEnRangee': true };
+const infoR = { 'image': '/img/c1.webp', 'titre': 'Sheet-Pan Apple Crisp', 'lien': '', 'isAfficheEnRangee': true };
+const infoR2 = { 'image': '/img/c2.webp', 'titre': 'Toasty Cinnamon Meringue Cake', 'lien': '', 'isAfficheEnRangee': true };
+const infoR3 = { 'image': '/img/c3.webp', 'titre': 'Pumpkin Banana Bread With Toasty Pecans', 'lien': '', 'isAfficheEnRangee': true };
 
 
 const produits = [
-    { 'lien': '', 'image': 'img/h1.jpg', 'titre': 'Food52 Gingham Linen Pot Holders (Set of 2)', 'prix': '35', 'variantTexte': 'more colors' },
-    { 'lien': '', 'image': 'img/h2.jpg', 'titre': 'Dansk Købenstyle Baker ', 'prix': '135', 'variantTexte': 'more colors' },
-    { 'lien': '', 'image': 'img/h3.jpg', 'titre': 'Recycled Clay Stacked Organic Dinnerware', 'prix': '90', 'variantTexte': 'more options' },
-    { 'lien': '', 'image': 'img/h4.jpg', 'titre': 'Staub Cast Iron Tall Cocotte, 5QT', 'prix': '199.9', 'variantTexte': 'more colors' }
+    { 'lien': '', 'image': '/img/h1.jpg', 'titre': 'Food52 Gingham Linen Pot Holders (Set of 2)', 'prix': '35', 'variantTexte': 'more colors' },
+    { 'lien': '', 'image': '/img/h2.jpg', 'titre': 'Dansk Købenstyle Baker ', 'prix': '135', 'variantTexte': 'more colors' },
+    { 'lien': '', 'image': '/img/h3.jpg', 'titre': 'Recycled Clay Stacked Organic Dinnerware', 'prix': '90', 'variantTexte': 'more options' },
+    { 'lien': '', 'image': '/img/h4.jpg', 'titre': 'Staub Cast Iron Tall Cocotte, 5QT', 'prix': '199.9', 'variantTexte': 'more colors' }
 ]
 
 const foodSect = {
     'lienSect': '',
     'titreSect': 'Food',
     'lienImg': '',
-    'image': 'img/i1.webp',
+    'image': '/img/i1.webp',
     'lienTag': '',
     'tag': 'COOKBOOKS',
     'lienTitre': '',
@@ -51,7 +51,7 @@ const homeSect = {
     'lienSect': '',
     'titreSect': 'Home52',
     'lienImg': '',
-    'image': 'img/i2.webp',
+    'image': '/img/i2.webp',
     'lienTag': '',
     'tag': 'HOME DECOR',
     'lienTitre': '',
@@ -72,10 +72,10 @@ const newestRecipes = {
     'texteCTA': 'VIEW ALL',
     'lienCTA': '',
     'recipes': [
-        { 'image': 'img/k1.jpg', 'titre': '\'Maroon Shrooms\' From Ghetto Gastro', 'lien': '' },
-        { 'image': 'img/k2.jpg', 'titre': 'Watermelon Granita From Ghetto Gastro', 'lien': '' },
-        { 'image': 'img/k3.jpg', 'titre': 'Fig Leaf Dumplings', 'lien': '' },
-        { 'image': 'img/k4.jpg', 'titre': 'Fancy Fairy Bread', 'lien': '' }
+        { 'image': '/img/k1.jpg', 'titre': '\'Maroon Shrooms\' From Ghetto Gastro', 'lien': '' },
+        { 'image': '/img/k2.jpg', 'titre': 'Watermelon Granita From Ghetto Gastro', 'lien': '' },
+        { 'image': '/img/k3.jpg', 'titre': 'Fig Leaf Dumplings', 'lien': '' },
+        { 'image': '/img/k4.jpg', 'titre': 'Fancy Fairy Bread', 'lien': '' }
 
     ],
     'produits': [],
@@ -88,10 +88,10 @@ const newestProducts = {
     'lienCTA': '',
     'recipes': [],
     'produits': [
-        { 'lien': '', 'image': 'img/l1.jpg', 'titre': 'Hand-Embroidered Holiday Napkins (Set of 2)', 'prix': '50', 'variantTexte': 'more colors' },
-        { 'lien': '', 'image': 'img/l2.jpg', 'titre': 'Onyx Coffee Lab Advent Calendar', 'prix': '135', 'variantTexte': '' },
-        { 'lien': '', 'image': 'img/l3.jpg', 'titre': 'Terrace Candle Holder (Set of 2)', 'prix': '50', 'variantTexte': 'more options' },
-        { 'lien': '', 'image': 'img/l4.jpg', 'titre': 'Shiny-Brite Vintage-Inspired Icicle Glass Ornaments (Set of 9)', 'prix': '55', 'variantTexte': '' }
+        { 'lien': '', 'image': '/img/l1.jpg', 'titre': 'Hand-Embroidered Holiday Napkins (Set of 2)', 'prix': '50', 'variantTexte': 'more colors' },
+        { 'lien': '', 'image': '/img/l2.jpg', 'titre': 'Onyx Coffee Lab Advent Calendar', 'prix': '135', 'variantTexte': '' },
+        { 'lien': '', 'image': '/img/l3.jpg', 'titre': 'Terrace Candle Holder (Set of 2)', 'prix': '50', 'variantTexte': 'more options' },
+        { 'lien': '', 'image': '/img/l4.jpg', 'titre': 'Shiny-Brite Vintage-Inspired Icicle Glass Ornaments (Set of 9)', 'prix': '55', 'variantTexte': '' }
     ],
     'isAfficheEnRangee': false
 }
@@ -108,7 +108,7 @@ function FragAccueil() {
                                     <div className="editorial--unit-image--container">
                                         <div className="hv1">
                                             <div className="hv1--1">
-                                                <img className="image" src="img/a1.webp" alt="" loading='lazy' />
+                                                <img className="image" src="/img/a1.webp" alt="" loading='lazy' />
                                             </div>
                                         </div>
                                     </div>
@@ -150,9 +150,9 @@ function FragAccueil() {
                     <Link className="sponsor--promo--lien lien" to=''>
                         <div className="sponsor--promo-img">
                             <picture>
-                                <source srcSet='img/d1-2.jpg' media='(min-width: 1024px)' type='image/jpg' />
-                                <source srcSet='img/d1.jpg' media='(min-width: 768px)' type='image/jpg' />
-                                <img className='sponsor--promo-img image' src="img/d1-1.jpg" alt="sponsor--promo" loading='lazy' />
+                                <source srcSet='/img/d1-2.jpg' media='(min-width: 1024px)' type='image/jpg' />
+                                <source srcSet='/img/d1.jpg' media='(min-width: 768px)' type='image/jpg' />
+                                <img className='sponsor--promo-img image' src="/img/d1-1.jpg" alt="sponsor--promo" loading='lazy' />
                             </picture>
 
                         </div>
@@ -171,7 +171,7 @@ function FragAccueil() {
                                 <div className="content--commerce-article--image">
                                     <div className="com1">
                                         <div className="com1--1">
-                                            <img className='image' src="img/g1.webp" alt="" loading='lazy' />
+                                            <img className='image' src="/img/g1.webp" alt="" loading='lazy' />
                                         </div>
                                     </div>
                                 </div>

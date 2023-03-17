@@ -12,65 +12,65 @@ const FeaturedContent = loadable(() => import('../composants/FeaturedContent'))
 const SFNewestProduct = loadable(() => import('./sousFrag/SFNewestProduct'))
  
 const recipesList = [
-  {'nom':'Cake','image':'img/t8.jpg','lien':''},
-  {'nom':'Dinner','image':'img/t8-1.jpg','lien':''},
-  {'nom':'Potato','image':'img/t8-2.jpg','lien':''},
-  {'nom':'Salad','image':'img/t8-3.jpg','lien':''},
-  {'nom':'Soup','image':'img/t8-4.jpg','lien':''},
-  {'nom':'Pasta','image':'img/t8-5.jpg','lien':''},
-  {'nom':'Salmon','image':'img/t8-6.jpg','lien':''},
-  {'nom':'Shrimp','image':'img/t8-7.jpg','lien':''},
-  {'nom':'Kale','image':'img/t8-8.jpg','lien':''}
+  {'nom':'Cake','image':'/img/t8.jpg','lien':''},
+  {'nom':'Dinner','image':'/img/t8-1.jpg','lien':''},
+  {'nom':'Potato','image':'/img/t8-2.jpg','lien':''},
+  {'nom':'Salad','image':'/img/t8-3.jpg','lien':''},
+  {'nom':'Soup','image':'/img/t8-4.jpg','lien':''},
+  {'nom':'Pasta','image':'/img/t8-5.jpg','lien':''},
+  {'nom':'Salmon','image':'/img/t8-6.jpg','lien':''},
+  {'nom':'Shrimp','image':'/img/t8-7.jpg','lien':''},
+  {'nom':'Kale','image':'/img/t8-8.jpg','lien':''}
 ]
 
 const recipesListe1 = [
-  {'image':'img/t9.jpg','lienImage':'', 'nom':'Spicy Chicken (or Turkey) Noodle Soup From Erin Jeanne McDowell','auteur':'','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-1.jpg','lienImage':'', 'nom':'Actually Good Chicken Divan With Potato Chips','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-2.jpg','lienImage':'', 'nom':'Lo Mai Gai (Sticky Rice in Lotus Leaf) From Lucas Sin','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-3.jpeg','lienImage':'', 'nom':'Super-Scripsy Chicken Smash Burgers','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
+  {'image':'/img/t9.jpg','lienImage':'', 'nom':'Spicy Chicken (or Turkey) Noodle Soup From Erin Jeanne McDowell','auteur':'','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-1.jpg','lienImage':'', 'nom':'Actually Good Chicken Divan With Potato Chips','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-2.jpg','lienImage':'', 'nom':'Lo Mai Gai (Sticky Rice in Lotus Leaf) From Lucas Sin','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-3.jpeg','lienImage':'', 'nom':'Super-Scripsy Chicken Smash Burgers','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
 ]
 
 const recipeSect1 = {'titre':'Count Your Chicken','sousTitre':'From cutlets to stews, we\'ve got oh-so many options.','lienAllRecipes':'','listeRecipes': recipesListe1}
 
 const recipesListe2 = [
-  {'image':'img/t9-4.jpg','lienImage':'', 'nom':'Vegan Grasshopper','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-5.jpg','lienImage':'', 'nom':'Vegan Butternut Squash Soup','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-6.jpg','lienImage':'', 'nom':'5-Minute Tomato Sauce From Heidi Swanson','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-7.jpg','lienImage':'', 'nom':'Garbanzo Aguachile Verde','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
+  {'image':'/img/t9-4.jpg','lienImage':'', 'nom':'Vegan Grasshopper','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-5.jpg','lienImage':'', 'nom':'Vegan Butternut Squash Soup','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-6.jpg','lienImage':'', 'nom':'5-Minute Tomato Sauce From Heidi Swanson','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-7.jpg','lienImage':'', 'nom':'Garbanzo Aguachile Verde','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
 ]
 
 const recipeSect2 = {'titre':'Count Your Chicken','sousTitre':'From cutlets','lienAllRecipes':'','listeRecipes': recipesListe2}
 
 const recipesListe3 = [
-  {'image':'img/t9-8.jpg','lienImage':'', 'nom':'Pineapple -Bacon Loaf with Hot Honey Glaze','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-9.jpg','lienImage':'', 'nom':'Apple & Sharp Cheddar Crostini','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-10.jpg','lienImage':'', 'nom':'Classic Cornbread From \'Savory Baking\' ','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-11.jpg','lienImage':'', 'nom':'Cheesy Potato Bread','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
+  {'image':'/img/t9-8.jpg','lienImage':'', 'nom':'Pineapple -Bacon Loaf with Hot Honey Glaze','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-9.jpg','lienImage':'', 'nom':'Apple & Sharp Cheddar Crostini','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-10.jpg','lienImage':'', 'nom':'Classic Cornbread From \'Savory Baking\' ','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-11.jpg','lienImage':'', 'nom':'Cheesy Potato Bread','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
 ]
 
 const recipeSect3 = {'titre':'Count Your Chicken','sousTitre':'From cutlets','lienAllRecipes':'','listeRecipes': recipesListe3}
 
 const recipesListe4 = [
-  {'image':'img/t9-4.jpg','lienImage':'', 'nom':'Pineapple -Bacon Loaf with Hot Honey Glaze','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-5.jpg','lienImage':'', 'nom':'Apple & Sharp Cheddar Crostini','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-3.jpeg','lienImage':'', 'nom':'Classic Cornbread From \'Savory Baking\' ','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
-  {'image':'img/t9-7.jpg','lienImage':'', 'nom':'Cheesy Potato Bread','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
+  {'image':'/img/t9-4.jpg','lienImage':'', 'nom':'Pineapple -Bacon Loaf with Hot Honey Glaze','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-5.jpg','lienImage':'', 'nom':'Apple & Sharp Cheddar Crostini','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-3.jpeg','lienImage':'', 'nom':'Classic Cornbread From \'Savory Baking\' ','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5},
+  {'image':'/img/t9-7.jpg','lienImage':'', 'nom':'Cheesy Potato Bread','auteur':'Macintosh','lienAuteur':'', 'nbEtoiles':5}
 ]
 
 const recipeSect4 = {'titre':'Count Your Chicken','sousTitre':'From cutlets','lienAllRecipes':'','listeRecipes': recipesListe4}
 
 
 const residentsListe = [
-  {'image':'img/t10.jpg','nom':'Erin Jeanne McDowell', 'description':'Bake It Up a Notch','lienResident':''},
-  {'image':'img/t10-1.jpg','nom':'Sohla El-Waylly', 'description':'Off-Script with Solha','lienResident':''},
-  {'image':'img/t10-2.png','nom':'Rick Martinez', 'description':'Sweet Heat','lienResident':''},
-  {'image':'img/t10-3.jpg','nom':'Kristen Miglore', 'description':'Genius Recipes','lienResident':''}
+  {'image':'/img/t10.jpg','nom':'Erin Jeanne McDowell', 'description':'Bake It Up a Notch','lienResident':''},
+  {'image':'/img/t10-1.jpg','nom':'Sohla El-Waylly', 'description':'Off-Script with Solha','lienResident':''},
+  {'image':'/img/t10-2.png','nom':'Rick Martinez', 'description':'Sweet Heat','lienResident':''},
+  {'image':'/img/t10-3.jpg','nom':'Kristen Miglore', 'description':'Genius Recipes','lienResident':''}
 ]
 
 
 const residentSect = {'titre':'Meet Our Residents', 'sousTitre':'The ultimate dream team—our residents will teach you everything ever you wanted know about dinner-wrangling, dessert-whispering, and then some.', 'lienAllResidents':'', 'listeResidents': residentsListe}
 
-const featuredRecipe = {'tag':'AMERICAN','lienTag':'','image':'img/u3.webp', 'lienImage':'', 'entete':'AMERICAN', 'lienEntete':'', 'titre':'Doritos Furikake', 'lienTitre':'', 'sousTitre':'This crunchy, savory seasoning from Romel Bruno is good on rice bowls, salads, you name it.', 'lienCTA':'','cta':'VIEW RECIPE'}
+const featuredRecipe = {'tag':'AMERICAN','lienTag':'','image':'/img/u3.webp', 'lienImage':'', 'entete':'AMERICAN', 'lienEntete':'', 'titre':'Doritos Furikake', 'lienTitre':'', 'sousTitre':'This crunchy, savory seasoning from Romel Bruno is good on rice bowls, salads, you name it.', 'lienCTA':'','cta':'VIEW RECIPE'}
 
 const featuredContent = {'titre':'A Few of Our Faves','sousTitre':'Ripened on the vine, picked by our editors, and ready to eat.'}
 

@@ -8,13 +8,13 @@ const FeaturesPod = loadable(() => import('../composants/FeaturesPod'))
 const SFContentSect = loadable(() => import('../fragments/sousFrag/SFContentSect'))
 const Newest = loadable(() => import('../composants/Newest')) 
 
-const editorialUnitInfo = {'image':'img/u5.webp', 'titre':'The 10 Most Popular Genius Recipes of 2022', 'lienArticle':'', 'tag':'Genius Recipes', 'lienTag':''}
+const editorialUnitInfo = {'image':'/img/u5.webp', 'titre':'The 10 Most Popular Genius Recipes of 2022', 'lienArticle':'', 'tag':'Genius Recipes', 'lienTag':''}
 
 const contentSect1 = {
     'lienSect': '',
     'titreSect': 'New & Now',
     'lienImg': '',
-    'image': 'img/u6.webp',
+    'image': '/img/u6.webp',
     'lienTag': '',
     'tag': 'COOKIE',
     'lienTitre': '',
@@ -34,7 +34,7 @@ const contentSect2 = {
     'lienSect': '',
     'titreSect': 'How to Cook',
     'lienImg': '',
-    'image': 'img/u6-1.webp',
+    'image': '/img/u6-1.webp',
     'lienTag': '',
     'tag': 'CHEESE',
     'lienTitre': '',
@@ -53,7 +53,7 @@ const contentSect3 = {
     'lienSect': '',
     'titreSect': 'What to Cook',
     'lienImg': '',
-    'image': 'img/u6-2.webp',
+    'image': '/img/u6-2.webp',
     'lienTag': '',
     'tag': 'INGREDIENTS',
     'lienTitre': '',
@@ -72,10 +72,10 @@ const recipes = {
     'texteCTA': 'BROWSE RECIPES',
     'lienCTA': '',
     'recipes': [
-        { 'image': 'img/u7.webp', 'titre': 'Gin Martini', 'lien': '' },
-        { 'image': 'img/u7-1.webp', 'titre': 'Margarita', 'lien': '' },
-        { 'image': 'img/u7-2.webp', 'titre': 'Mojito', 'lien': '' },
-        { 'image': 'img/u7-3.webp', 'titre': 'Cosmopolitan', 'lien': '' }
+        { 'image': '//img/u7.webp', 'titre': 'Gin Martini', 'lien': '' },
+        { 'image': '//img/u7-1.webp', 'titre': 'Margarita', 'lien': '' },
+        { 'image': '//img/u7-2.webp', 'titre': 'Mojito', 'lien': '' },
+        { 'image': '//img/u7-3.webp', 'titre': 'Cosmopolitan', 'lien': '' }
 
     ],
     'produits': [],

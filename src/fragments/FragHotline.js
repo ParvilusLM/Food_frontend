@@ -291,24 +291,24 @@ const questions = [
 ]
 
 const topUserWeekly = [
-  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Nancy'},
-  {'lienUtilisateur':'','image':'img/avatar1.png','nomUtilisateur':'702551'},
-  {'lienUtilisateur':'','image':'img/avatar4.jpg','nomUtilisateur':'drbabs'},
-  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Happygoin'},
-  {'lienUtilisateur':'','image':'img/avatar3.jpg','nomUtilisateur':'Miss_Karen'}
+  {'lienUtilisateur':'','image':'/img/default-avatar.png','nomUtilisateur':'Nancy'},
+  {'lienUtilisateur':'','image':'/img/avatar1.png','nomUtilisateur':'702551'},
+  {'lienUtilisateur':'','image':'/img/avatar4.jpg','nomUtilisateur':'drbabs'},
+  {'lienUtilisateur':'','image':'/img/default-avatar.png','nomUtilisateur':'Happygoin'},
+  {'lienUtilisateur':'','image':'/img/avatar3.jpg','nomUtilisateur':'Miss_Karen'}
 ]
 
 const topUserMonthly = [
-  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Lori T.'},
-  {'lienUtilisateur':'','image':'img/avatar1.png','nomUtilisateur':'702551'},
-  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Nancy'},
-  {'lienUtilisateur':'','image':'img/avatar2.jpg','nomUtilisateur':'MMH'},
-  {'lienUtilisateur':'','image':'img/avatar3.jpg','nomUtilisateur':'Miss_Karen'},
-  {'lienUtilisateur':'','image':'img/avatar4.jpg','nomUtilisateur':'drbabs'},
-  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Happygoin'},
-  {'lienUtilisateur':'','image':'img/avatar5.jpg','nomUtilisateur':'HalfPint'},
-  {'lienUtilisateur':'','image':'img/avatar6.jpg','nomUtilisateur':'Windischgirl'},
-  {'lienUtilisateur':'','image':'img/default-avatar.png','nomUtilisateur':'Stephanie G.'}
+  {'lienUtilisateur':'','image':'/img/default-avatar.png','nomUtilisateur':'Lori T.'},
+  {'lienUtilisateur':'','image':'/img/avatar1.png','nomUtilisateur':'702551'},
+  {'lienUtilisateur':'','image':'/img/default-avatar.png','nomUtilisateur':'Nancy'},
+  {'lienUtilisateur':'','image':'/img/avatar2.jpg','nomUtilisateur':'MMH'},
+  {'lienUtilisateur':'','image':'/img/avatar3.jpg','nomUtilisateur':'Miss_Karen'},
+  {'lienUtilisateur':'','image':'/img/avatar4.jpg','nomUtilisateur':'drbabs'},
+  {'lienUtilisateur':'','image':'/img/default-avatar.png','nomUtilisateur':'Happygoin'},
+  {'lienUtilisateur':'','image':'/img/avatar5.jpg','nomUtilisateur':'HalfPint'},
+  {'lienUtilisateur':'','image':'/img/avatar6.jpg','nomUtilisateur':'Windischgirl'},
+  {'lienUtilisateur':'','image':'/img/default-avatar.png','nomUtilisateur':'Stephanie G.'}
 ]
 
 function FragHotline() {

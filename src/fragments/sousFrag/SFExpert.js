@@ -6,10 +6,10 @@ import loadable from '@loadable/component'
 const Slideshow = loadable(() => import('../../composants/Slideshow'))
 
 const produitsExp = [
-    { 'lien': '', 'image': 'img/e8.jpg', 'titre': 'Mirzam Chocolate Advent Calendar', 'prix': '45', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e9.jpg', 'titre': 'Amedei Tuscany Chocolate Advent Calendar', 'prix': '190', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e10.jpg', 'titre': 'Sugarfina Eight Nights of Hanukkah Candy Collection', 'prix': '30', 'variantTexte': '' },
-    { 'lien': '', 'image': 'img/e11.jpg', 'titre': 'Goodio Vegan Chocolate Advent Calendar', 'prix': '65', 'variantTexte': '' }
+    { 'lien': '', 'image': '/img/e8.jpg', 'titre': 'Mirzam Chocolate Advent Calendar', 'prix': '45', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e9.jpg', 'titre': 'Amedei Tuscany Chocolate Advent Calendar', 'prix': '190', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e10.jpg', 'titre': 'Sugarfina Eight Nights of Hanukkah Candy Collection', 'prix': '30', 'variantTexte': '' },
+    { 'lien': '', 'image': '/img/e11.jpg', 'titre': 'Goodio Vegan Chocolate Advent Calendar', 'prix': '65', 'variantTexte': '' }
 ]
 
 function SFExpert() {
@@ -28,7 +28,7 @@ function SFExpert() {
                         <div className="expert--avatar">
                             <div className="d1">
                                 <div className="1--1">
-                                    <img src="img/t5.jpg" loading='lazy' alt="" className='image'/>
+                                    <img src="/img/t5.jpg" loading='lazy' alt="" className='image'/>
                                 </div>
                             </div>
                         </div>

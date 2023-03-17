@@ -58,7 +58,7 @@ function DrawerRecherche() {
               <div className="search-panel__result-img">
                 <div className="wrapper-img-1">
                   <div className="wrapper-img-2">
-                    <img src="img-downl/insearch_img1.jpg" loading='lazy' alt="" className="image" />
+                    <img src="/img-downl/insearch_img1.jpg" loading='lazy' alt="" className="image" />
                   </div>
                 </div>
               </div>
@@ -72,7 +72,7 @@ function DrawerRecherche() {
               <div className="search-panel__result-img">
                 <div className="wrapper-img-1">
                   <div className="wrapper-img-2">
-                    <img src="img-downl/insearch_img2.jpg" loading='lazy' alt="" className="image" />
+                    <img src="/img-downl/insearch_img2.jpg" loading='lazy' alt="" className="image" />
                   </div>
                 </div>
               </div>
@@ -91,7 +91,7 @@ function DrawerRecherche() {
               <div className="search-panel__result-img">
                 <div className="wrapper-img-1">
                   <div className="wrapper-img-2">
-                    <img src="img-downl/insearch_img3.jpg" loading='lazy' alt="" className="image" />
+                    <img src="/img-downl/insearch_img3.jpg" loading='lazy' alt="" className="image" />
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@ function DrawerRecherche() {
               <div className="search-panel__result-img">
                 <div className="wrapper-img-1">
                   <div className="wrapper-img-2">
-                    <img src="img-downl/insearch_img4.jpg" loading='lazy' alt="" className="image" />
+                    <img src="/img-downl/insearch_img4.jpg" loading='lazy' alt="" className="image" />
                   </div>
                 </div>
               </div>
