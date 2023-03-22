@@ -1,5 +1,5 @@
 import React, {Fragment, useState, useEffect} from 'react'
- import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { startLoading, authError, login } from '../../store/authSlice'
 import axios from 'axios';
 import './styles/SignupForm.scss'

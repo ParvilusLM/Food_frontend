@@ -3,10 +3,13 @@ import { Link } from 'react-router-dom'
 import './styles/Header.scss'
 import loadable from '@loadable/component'
 import $ from 'jquery'
+import { useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
-const DrawerConnexion = loadable(() => import('../composants/DrawerConnexion'));
-const DrawerRecherche = loadable(() => import('../composants/DrawerRecherche'));
-const DrawerPanier = loadable(() => import('../composants/DrawerPanier'));
+const DrawerConnexion = loadable(() => import('./DrawerConnexion'));
+const DrawerRecherche = loadable(() => import('./DrawerRecherche'));
+const DrawerPanier = loadable(() => import('./DrawerPanier'));
+const DrawerProfile = loadable(() => import('./DrawerProfile'))
 
 function Header() {
 

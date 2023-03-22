@@ -10,11 +10,29 @@ function LoginForm({ setEtapeAuth }) {
   const dispatch = useDispatch()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+    
 
     const handleSubmit = (event) => {
         event.preventDefault();
         axios.post(`${process.env.REACT_APP_CONNEXION_URL}`, { email, password })
-        .then(response => {console.log(response.data)})
+        .then(response => {
+            console.log(response.data)
+
+            axios.get(`${process.env.REACT_APP_INSCRIPTION_URL}/me`, {
+                headers: {
+                    'Authorization': `Token ${response.data.token}`
+                }
+                })
+                .then(responseUtilisateur => {
+                    // Si la réponse est réussie, mettre à jour l'état avec l'utilisateur récupéré
+                    console.log(responseUtilisateur.data)
+                })
+                .catch(error => {
+                    // Si la réponse est une erreur, mettre à jour l'état avec l'erreur
+                    console.log('recuperation echouee')
+            });
+        
+        })
         .catch(error => {console.log('Erreur lors de la connexion de l\'utilisateur.')});
     }
 
