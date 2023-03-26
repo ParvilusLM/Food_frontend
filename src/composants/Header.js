@@ -25,10 +25,13 @@ function Header() {
                 $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
                 $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
                 $('.lien-nav--community-exp').attr('aria-expanded', 'false');
+                $('#the_shopDropdown').removeClass('dropdown--shop-visible');
+                $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
+                $('#communityDropdown').removeClass('dropdown--community-visible');
             });
 
             $('.wrapper--link-shop').on('click', function () {
-                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || ($(window).width() >= 1024 && !$('.global-nav__menu').hasClass('global-nav__menu--expanded')) ) {
+                if ($('.global-nav__menu').hasClass('global-nav__menu--expanded') || ($(window).width() >= 1024 && !$('.global-nav__menu').hasClass('global-nav__menu--expanded'))) {
                     const valAttr = $('.lien-nav--shop-exp').attr('aria-expanded');
                     if (valAttr === 'true') {
                         $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
@@ -46,7 +49,7 @@ function Header() {
             });
 
             $('.wrapper--link-recipes').on('click', function () {
-                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || ($(window).width() >= 1024 && !$('.global-nav__menu').hasClass('global-nav__menu--expanded')) ) {
+                if ($('.global-nav__menu').hasClass('global-nav__menu--expanded') || ($(window).width() >= 1024 && !$('.global-nav__menu').hasClass('global-nav__menu--expanded'))) {
                     const valAttr = $('.lien-nav--recipes-exp').attr('aria-expanded');
                     if (valAttr === 'true') {
                         $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
@@ -64,7 +67,7 @@ function Header() {
             });
 
             $('.wrapper--link-community').on('click', function () {
-                if($('.global-nav__menu').hasClass('global-nav__menu--expanded') || ($(window).width() >= 1024 && !$('.global-nav__menu').hasClass('global-nav__menu--expanded')) ) {
+                if ($('.global-nav__menu').hasClass('global-nav__menu--expanded') || ($(window).width() >= 1024 && !$('.global-nav__menu').hasClass('global-nav__menu--expanded'))) {
                     const valAttr = $('.lien-nav--community-exp').attr('aria-expanded');
                     if (valAttr === 'true') {
                         $('.lien-nav--community-exp').attr('aria-expanded', 'false');
@@ -76,13 +79,13 @@ function Header() {
                         $('#communityDropdown').addClass('dropdown--community-visible');
                         $('#the_recipesDropdown').removeClass('dropdown--recipes-visible');
                         $('#the_shopDropdown').removeClass('dropdown--shop-visible');
-                        
+
                     }
                 }
             });
 
             $(".li--food, .li--drink52, .li--home52, .li--watch").on('click', function () {
-                if($('.global-nav__menu').hasClass('global-nav__menu--expanded')) {
+                if ($('.global-nav__menu').hasClass('global-nav__menu--expanded')) {
                     $('.global-nav__menu').removeClass('global-nav__menu--expanded');
                 }
 
@@ -95,10 +98,10 @@ function Header() {
             });
 
             $("#the_shopDropdown:has(.lien), #the_recipesDropdown:has(.lien-recipes), #communityDropdown:has(.lien-community)").on('click', function () {
-                if($('.global-nav__menu').hasClass('global-nav__menu--expanded')) {
+                if ($('.global-nav__menu').hasClass('global-nav__menu--expanded')) {
                     $('.global-nav__menu').removeClass('global-nav__menu--expanded');
                 }
-                
+
                 $('.lien-nav--shop-exp').attr('aria-expanded', 'false');
                 $('#the_shopDropdown').removeClass('dropdown--shop-visible');
                 $('.lien-nav--recipes-exp').attr('aria-expanded', 'false');
@@ -119,7 +122,7 @@ function Header() {
 
         })
 
-    },[]);
+    }, []);
 
     return (
         <Fragment>
@@ -150,7 +153,7 @@ function Header() {
                                             </span>
                                         </Link>
                                     </div>
-                                    
+
                                     <div className="global-nav__menu-dropdown" id='the_shopDropdown'>
                                         <div className="global-nav__shop global-nav__shop--column">
                                             <ul className="global-nav__shop-groups">
@@ -461,7 +464,7 @@ function Header() {
                                             </span>
                                         </Link>
                                     </div>
-                                    
+
                                     <div className="global-nav__menu-dropdown" id='the_recipesDropdown'>
                                         <div className="global-nav__recipes--row">
                                             <div className="global-nav__recipes-groups explore-arrow">
@@ -660,7 +663,7 @@ function Header() {
                                             </span>
                                         </Link>
                                     </div>
-                                    
+
                                     <div className="global-nav__menu-dropdown" id='communityDropdown'>
                                         <ul className="global-nav__community">
                                             <li>
