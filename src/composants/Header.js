@@ -12,6 +12,7 @@ const DrawerPanier = loadable(() => import('./DrawerPanier'));
 const DrawerProfile = loadable(() => import('./DrawerProfile'))
 
 function Header() {
+    const isAuthenticated = useSelector( state => state.auth.isAuthenticated)
 
     useEffect(() => {
 
@@ -731,7 +732,9 @@ function Header() {
 
                         <ul className="global-nav__actions">
                             <li className="global-nav__action">
-                                <DrawerConnexion />
+                                {isAuthenticated === true && <DrawerProfile />}
+                                {isAuthenticated === false && <DrawerConnexion />}
+                                
                             </li>
                             <li className="global-nav__action">
                                 <DrawerRecherche />
